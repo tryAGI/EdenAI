@@ -11,8 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Replicate { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -29,14 +35,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Minimax { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -53,8 +53,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Minimax { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Replicate { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,7 +65,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagegenerationResponseModel" /> class.
         /// </summary>
-        /// <param name="replicate">
+        /// <param name="openai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="stabilityai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="amazon">
@@ -74,10 +77,7 @@ namespace EdenAI
         /// <param name="deepai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="stabilityai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="openai">
+        /// <param name="minimax">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="bytedance">
@@ -86,30 +86,30 @@ namespace EdenAI
         /// <param name="leonardo">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="minimax">
+        /// <param name="replicate">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagegenerationResponseModel(
-            global::EdenAI.ImagegenerationGenerationDataClass? replicate,
+            global::EdenAI.ImagegenerationGenerationDataClass? openai,
+            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
             global::EdenAI.ImagegenerationGenerationDataClass? amazon,
             global::EdenAI.ImagegenerationGenerationDataClass? deepai,
-            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
-            global::EdenAI.ImagegenerationGenerationDataClass? openai,
+            global::EdenAI.ImagegenerationGenerationDataClass? minimax,
             global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
             global::EdenAI.ImagegenerationGenerationDataClass? leonardo,
-            global::EdenAI.ImagegenerationGenerationDataClass? minimax)
+            global::EdenAI.ImagegenerationGenerationDataClass? replicate)
         {
-            this.Replicate = replicate;
+            this.Openai = openai;
+            this.Stabilityai = stabilityai;
             this.Amazon = amazon;
             this.Deepai = deepai;
-            this.Stabilityai = stabilityai;
-            this.Openai = openai;
+            this.Minimax = minimax;
             this.Bytedance = bytedance;
             this.Leonardo = leonardo;
-            this.Minimax = minimax;
+            this.Replicate = replicate;
         }
 
         /// <summary>
