@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Nuget">
+    <PackageId>tryAGI.EdenAI</PackageId>
     <Description>C# SDK based on EdenAI OpenAPI specification.</Description>
     <PackageTags>api;client;sdk;dotnet;openapi;edenai;ai-gateway</PackageTags>
   </PropertyGroup>
