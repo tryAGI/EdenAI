@@ -1,0 +1,356 @@
+
+#nullable enable
+
+namespace EdenAI
+{
+    public partial class ExplicitContentDetectionAsyncClient
+    {
+        partial void PrepareVideoVideoExplicitContentDetectionAsyncRetrieve2Arguments(
+            global::System.Net.Http.HttpClient httpClient,
+            ref string publicId,
+            ref bool? responseAsDict,
+            ref bool? showBase64,
+            ref bool? showOriginalResponse);
+        partial void PrepareVideoVideoExplicitContentDetectionAsyncRetrieve2Request(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string publicId,
+            bool? responseAsDict,
+            bool? showBase64,
+            bool? showOriginalResponse);
+        partial void ProcessVideoVideoExplicitContentDetectionAsyncRetrieve2Response(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage);
+
+        partial void ProcessVideoVideoExplicitContentDetectionAsyncRetrieve2ResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
+        /// <summary>
+        /// Video Explicit Content Detection Get Job Results<br/>
+        /// Get the status and results of an async job given its ID.
+        /// </summary>
+        /// <param name="publicId"></param>
+        /// <param name="responseAsDict">
+        /// Default Value: true
+        /// </param>
+        /// <param name="showBase64">
+        /// Default Value: true
+        /// </param>
+        /// <param name="showOriginalResponse">
+        /// Default Value: false
+        /// </param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::EdenAI.AsyncvideoexplicitContentDetectionAsyncResponseModel> VideoVideoExplicitContentDetectionAsyncRetrieve2Async(
+            string publicId,
+            bool? responseAsDict = default,
+            bool? showBase64 = default,
+            bool? showOriginalResponse = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            PrepareArguments(
+                client: HttpClient);
+            PrepareVideoVideoExplicitContentDetectionAsyncRetrieve2Arguments(
+                httpClient: HttpClient,
+                publicId: ref publicId,
+                responseAsDict: ref responseAsDict,
+                showBase64: ref showBase64,
+                showOriginalResponse: ref showOriginalResponse);
+
+            var __pathBuilder = new global::EdenAI.PathBuilder(
+                path: $"/video/explicit_content_detection_async/{publicId}/",
+                baseUri: HttpClient.BaseAddress); 
+            __pathBuilder
+                .AddOptionalParameter("response_as_dict", responseAsDict?.ToString().ToLowerInvariant())
+                .AddOptionalParameter("show_base_64", showBase64?.ToString().ToLowerInvariant())
+                .AddOptionalParameter("show_original_response", showOriginalResponse?.ToString().ToLowerInvariant()) 
+                ; 
+            var __path = __pathBuilder.ToString();
+            using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
+                method: global::System.Net.Http.HttpMethod.Get,
+                requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
+#if NET6_0_OR_GREATER
+            __httpRequest.Version = global::System.Net.HttpVersion.Version11;
+            __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
+#endif
+
+            foreach (var __authorization in Authorizations)
+            {
+                if (__authorization.Type == "Http" ||
+                    __authorization.Type == "OAuth2")
+                {
+                    __httpRequest.Headers.Authorization = new global::System.Net.Http.Headers.AuthenticationHeaderValue(
+                        scheme: __authorization.Name,
+                        parameter: __authorization.Value);
+                }
+                else if (__authorization.Type == "ApiKey" &&
+                         __authorization.Location == "Header")
+                {
+                    __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
+                }
+            }
+
+            PrepareRequest(
+                client: HttpClient,
+                request: __httpRequest);
+            PrepareVideoVideoExplicitContentDetectionAsyncRetrieve2Request(
+                httpClient: HttpClient,
+                httpRequestMessage: __httpRequest,
+                publicId: publicId,
+                responseAsDict: responseAsDict,
+                showBase64: showBase64,
+                showOriginalResponse: showOriginalResponse);
+
+            using var __response = await HttpClient.SendAsync(
+                request: __httpRequest,
+                completionOption: global::System.Net.Http.HttpCompletionOption.ResponseContentRead,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
+
+            ProcessResponse(
+                client: HttpClient,
+                response: __response);
+            ProcessVideoVideoExplicitContentDetectionAsyncRetrieve2Response(
+                httpClient: HttpClient,
+                httpResponseMessage: __response);
+            // 
+            if ((int)__response.StatusCode == 400)
+            {
+                string? __content_400 = null;
+                global::System.Exception? __exception_400 = null;
+                global::EdenAI.BadRequest? __value_400 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_400 = global::EdenAI.BadRequest.FromJson(__content_400, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_400 = global::EdenAI.BadRequest.FromJson(__content_400, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_400 = __ex;
+                }
+
+                throw new global::EdenAI.ApiException<global::EdenAI.BadRequest>(
+                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_400,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_400,
+                    ResponseObject = __value_400,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+            // 
+            if ((int)__response.StatusCode == 500)
+            {
+                string? __content_500 = null;
+                global::System.Exception? __exception_500 = null;
+                global::EdenAI.Error? __value_500 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_500 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_500 = global::EdenAI.Error.FromJson(__content_500, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_500 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_500 = global::EdenAI.Error.FromJson(__content_500, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_500 = __ex;
+                }
+
+                throw new global::EdenAI.ApiException<global::EdenAI.Error>(
+                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_500,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_500,
+                    ResponseObject = __value_500,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+            // 
+            if ((int)__response.StatusCode == 403)
+            {
+                string? __content_403 = null;
+                global::System.Exception? __exception_403 = null;
+                global::EdenAI.Error? __value_403 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_403 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_403 = global::EdenAI.Error.FromJson(__content_403, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_403 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_403 = global::EdenAI.Error.FromJson(__content_403, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_403 = __ex;
+                }
+
+                throw new global::EdenAI.ApiException<global::EdenAI.Error>(
+                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_403,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_403,
+                    ResponseObject = __value_403,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+            // 
+            if ((int)__response.StatusCode == 404)
+            {
+                string? __content_404 = null;
+                global::System.Exception? __exception_404 = null;
+                global::EdenAI.NotFoundResponse? __value_404 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                        __value_404 = global::EdenAI.NotFoundResponse.FromJson(__content_404, JsonSerializerContext);
+                    }
+                    else
+                    {
+                        __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+
+                        __value_404 = global::EdenAI.NotFoundResponse.FromJson(__content_404, JsonSerializerContext);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_404 = __ex;
+                }
+
+                throw new global::EdenAI.ApiException<global::EdenAI.NotFoundResponse>(
+                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_404,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_404,
+                    ResponseObject = __value_404,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
+
+            if (ReadResponseAsString)
+            {
+                var __content = await __response.Content.ReadAsStringAsync(
+#if NET5_0_OR_GREATER
+                    cancellationToken
+#endif
+                ).ConfigureAwait(false);
+
+                ProcessResponseContent(
+                    client: HttpClient,
+                    response: __response,
+                    content: ref __content);
+                ProcessVideoVideoExplicitContentDetectionAsyncRetrieve2ResponseContent(
+                    httpClient: HttpClient,
+                    httpResponseMessage: __response,
+                    content: ref __content);
+
+                try
+                {
+                    __response.EnsureSuccessStatusCode();
+
+                    return
+                        global::EdenAI.AsyncvideoexplicitContentDetectionAsyncResponseModel.FromJson(__content, JsonSerializerContext) ??
+                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                }
+                catch (global::System.Exception __ex)
+                {
+                    throw new global::EdenAI.ApiException(
+                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                        innerException: __ex,
+                        statusCode: __response.StatusCode)
+                    {
+                        ResponseBody = __content,
+                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                            __response.Headers,
+                            h => h.Key,
+                            h => h.Value),
+                    };
+                }
+            }
+            else
+            {
+                try
+                {
+                    __response.EnsureSuccessStatusCode();
+
+                    using var __content = await __response.Content.ReadAsStreamAsync(
+#if NET5_0_OR_GREATER
+                        cancellationToken
+#endif
+                    ).ConfigureAwait(false);
+
+                    return
+                        await global::EdenAI.AsyncvideoexplicitContentDetectionAsyncResponseModel.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        throw new global::System.InvalidOperationException("Response deserialization failed.");
+                }
+                catch (global::System.Exception __ex)
+                {
+                    string? __content = null;
+                    try
+                    {
+                        __content = await __response.Content.ReadAsStringAsync(
+#if NET5_0_OR_GREATER
+                            cancellationToken
+#endif
+                        ).ConfigureAwait(false);
+                    }
+                    catch (global::System.Exception)
+                    {
+                    }
+
+                    throw new global::EdenAI.ApiException(
+                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                        innerException: __ex,
+                        statusCode: __response.StatusCode)
+                    {
+                        ResponseBody = __content,
+                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                            __response.Headers,
+                            h => h.Key,
+                            h => h.Value),
+                    };
+                }
+            }
+        }
+    }
+}
