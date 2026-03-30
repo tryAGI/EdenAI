@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Sapling { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -29,20 +29,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Sapling { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
         public global::EdenAI.TextspellCheckSpellCheckDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Openai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,19 +56,19 @@ namespace EdenAI
         /// <param name="prowritingaid">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="sapling">
+        /// <param name="cohere">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="cohere">
+        /// <param name="sapling">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="xai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -76,18 +76,18 @@ namespace EdenAI
 #endif
         public TextspellCheckResponseModel(
             global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? sapling,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? microsoft,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? openai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? xai)
+            global::EdenAI.TextspellCheckSpellCheckDataClass? microsoft,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? sapling,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? xai,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? openai)
         {
             this.Prowritingaid = prowritingaid;
-            this.Sapling = sapling;
-            this.Microsoft = microsoft;
-            this.Openai = openai;
             this.Cohere = cohere;
+            this.Microsoft = microsoft;
+            this.Sapling = sapling;
             this.Xai = xai;
+            this.Openai = openai;
         }
 
         /// <summary>
