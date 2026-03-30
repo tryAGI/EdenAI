@@ -11,20 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Klippa { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Mindee { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,14 +29,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Mindee { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Klippa { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -59,22 +59,22 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcridentityParserResponseModel" /> class.
         /// </summary>
-        /// <param name="klippa">
+        /// <param name="mindee">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="microsoft">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="openai">
+        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="affinda">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="mindee">
+        /// <param name="klippa">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
+        /// <param name="openai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="base64">
@@ -84,20 +84,20 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcridentityParserResponseModel(
-            global::EdenAI.OcridentityParserIdentityParserDataClass? klippa,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? microsoft,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? openai,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? affinda,
             global::EdenAI.OcridentityParserIdentityParserDataClass? mindee,
             global::EdenAI.OcridentityParserIdentityParserDataClass? amazon,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? affinda,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? klippa,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? openai,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? microsoft,
             global::EdenAI.OcridentityParserIdentityParserDataClass? base64)
         {
-            this.Klippa = klippa;
-            this.Microsoft = microsoft;
-            this.Openai = openai;
-            this.Affinda = affinda;
             this.Mindee = mindee;
             this.Amazon = amazon;
+            this.Affinda = affinda;
+            this.Klippa = klippa;
+            this.Openai = openai;
+            this.Microsoft = microsoft;
             this.Base64 = base64;
         }
 

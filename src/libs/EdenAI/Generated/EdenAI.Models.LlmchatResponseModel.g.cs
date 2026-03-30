@@ -11,50 +11,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.LlmchatChatDataClass? Tenstorrent { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nebius")]
-        public global::EdenAI.LlmchatChatDataClass? Nebius { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepinfra")]
-        public global::EdenAI.LlmchatChatDataClass? Deepinfra { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.LlmchatChatDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
-        public global::EdenAI.LlmchatChatDataClass? Meta { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cerebras")]
-        public global::EdenAI.LlmchatChatDataClass? Cerebras { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dashscope")]
         public global::EdenAI.LlmchatChatDataClass? Dashscope { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.LlmchatChatDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("together_ai")]
+        public global::EdenAI.LlmchatChatDataClass? TogetherAi { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.LlmchatChatDataClass? Xai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -65,26 +35,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
-        public global::EdenAI.LlmchatChatDataClass? Minimax { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
+        public global::EdenAI.LlmchatChatDataClass? Meta { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.LlmchatChatDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cloudflare")]
+        public global::EdenAI.LlmchatChatDataClass? Cloudflare { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("iointelligence")]
-        public global::EdenAI.LlmchatChatDataClass? Iointelligence { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("huggingface")]
-        public global::EdenAI.LlmchatChatDataClass? Huggingface { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.LlmchatChatDataClass? Tenstorrent { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -95,32 +59,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fireworks_ai")]
-        public global::EdenAI.LlmchatChatDataClass? FireworksAi { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cerebras")]
+        public global::EdenAI.LlmchatChatDataClass? Cerebras { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("databricks")]
-        public global::EdenAI.LlmchatChatDataClass? Databricks { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.LlmchatChatDataClass? Mistral { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ovhcloud")]
-        public global::EdenAI.LlmchatChatDataClass? Ovhcloud { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.LlmchatChatDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
+        public global::EdenAI.LlmchatChatDataClass? Replicate { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -137,8 +83,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.LlmchatChatDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nebius")]
+        public global::EdenAI.LlmchatChatDataClass? Nebius { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -149,26 +95,80 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ovhcloud")]
+        public global::EdenAI.LlmchatChatDataClass? Ovhcloud { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.LlmchatChatDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fireworks_ai")]
+        public global::EdenAI.LlmchatChatDataClass? FireworksAi { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.LlmchatChatDataClass? Google { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cloudflare")]
-        public global::EdenAI.LlmchatChatDataClass? Cloudflare { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.LlmchatChatDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
-        public global::EdenAI.LlmchatChatDataClass? Replicate { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.LlmchatChatDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("together_ai")]
-        public global::EdenAI.LlmchatChatDataClass? TogetherAi { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.LlmchatChatDataClass? Mistral { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.LlmchatChatDataClass? Cohere { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("huggingface")]
+        public global::EdenAI.LlmchatChatDataClass? Huggingface { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepinfra")]
+        public global::EdenAI.LlmchatChatDataClass? Deepinfra { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("iointelligence")]
+        public global::EdenAI.LlmchatChatDataClass? Iointelligence { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
+        public global::EdenAI.LlmchatChatDataClass? Minimax { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("databricks")]
+        public global::EdenAI.LlmchatChatDataClass? Databricks { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -179,61 +179,34 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="LlmchatResponseModel" /> class.
         /// </summary>
-        /// <param name="tenstorrent">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="nebius">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="deepinfra">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="openai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="meta">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="cerebras">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="dashscope">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="cohere">
+        /// <param name="togetherAi">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="deepseek">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="minimax">
+        /// <param name="meta">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="microsoft">
+        /// <param name="cloudflare">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="iointelligence">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="huggingface">
+        /// <param name="tenstorrent">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="perplexityai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="fireworksAi">
+        /// <param name="cerebras">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="databricks">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="mistral">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="ovhcloud">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="xai">
+        /// <param name="replicate">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="bytedance">
@@ -242,83 +215,110 @@ namespace EdenAI
         /// <param name="groq">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
+        /// <param name="nebius">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="anthropic">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="ovhcloud">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="openai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="fireworksAi">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="cloudflare">
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="replicate">
+        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="togetherAi">
+        /// <param name="mistral">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="cohere">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="huggingface">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="deepinfra">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="iointelligence">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="minimax">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="databricks">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LlmchatResponseModel(
-            global::EdenAI.LlmchatChatDataClass? tenstorrent,
-            global::EdenAI.LlmchatChatDataClass? nebius,
-            global::EdenAI.LlmchatChatDataClass? deepinfra,
-            global::EdenAI.LlmchatChatDataClass? openai,
-            global::EdenAI.LlmchatChatDataClass? meta,
-            global::EdenAI.LlmchatChatDataClass? cerebras,
             global::EdenAI.LlmchatChatDataClass? dashscope,
-            global::EdenAI.LlmchatChatDataClass? cohere,
-            global::EdenAI.LlmchatChatDataClass? deepseek,
-            global::EdenAI.LlmchatChatDataClass? minimax,
-            global::EdenAI.LlmchatChatDataClass? microsoft,
-            global::EdenAI.LlmchatChatDataClass? iointelligence,
-            global::EdenAI.LlmchatChatDataClass? huggingface,
-            global::EdenAI.LlmchatChatDataClass? perplexityai,
-            global::EdenAI.LlmchatChatDataClass? fireworksAi,
-            global::EdenAI.LlmchatChatDataClass? databricks,
-            global::EdenAI.LlmchatChatDataClass? mistral,
-            global::EdenAI.LlmchatChatDataClass? ovhcloud,
+            global::EdenAI.LlmchatChatDataClass? togetherAi,
             global::EdenAI.LlmchatChatDataClass? xai,
+            global::EdenAI.LlmchatChatDataClass? deepseek,
+            global::EdenAI.LlmchatChatDataClass? meta,
+            global::EdenAI.LlmchatChatDataClass? cloudflare,
+            global::EdenAI.LlmchatChatDataClass? tenstorrent,
+            global::EdenAI.LlmchatChatDataClass? perplexityai,
+            global::EdenAI.LlmchatChatDataClass? cerebras,
+            global::EdenAI.LlmchatChatDataClass? replicate,
             global::EdenAI.LlmchatChatDataClass? bytedance,
             global::EdenAI.LlmchatChatDataClass? groq,
-            global::EdenAI.LlmchatChatDataClass? amazon,
+            global::EdenAI.LlmchatChatDataClass? nebius,
             global::EdenAI.LlmchatChatDataClass? anthropic,
+            global::EdenAI.LlmchatChatDataClass? ovhcloud,
+            global::EdenAI.LlmchatChatDataClass? openai,
+            global::EdenAI.LlmchatChatDataClass? fireworksAi,
             global::EdenAI.LlmchatChatDataClass? google,
-            global::EdenAI.LlmchatChatDataClass? cloudflare,
-            global::EdenAI.LlmchatChatDataClass? replicate,
-            global::EdenAI.LlmchatChatDataClass? togetherAi)
+            global::EdenAI.LlmchatChatDataClass? microsoft,
+            global::EdenAI.LlmchatChatDataClass? amazon,
+            global::EdenAI.LlmchatChatDataClass? mistral,
+            global::EdenAI.LlmchatChatDataClass? cohere,
+            global::EdenAI.LlmchatChatDataClass? huggingface,
+            global::EdenAI.LlmchatChatDataClass? deepinfra,
+            global::EdenAI.LlmchatChatDataClass? iointelligence,
+            global::EdenAI.LlmchatChatDataClass? minimax,
+            global::EdenAI.LlmchatChatDataClass? databricks)
         {
-            this.Tenstorrent = tenstorrent;
-            this.Nebius = nebius;
-            this.Deepinfra = deepinfra;
-            this.Openai = openai;
-            this.Meta = meta;
-            this.Cerebras = cerebras;
             this.Dashscope = dashscope;
-            this.Cohere = cohere;
-            this.Deepseek = deepseek;
-            this.Minimax = minimax;
-            this.Microsoft = microsoft;
-            this.Iointelligence = iointelligence;
-            this.Huggingface = huggingface;
-            this.Perplexityai = perplexityai;
-            this.FireworksAi = fireworksAi;
-            this.Databricks = databricks;
-            this.Mistral = mistral;
-            this.Ovhcloud = ovhcloud;
+            this.TogetherAi = togetherAi;
             this.Xai = xai;
+            this.Deepseek = deepseek;
+            this.Meta = meta;
+            this.Cloudflare = cloudflare;
+            this.Tenstorrent = tenstorrent;
+            this.Perplexityai = perplexityai;
+            this.Cerebras = cerebras;
+            this.Replicate = replicate;
             this.Bytedance = bytedance;
             this.Groq = groq;
-            this.Amazon = amazon;
+            this.Nebius = nebius;
             this.Anthropic = anthropic;
+            this.Ovhcloud = ovhcloud;
+            this.Openai = openai;
+            this.FireworksAi = fireworksAi;
             this.Google = google;
-            this.Cloudflare = cloudflare;
-            this.Replicate = replicate;
-            this.TogetherAi = togetherAi;
+            this.Microsoft = microsoft;
+            this.Amazon = amazon;
+            this.Mistral = mistral;
+            this.Cohere = cohere;
+            this.Huggingface = huggingface;
+            this.Deepinfra = deepinfra;
+            this.Iointelligence = iointelligence;
+            this.Minimax = minimax;
+            this.Databricks = databricks;
         }
 
         /// <summary>

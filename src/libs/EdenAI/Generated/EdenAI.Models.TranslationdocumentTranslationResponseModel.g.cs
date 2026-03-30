@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepl")]
-        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? Deepl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? Google { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepl")]
+        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? Deepl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,21 +29,21 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TranslationdocumentTranslationResponseModel" /> class.
         /// </summary>
-        /// <param name="deepl">
+        /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="google">
+        /// <param name="deepl">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TranslationdocumentTranslationResponseModel(
-            global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? deepl,
-            global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? google)
+            global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? google,
+            global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? deepl)
         {
-            this.Deepl = deepl;
             this.Google = google;
+            this.Deepl = deepl;
         }
 
         /// <summary>
