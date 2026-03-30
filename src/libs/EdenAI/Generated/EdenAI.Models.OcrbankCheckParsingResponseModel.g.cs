@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Mindee { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Veryfi { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Veryfi { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Mindee { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -44,10 +44,10 @@ namespace EdenAI
         /// <param name="base64">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="mindee">
+        /// <param name="veryfi">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="veryfi">
+        /// <param name="mindee">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="extracta">
@@ -58,13 +58,13 @@ namespace EdenAI
 #endif
         public OcrbankCheckParsingResponseModel(
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? base64,
-            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? mindee,
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? veryfi,
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? mindee,
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? extracta)
         {
             this.Base64 = base64;
-            this.Mindee = mindee;
             this.Veryfi = veryfi;
+            this.Mindee = mindee;
             this.Extracta = extracta;
         }
 
