@@ -11,6 +11,12 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("hireability")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Hireability { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("senseloaf")]
         public global::EdenAI.OcrresumeParserResumeParserDataClass? Senseloaf { get; set; }
 
@@ -19,12 +25,6 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
         public global::EdenAI.OcrresumeParserResumeParserDataClass? Klippa { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hireability")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Hireability { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -53,13 +53,13 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrresumeParserResponseModel" /> class.
         /// </summary>
+        /// <param name="hireability">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="senseloaf">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="klippa">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="hireability">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="openai">
@@ -75,16 +75,16 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrresumeParserResponseModel(
+            global::EdenAI.OcrresumeParserResumeParserDataClass? hireability,
             global::EdenAI.OcrresumeParserResumeParserDataClass? senseloaf,
             global::EdenAI.OcrresumeParserResumeParserDataClass? klippa,
-            global::EdenAI.OcrresumeParserResumeParserDataClass? hireability,
             global::EdenAI.OcrresumeParserResumeParserDataClass? openai,
             global::EdenAI.OcrresumeParserResumeParserDataClass? affinda,
             global::EdenAI.OcrresumeParserResumeParserDataClass? extracta)
         {
+            this.Hireability = hireability;
             this.Senseloaf = senseloaf;
             this.Klippa = klippa;
-            this.Hireability = hireability;
             this.Openai = openai;
             this.Affinda = affinda;
             this.Extracta = extracta;
