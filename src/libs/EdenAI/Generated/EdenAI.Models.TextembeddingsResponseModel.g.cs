@@ -29,8 +29,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Mistral { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -41,14 +41,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Cohere { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Mistral { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Google { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -68,16 +68,16 @@ namespace EdenAI
         /// <param name="iointelligence">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="cohere">
+        /// <param name="mistral">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="jina">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="google">
+        /// <param name="cohere">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="mistral">
+        /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -87,18 +87,18 @@ namespace EdenAI
             global::EdenAI.TextembeddingsEmbeddingsDataClass? ai21labs,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? openai,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? iointelligence,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? cohere,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? mistral,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? jina,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? google,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? mistral)
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? cohere,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? google)
         {
             this.Ai21labs = ai21labs;
             this.Openai = openai;
             this.Iointelligence = iointelligence;
-            this.Cohere = cohere;
-            this.Jina = jina;
-            this.Google = google;
             this.Mistral = mistral;
+            this.Jina = jina;
+            this.Cohere = cohere;
+            this.Google = google;
         }
 
         /// <summary>
