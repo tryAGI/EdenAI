@@ -11,6 +11,12 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Api4ai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
         public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Sentisight { get; set; }
 
@@ -19,12 +25,6 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -53,13 +53,13 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageobjectDetectionResponseModel" /> class.
         /// </summary>
+        /// <param name="api4ai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="sentisight">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="amazon">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="api4ai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="clarifai">
@@ -75,16 +75,16 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageobjectDetectionResponseModel(
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? api4ai,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? sentisight,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? amazon,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? api4ai,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? clarifai,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? microsoft,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? google)
         {
+            this.Api4ai = api4ai;
             this.Sentisight = sentisight;
             this.Amazon = amazon;
-            this.Api4ai = api4ai;
             this.Clarifai = clarifai;
             this.Microsoft = microsoft;
             this.Google = google;

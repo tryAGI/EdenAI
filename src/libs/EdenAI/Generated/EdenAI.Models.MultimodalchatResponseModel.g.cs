@@ -11,20 +11,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
-        public global::EdenAI.MultimodalchatChatDataClass? Anthropic { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.MultimodalchatChatDataClass? Xai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.MultimodalchatChatDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.MultimodalchatChatDataClass? Mistral { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
+        public global::EdenAI.MultimodalchatChatDataClass? Anthropic { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,8 +35,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.MultimodalchatChatDataClass? Mistral { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.MultimodalchatChatDataClass? Xai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -59,19 +59,19 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="MultimodalchatResponseModel" /> class.
         /// </summary>
-        /// <param name="anthropic">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="xai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="amazon">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="mistral">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="anthropic">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="mistral">
+        /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
@@ -84,19 +84,19 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public MultimodalchatResponseModel(
-            global::EdenAI.MultimodalchatChatDataClass? anthropic,
-            global::EdenAI.MultimodalchatChatDataClass? xai,
             global::EdenAI.MultimodalchatChatDataClass? amazon,
-            global::EdenAI.MultimodalchatChatDataClass? openai,
             global::EdenAI.MultimodalchatChatDataClass? mistral,
+            global::EdenAI.MultimodalchatChatDataClass? anthropic,
+            global::EdenAI.MultimodalchatChatDataClass? openai,
+            global::EdenAI.MultimodalchatChatDataClass? xai,
             global::EdenAI.MultimodalchatChatDataClass? microsoft,
             global::EdenAI.MultimodalchatChatDataClass? google)
         {
-            this.Anthropic = anthropic;
-            this.Xai = xai;
             this.Amazon = amazon;
-            this.Openai = openai;
             this.Mistral = mistral;
+            this.Anthropic = anthropic;
+            this.Openai = openai;
+            this.Xai = xai;
             this.Microsoft = microsoft;
             this.Google = google;
         }
