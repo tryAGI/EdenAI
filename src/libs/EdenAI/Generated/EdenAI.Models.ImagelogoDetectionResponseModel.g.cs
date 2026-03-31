@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Api4ai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Openai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -29,14 +29,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Clarifai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Clarifai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -62,16 +62,16 @@ namespace EdenAI
         /// <param name="anthropic">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="api4ai">
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="smartclick">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="clarifai">
+        /// <param name="api4ai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="clarifai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
@@ -85,18 +85,18 @@ namespace EdenAI
 #endif
         public ImagelogoDetectionResponseModel(
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? anthropic,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? api4ai,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? smartclick,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? clarifai,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? openai,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? smartclick,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? api4ai,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? clarifai,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? microsoft,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? google)
         {
             this.Anthropic = anthropic;
-            this.Api4ai = api4ai;
-            this.Smartclick = smartclick;
-            this.Clarifai = clarifai;
             this.Openai = openai;
+            this.Smartclick = smartclick;
+            this.Api4ai = api4ai;
+            this.Clarifai = clarifai;
             this.Microsoft = microsoft;
             this.Google = google;
         }
