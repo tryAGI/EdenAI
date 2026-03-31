@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,10 +35,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrocrTablesAsyncModel" /> class.
         /// </summary>
-        /// <param name="microsoft">
+        /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="google">
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="amazon">
@@ -48,12 +48,12 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrTablesAsyncModel(
-            global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? microsoft,
             global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? google,
+            global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? microsoft,
             global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? amazon)
         {
-            this.Microsoft = microsoft;
             this.Google = google;
+            this.Microsoft = microsoft;
             this.Amazon = amazon;
         }
 
