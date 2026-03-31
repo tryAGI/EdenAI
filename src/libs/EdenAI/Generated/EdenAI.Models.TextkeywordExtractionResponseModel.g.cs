@@ -11,20 +11,26 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("corticalio")]
         public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Corticalio { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Tenstorrent { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Emvista { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -41,20 +47,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Tenstorrent { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Emvista { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,13 +65,16 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextkeywordExtractionResponseModel" /> class.
         /// </summary>
+        /// <param name="xai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="corticalio">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
+        /// <param name="tenstorrent">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="emvista">
+        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="oneai">
@@ -80,36 +83,33 @@ namespace EdenAI
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="tenstorrent">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="xai">
+        /// <param name="emvista">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextkeywordExtractionResponseModel(
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? xai,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? corticalio,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? tenstorrent,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? amazon,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? emvista,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? oneai,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? openai,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? tenstorrent,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? microsoft,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? xai)
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? emvista)
         {
+            this.Xai = xai;
             this.Corticalio = corticalio;
+            this.Tenstorrent = tenstorrent;
             this.Amazon = amazon;
-            this.Emvista = emvista;
             this.Oneai = oneai;
             this.Openai = openai;
-            this.Tenstorrent = tenstorrent;
             this.Microsoft = microsoft;
-            this.Xai = xai;
+            this.Emvista = emvista;
         }
 
         /// <summary>
