@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("modernmt")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Modernmt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -23,8 +23,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("modernmt")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Modernmt { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,14 +35,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepl")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Deepl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepl")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Deepl { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -59,22 +59,22 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TranslationautomaticTranslationResponseModel" /> class.
         /// </summary>
-        /// <param name="modernmt">
+        /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="xai">
+        /// <param name="modernmt">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="deepl">
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="microsoft">
+        /// <param name="deepl">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
@@ -84,20 +84,20 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TranslationautomaticTranslationResponseModel(
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? modernmt,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? xai,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? modernmt,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? openai,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? deepl,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? microsoft,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? deepl,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? google)
         {
-            this.Modernmt = modernmt;
-            this.Amazon = amazon;
             this.Xai = xai;
+            this.Amazon = amazon;
+            this.Modernmt = modernmt;
             this.Openai = openai;
-            this.Deepl = deepl;
             this.Microsoft = microsoft;
+            this.Deepl = deepl;
             this.Google = google;
         }
 
