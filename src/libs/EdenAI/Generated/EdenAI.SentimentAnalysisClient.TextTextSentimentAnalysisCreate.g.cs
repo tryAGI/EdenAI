@@ -827,6 +827,7 @@ namespace EdenAI
             string? language = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsyntaxAnalysistextsentimentAnalysisTextAnalysisRequest
             {
                 Settings = settings,

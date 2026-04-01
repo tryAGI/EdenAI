@@ -194,6 +194,7 @@ namespace EdenAI
             global::System.Collections.Generic.IList<object>? metadata = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.AddUrlRequest
             {
                 Urls = urls,

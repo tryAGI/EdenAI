@@ -1422,6 +1422,7 @@ namespace EdenAI
             object? webSearchOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.LlmchatllmchatChatRequest
             {
                 Messages = messages,

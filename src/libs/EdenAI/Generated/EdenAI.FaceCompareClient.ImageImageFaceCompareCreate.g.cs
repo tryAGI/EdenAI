@@ -423,6 +423,7 @@ namespace EdenAI
             string? file2Url = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.ImagefaceCompareFaceCompareRequest
             {
                 Settings = settings,

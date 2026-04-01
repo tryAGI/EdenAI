@@ -692,6 +692,7 @@ namespace EdenAI
             global::System.Guid? conversationId = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.GenerateRequest
             {
                 Messages = messages,
