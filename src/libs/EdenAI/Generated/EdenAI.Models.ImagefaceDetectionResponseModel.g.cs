@@ -17,6 +17,12 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
         public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Clarifai { get; set; }
 
@@ -25,12 +31,6 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -50,13 +50,13 @@ namespace EdenAI
         /// <param name="api4ai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="amazon">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="clarifai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
@@ -67,15 +67,15 @@ namespace EdenAI
 #endif
         public ImagefaceDetectionResponseModel(
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? api4ai,
+            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? clarifai,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? microsoft,
-            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? google)
         {
             this.Api4ai = api4ai;
+            this.Amazon = amazon;
             this.Clarifai = clarifai;
             this.Microsoft = microsoft;
-            this.Amazon = amazon;
             this.Google = google;
         }
 
