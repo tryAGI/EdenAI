@@ -11,12 +11,6 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
         public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Oneai { get; set; }
 
@@ -25,6 +19,18 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Google { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -41,12 +47,6 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Xai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Amazon { get; set; }
 
@@ -59,22 +59,22 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextnamedEntityRecognitionResponseModel" /> class.
         /// </summary>
-        /// <param name="microsoft">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="oneai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="xai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="microsoft">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="tenstorrent">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="amazon">
@@ -84,20 +84,20 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextnamedEntityRecognitionResponseModel(
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? microsoft,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? oneai,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? google,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? xai,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? microsoft,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? openai,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? tenstorrent,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? xai,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? amazon)
         {
-            this.Microsoft = microsoft;
             this.Oneai = oneai;
             this.Google = google;
+            this.Xai = xai;
+            this.Microsoft = microsoft;
             this.Openai = openai;
             this.Tenstorrent = tenstorrent;
-            this.Xai = xai;
             this.Amazon = amazon;
         }
 

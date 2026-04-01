@@ -11,38 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("symbl")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Symbl { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Deepgram { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
         public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Oneai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("assembly")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Assembly { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gladia")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Gladia { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("symbl")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Symbl { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -53,8 +29,32 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gladia")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Gladia { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Deepgram { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speechmatics")]
         public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Speechmatics { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Openai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -65,8 +65,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("assembly")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Assembly { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -95,34 +95,34 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="AudiospeechToTextAsyncModel" /> class.
         /// </summary>
-        /// <param name="symbl">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="deepgram">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="microsoft">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="oneai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="assembly">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="gladia">
+        /// <param name="symbl">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="gladia">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="deepgram">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="speechmatics">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="microsoft">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="voci">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="assembly">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="voxist">
@@ -138,30 +138,30 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudiospeechToTextAsyncModel(
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? symbl,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? deepgram,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? microsoft,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? oneai,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? assembly,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? gladia,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? symbl,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? google,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? gladia,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? deepgram,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? speechmatics,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? voci,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? microsoft,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? openai,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? voci,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? assembly,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? voxist,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? amazon,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? faker)
         {
-            this.Symbl = symbl;
-            this.Deepgram = deepgram;
-            this.Microsoft = microsoft;
             this.Oneai = oneai;
-            this.Assembly = assembly;
-            this.Gladia = gladia;
+            this.Symbl = symbl;
             this.Google = google;
+            this.Gladia = gladia;
+            this.Deepgram = deepgram;
             this.Speechmatics = speechmatics;
-            this.Voci = voci;
+            this.Microsoft = microsoft;
             this.Openai = openai;
+            this.Voci = voci;
+            this.Assembly = assembly;
             this.Voxist = voxist;
             this.Amazon = amazon;
             this.Faker = faker;

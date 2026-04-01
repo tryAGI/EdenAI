@@ -11,6 +11,18 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lovoai")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Lovoai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Google { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
         public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Deepgram { get; set; }
 
@@ -23,20 +35,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Google { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lovoai")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Lovoai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -59,19 +59,19 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="AudiotextToSpeechResponseModel" /> class.
         /// </summary>
+        /// <param name="lovoai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="google">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="deepgram">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="google">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="openai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="lovoai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="elevenlabs">
@@ -84,19 +84,19 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudiotextToSpeechResponseModel(
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? lovoai,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? google,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? microsoft,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? google,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? openai,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? lovoai,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? elevenlabs,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? amazon)
         {
+            this.Lovoai = lovoai;
+            this.Google = google;
             this.Deepgram = deepgram;
             this.Microsoft = microsoft;
-            this.Google = google;
             this.Openai = openai;
-            this.Lovoai = lovoai;
             this.Elevenlabs = elevenlabs;
             this.Amazon = amazon;
         }
