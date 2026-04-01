@@ -731,7 +731,6 @@ namespace EdenAI
             int? outputSentences = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.TextsummarizeSummarizeRequest
             {
                 Settings = settings,

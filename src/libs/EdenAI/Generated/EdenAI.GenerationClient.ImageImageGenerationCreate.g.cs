@@ -536,7 +536,6 @@ namespace EdenAI
             int? numImages = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.ImagegenerationGenerationRequest
             {
                 Settings = settings,

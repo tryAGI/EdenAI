@@ -734,7 +734,6 @@ namespace EdenAI
             bool? convertToPdf = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.OcrfinancialParserFinancialParserRequest
             {
                 Settings = settings,

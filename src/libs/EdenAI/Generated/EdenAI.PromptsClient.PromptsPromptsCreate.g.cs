@@ -229,7 +229,6 @@ namespace EdenAI
             string systemPrompt,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.PromptCreateRequest
             {
                 Name = name,
