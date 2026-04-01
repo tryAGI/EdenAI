@@ -205,7 +205,6 @@ namespace EdenAI
             bool? activeBalance = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.PatchedCustomTokenUpdateRequest
             {
                 Balance = balance,

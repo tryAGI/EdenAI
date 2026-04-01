@@ -294,7 +294,6 @@ namespace EdenAI
             bool? showBase64 = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.AutomlClassificationTrainRequest
             {
                 Settings = settings,

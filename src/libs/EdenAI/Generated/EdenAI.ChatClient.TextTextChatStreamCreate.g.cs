@@ -288,7 +288,6 @@ namespace EdenAI
             global::EdenAI.FallbackTypeEnum? fallbackType = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.TextchatChatStreamRequest
             {
                 Settings = settings,

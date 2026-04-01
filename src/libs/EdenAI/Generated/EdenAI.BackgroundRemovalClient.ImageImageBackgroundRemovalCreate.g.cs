@@ -422,7 +422,6 @@ namespace EdenAI
             string? providerParams = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.ImagebackgroundRemovalBackgroundRemovalRequest
             {
                 Settings = settings,

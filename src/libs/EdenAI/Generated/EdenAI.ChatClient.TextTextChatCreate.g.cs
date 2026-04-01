@@ -1114,7 +1114,6 @@ namespace EdenAI
             global::EdenAI.ReasoningEffortEnum? reasoningEffort = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::EdenAI.TextchatChatRequest
             {
                 Settings = settings,
