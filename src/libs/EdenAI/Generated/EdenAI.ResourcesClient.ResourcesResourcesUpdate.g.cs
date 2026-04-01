@@ -208,6 +208,7 @@ namespace EdenAI
             string provider,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.ResourceUpdateRequest
             {
                 Resource = requestResource,

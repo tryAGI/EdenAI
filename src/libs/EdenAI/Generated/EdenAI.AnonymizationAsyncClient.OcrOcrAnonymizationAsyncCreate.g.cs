@@ -358,6 +358,7 @@ namespace EdenAI
             string? filePassword = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.AnonymizationAsyncRequest
             {
                 Settings = settings,

@@ -961,6 +961,7 @@ namespace EdenAI
             bool? convertToWav = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.SpeechToTextAsyncRequest
             {
                 Settings = settings,

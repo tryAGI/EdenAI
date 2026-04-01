@@ -207,6 +207,7 @@ namespace EdenAI
             object? data = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::EdenAI.PatchedAssetUpdateRequest
             {
                 SubResource = subResource,
