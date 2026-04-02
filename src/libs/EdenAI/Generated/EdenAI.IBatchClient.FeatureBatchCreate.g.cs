@@ -33,8 +33,8 @@ namespace EdenAI
         /// |Feature Name|Subfeature Name|<br/>
         /// |------------|---------------|<br/>
         /// |`translation`|`language_detection`|<br/>
-        /// |`text`|`chat`|<br/>
         /// |`image`|`face_detection`|<br/>
+        /// |`text`|`chat`|<br/>
         /// |`ocr`|`receipt_parser`|<br/>
         /// |`image`|`anonymization`|<br/>
         /// |`audio`|`text_to_speech`|<br/>
@@ -55,14 +55,14 @@ namespace EdenAI
         /// |`translation`|`automatic_translation`|<br/>
         /// |`text`|`search`|<br/>
         /// |`text`|`spell_check`|<br/>
+        /// |`image`|`object_detection`|<br/>
         /// |`ocr`|`identity_parser`|<br/>
+        /// |`image`|`explicit_content`|<br/>
         /// |`ocr`|`invoice_parser`|<br/>
         /// |`ocr`|`resume_parser`|<br/>
         /// |`audio`|`speech_to_text_async`|<br/>
         /// |`ocr`|`ocr_tables_async`|<br/>
         /// |`video`|`text_detection_async`|<br/>
-        /// |`image`|`object_detection`|<br/>
-        /// |`image`|`explicit_content`|<br/>
         /// |`text`|`question_answer`|<br/>
         /// |`text`|`keyword_extraction`|<br/>
         /// |`text`|`named_entity_recognition`|<br/>
@@ -112,8 +112,8 @@ namespace EdenAI
         /// |Feature Name|Subfeature Name|<br/>
         /// |------------|---------------|<br/>
         /// |`translation`|`language_detection`|<br/>
-        /// |`text`|`chat`|<br/>
         /// |`image`|`face_detection`|<br/>
+        /// |`text`|`chat`|<br/>
         /// |`ocr`|`receipt_parser`|<br/>
         /// |`image`|`anonymization`|<br/>
         /// |`audio`|`text_to_speech`|<br/>
@@ -134,14 +134,14 @@ namespace EdenAI
         /// |`translation`|`automatic_translation`|<br/>
         /// |`text`|`search`|<br/>
         /// |`text`|`spell_check`|<br/>
+        /// |`image`|`object_detection`|<br/>
         /// |`ocr`|`identity_parser`|<br/>
+        /// |`image`|`explicit_content`|<br/>
         /// |`ocr`|`invoice_parser`|<br/>
         /// |`ocr`|`resume_parser`|<br/>
         /// |`audio`|`speech_to_text_async`|<br/>
         /// |`ocr`|`ocr_tables_async`|<br/>
         /// |`video`|`text_detection_async`|<br/>
-        /// |`image`|`object_detection`|<br/>
-        /// |`image`|`explicit_content`|<br/>
         /// |`text`|`question_answer`|<br/>
         /// |`text`|`keyword_extraction`|<br/>
         /// |`text`|`named_entity_recognition`|<br/>
