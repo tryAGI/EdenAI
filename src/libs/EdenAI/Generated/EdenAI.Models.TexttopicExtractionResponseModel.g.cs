@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Openai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -44,10 +44,10 @@ namespace EdenAI
         /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="tenstorrent">
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="tenstorrent">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
@@ -58,13 +58,13 @@ namespace EdenAI
 #endif
         public TexttopicExtractionResponseModel(
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai,
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? openai,
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google)
         {
             this.Xai = xai;
-            this.Tenstorrent = tenstorrent;
             this.Openai = openai;
+            this.Tenstorrent = tenstorrent;
             this.Google = google;
         }
 
