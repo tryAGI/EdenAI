@@ -56,8 +56,8 @@ namespace EdenAI
         /// |Feature Name|Subfeature Name|<br/>
         /// |------------|---------------|<br/>
         /// |`translation`|`language_detection`|<br/>
-        /// |`image`|`face_detection`|<br/>
         /// |`text`|`chat`|<br/>
+        /// |`image`|`face_detection`|<br/>
         /// |`ocr`|`receipt_parser`|<br/>
         /// |`image`|`anonymization`|<br/>
         /// |`audio`|`text_to_speech`|<br/>
@@ -78,14 +78,14 @@ namespace EdenAI
         /// |`translation`|`automatic_translation`|<br/>
         /// |`text`|`search`|<br/>
         /// |`text`|`spell_check`|<br/>
-        /// |`image`|`object_detection`|<br/>
         /// |`ocr`|`identity_parser`|<br/>
-        /// |`image`|`explicit_content`|<br/>
         /// |`ocr`|`invoice_parser`|<br/>
         /// |`ocr`|`resume_parser`|<br/>
         /// |`audio`|`speech_to_text_async`|<br/>
         /// |`ocr`|`ocr_tables_async`|<br/>
         /// |`video`|`text_detection_async`|<br/>
+        /// |`image`|`object_detection`|<br/>
+        /// |`image`|`explicit_content`|<br/>
         /// |`text`|`question_answer`|<br/>
         /// |`text`|`keyword_extraction`|<br/>
         /// |`text`|`named_entity_recognition`|<br/>
@@ -145,7 +145,7 @@ namespace EdenAI
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
-            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
+            var __httpRequestContentBody = request.ToJson(JsonSerializerOptions);
             var __httpRequestContent = new global::System.Net.Http.StringContent(
                 content: __httpRequestContentBody,
                 encoding: global::System.Text.Encoding.UTF8,
@@ -185,13 +185,13 @@ namespace EdenAI
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::EdenAI.BadRequest.FromJson(__content_400, JsonSerializerContext);
+                        __value_400 = global::EdenAI.BadRequest.FromJson(__content_400, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::EdenAI.BadRequest.FromJson(__content_400, JsonSerializerContext);
+                        __value_400 = global::EdenAI.BadRequest.FromJson(__content_400, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -223,13 +223,13 @@ namespace EdenAI
                     if (ReadResponseAsString)
                     {
                         __content_500 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_500 = global::EdenAI.Error.FromJson(__content_500, JsonSerializerContext);
+                        __value_500 = global::EdenAI.Error.FromJson(__content_500, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_500 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_500 = global::EdenAI.Error.FromJson(__content_500, JsonSerializerContext);
+                        __value_500 = global::EdenAI.Error.FromJson(__content_500, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -261,13 +261,13 @@ namespace EdenAI
                     if (ReadResponseAsString)
                     {
                         __content_403 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_403 = global::EdenAI.Error.FromJson(__content_403, JsonSerializerContext);
+                        __value_403 = global::EdenAI.Error.FromJson(__content_403, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_403 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_403 = global::EdenAI.Error.FromJson(__content_403, JsonSerializerContext);
+                        __value_403 = global::EdenAI.Error.FromJson(__content_403, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -299,13 +299,13 @@ namespace EdenAI
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::EdenAI.NotFoundResponse.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::EdenAI.NotFoundResponse.FromJson(__content_404, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::EdenAI.NotFoundResponse.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::EdenAI.NotFoundResponse.FromJson(__content_404, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -349,7 +349,7 @@ namespace EdenAI
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::EdenAI.BatchLaunchResponse.FromJson(__content, JsonSerializerContext) ??
+                        global::EdenAI.BatchLaunchResponse.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -380,7 +380,7 @@ namespace EdenAI
                     ).ConfigureAwait(false);
 
                     return
-                        await global::EdenAI.BatchLaunchResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::EdenAI.BatchLaunchResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
@@ -441,8 +441,8 @@ namespace EdenAI
         /// |Feature Name|Subfeature Name|<br/>
         /// |------------|---------------|<br/>
         /// |`translation`|`language_detection`|<br/>
-        /// |`image`|`face_detection`|<br/>
         /// |`text`|`chat`|<br/>
+        /// |`image`|`face_detection`|<br/>
         /// |`ocr`|`receipt_parser`|<br/>
         /// |`image`|`anonymization`|<br/>
         /// |`audio`|`text_to_speech`|<br/>
@@ -463,14 +463,14 @@ namespace EdenAI
         /// |`translation`|`automatic_translation`|<br/>
         /// |`text`|`search`|<br/>
         /// |`text`|`spell_check`|<br/>
-        /// |`image`|`object_detection`|<br/>
         /// |`ocr`|`identity_parser`|<br/>
-        /// |`image`|`explicit_content`|<br/>
         /// |`ocr`|`invoice_parser`|<br/>
         /// |`ocr`|`resume_parser`|<br/>
         /// |`audio`|`speech_to_text_async`|<br/>
         /// |`ocr`|`ocr_tables_async`|<br/>
         /// |`video`|`text_detection_async`|<br/>
+        /// |`image`|`object_detection`|<br/>
+        /// |`image`|`explicit_content`|<br/>
         /// |`text`|`question_answer`|<br/>
         /// |`text`|`keyword_extraction`|<br/>
         /// |`text`|`named_entity_recognition`|<br/>

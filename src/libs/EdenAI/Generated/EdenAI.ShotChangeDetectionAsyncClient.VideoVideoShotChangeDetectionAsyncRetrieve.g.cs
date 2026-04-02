@@ -103,7 +103,7 @@ namespace EdenAI
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::EdenAI.ListAsyncJobResponse.FromJson(__content, JsonSerializerContext) ??
+                        global::EdenAI.ListAsyncJobResponse.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -134,7 +134,7 @@ namespace EdenAI
                     ).ConfigureAwait(false);
 
                     return
-                        await global::EdenAI.ListAsyncJobResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::EdenAI.ListAsyncJobResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
