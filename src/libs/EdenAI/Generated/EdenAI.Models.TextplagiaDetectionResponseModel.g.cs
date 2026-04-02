@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
-        public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Originalityai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("winstonai")]
+        public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Winstonai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("winstonai")]
-        public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Winstonai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
+        public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Originalityai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,21 +29,21 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextplagiaDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="originalityai">
+        /// <param name="winstonai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="winstonai">
+        /// <param name="originalityai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextplagiaDetectionResponseModel(
-            global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? originalityai,
-            global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? winstonai)
+            global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? winstonai,
+            global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? originalityai)
         {
-            this.Originalityai = originalityai;
             this.Winstonai = winstonai;
+            this.Originalityai = originalityai;
         }
 
         /// <summary>
