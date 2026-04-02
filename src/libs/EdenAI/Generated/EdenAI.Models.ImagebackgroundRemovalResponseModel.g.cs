@@ -17,8 +17,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Sentisight { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
         public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Stabilityai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("photoroom")]
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Photoroom { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,20 +47,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("photoroom")]
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Photoroom { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clipdrop")]
         public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Clipdrop { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Sentisight { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -62,7 +62,13 @@ namespace EdenAI
         /// <param name="picsart">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="sentisight">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="stabilityai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="photoroom">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="api4ai">
@@ -71,13 +77,7 @@ namespace EdenAI
         /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="photoroom">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="clipdrop">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="sentisight">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -85,20 +85,20 @@ namespace EdenAI
 #endif
         public ImagebackgroundRemovalResponseModel(
             global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? picsart,
+            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? sentisight,
             global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? stabilityai,
+            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? photoroom,
             global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? api4ai,
             global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? microsoft,
-            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? photoroom,
-            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? clipdrop,
-            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? sentisight)
+            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? clipdrop)
         {
             this.Picsart = picsart;
+            this.Sentisight = sentisight;
             this.Stabilityai = stabilityai;
+            this.Photoroom = photoroom;
             this.Api4ai = api4ai;
             this.Microsoft = microsoft;
-            this.Photoroom = photoroom;
             this.Clipdrop = clipdrop;
-            this.Sentisight = sentisight;
         }
 
         /// <summary>
