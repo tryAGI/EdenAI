@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Deepgram { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,8 +35,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Deepgram { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -62,7 +62,7 @@ namespace EdenAI
         /// <param name="elevenlabs">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="microsoft">
+        /// <param name="deepgram">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="amazon">
@@ -71,7 +71,7 @@ namespace EdenAI
         /// <param name="lovoai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="deepgram">
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
@@ -85,18 +85,18 @@ namespace EdenAI
 #endif
         public AudiotextToSpeechResponseModel(
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? elevenlabs,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? microsoft,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? amazon,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? lovoai,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? microsoft,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? google,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? openai)
         {
             this.Elevenlabs = elevenlabs;
-            this.Microsoft = microsoft;
+            this.Deepgram = deepgram;
             this.Amazon = amazon;
             this.Lovoai = lovoai;
-            this.Deepgram = deepgram;
+            this.Microsoft = microsoft;
             this.Google = google;
             this.Openai = openai;
         }

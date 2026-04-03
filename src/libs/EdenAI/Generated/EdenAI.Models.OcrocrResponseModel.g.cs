@@ -11,20 +11,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.OcrocrOcrDataClass? Api4ai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.OcrocrOcrDataClass? Clarifai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.OcrocrOcrDataClass? Mistral { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,14 +23,26 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
-        public global::EdenAI.OcrocrOcrDataClass? Base64 { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.OcrocrOcrDataClass? Clarifai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.OcrocrOcrDataClass? Mistral { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.OcrocrOcrDataClass? Api4ai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
+        public global::EdenAI.OcrocrOcrDataClass? Base64 { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -65,22 +65,22 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrocrResponseModel" /> class.
         /// </summary>
-        /// <param name="api4ai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="clarifai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="microsoft">
+        /// <param name="mistral">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="base64">
+        /// <param name="clarifai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="mistral">
+        /// <param name="api4ai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="microsoft">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="base64">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
@@ -93,21 +93,21 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrResponseModel(
-            global::EdenAI.OcrocrOcrDataClass? api4ai,
-            global::EdenAI.OcrocrOcrDataClass? clarifai,
-            global::EdenAI.OcrocrOcrDataClass? microsoft,
-            global::EdenAI.OcrocrOcrDataClass? amazon,
-            global::EdenAI.OcrocrOcrDataClass? base64,
             global::EdenAI.OcrocrOcrDataClass? mistral,
+            global::EdenAI.OcrocrOcrDataClass? amazon,
+            global::EdenAI.OcrocrOcrDataClass? clarifai,
+            global::EdenAI.OcrocrOcrDataClass? api4ai,
+            global::EdenAI.OcrocrOcrDataClass? microsoft,
+            global::EdenAI.OcrocrOcrDataClass? base64,
             global::EdenAI.OcrocrOcrDataClass? google,
             global::EdenAI.OcrocrOcrDataClass? sentisight)
         {
-            this.Api4ai = api4ai;
-            this.Clarifai = clarifai;
-            this.Microsoft = microsoft;
-            this.Amazon = amazon;
-            this.Base64 = base64;
             this.Mistral = mistral;
+            this.Amazon = amazon;
+            this.Clarifai = clarifai;
+            this.Api4ai = api4ai;
+            this.Microsoft = microsoft;
+            this.Base64 = base64;
             this.Google = google;
             this.Sentisight = sentisight;
         }
