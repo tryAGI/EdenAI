@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("twelvelabs")]
-        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Twelvelabs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("twelvelabs")]
+        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Twelvelabs { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,10 +35,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideotextDetectionAsyncModel" /> class.
         /// </summary>
-        /// <param name="twelvelabs">
+        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
+        /// <param name="twelvelabs">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
@@ -48,12 +48,12 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideotextDetectionAsyncModel(
-            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? twelvelabs,
             global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? amazon,
+            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? twelvelabs,
             global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? google)
         {
-            this.Twelvelabs = twelvelabs;
             this.Amazon = amazon;
+            this.Twelvelabs = twelvelabs;
             this.Google = google;
         }
 
