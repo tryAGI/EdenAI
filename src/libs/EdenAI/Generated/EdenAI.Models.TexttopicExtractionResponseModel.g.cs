@@ -11,12 +11,6 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Google { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Openai { get; set; }
 
@@ -25,6 +19,12 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
         public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Google { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -41,13 +41,13 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TexttopicExtractionResponseModel" /> class.
         /// </summary>
-        /// <param name="google">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="xai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="tenstorrent">
@@ -57,14 +57,14 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TexttopicExtractionResponseModel(
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? openai,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai,
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent)
         {
-            this.Google = google;
             this.Openai = openai;
             this.Xai = xai;
+            this.Google = google;
             this.Tenstorrent = tenstorrent;
         }
 
