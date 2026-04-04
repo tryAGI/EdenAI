@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextmoderationModerationDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextmoderationModerationDataClass? Openai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextmoderationModerationDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextmoderationModerationDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,10 +35,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextmoderationResponseModel" /> class.
         /// </summary>
-        /// <param name="microsoft">
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="google">
@@ -48,12 +48,12 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextmoderationResponseModel(
-            global::EdenAI.TextmoderationModerationDataClass? microsoft,
             global::EdenAI.TextmoderationModerationDataClass? openai,
+            global::EdenAI.TextmoderationModerationDataClass? microsoft,
             global::EdenAI.TextmoderationModerationDataClass? google)
         {
-            this.Microsoft = microsoft;
             this.Openai = openai;
+            this.Microsoft = microsoft;
             this.Google = google;
         }
 
