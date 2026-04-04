@@ -17,14 +17,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Emvista { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Oneai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -41,14 +47,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Oneai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Emvista { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -62,10 +62,13 @@ namespace EdenAI
         /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="emvista">
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="openai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="oneai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="privateai">
@@ -74,10 +77,7 @@ namespace EdenAI
         /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="microsoft">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="oneai">
+        /// <param name="emvista">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -85,20 +85,20 @@ namespace EdenAI
 #endif
         public TextanonymizationResponseModel(
             global::EdenAI.TextanonymizationAnonymizationDataClass? amazon,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft,
             global::EdenAI.TextanonymizationAnonymizationDataClass? openai,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? oneai,
             global::EdenAI.TextanonymizationAnonymizationDataClass? privateai,
             global::EdenAI.TextanonymizationAnonymizationDataClass? xai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? oneai)
+            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista)
         {
             this.Amazon = amazon;
-            this.Emvista = emvista;
+            this.Microsoft = microsoft;
             this.Openai = openai;
+            this.Oneai = oneai;
             this.Privateai = privateai;
             this.Xai = xai;
-            this.Microsoft = microsoft;
-            this.Oneai = oneai;
+            this.Emvista = emvista;
         }
 
         /// <summary>
