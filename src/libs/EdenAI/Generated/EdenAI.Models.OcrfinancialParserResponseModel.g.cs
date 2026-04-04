@@ -17,32 +17,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Google { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataleon")]
         public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Dataleon { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("eagledoc")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Eagledoc { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Openai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -53,14 +29,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Mindee { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Google { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -77,14 +47,44 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Affinda { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("eagledoc")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Eagledoc { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
         public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Klippa { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Affinda { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Mindee { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -98,28 +98,13 @@ namespace EdenAI
         /// <param name="extracta">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="google">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="dataleon">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="microsoft">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="eagledoc">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="tabscanner">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="mindee">
+        /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="veryfi">
@@ -128,10 +113,25 @@ namespace EdenAI
         /// <param name="base64">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="affinda">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="amazon">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="eagledoc">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="klippa">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="affinda">
+        /// <param name="openai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="mindee">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -139,32 +139,32 @@ namespace EdenAI
 #endif
         public OcrfinancialParserResponseModel(
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? extracta,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? google,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? dataleon,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? microsoft,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? eagledoc,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? openai,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? tabscanner,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? amazon,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? mindee,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? google,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? veryfi,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? base64,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? affinda,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? amazon,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? eagledoc,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? klippa,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? affinda)
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? openai,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? mindee,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? microsoft)
         {
             this.Extracta = extracta;
-            this.Google = google;
             this.Dataleon = dataleon;
-            this.Microsoft = microsoft;
-            this.Eagledoc = eagledoc;
-            this.Openai = openai;
             this.Tabscanner = tabscanner;
-            this.Amazon = amazon;
-            this.Mindee = mindee;
+            this.Google = google;
             this.Veryfi = veryfi;
             this.Base64 = base64;
-            this.Klippa = klippa;
             this.Affinda = affinda;
+            this.Amazon = amazon;
+            this.Eagledoc = eagledoc;
+            this.Klippa = klippa;
+            this.Openai = openai;
+            this.Mindee = mindee;
+            this.Microsoft = microsoft;
         }
 
         /// <summary>
