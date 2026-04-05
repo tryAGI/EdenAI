@@ -11,50 +11,20 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
         public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Extracta { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dataleon")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Dataleon { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tabscanner")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Tabscanner { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Google { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Veryfi { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Base64 { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Affinda { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -71,8 +41,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("dataleon")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Dataleon { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Google { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -83,8 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Veryfi { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Affinda { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Base64 { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tabscanner")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Tabscanner { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -95,28 +95,13 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrfinancialParserResponseModel" /> class.
         /// </summary>
+        /// <param name="openai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="microsoft">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="extracta">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="dataleon">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="tabscanner">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="google">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="veryfi">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="base64">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="affinda">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="eagledoc">
@@ -125,46 +110,61 @@ namespace EdenAI
         /// <param name="klippa">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="dataleon">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="mindee">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="microsoft">
+        /// <param name="veryfi">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="affinda">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="base64">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="amazon">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="tabscanner">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrfinancialParserResponseModel(
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? openai,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? microsoft,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? extracta,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? dataleon,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? tabscanner,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? google,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? veryfi,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? base64,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? affinda,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? amazon,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? eagledoc,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? klippa,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? openai,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? dataleon,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? google,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? mindee,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? microsoft)
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? veryfi,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? affinda,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? base64,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? amazon,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? tabscanner)
         {
+            this.Openai = openai;
+            this.Microsoft = microsoft;
             this.Extracta = extracta;
-            this.Dataleon = dataleon;
-            this.Tabscanner = tabscanner;
-            this.Google = google;
-            this.Veryfi = veryfi;
-            this.Base64 = base64;
-            this.Affinda = affinda;
-            this.Amazon = amazon;
             this.Eagledoc = eagledoc;
             this.Klippa = klippa;
-            this.Openai = openai;
+            this.Dataleon = dataleon;
+            this.Google = google;
             this.Mindee = mindee;
-            this.Microsoft = microsoft;
+            this.Veryfi = veryfi;
+            this.Affinda = affinda;
+            this.Base64 = base64;
+            this.Amazon = amazon;
+            this.Tabscanner = tabscanner;
         }
 
         /// <summary>
