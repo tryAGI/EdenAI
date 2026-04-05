@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("facepp")]
-        public global::EdenAI.ImagefaceCompareFaceCompareDataClass? Facepp { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagefaceCompareFaceCompareDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagefaceCompareFaceCompareDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("facepp")]
+        public global::EdenAI.ImagefaceCompareFaceCompareDataClass? Facepp { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,10 +35,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagefaceCompareResponseModel" /> class.
         /// </summary>
-        /// <param name="facepp">
+        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
+        /// <param name="facepp">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="base64">
@@ -48,12 +48,12 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagefaceCompareResponseModel(
-            global::EdenAI.ImagefaceCompareFaceCompareDataClass? facepp,
             global::EdenAI.ImagefaceCompareFaceCompareDataClass? amazon,
+            global::EdenAI.ImagefaceCompareFaceCompareDataClass? facepp,
             global::EdenAI.ImagefaceCompareFaceCompareDataClass? base64)
         {
-            this.Facepp = facepp;
             this.Amazon = amazon;
+            this.Facepp = facepp;
             this.Base64 = base64;
         }
 
