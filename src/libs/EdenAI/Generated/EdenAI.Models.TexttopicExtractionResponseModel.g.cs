@@ -17,12 +17,6 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Openai { get; set; }
 
@@ -31,6 +25,12 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
         public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,13 +44,13 @@ namespace EdenAI
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="tenstorrent">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="xai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="tenstorrent">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -58,14 +58,14 @@ namespace EdenAI
 #endif
         public TexttopicExtractionResponseModel(
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google,
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? openai,
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai)
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai,
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent)
         {
             this.Google = google;
-            this.Tenstorrent = tenstorrent;
             this.Openai = openai;
             this.Xai = xai;
+            this.Tenstorrent = tenstorrent;
         }
 
         /// <summary>
