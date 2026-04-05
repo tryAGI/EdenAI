@@ -11,8 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Bytedance { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Deepai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -29,20 +35,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Bytedance { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -53,8 +47,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Deepai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,7 +65,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagegenerationResponseModel" /> class.
         /// </summary>
-        /// <param name="stabilityai">
+        /// <param name="bytedance">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="deepai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="leonardo">
@@ -74,42 +77,39 @@ namespace EdenAI
         /// <param name="minimax">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="stabilityai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="replicate">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="bytedance">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="replicate">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="deepai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagegenerationResponseModel(
-            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
+            global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
+            global::EdenAI.ImagegenerationGenerationDataClass? deepai,
             global::EdenAI.ImagegenerationGenerationDataClass? leonardo,
             global::EdenAI.ImagegenerationGenerationDataClass? minimax,
-            global::EdenAI.ImagegenerationGenerationDataClass? amazon,
-            global::EdenAI.ImagegenerationGenerationDataClass? openai,
-            global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
+            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
             global::EdenAI.ImagegenerationGenerationDataClass? replicate,
-            global::EdenAI.ImagegenerationGenerationDataClass? deepai)
+            global::EdenAI.ImagegenerationGenerationDataClass? amazon,
+            global::EdenAI.ImagegenerationGenerationDataClass? openai)
         {
-            this.Stabilityai = stabilityai;
+            this.Bytedance = bytedance;
+            this.Deepai = deepai;
             this.Leonardo = leonardo;
             this.Minimax = minimax;
+            this.Stabilityai = stabilityai;
+            this.Replicate = replicate;
             this.Amazon = amazon;
             this.Openai = openai;
-            this.Bytedance = bytedance;
-            this.Replicate = replicate;
-            this.Deepai = deepai;
         }
 
         /// <summary>
