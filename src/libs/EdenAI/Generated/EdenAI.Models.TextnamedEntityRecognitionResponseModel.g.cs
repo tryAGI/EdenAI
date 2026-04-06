@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Oneai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,14 +35,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Oneai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Openai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -62,7 +62,7 @@ namespace EdenAI
         /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="oneai">
+        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="tenstorrent">
@@ -71,10 +71,10 @@ namespace EdenAI
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="oneai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
@@ -85,19 +85,19 @@ namespace EdenAI
 #endif
         public TextnamedEntityRecognitionResponseModel(
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? xai,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? oneai,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? amazon,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? tenstorrent,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? google,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? oneai,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? openai,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? amazon,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? microsoft)
         {
             this.Xai = xai;
-            this.Oneai = oneai;
+            this.Amazon = amazon;
             this.Tenstorrent = tenstorrent;
             this.Google = google;
+            this.Oneai = oneai;
             this.Openai = openai;
-            this.Amazon = amazon;
             this.Microsoft = microsoft;
         }
 
