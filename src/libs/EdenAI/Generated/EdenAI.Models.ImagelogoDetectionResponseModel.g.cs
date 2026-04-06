@@ -11,26 +11,26 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("smartclick")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Smartclick { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
         public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Anthropic { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Api4ai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Openai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("smartclick")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Smartclick { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -59,16 +59,16 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagelogoDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="smartclick">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="anthropic">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="api4ai">
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="smartclick">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="api4ai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
@@ -84,18 +84,18 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagelogoDetectionResponseModel(
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? smartclick,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? anthropic,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? api4ai,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? openai,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? smartclick,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? api4ai,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? microsoft,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? clarifai,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? google)
         {
-            this.Smartclick = smartclick;
             this.Anthropic = anthropic;
-            this.Api4ai = api4ai;
             this.Openai = openai;
+            this.Smartclick = smartclick;
+            this.Api4ai = api4ai;
             this.Microsoft = microsoft;
             this.Clarifai = clarifai;
             this.Google = google;
