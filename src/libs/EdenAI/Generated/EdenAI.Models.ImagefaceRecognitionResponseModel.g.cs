@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("facepp")]
-        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Facepp { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("facepp")]
+        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Facepp { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,10 +35,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagefaceRecognitionResponseModel" /> class.
         /// </summary>
-        /// <param name="facepp">
+        /// <param name="amazon">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="amazon">
+        /// <param name="facepp">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="microsoft">
@@ -48,12 +48,12 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagefaceRecognitionResponseModel(
-            global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? facepp,
             global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? amazon,
+            global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? facepp,
             global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? microsoft)
         {
-            this.Facepp = facepp;
             this.Amazon = amazon;
+            this.Facepp = facepp;
             this.Microsoft = microsoft;
         }
 

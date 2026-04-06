@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Sapling { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -29,8 +29,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Sapling { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -56,13 +56,13 @@ namespace EdenAI
         /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="sapling">
+        /// <param name="prowritingaid">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="cohere">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="prowritingaid">
+        /// <param name="sapling">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="openai">
@@ -76,16 +76,16 @@ namespace EdenAI
 #endif
         public TextspellCheckResponseModel(
             global::EdenAI.TextspellCheckSpellCheckDataClass? xai,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? sapling,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
             global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? sapling,
             global::EdenAI.TextspellCheckSpellCheckDataClass? openai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? microsoft)
         {
             this.Xai = xai;
-            this.Sapling = sapling;
-            this.Cohere = cohere;
             this.Prowritingaid = prowritingaid;
+            this.Cohere = cohere;
+            this.Sapling = sapling;
             this.Openai = openai;
             this.Microsoft = microsoft;
         }
