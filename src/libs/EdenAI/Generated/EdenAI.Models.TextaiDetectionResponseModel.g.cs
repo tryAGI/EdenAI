@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
-        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Sapling { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
+        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Originalityai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
-        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Originalityai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
+        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Sapling { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +38,10 @@ namespace EdenAI
         /// <param name="winstonai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="sapling">
+        /// <param name="originalityai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="originalityai">
+        /// <param name="sapling">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -49,12 +49,12 @@ namespace EdenAI
 #endif
         public TextaiDetectionResponseModel(
             global::EdenAI.TextaiDetectionAiDetectionDataClass? winstonai,
-            global::EdenAI.TextaiDetectionAiDetectionDataClass? sapling,
-            global::EdenAI.TextaiDetectionAiDetectionDataClass? originalityai)
+            global::EdenAI.TextaiDetectionAiDetectionDataClass? originalityai,
+            global::EdenAI.TextaiDetectionAiDetectionDataClass? sapling)
         {
             this.Winstonai = winstonai;
-            this.Sapling = sapling;
             this.Originalityai = originalityai;
+            this.Sapling = sapling;
         }
 
         /// <summary>
