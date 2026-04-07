@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextcodeGenerationCodeGenerationDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextcodeGenerationCodeGenerationDataClass? Xai { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextcodeGenerationCodeGenerationDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextcodeGenerationCodeGenerationDataClass? Openai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +38,10 @@ namespace EdenAI
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="xai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="xai">
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -49,12 +49,12 @@ namespace EdenAI
 #endif
         public TextcodeGenerationResponseModel(
             global::EdenAI.TextcodeGenerationCodeGenerationDataClass? google,
-            global::EdenAI.TextcodeGenerationCodeGenerationDataClass? openai,
-            global::EdenAI.TextcodeGenerationCodeGenerationDataClass? xai)
+            global::EdenAI.TextcodeGenerationCodeGenerationDataClass? xai,
+            global::EdenAI.TextcodeGenerationCodeGenerationDataClass? openai)
         {
             this.Google = google;
-            this.Openai = openai;
             this.Xai = xai;
+            this.Openai = openai;
         }
 
         /// <summary>
