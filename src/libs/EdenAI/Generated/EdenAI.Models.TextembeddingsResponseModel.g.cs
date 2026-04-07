@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ai21labs")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Ai21labs { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("jina")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Jina { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Cohere { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -35,8 +35,8 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ai21labs")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Ai21labs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("jina")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Jina { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -59,10 +59,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextembeddingsResponseModel" /> class.
         /// </summary>
-        /// <param name="cohere">
+        /// <param name="ai21labs">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="jina">
+        /// <param name="cohere">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="iointelligence">
@@ -71,7 +71,7 @@ namespace EdenAI
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="ai21labs">
+        /// <param name="jina">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
         /// <param name="openai">
@@ -84,19 +84,19 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextembeddingsResponseModel(
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? ai21labs,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? cohere,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? jina,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? iointelligence,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? google,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? ai21labs,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? jina,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? openai,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? mistral)
         {
+            this.Ai21labs = ai21labs;
             this.Cohere = cohere;
-            this.Jina = jina;
             this.Iointelligence = iointelligence;
             this.Google = google;
-            this.Ai21labs = ai21labs;
+            this.Jina = jina;
             this.Openai = openai;
             this.Mistral = mistral;
         }
