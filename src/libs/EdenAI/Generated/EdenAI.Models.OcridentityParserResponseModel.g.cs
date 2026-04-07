@@ -23,6 +23,18 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Mindee { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.OcridentityParserIdentityParserDataClass? Microsoft { get; set; }
 
@@ -39,18 +51,6 @@ namespace EdenAI
         public global::EdenAI.OcridentityParserIdentityParserDataClass? Affinda { get; set; }
 
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Mindee { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -65,6 +65,12 @@ namespace EdenAI
         /// <param name="base64">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="mindee">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="openai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
@@ -74,31 +80,25 @@ namespace EdenAI
         /// <param name="affinda">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="mindee">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="openai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcridentityParserResponseModel(
             global::EdenAI.OcridentityParserIdentityParserDataClass? amazon,
             global::EdenAI.OcridentityParserIdentityParserDataClass? base64,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? mindee,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? openai,
             global::EdenAI.OcridentityParserIdentityParserDataClass? microsoft,
             global::EdenAI.OcridentityParserIdentityParserDataClass? klippa,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? affinda,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? mindee,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? openai)
+            global::EdenAI.OcridentityParserIdentityParserDataClass? affinda)
         {
             this.Amazon = amazon;
             this.Base64 = base64;
+            this.Mindee = mindee;
+            this.Openai = openai;
             this.Microsoft = microsoft;
             this.Klippa = klippa;
             this.Affinda = affinda;
-            this.Mindee = mindee;
-            this.Openai = openai;
         }
 
         /// <summary>
