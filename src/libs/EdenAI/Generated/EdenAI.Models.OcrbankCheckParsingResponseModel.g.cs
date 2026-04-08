@@ -9,25 +9,25 @@ namespace EdenAI
     public sealed partial class OcrbankCheckParsingResponseModel
     {
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
         public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Veryfi { get; set; }
 
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
         public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Base64 { get; set; }
 
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
         public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Mindee { get; set; }
 
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
         public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Extracta { get; set; }
@@ -41,18 +41,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrbankCheckParsingResponseModel" /> class.
         /// </summary>
-        /// <param name="veryfi">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="base64">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="mindee">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="extracta">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
+        /// <param name="veryfi"></param>
+        /// <param name="base64"></param>
+        /// <param name="mindee"></param>
+        /// <param name="extracta"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

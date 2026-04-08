@@ -27,8 +27,17 @@ namespace EdenAI
         public global::System.Collections.Generic.IList<global::EdenAI.Word>? Words { get; set; }
 
         /// <summary>
-        /// Bounding box of the line, can be None<br/>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// Bounding box of a word in the image<br/>
+        /// Attributes:<br/>
+        ///     left (float): Left coordinate of the bounding box<br/>
+        ///     top (float): Top coordinate of the bounding box<br/>
+        ///     width (float): Width of the bounding box<br/>
+        ///     height (float): Height of the bounding box<br/>
+        ///     text (str): Text detected in the bounding box<br/>
+        /// Constructor:<br/>
+        ///     from_json (classmethod): Create a new instance of BoundingBox from a JSON object<br/>
+        ///     from_normalized_vertices (classmethod): Create a new instance of BoundingBox from normalized vertices<br/>
+        ///     unknown (classmethod): Return a invalid bouding_box with all field filled with `-1`
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bounding_box")]
         public global::EdenAI.BoundingBox? BoundingBox { get; set; }
@@ -59,8 +68,17 @@ namespace EdenAI
         /// List of words
         /// </param>
         /// <param name="boundingBox">
-        /// Bounding box of the line, can be None<br/>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// Bounding box of a word in the image<br/>
+        /// Attributes:<br/>
+        ///     left (float): Left coordinate of the bounding box<br/>
+        ///     top (float): Top coordinate of the bounding box<br/>
+        ///     width (float): Width of the bounding box<br/>
+        ///     height (float): Height of the bounding box<br/>
+        ///     text (str): Text detected in the bounding box<br/>
+        /// Constructor:<br/>
+        ///     from_json (classmethod): Create a new instance of BoundingBox from a JSON object<br/>
+        ///     from_normalized_vertices (classmethod): Create a new instance of BoundingBox from normalized vertices<br/>
+        ///     unknown (classmethod): Return a invalid bouding_box with all field filled with `-1`
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

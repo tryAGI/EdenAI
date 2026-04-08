@@ -20,7 +20,17 @@ namespace EdenAI
         public required string Text { get; set; }
 
         /// <summary>
-        /// Bounding boxes of the words in the word
+        /// Bounding box of a word in the image<br/>
+        /// Attributes:<br/>
+        ///     left (float): Left coordinate of the bounding box<br/>
+        ///     top (float): Top coordinate of the bounding box<br/>
+        ///     width (float): Width of the bounding box<br/>
+        ///     height (float): Height of the bounding box<br/>
+        ///     text (str): Text detected in the bounding box<br/>
+        /// Constructor:<br/>
+        ///     from_json (classmethod): Create a new instance of BoundingBox from a JSON object<br/>
+        ///     from_normalized_vertices (classmethod): Create a new instance of BoundingBox from normalized vertices<br/>
+        ///     unknown (classmethod): Return a invalid bouding_box with all field filled with `-1`
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bounding_box")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -46,7 +56,17 @@ namespace EdenAI
         /// Text detected in the word
         /// </param>
         /// <param name="boundingBox">
-        /// Bounding boxes of the words in the word
+        /// Bounding box of a word in the image<br/>
+        /// Attributes:<br/>
+        ///     left (float): Left coordinate of the bounding box<br/>
+        ///     top (float): Top coordinate of the bounding box<br/>
+        ///     width (float): Width of the bounding box<br/>
+        ///     height (float): Height of the bounding box<br/>
+        ///     text (str): Text detected in the bounding box<br/>
+        /// Constructor:<br/>
+        ///     from_json (classmethod): Create a new instance of BoundingBox from a JSON object<br/>
+        ///     from_normalized_vertices (classmethod): Create a new instance of BoundingBox from normalized vertices<br/>
+        ///     unknown (classmethod): Return a invalid bouding_box with all field filled with `-1`
         /// </param>
         /// <param name="confidence">
         /// Confidence score of the word

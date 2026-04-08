@@ -30,7 +30,7 @@ namespace EdenAI
         public required int LikelihoodScore { get; set; }
 
         /// <summary>
-        /// The category of the detected content. Possible values include: 'Toxic', 'Content', 'Sexual', 'Violence', 'DrugAndAlcohol', 'Finance', 'HateAndExtremism', 'Safe', 'Other'.
+        /// This enum are used to categorize the explicit content extracted from the text
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("category")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.CategoryTypeJsonConverter))]
@@ -112,7 +112,7 @@ namespace EdenAI
         /// <param name="likelihood"></param>
         /// <param name="likelihoodScore"></param>
         /// <param name="category">
-        /// The category of the detected content. Possible values include: 'Toxic', 'Content', 'Sexual', 'Violence', 'DrugAndAlcohol', 'Finance', 'HateAndExtremism', 'Safe', 'Other'.
+        /// This enum are used to categorize the explicit content extracted from the text
         /// </param>
         /// <param name="subcategory">
         /// The subcategory of content. Possible values:<br/>

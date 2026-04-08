@@ -9,19 +9,19 @@ namespace EdenAI
     public sealed partial class ImagequestionAnswerResponseModel
     {
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alephalpha")]
-        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Alephalpha { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Google { get; set; }
 
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("alephalpha")]
+        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Alephalpha { get; set; }
+
+        /// <summary>
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Openai { get; set; }
@@ -35,25 +35,19 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagequestionAnswerResponseModel" /> class.
         /// </summary>
-        /// <param name="alephalpha">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="google">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="openai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
+        /// <param name="google"></param>
+        /// <param name="alephalpha"></param>
+        /// <param name="openai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagequestionAnswerResponseModel(
-            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? alephalpha,
             global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? google,
+            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? alephalpha,
             global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? openai)
         {
-            this.Alephalpha = alephalpha;
             this.Google = google;
+            this.Alephalpha = alephalpha;
             this.Openai = openai;
         }
 

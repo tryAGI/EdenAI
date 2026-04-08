@@ -9,16 +9,16 @@ namespace EdenAI
     public sealed partial class VideoquestionAnswerResponseModel
     {
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,21 +29,17 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideoquestionAnswerResponseModel" /> class.
         /// </summary>
-        /// <param name="amazon">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="google">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
+        /// <param name="google"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideoquestionAnswerResponseModel(
-            global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? amazon,
-            global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? google)
+            global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? google,
+            global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? amazon)
         {
-            this.Amazon = amazon;
             this.Google = google;
+            this.Amazon = amazon;
         }
 
         /// <summary>

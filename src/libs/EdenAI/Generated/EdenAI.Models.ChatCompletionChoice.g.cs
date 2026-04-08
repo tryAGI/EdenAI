@@ -16,7 +16,7 @@ namespace EdenAI
         public required int Index { get; set; }
 
         /// <summary>
-        /// The chat completion message
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -41,9 +41,7 @@ namespace EdenAI
         /// <param name="index">
         /// The index of this completion choice
         /// </param>
-        /// <param name="message">
-        /// The chat completion message
-        /// </param>
+        /// <param name="message"></param>
         /// <param name="finishReason">
         /// The reason the completion finished: 'stop', 'length', 'tool_calls', 'content_filter', or 'function_call'
         /// </param>

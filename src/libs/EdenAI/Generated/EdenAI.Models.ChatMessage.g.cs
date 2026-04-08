@@ -9,7 +9,7 @@ namespace EdenAI
     public sealed partial class ChatMessage
     {
         /// <summary>
-        /// The role of the message author
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.ChatRoleJsonConverter))]
@@ -53,9 +53,7 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatMessage" /> class.
         /// </summary>
-        /// <param name="role">
-        /// The role of the message author
-        /// </param>
+        /// <param name="role"></param>
         /// <param name="content">
         /// The content of the message<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464

@@ -9,7 +9,7 @@ namespace EdenAI
     public sealed partial class LogoItem
     {
         /// <summary>
-        /// Default Value: {"vertices":[]}
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bounding_poly")]
         public global::EdenAI.LogoBoundingPoly? BoundingPoly { get; set; }
@@ -43,9 +43,7 @@ namespace EdenAI
         /// <param name="score">
         /// Confidence score how sure it's this is a real logo.
         /// </param>
-        /// <param name="boundingPoly">
-        /// Default Value: {"vertices":[]}
-        /// </param>
+        /// <param name="boundingPoly"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
