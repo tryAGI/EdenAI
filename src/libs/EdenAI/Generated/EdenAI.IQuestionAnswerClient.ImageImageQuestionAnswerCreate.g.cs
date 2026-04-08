@@ -36,7 +36,7 @@ namespace EdenAI
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
         /// |**openai**|`gpt-4o`|<br/>
-        /// |**google**|`gemini-2.5-pro`|<br/>
+        /// |**google**|`gemini-1.5-pro`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -78,7 +78,7 @@ namespace EdenAI
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
         /// |**openai**|`gpt-4o`|<br/>
-        /// |**google**|`gemini-2.5-pro`|<br/>
+        /// |**google**|`gemini-1.5-pro`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
