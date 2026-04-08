@@ -9,14 +9,14 @@ namespace EdenAI
     public sealed partial class ChatCompletionUsage
     {
         /// <summary>
-        /// Number of tokens in the generated completion
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("completion_tokens_details")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.UsageTokensDetails CompletionTokensDetails { get; set; }
 
         /// <summary>
-        /// Number of tokens in the prompt
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt_tokens_details")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -38,12 +38,8 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatCompletionUsage" /> class.
         /// </summary>
-        /// <param name="completionTokensDetails">
-        /// Number of tokens in the generated completion
-        /// </param>
-        /// <param name="promptTokensDetails">
-        /// Number of tokens in the prompt
-        /// </param>
+        /// <param name="completionTokensDetails"></param>
+        /// <param name="promptTokensDetails"></param>
         /// <param name="totalTokens">
         /// Total number of tokens used (prompt + completion)
         /// </param>

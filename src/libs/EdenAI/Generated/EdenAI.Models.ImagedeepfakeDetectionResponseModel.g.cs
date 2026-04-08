@@ -9,7 +9,7 @@ namespace EdenAI
     public sealed partial class ImagedeepfakeDetectionResponseModel
     {
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sightengine")]
         public global::EdenAI.ImagedeepfakeDetectionDeepfakeDetectionDataClass? Sightengine { get; set; }
@@ -23,9 +23,7 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagedeepfakeDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="sightengine">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
+        /// <param name="sightengine"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

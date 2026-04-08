@@ -9,13 +9,13 @@ namespace EdenAI
     public sealed partial class TextplagiaDetectionResponseModel
     {
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
         public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Originalityai { get; set; }
 
         /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("winstonai")]
         public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Winstonai { get; set; }
@@ -29,12 +29,8 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextplagiaDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="originalityai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
-        /// <param name="winstonai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
+        /// <param name="originalityai"></param>
+        /// <param name="winstonai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
