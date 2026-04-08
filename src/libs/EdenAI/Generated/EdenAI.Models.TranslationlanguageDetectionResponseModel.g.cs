@@ -11,12 +11,6 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Xai { get; set; }
-
-        /// <summary>
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Google { get; set; }
 
@@ -47,6 +41,12 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Openai { get; set; }
 
@@ -59,9 +59,6 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TranslationlanguageDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="xai">
-        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
         /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
@@ -77,6 +74,9 @@ namespace EdenAI
         /// <param name="microsoft">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
+        /// <param name="xai">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
@@ -84,20 +84,20 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TranslationlanguageDetectionResponseModel(
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? xai,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? google,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? amazon,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? modernmt,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? oneai,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? microsoft,
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? xai,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? openai)
         {
-            this.Xai = xai;
             this.Google = google;
             this.Amazon = amazon;
             this.Modernmt = modernmt;
             this.Oneai = oneai;
             this.Microsoft = microsoft;
+            this.Xai = xai;
             this.Openai = openai;
         }
 
