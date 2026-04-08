@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Google { get; set; }
 
         /// <summary>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Openai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +38,10 @@ namespace EdenAI
         /// <param name="alephalpha">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="openai">
+        /// <param name="google">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="google">
+        /// <param name="openai">
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
 #if NET7_0_OR_GREATER
@@ -49,12 +49,12 @@ namespace EdenAI
 #endif
         public ImagequestionAnswerResponseModel(
             global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? alephalpha,
-            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? openai,
-            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? google)
+            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? google,
+            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? openai)
         {
             this.Alephalpha = alephalpha;
-            this.Openai = openai;
             this.Google = google;
+            this.Openai = openai;
         }
 
         /// <summary>

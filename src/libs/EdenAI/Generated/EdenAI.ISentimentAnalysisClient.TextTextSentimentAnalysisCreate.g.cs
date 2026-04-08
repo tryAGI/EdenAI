@@ -219,7 +219,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**google**|`gemini-2.5-flash`|<br/>
+        /// |**google**|`gemini-1.5-flash`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// |**xai**|`grok-2-latest`|<br/>
         /// &lt;/details&gt;
@@ -446,7 +446,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**google**|`gemini-2.5-flash`|<br/>
+        /// |**google**|`gemini-1.5-flash`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// |**xai**|`grok-2-latest`|<br/>
         /// &lt;/details&gt;
