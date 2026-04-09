@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class AutomlClassificationClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_ImageImageAutomlClassificationListProjectsRetrieveSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_ImageImageAutomlClassificationListProjectsRetrieveSecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_ImageImageAutomlClassificationListProjectsRetrieveSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_ImageImageAutomlClassificationListProjectsRetrieveSecurityRequirement0,
+                s_ImageImageAutomlClassificationListProjectsRetrieveSecurityRequirement1,
+            };
         partial void PrepareImageImageAutomlClassificationListProjectsRetrieveArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareImageImageAutomlClassificationListProjectsRetrieveRequest(
@@ -33,9 +61,15 @@ namespace EdenAI
             PrepareImageImageAutomlClassificationListProjectsRetrieveArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ImageImageAutomlClassificationListProjectsRetrieveSecurityRequirements,
+                operationName: "ImageImageAutomlClassificationListProjectsRetrieveAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/image/automl_classification/list_projects/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -45,7 +79,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class CustomChatbotUpdateOperationsClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_AiproductsAiproductsAskyodaV2ConversationsUpdateSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_AiproductsAiproductsAskyodaV2ConversationsUpdateSecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_AiproductsAiproductsAskyodaV2ConversationsUpdateSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_AiproductsAiproductsAskyodaV2ConversationsUpdateSecurityRequirement0,
+                s_AiproductsAiproductsAskyodaV2ConversationsUpdateSecurityRequirement1,
+            };
         partial void PrepareAiproductsAiproductsAskyodaV2ConversationsUpdateArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid conversationId,
@@ -50,9 +78,15 @@ namespace EdenAI
                 projectId: ref projectId,
                 request: request);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AiproductsAiproductsAskyodaV2ConversationsUpdateSecurityRequirements,
+                operationName: "AiproductsAiproductsAskyodaV2ConversationsUpdateAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: $"/aiproducts/askyoda/v2/{projectId}/conversations/{conversationId}/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Put,
@@ -62,7 +96,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class ObjectTrackingAsyncClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_VideoVideoObjectTrackingAsyncDestroySecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_VideoVideoObjectTrackingAsyncDestroySecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_VideoVideoObjectTrackingAsyncDestroySecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_VideoVideoObjectTrackingAsyncDestroySecurityRequirement0,
+                s_VideoVideoObjectTrackingAsyncDestroySecurityRequirement1,
+            };
         partial void PrepareVideoVideoObjectTrackingAsyncDestroyArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareVideoVideoObjectTrackingAsyncDestroyRequest(
@@ -31,9 +59,15 @@ namespace EdenAI
             PrepareVideoVideoObjectTrackingAsyncDestroyArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_VideoVideoObjectTrackingAsyncDestroySecurityRequirements,
+                operationName: "VideoVideoObjectTrackingAsyncDestroyAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/video/object_tracking_async/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -43,7 +77,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

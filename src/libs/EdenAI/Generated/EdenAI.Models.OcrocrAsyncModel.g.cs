@@ -23,6 +23,12 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
         public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Oneai { get; set; }
 
@@ -31,12 +37,6 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,24 +49,24 @@ namespace EdenAI
         /// </summary>
         /// <param name="mistral"></param>
         /// <param name="google"></param>
+        /// <param name="amazon"></param>
         /// <param name="oneai"></param>
         /// <param name="microsoft"></param>
-        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrAsyncModel(
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? mistral,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google,
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? oneai,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? microsoft,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon)
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? microsoft)
         {
             this.Mistral = mistral;
             this.Google = google;
+            this.Amazon = amazon;
             this.Oneai = oneai;
             this.Microsoft = microsoft;
-            this.Amazon = amazon;
         }
 
         /// <summary>
