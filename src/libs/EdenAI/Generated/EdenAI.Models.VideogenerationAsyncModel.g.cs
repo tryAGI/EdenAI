@@ -23,12 +23,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Amazon { get; set; }
 
@@ -37,6 +31,12 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -55,9 +55,9 @@ namespace EdenAI
         /// </summary>
         /// <param name="microsoft"></param>
         /// <param name="minimax"></param>
-        /// <param name="openai"></param>
         /// <param name="amazon"></param>
         /// <param name="google"></param>
+        /// <param name="openai"></param>
         /// <param name="bytedance"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -65,16 +65,16 @@ namespace EdenAI
         public VideogenerationAsyncModel(
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? minimax,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? google,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance)
         {
             this.Microsoft = microsoft;
             this.Minimax = minimax;
-            this.Openai = openai;
             this.Amazon = amazon;
             this.Google = google;
+            this.Openai = openai;
             this.Bytedance = bytedance;
         }
 
