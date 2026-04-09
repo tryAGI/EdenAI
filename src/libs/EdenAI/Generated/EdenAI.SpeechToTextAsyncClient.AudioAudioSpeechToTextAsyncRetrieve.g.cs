@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class SpeechToTextAsyncClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_AudioAudioSpeechToTextAsyncRetrieveSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_AudioAudioSpeechToTextAsyncRetrieveSecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_AudioAudioSpeechToTextAsyncRetrieveSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_AudioAudioSpeechToTextAsyncRetrieveSecurityRequirement0,
+                s_AudioAudioSpeechToTextAsyncRetrieveSecurityRequirement1,
+            };
         partial void PrepareAudioAudioSpeechToTextAsyncRetrieveArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareAudioAudioSpeechToTextAsyncRetrieveRequest(
@@ -34,9 +62,15 @@ namespace EdenAI
             PrepareAudioAudioSpeechToTextAsyncRetrieveArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AudioAudioSpeechToTextAsyncRetrieveSecurityRequirements,
+                operationName: "AudioAudioSpeechToTextAsyncRetrieveAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/audio/speech_to_text_async/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -46,7 +80,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

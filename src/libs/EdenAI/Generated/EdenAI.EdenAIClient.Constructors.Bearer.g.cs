@@ -6,6 +6,7 @@ namespace EdenAI
     public sealed partial class EdenAIClient
     {
         /// <inheritdoc cref="EdenAIClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::EdenAI.EndPointAuthorization}?, bool)"/>
+
         public EdenAIClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

@@ -5,6 +5,25 @@ namespace EdenAI
 {
     public partial class CostMonitoringClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_CostManagementCostManagementRetrieveSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_CostManagementCostManagementRetrieveSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_CostManagementCostManagementRetrieveSecurityRequirement0,
+            };
         partial void PrepareCostManagementCostManagementRetrieveArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.DateTime begin,
@@ -72,6 +91,12 @@ namespace EdenAI
                 token: ref token,
                 workflowId: ref workflowId);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_CostManagementCostManagementRetrieveSecurityRequirements,
+                operationName: "CostManagementCostManagementRetrieveAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/cost_management/",
                 baseUri: HttpClient.BaseAddress); 
@@ -84,7 +109,7 @@ namespace EdenAI
                 .AddOptionalParameter("subfeature", subfeature)
                 .AddOptionalParameter("token", token)
                 .AddOptionalParameter("workflow_id", workflowId?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -94,7 +119,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

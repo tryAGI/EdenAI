@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class PromptsClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_PromptsPromptsHistoryListSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_PromptsPromptsHistoryListSecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_PromptsPromptsHistoryListSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_PromptsPromptsHistoryListSecurityRequirement0,
+                s_PromptsPromptsHistoryListSecurityRequirement1,
+            };
         partial void PreparePromptsPromptsHistoryListArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string name,
@@ -47,13 +75,19 @@ namespace EdenAI
                 page: ref page,
                 pageSize: ref pageSize);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PromptsPromptsHistoryListSecurityRequirements,
+                operationName: "PromptsPromptsHistoryListAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: $"/prompts/{name}/history/",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("page", page?.ToString())
                 .AddOptionalParameter("page_size", pageSize?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -63,7 +97,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

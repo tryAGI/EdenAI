@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class PersonTrackingAsyncClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_VideoVideoPersonTrackingAsyncCreateSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_VideoVideoPersonTrackingAsyncCreateSecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_VideoVideoPersonTrackingAsyncCreateSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_VideoVideoPersonTrackingAsyncCreateSecurityRequirement0,
+                s_VideoVideoPersonTrackingAsyncCreateSecurityRequirement1,
+            };
         partial void PrepareVideoVideoPersonTrackingAsyncCreateArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::EdenAI.AsyncVideoAnalysisRequest request);
@@ -46,9 +74,15 @@ namespace EdenAI
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_VideoVideoPersonTrackingAsyncCreateSecurityRequirements,
+                operationName: "VideoVideoPersonTrackingAsyncCreateAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/video/person_tracking_async/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -58,7 +92,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

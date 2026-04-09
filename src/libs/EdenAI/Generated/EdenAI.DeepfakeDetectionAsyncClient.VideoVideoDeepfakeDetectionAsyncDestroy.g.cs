@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class DeepfakeDetectionAsyncClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_VideoVideoDeepfakeDetectionAsyncDestroySecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_VideoVideoDeepfakeDetectionAsyncDestroySecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_VideoVideoDeepfakeDetectionAsyncDestroySecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_VideoVideoDeepfakeDetectionAsyncDestroySecurityRequirement0,
+                s_VideoVideoDeepfakeDetectionAsyncDestroySecurityRequirement1,
+            };
         partial void PrepareVideoVideoDeepfakeDetectionAsyncDestroyArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareVideoVideoDeepfakeDetectionAsyncDestroyRequest(
@@ -31,9 +59,15 @@ namespace EdenAI
             PrepareVideoVideoDeepfakeDetectionAsyncDestroyArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_VideoVideoDeepfakeDetectionAsyncDestroySecurityRequirements,
+                operationName: "VideoVideoDeepfakeDetectionAsyncDestroyAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/video/deepfake_detection_async/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -43,7 +77,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

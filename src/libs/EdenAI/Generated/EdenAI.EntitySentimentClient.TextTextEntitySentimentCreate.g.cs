@@ -5,6 +5,25 @@ namespace EdenAI
 {
     public partial class EntitySentimentClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_TextTextEntitySentimentCreateSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_TextTextEntitySentimentCreateSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_TextTextEntitySentimentCreateSecurityRequirement0,
+            };
         partial void PrepareTextTextEntitySentimentCreateArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::EdenAI.TextentitySentimentEntitySentimentRequest request);
@@ -109,9 +128,15 @@ namespace EdenAI
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_TextTextEntitySentimentCreateSecurityRequirements,
+                operationName: "TextTextEntitySentimentCreateAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/text/entity_sentiment/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -121,7 +146,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

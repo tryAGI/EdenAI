@@ -5,6 +5,25 @@ namespace EdenAI
 {
     public partial class FaceRecognitionClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_ImageImageFaceRecognitionListFacesRetrieveSecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_ImageImageFaceRecognitionListFacesRetrieveSecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_ImageImageFaceRecognitionListFacesRetrieveSecurityRequirement0,
+            };
         partial void PrepareImageImageFaceRecognitionListFacesRetrieveArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref bool? attributesAsList,
@@ -85,6 +104,12 @@ namespace EdenAI
                 showBase64: ref showBase64,
                 showOriginalResponse: ref showOriginalResponse);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ImageImageFaceRecognitionListFacesRetrieveSecurityRequirements,
+                operationName: "ImageImageFaceRecognitionListFacesRetrieveAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/image/face_recognition/list_faces/",
                 baseUri: HttpClient.BaseAddress); 
@@ -96,7 +121,7 @@ namespace EdenAI
                 .AddOptionalParameter("settings", settings)
                 .AddOptionalParameter("show_base_64", showBase64?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("show_original_response", showOriginalResponse?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -106,7 +131,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

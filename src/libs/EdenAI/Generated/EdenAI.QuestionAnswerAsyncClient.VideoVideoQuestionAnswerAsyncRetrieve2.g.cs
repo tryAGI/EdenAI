@@ -5,6 +5,25 @@ namespace EdenAI
 {
     public partial class QuestionAnswerAsyncClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_VideoVideoQuestionAnswerAsyncRetrieve2SecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_VideoVideoQuestionAnswerAsyncRetrieve2SecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_VideoVideoQuestionAnswerAsyncRetrieve2SecurityRequirement0,
+            };
         partial void PrepareVideoVideoQuestionAnswerAsyncRetrieve2Arguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string publicId,
@@ -59,6 +78,12 @@ namespace EdenAI
                 showBase64: ref showBase64,
                 showOriginalResponse: ref showOriginalResponse);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_VideoVideoQuestionAnswerAsyncRetrieve2SecurityRequirements,
+                operationName: "VideoVideoQuestionAnswerAsyncRetrieve2Async");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: $"/video/question_answer_async/{publicId}/",
                 baseUri: HttpClient.BaseAddress); 
@@ -66,7 +91,7 @@ namespace EdenAI
                 .AddOptionalParameter("response_as_dict", responseAsDict?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("show_base_64", showBase64?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("show_original_response", showOriginalResponse?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -76,7 +101,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,34 @@ namespace EdenAI
 {
     public partial class OcrTablesAsyncClient
     {
+
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_OcrOcrOcrTablesAsyncDestroySecurityRequirement0 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                {                    new global::EdenAI.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_OcrOcrOcrTablesAsyncDestroySecurityRequirement1 =
+            new global::EdenAI.EndPointSecurityRequirement
+            {
+                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_OcrOcrOcrTablesAsyncDestroySecurityRequirements =
+            new global::EdenAI.EndPointSecurityRequirement[]
+            {                s_OcrOcrOcrTablesAsyncDestroySecurityRequirement0,
+                s_OcrOcrOcrTablesAsyncDestroySecurityRequirement1,
+            };
         partial void PrepareOcrOcrOcrTablesAsyncDestroyArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareOcrOcrOcrTablesAsyncDestroyRequest(
@@ -31,9 +59,15 @@ namespace EdenAI
             PrepareOcrOcrOcrTablesAsyncDestroyArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_OcrOcrOcrTablesAsyncDestroySecurityRequirements,
+                operationName: "OcrOcrOcrTablesAsyncDestroyAsync");
+
             var __pathBuilder = new global::EdenAI.PathBuilder(
                 path: "/ocr/ocr_tables_async/",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -43,7 +77,7 @@ namespace EdenAI
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
