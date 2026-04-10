@@ -11,14 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("privateai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Privateai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
@@ -29,14 +23,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -51,6 +45,12 @@ namespace EdenAI
         public global::EdenAI.TextanonymizationAnonymizationDataClass? Amazon { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privateai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Privateai { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -59,32 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextanonymizationResponseModel" /> class.
         /// </summary>
-        /// <param name="openai"></param>
-        /// <param name="privateai"></param>
-        /// <param name="emvista"></param>
         /// <param name="xai"></param>
+        /// <param name="emvista"></param>
         /// <param name="microsoft"></param>
+        /// <param name="openai"></param>
         /// <param name="oneai"></param>
         /// <param name="amazon"></param>
+        /// <param name="privateai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextanonymizationResponseModel(
-            global::EdenAI.TextanonymizationAnonymizationDataClass? openai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? privateai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista,
             global::EdenAI.TextanonymizationAnonymizationDataClass? xai,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista,
             global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? openai,
             global::EdenAI.TextanonymizationAnonymizationDataClass? oneai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? amazon)
+            global::EdenAI.TextanonymizationAnonymizationDataClass? amazon,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? privateai)
         {
-            this.Openai = openai;
-            this.Privateai = privateai;
-            this.Emvista = emvista;
             this.Xai = xai;
+            this.Emvista = emvista;
             this.Microsoft = microsoft;
+            this.Openai = openai;
             this.Oneai = oneai;
             this.Amazon = amazon;
+            this.Privateai = privateai;
         }
 
         /// <summary>

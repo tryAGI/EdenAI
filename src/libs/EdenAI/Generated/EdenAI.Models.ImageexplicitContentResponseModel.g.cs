@@ -17,12 +17,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
         public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Clarifai { get; set; }
 
@@ -37,6 +31,12 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -60,10 +60,10 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="ImageexplicitContentResponseModel" /> class.
         /// </summary>
         /// <param name="sentisight"></param>
-        /// <param name="openai"></param>
         /// <param name="clarifai"></param>
         /// <param name="microsoft"></param>
         /// <param name="google"></param>
+        /// <param name="openai"></param>
         /// <param name="api4ai"></param>
         /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
@@ -71,18 +71,18 @@ namespace EdenAI
 #endif
         public ImageexplicitContentResponseModel(
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? sentisight,
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? openai,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? clarifai,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? microsoft,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? google,
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? openai,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? api4ai,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? amazon)
         {
             this.Sentisight = sentisight;
-            this.Openai = openai;
             this.Clarifai = clarifai;
             this.Microsoft = microsoft;
             this.Google = google;
+            this.Openai = openai;
             this.Api4ai = api4ai;
             this.Amazon = amazon;
         }
