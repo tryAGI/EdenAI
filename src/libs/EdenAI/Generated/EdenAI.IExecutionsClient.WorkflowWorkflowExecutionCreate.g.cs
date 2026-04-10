@@ -14,12 +14,14 @@ namespace EdenAI
         /// </summary>
         /// <param name="workflowId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ExecutionExampleSuccessCreate> WorkflowWorkflowExecutionCreateAsync(
             global::System.Guid workflowId,
 
             global::EdenAI.ExecutionFakeCreateRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create an Execution<br/>
@@ -44,6 +46,7 @@ namespace EdenAI
         /// An example of an input parameter specified in the input node<br/>
         /// Default Value: https://example.com/public/invoice_123.pdf
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ExecutionExampleSuccessCreate> WorkflowWorkflowExecutionCreateAsync(
@@ -52,6 +55,7 @@ namespace EdenAI
             object? usersWebhookParameters = default,
             bool? sendWebhookData = default,
             string? myInvoice = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

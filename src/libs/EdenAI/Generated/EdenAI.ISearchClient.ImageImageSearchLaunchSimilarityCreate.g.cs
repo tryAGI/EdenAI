@@ -14,11 +14,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagesearchResponseModel> ImageImageSearchLaunchSimilarityCreateAsync(
 
             global::EdenAI.ImagesearchlaunchSimilaritySearchImageRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Search - launch similarity<br/>
@@ -81,6 +83,7 @@ namespace EdenAI
         /// The `n` parameter specifies the number of images you want to be returned in the response.             It determines the count of the most similar images to the input image that will be included in the response.             By default, it is set to 10.<br/>
         /// Default Value: 10
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagesearchResponseModel> ImageImageSearchLaunchSimilarityCreateAsync(
@@ -95,6 +98,7 @@ namespace EdenAI
             string? filename = default,
             string? fileUrl = default,
             int? n = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

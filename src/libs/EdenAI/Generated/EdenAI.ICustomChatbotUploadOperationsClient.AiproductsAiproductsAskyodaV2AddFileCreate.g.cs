@@ -29,12 +29,14 @@ namespace EdenAI
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task AiproductsAiproductsAskyodaV2AddFileCreateAsync(
             global::System.Guid projectId,
 
             global::EdenAI.AddFileRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Add File<br/>
@@ -81,6 +83,7 @@ namespace EdenAI
         /// <param name="provider">
         /// Select a provider to use, only for audio (speech-to-text) &amp; pdf (ocr-async) files.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task AiproductsAiproductsAskyodaV2AddFileCreateAsync(
@@ -91,6 +94,7 @@ namespace EdenAI
             string? fileUrl = default,
             string? metadata = default,
             string? provider = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

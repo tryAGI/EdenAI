@@ -175,11 +175,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.TextsummarizeResponseModel> TextTextSummarizeCreateAsync(
 
             global::EdenAI.TextsummarizeSummarizeRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Summarize<br/>
@@ -399,6 +401,7 @@ namespace EdenAI
         /// <param name="outputSentences">
         /// Default Value: 1
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.TextsummarizeResponseModel> TextTextSummarizeCreateAsync(
@@ -412,6 +415,7 @@ namespace EdenAI
             bool? showOriginalResponse = default,
             string? language = default,
             int? outputSentences = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

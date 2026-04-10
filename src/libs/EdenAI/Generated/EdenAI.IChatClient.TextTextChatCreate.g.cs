@@ -347,11 +347,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.TextchatResponseModel> TextTextChatCreateAsync(
 
             global::EdenAI.TextchatChatRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Chat<br/>
@@ -776,6 +778,7 @@ namespace EdenAI
         /// * `medium` - medium<br/>
         /// * `high` - high
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.TextchatResponseModel> TextTextChatCreateAsync(
@@ -795,6 +798,7 @@ namespace EdenAI
             global::System.Collections.Generic.IList<global::EdenAI.ChatAvailableToolsRequest>? availableTools = default,
             global::System.Collections.Generic.IList<global::EdenAI.ChatToolResultRequest>? toolResults = default,
             global::EdenAI.ReasoningEffortEnum? reasoningEffort = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

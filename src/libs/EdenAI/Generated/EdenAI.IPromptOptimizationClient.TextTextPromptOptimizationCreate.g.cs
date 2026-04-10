@@ -94,11 +94,13 @@ namespace EdenAI
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=text-prompt_optimization' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.TextpromptOptimizationResponseModel> TextTextPromptOptimizationCreateAsync(
 
             global::EdenAI.TextpromptOptimizationPromptOptimizationRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Prompt Optimization<br/>
@@ -234,6 +236,7 @@ namespace EdenAI
         /// <param name="targetProvider">
         /// Select the provider for the prompt optimization
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.TextpromptOptimizationResponseModel> TextTextPromptOptimizationCreateAsync(
@@ -246,6 +249,7 @@ namespace EdenAI
             bool? attributesAsList = default,
             bool? showBase64 = default,
             bool? showOriginalResponse = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

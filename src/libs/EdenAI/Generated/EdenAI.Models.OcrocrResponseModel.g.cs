@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.OcrocrOcrDataClass? Api4ai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.OcrocrOcrDataClass? Clarifai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrocrOcrDataClass? Amazon { get; set; }
 
         /// <summary>
         /// 
@@ -29,14 +29,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
-        public global::EdenAI.OcrocrOcrDataClass? Sentisight { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.OcrocrOcrDataClass? Clarifai { get; set; }
 
         /// <summary>
         /// 
@@ -53,8 +47,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrocrOcrDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.OcrocrOcrDataClass? Api4ai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
+        public global::EdenAI.OcrocrOcrDataClass? Sentisight { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,35 +65,35 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrocrResponseModel" /> class.
         /// </summary>
-        /// <param name="api4ai"></param>
-        /// <param name="clarifai"></param>
-        /// <param name="base64"></param>
-        /// <param name="sentisight"></param>
         /// <param name="microsoft"></param>
+        /// <param name="amazon"></param>
+        /// <param name="base64"></param>
+        /// <param name="clarifai"></param>
         /// <param name="mistral"></param>
         /// <param name="google"></param>
-        /// <param name="amazon"></param>
+        /// <param name="api4ai"></param>
+        /// <param name="sentisight"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrResponseModel(
-            global::EdenAI.OcrocrOcrDataClass? api4ai,
-            global::EdenAI.OcrocrOcrDataClass? clarifai,
-            global::EdenAI.OcrocrOcrDataClass? base64,
-            global::EdenAI.OcrocrOcrDataClass? sentisight,
             global::EdenAI.OcrocrOcrDataClass? microsoft,
+            global::EdenAI.OcrocrOcrDataClass? amazon,
+            global::EdenAI.OcrocrOcrDataClass? base64,
+            global::EdenAI.OcrocrOcrDataClass? clarifai,
             global::EdenAI.OcrocrOcrDataClass? mistral,
             global::EdenAI.OcrocrOcrDataClass? google,
-            global::EdenAI.OcrocrOcrDataClass? amazon)
+            global::EdenAI.OcrocrOcrDataClass? api4ai,
+            global::EdenAI.OcrocrOcrDataClass? sentisight)
         {
-            this.Api4ai = api4ai;
-            this.Clarifai = clarifai;
-            this.Base64 = base64;
-            this.Sentisight = sentisight;
             this.Microsoft = microsoft;
+            this.Amazon = amazon;
+            this.Base64 = base64;
+            this.Clarifai = clarifai;
             this.Mistral = mistral;
             this.Google = google;
-            this.Amazon = amazon;
+            this.Api4ai = api4ai;
+            this.Sentisight = sentisight;
         }
 
         /// <summary>

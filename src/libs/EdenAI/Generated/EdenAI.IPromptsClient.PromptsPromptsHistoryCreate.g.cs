@@ -9,12 +9,14 @@ namespace EdenAI
         /// </summary>
         /// <param name="name"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.PromptHistory> PromptsPromptsHistoryCreateAsync(
             string name,
 
             global::EdenAI.PromptHistoryRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Prompt History
@@ -48,6 +50,7 @@ namespace EdenAI
         /// <param name="systemPrompt">
         /// Specify a system prompt for the LLM
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.PromptHistory> PromptsPromptsHistoryCreateAsync(
@@ -57,6 +60,7 @@ namespace EdenAI
             object? @params = default,
             global::System.Collections.Generic.IList<string>? fileUrls = default,
             string? systemPrompt = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

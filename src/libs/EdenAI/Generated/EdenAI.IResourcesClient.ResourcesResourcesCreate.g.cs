@@ -8,11 +8,13 @@ namespace EdenAI
         /// 
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ResourceCreate> ResourcesResourcesCreateAsync(
 
             global::EdenAI.ResourceCreateRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// 
@@ -26,6 +28,7 @@ namespace EdenAI
         /// * `ai` - Ai
         /// </param>
         /// <param name="provider"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ResourceCreate> ResourcesResourcesCreateAsync(
@@ -33,6 +36,7 @@ namespace EdenAI
             object data,
             global::EdenAI.TypeDe8Enum type,
             string provider,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
