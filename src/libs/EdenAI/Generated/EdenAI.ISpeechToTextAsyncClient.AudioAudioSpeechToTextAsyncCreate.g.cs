@@ -293,11 +293,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.LaunchAsyncJobResponse> AudioAudioSpeechToTextAsyncCreateAsync(
 
             global::EdenAI.SpeechToTextAsyncRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Speech to Text Launch Job<br/>
@@ -664,6 +666,7 @@ namespace EdenAI
         /// Boolean value to specify weather to convert the audio/video file to wav format to be accepted by a majority of the providers<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.LaunchAsyncJobResponse> AudioAudioSpeechToTextAsyncCreateAsync(
@@ -684,6 +687,7 @@ namespace EdenAI
             bool? profanityFilter = default,
             string? customVocabulary = default,
             bool? convertToWav = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

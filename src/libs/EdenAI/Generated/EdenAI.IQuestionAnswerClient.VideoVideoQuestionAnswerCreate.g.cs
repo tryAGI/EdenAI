@@ -33,11 +33,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.VideoquestionAnswerResponseModel> VideoVideoQuestionAnswerCreateAsync(
 
             global::EdenAI.VideoquestionAnswerQuestionAnswerRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Question Answer<br/>
@@ -125,6 +127,7 @@ namespace EdenAI
         /// <param name="text">
         /// Question about the video
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.VideoquestionAnswerResponseModel> VideoVideoQuestionAnswerCreateAsync(
@@ -141,6 +144,7 @@ namespace EdenAI
             string? fileUrl = default,
             double? temperature = default,
             int? maxTokens = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

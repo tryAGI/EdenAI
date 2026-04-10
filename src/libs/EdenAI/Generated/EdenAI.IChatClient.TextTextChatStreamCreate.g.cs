@@ -10,11 +10,13 @@ namespace EdenAI
         /// NOTE: For this feature, you an only request one provider at a time.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<string> TextTextChatStreamCreateAsync(
 
             global::EdenAI.TextchatChatStreamRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Chat Stream<br/>
@@ -105,6 +107,7 @@ namespace EdenAI
         /// <param name="fallbackType">
         /// Default Value: continue
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<string> TextTextChatStreamCreateAsync(
@@ -125,6 +128,7 @@ namespace EdenAI
             global::System.Collections.Generic.IList<global::EdenAI.ChatToolResultRequest>? toolResults = default,
             global::EdenAI.ReasoningEffortEnum? reasoningEffort = default,
             global::EdenAI.FallbackTypeEnum? fallbackType = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

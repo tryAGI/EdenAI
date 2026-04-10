@@ -14,11 +14,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagefaceRecognitionResponseModel> ImageImageFaceRecognitionDeleteFaceCreateAsync(
 
             global::EdenAI.ImagefaceRecognitiondeleteFaceFaceRecognitionDeleteFaceRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Face Recognition - Delete Face<br/>
@@ -71,6 +73,7 @@ namespace EdenAI
         /// <param name="faceId">
         /// ID of face to delete
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagefaceRecognitionResponseModel> ImageImageFaceRecognitionDeleteFaceCreateAsync(
@@ -82,6 +85,7 @@ namespace EdenAI
             bool? attributesAsList = default,
             bool? showBase64 = default,
             bool? showOriginalResponse = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

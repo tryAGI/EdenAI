@@ -272,11 +272,13 @@ namespace EdenAI
         /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=audio-text_to_speech' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.AudiotextToSpeechResponseModel> AudioAudioTextToSpeechCreateAsync(
 
             global::EdenAI.AudiotextToSpeechTextToSpeechRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Text to Speech<br/>
@@ -610,6 +612,7 @@ namespace EdenAI
         /// Optional. The synthesis sample rate (in hertz) for this audio. When this is specified, the audio will be converted             either to the right passed value, or to a the nearest value acceptable by the provider<br/>
         /// Default Value: 0
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.AudiotextToSpeechResponseModel> AudioAudioTextToSpeechCreateAsync(
@@ -628,6 +631,7 @@ namespace EdenAI
             int? volume = default,
             string? audioFormat = default,
             int? samplingRate = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

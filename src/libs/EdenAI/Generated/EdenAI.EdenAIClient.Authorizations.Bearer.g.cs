@@ -25,6 +25,7 @@ namespace EdenAI
             Authorizations.Add(new global::EdenAI.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "FeatureApiAuth",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

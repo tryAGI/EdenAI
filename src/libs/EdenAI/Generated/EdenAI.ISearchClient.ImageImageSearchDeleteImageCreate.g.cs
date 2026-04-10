@@ -14,11 +14,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagesearchResponseModel> ImageImageSearchDeleteImageCreateAsync(
 
             global::EdenAI.ImagesearchdeleteImageDeleteImageRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Search - Delete phase<br/>
@@ -69,6 +71,7 @@ namespace EdenAI
         /// Default Value: false
         /// </param>
         /// <param name="imageName"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagesearchResponseModel> ImageImageSearchDeleteImageCreateAsync(
@@ -80,6 +83,7 @@ namespace EdenAI
             bool? attributesAsList = default,
             bool? showBase64 = default,
             bool? showOriginalResponse = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

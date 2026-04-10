@@ -9,12 +9,14 @@ namespace EdenAI
         /// </summary>
         /// <param name="workflowId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.WebhookParameters> WorkflowWorkflowWebhookPartialUpdateAsync(
             global::System.Guid workflowId,
 
             global::EdenAI.PatchedWebhookParametersRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update workflow webhook URL
@@ -30,6 +32,7 @@ namespace EdenAI
         /// If set to false the webhook will not contain the result data. Use if your webhook receiver has a request size limit.<br/>
         /// Default Value: true
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.WebhookParameters> WorkflowWorkflowWebhookPartialUpdateAsync(
@@ -37,6 +40,7 @@ namespace EdenAI
             string? webhookReceiver = default,
             object? usersWebhookParameters = default,
             bool? sendWebhookData = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

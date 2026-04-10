@@ -17,12 +17,14 @@ namespace EdenAI
         /// <param name="chunkIds"></param>
         /// <param name="id"></param>
         /// <param name="projectId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.YodaDeleteResponse> AiproductsAiproductsAskyodaV2DeleteChunkDestroyAsync(
             global::System.Guid projectId,
             global::System.Collections.Generic.IList<string>? chunkIds = default,
             string? id = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -28,11 +28,13 @@ namespace EdenAI
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagelogoDetectionResponseModel> ImageImageLogoDetectionCreateAsync(
 
             global::EdenAI.ImagelogoDetectionLogoDetectionRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Logo Detection<br/>
@@ -105,6 +107,7 @@ namespace EdenAI
         /// <param name="fileUrl">
         /// File **URL** to analyse to be used with with *content-type*: **application/json**.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.ImagelogoDetectionResponseModel> ImageImageLogoDetectionCreateAsync(
@@ -118,6 +121,7 @@ namespace EdenAI
             byte[]? file = default,
             string? filename = default,
             string? fileUrl = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

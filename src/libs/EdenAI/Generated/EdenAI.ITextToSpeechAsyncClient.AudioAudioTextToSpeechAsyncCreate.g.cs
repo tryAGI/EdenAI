@@ -236,11 +236,13 @@ namespace EdenAI
         /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=audio-text_to_speech_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.LaunchAsyncJobResponse> AudioAudioTextToSpeechAsyncCreateAsync(
 
             global::EdenAI.TextToSpeechAsyncRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Text to Speech launch job<br/>
@@ -548,6 +550,7 @@ namespace EdenAI
         /// If set to false the webhook will not contain the result data. Use if your webhook receiver has a request size limit.<br/>
         /// Default Value: true
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.LaunchAsyncJobResponse> AudioAudioTextToSpeechAsyncCreateAsync(
@@ -569,6 +572,7 @@ namespace EdenAI
             string? webhookReceiver = default,
             object? usersWebhookParameters = default,
             bool? sendWebhookData = default,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
