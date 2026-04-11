@@ -23,14 +23,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Extracta { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Veryfi { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Veryfi { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Extracta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,21 +43,21 @@ namespace EdenAI
         /// </summary>
         /// <param name="mindee"></param>
         /// <param name="base64"></param>
-        /// <param name="extracta"></param>
         /// <param name="veryfi"></param>
+        /// <param name="extracta"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrbankCheckParsingResponseModel(
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? mindee,
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? base64,
-            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? extracta,
-            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? veryfi)
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? veryfi,
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? extracta)
         {
             this.Mindee = mindee;
             this.Base64 = base64;
-            this.Extracta = extracta;
             this.Veryfi = veryfi;
+            this.Extracta = extracta;
         }
 
         /// <summary>
