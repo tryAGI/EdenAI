@@ -11,14 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
@@ -29,14 +23,20 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Oneai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// 
@@ -59,30 +59,30 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextnamedEntityRecognitionResponseModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
-        /// <param name="google"></param>
-        /// <param name="microsoft"></param>
         /// <param name="oneai"></param>
+        /// <param name="microsoft"></param>
         /// <param name="openai"></param>
+        /// <param name="google"></param>
+        /// <param name="amazon"></param>
         /// <param name="tenstorrent"></param>
         /// <param name="xai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextnamedEntityRecognitionResponseModel(
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? amazon,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? google,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? microsoft,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? oneai,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? microsoft,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? openai,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? google,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? amazon,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? tenstorrent,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? xai)
         {
-            this.Amazon = amazon;
-            this.Google = google;
-            this.Microsoft = microsoft;
             this.Oneai = oneai;
+            this.Microsoft = microsoft;
             this.Openai = openai;
+            this.Google = google;
+            this.Amazon = amazon;
             this.Tenstorrent = tenstorrent;
             this.Xai = xai;
         }
