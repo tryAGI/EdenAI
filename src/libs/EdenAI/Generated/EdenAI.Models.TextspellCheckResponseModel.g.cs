@@ -11,18 +11,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Xai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.TextspellCheckSpellCheckDataClass? Microsoft { get; set; }
 
@@ -31,6 +19,12 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TextspellCheckSpellCheckDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
 
         /// <summary>
         /// 
@@ -45,6 +39,12 @@ namespace EdenAI
         public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Xai { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -53,29 +53,29 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextspellCheckResponseModel" /> class.
         /// </summary>
-        /// <param name="prowritingaid"></param>
-        /// <param name="xai"></param>
         /// <param name="microsoft"></param>
         /// <param name="openai"></param>
+        /// <param name="prowritingaid"></param>
         /// <param name="sapling"></param>
         /// <param name="cohere"></param>
+        /// <param name="xai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextspellCheckResponseModel(
-            global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? xai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? microsoft,
             global::EdenAI.TextspellCheckSpellCheckDataClass? openai,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid,
             global::EdenAI.TextspellCheckSpellCheckDataClass? sapling,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere)
+            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? xai)
         {
-            this.Prowritingaid = prowritingaid;
-            this.Xai = xai;
             this.Microsoft = microsoft;
             this.Openai = openai;
+            this.Prowritingaid = prowritingaid;
             this.Sapling = sapling;
             this.Cohere = cohere;
+            this.Xai = xai;
         }
 
         /// <summary>
