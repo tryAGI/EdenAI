@@ -23,8 +23,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
 
         /// <summary>
         /// 
@@ -35,8 +35,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
@@ -55,9 +55,9 @@ namespace EdenAI
         /// </summary>
         /// <param name="prowritingaid"></param>
         /// <param name="sapling"></param>
-        /// <param name="xai"></param>
-        /// <param name="openai"></param>
         /// <param name="cohere"></param>
+        /// <param name="openai"></param>
+        /// <param name="xai"></param>
         /// <param name="microsoft"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -65,16 +65,16 @@ namespace EdenAI
         public TextspellCheckResponseModel(
             global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid,
             global::EdenAI.TextspellCheckSpellCheckDataClass? sapling,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? xai,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? openai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? openai,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? xai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? microsoft)
         {
             this.Prowritingaid = prowritingaid;
             this.Sapling = sapling;
-            this.Xai = xai;
-            this.Openai = openai;
             this.Cohere = cohere;
+            this.Openai = openai;
+            this.Xai = xai;
             this.Microsoft = microsoft;
         }
 
