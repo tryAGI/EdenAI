@@ -17,8 +17,26 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privateai")]
         public global::EdenAI.TextanonymizationAnonymizationDataClass? Privateai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Emvista { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -33,24 +51,6 @@ namespace EdenAI
         public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Emvista { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Xai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -60,31 +60,31 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TextanonymizationResponseModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
+        /// <param name="xai"></param>
         /// <param name="privateai"></param>
+        /// <param name="emvista"></param>
+        /// <param name="microsoft"></param>
         /// <param name="oneai"></param>
         /// <param name="openai"></param>
-        /// <param name="emvista"></param>
-        /// <param name="xai"></param>
-        /// <param name="microsoft"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextanonymizationResponseModel(
             global::EdenAI.TextanonymizationAnonymizationDataClass? amazon,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? privateai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? oneai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? openai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista,
             global::EdenAI.TextanonymizationAnonymizationDataClass? xai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft)
+            global::EdenAI.TextanonymizationAnonymizationDataClass? privateai,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? oneai,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? openai)
         {
             this.Amazon = amazon;
+            this.Xai = xai;
             this.Privateai = privateai;
+            this.Emvista = emvista;
+            this.Microsoft = microsoft;
             this.Oneai = oneai;
             this.Openai = openai;
-            this.Emvista = emvista;
-            this.Xai = xai;
-            this.Microsoft = microsoft;
         }
 
         /// <summary>
