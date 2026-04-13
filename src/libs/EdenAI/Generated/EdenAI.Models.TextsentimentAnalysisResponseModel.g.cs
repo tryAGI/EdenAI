@@ -11,20 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Oneai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
@@ -35,8 +23,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ibm")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Ibm { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Amazon { get; set; }
 
         /// <summary>
         /// 
@@ -47,26 +35,38 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Google { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Sapling { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ibm")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Ibm { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Oneai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Sapling { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -77,41 +77,41 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextsentimentAnalysisResponseModel" /> class.
         /// </summary>
-        /// <param name="oneai"></param>
         /// <param name="openai"></param>
-        /// <param name="xai"></param>
         /// <param name="emvista"></param>
-        /// <param name="ibm"></param>
-        /// <param name="tenstorrent"></param>
         /// <param name="amazon"></param>
+        /// <param name="tenstorrent"></param>
         /// <param name="google"></param>
-        /// <param name="sapling"></param>
+        /// <param name="ibm"></param>
+        /// <param name="oneai"></param>
+        /// <param name="xai"></param>
         /// <param name="microsoft"></param>
+        /// <param name="sapling"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextsentimentAnalysisResponseModel(
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? oneai,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? openai,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? xai,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? emvista,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? ibm,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? tenstorrent,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? amazon,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? tenstorrent,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? google,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? sapling,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? microsoft)
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? ibm,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? oneai,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? xai,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? microsoft,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? sapling)
         {
-            this.Oneai = oneai;
             this.Openai = openai;
-            this.Xai = xai;
             this.Emvista = emvista;
-            this.Ibm = ibm;
-            this.Tenstorrent = tenstorrent;
             this.Amazon = amazon;
+            this.Tenstorrent = tenstorrent;
             this.Google = google;
-            this.Sapling = sapling;
+            this.Ibm = ibm;
+            this.Oneai = oneai;
+            this.Xai = xai;
             this.Microsoft = microsoft;
+            this.Sapling = sapling;
         }
 
         /// <summary>
