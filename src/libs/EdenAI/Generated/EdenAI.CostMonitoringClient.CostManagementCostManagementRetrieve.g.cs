@@ -29,22 +29,26 @@ namespace EdenAI
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.DateTime begin,
             ref global::System.DateTime end,
+            ref global::EdenAI.CostManagementCostManagementRetrieveGroupBy? groupBy,
             ref string? provider,
             ref global::System.Guid? ragProjectId,
             ref int step,
             ref string? subfeature,
             ref string? token,
+            ref string? user,
             ref global::System.Guid? workflowId);
         partial void PrepareCostManagementCostManagementRetrieveRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             global::System.DateTime begin,
             global::System.DateTime end,
+            global::EdenAI.CostManagementCostManagementRetrieveGroupBy? groupBy,
             string? provider,
             global::System.Guid? ragProjectId,
             int step,
             string? subfeature,
             string? token,
+            string? user,
             global::System.Guid? workflowId);
         partial void ProcessCostManagementCostManagementRetrieveResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -60,11 +64,13 @@ namespace EdenAI
         /// </summary>
         /// <param name="begin"></param>
         /// <param name="end"></param>
+        /// <param name="groupBy"></param>
         /// <param name="provider"></param>
         /// <param name="ragProjectId"></param>
         /// <param name="step"></param>
         /// <param name="subfeature"></param>
         /// <param name="token"></param>
+        /// <param name="user"></param>
         /// <param name="workflowId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -73,10 +79,12 @@ namespace EdenAI
             global::System.DateTime begin,
             global::System.DateTime end,
             int step,
+            global::EdenAI.CostManagementCostManagementRetrieveGroupBy? groupBy = default,
             string? provider = default,
             global::System.Guid? ragProjectId = default,
             string? subfeature = default,
             string? token = default,
+            string? user = default,
             global::System.Guid? workflowId = default,
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -87,11 +95,13 @@ namespace EdenAI
                 httpClient: HttpClient,
                 begin: ref begin,
                 end: ref end,
+                groupBy: ref groupBy,
                 provider: ref provider,
                 ragProjectId: ref ragProjectId,
                 step: ref step,
                 subfeature: ref subfeature,
                 token: ref token,
+                user: ref user,
                 workflowId: ref workflowId);
 
 
@@ -122,11 +132,13 @@ namespace EdenAI
                             __pathBuilder
                                 .AddRequiredParameter("begin", begin.ToString("yyyy-MM-dd"))
                                 .AddRequiredParameter("end", end.ToString("yyyy-MM-dd"))
+                                .AddOptionalParameter("group_by", groupBy?.ToValueString())
                                 .AddOptionalParameter("provider", provider)
                                 .AddOptionalParameter("rag_project_id", ragProjectId?.ToString())
                                 .AddRequiredParameter("step", step.ToString()!)
                                 .AddOptionalParameter("subfeature", subfeature)
                                 .AddOptionalParameter("token", token)
+                                .AddOptionalParameter("user", user)
                                 .AddOptionalParameter("workflow_id", workflowId?.ToString()) 
                                 ;
                             var __path = __pathBuilder.ToString();
@@ -171,11 +183,13 @@ namespace EdenAI
                     httpRequestMessage: __httpRequest,
                     begin: begin,
                     end: end,
+                    groupBy: groupBy,
                     provider: provider,
                     ragProjectId: ragProjectId,
                     step: step,
                     subfeature: subfeature,
                     token: token,
+                    user: user,
                     workflowId: workflowId);
 
                 return __httpRequest;

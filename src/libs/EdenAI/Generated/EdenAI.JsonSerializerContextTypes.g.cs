@@ -2228,35 +2228,39 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AIProject>? Type550 { get; set; }
+        public global::EdenAI.CostManagementCostManagementRetrieveGroupBy? Type550 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Conversation>? Type551 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AIProject>? Type551 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AiProductFile>? Type552 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Conversation>? Type552 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.BatchList>? Type553 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AiProductFile>? Type553 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ProviderSubfeature>? Type554 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.BatchList>? Type554 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ResourceList>? Type555 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ProviderSubfeature>? Type555 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.CustomTokensList>? Type556 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ResourceList>? Type556 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Workflow>? Type557 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.CustomTokensList>? Type557 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::EdenAI.Workflow>? Type558 { get; set; }
 
         /// <summary>
         /// 
