@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -23,20 +23,20 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
         public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Deepgram { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Amazon { get; set; }
 
         /// <summary>
         /// 
@@ -59,30 +59,30 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="AudiotextToSpeechResponseModel" /> class.
         /// </summary>
-        /// <param name="openai"></param>
-        /// <param name="lovoai"></param>
-        /// <param name="amazon"></param>
-        /// <param name="deepgram"></param>
         /// <param name="microsoft"></param>
+        /// <param name="lovoai"></param>
+        /// <param name="deepgram"></param>
+        /// <param name="openai"></param>
+        /// <param name="amazon"></param>
         /// <param name="google"></param>
         /// <param name="elevenlabs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudiotextToSpeechResponseModel(
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? openai,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? lovoai,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? amazon,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? microsoft,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? lovoai,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? openai,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? amazon,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? google,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? elevenlabs)
         {
-            this.Openai = openai;
-            this.Lovoai = lovoai;
-            this.Amazon = amazon;
-            this.Deepgram = deepgram;
             this.Microsoft = microsoft;
+            this.Lovoai = lovoai;
+            this.Deepgram = deepgram;
+            this.Openai = openai;
+            this.Amazon = amazon;
             this.Google = google;
             this.Elevenlabs = elevenlabs;
         }

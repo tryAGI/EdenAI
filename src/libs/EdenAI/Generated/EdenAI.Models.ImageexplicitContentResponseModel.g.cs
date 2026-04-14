@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -23,26 +23,26 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Api4ai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
         public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Sentisight { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// 
@@ -59,31 +59,31 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageexplicitContentResponseModel" /> class.
         /// </summary>
-        /// <param name="openai"></param>
-        /// <param name="clarifai"></param>
-        /// <param name="sentisight"></param>
-        /// <param name="amazon"></param>
         /// <param name="microsoft"></param>
+        /// <param name="clarifai"></param>
         /// <param name="api4ai"></param>
+        /// <param name="sentisight"></param>
+        /// <param name="openai"></param>
+        /// <param name="amazon"></param>
         /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageexplicitContentResponseModel(
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? openai,
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? clarifai,
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? sentisight,
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? amazon,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? microsoft,
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? clarifai,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? api4ai,
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? sentisight,
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? openai,
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? amazon,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? google)
         {
-            this.Openai = openai;
-            this.Clarifai = clarifai;
-            this.Sentisight = sentisight;
-            this.Amazon = amazon;
             this.Microsoft = microsoft;
+            this.Clarifai = clarifai;
             this.Api4ai = api4ai;
+            this.Sentisight = sentisight;
+            this.Openai = openai;
+            this.Amazon = amazon;
             this.Google = google;
         }
 
