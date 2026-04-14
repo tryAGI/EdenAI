@@ -141,6 +141,10 @@ namespace EdenAI
 
             typeof(global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusNullableJsonConverter),
 
+            typeof(global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByJsonConverter),
+
+            typeof(global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByNullableJsonConverter),
+
             typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>),
 
             typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>),
@@ -703,6 +707,7 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.VideoText>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.FeatureBatchRetrieveStatus), TypeInfoPropertyName = "FeatureBatchRetrieveStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.CostManagementCostManagementRetrieveGroupBy), TypeInfoPropertyName = "CostManagementCostManagementRetrieveGroupBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.AIProject>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.Conversation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.AiProductFile>))]
