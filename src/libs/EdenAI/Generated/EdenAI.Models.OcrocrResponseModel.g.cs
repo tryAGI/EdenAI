@@ -17,6 +17,18 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.OcrocrOcrDataClass? Api4ai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
+        public global::EdenAI.OcrocrOcrDataClass? Base64 { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
         public global::EdenAI.OcrocrOcrDataClass? Sentisight { get; set; }
 
@@ -29,20 +41,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
-        public global::EdenAI.OcrocrOcrDataClass? Base64 { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.OcrocrOcrDataClass? Google { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.OcrocrOcrDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// 
@@ -66,11 +66,11 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="OcrocrResponseModel" /> class.
         /// </summary>
         /// <param name="microsoft"></param>
+        /// <param name="api4ai"></param>
+        /// <param name="base64"></param>
         /// <param name="sentisight"></param>
         /// <param name="clarifai"></param>
-        /// <param name="base64"></param>
         /// <param name="google"></param>
-        /// <param name="api4ai"></param>
         /// <param name="mistral"></param>
         /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
@@ -78,20 +78,20 @@ namespace EdenAI
 #endif
         public OcrocrResponseModel(
             global::EdenAI.OcrocrOcrDataClass? microsoft,
+            global::EdenAI.OcrocrOcrDataClass? api4ai,
+            global::EdenAI.OcrocrOcrDataClass? base64,
             global::EdenAI.OcrocrOcrDataClass? sentisight,
             global::EdenAI.OcrocrOcrDataClass? clarifai,
-            global::EdenAI.OcrocrOcrDataClass? base64,
             global::EdenAI.OcrocrOcrDataClass? google,
-            global::EdenAI.OcrocrOcrDataClass? api4ai,
             global::EdenAI.OcrocrOcrDataClass? mistral,
             global::EdenAI.OcrocrOcrDataClass? amazon)
         {
             this.Microsoft = microsoft;
+            this.Api4ai = api4ai;
+            this.Base64 = base64;
             this.Sentisight = sentisight;
             this.Clarifai = clarifai;
-            this.Base64 = base64;
             this.Google = google;
-            this.Api4ai = api4ai;
             this.Mistral = mistral;
             this.Amazon = amazon;
         }
