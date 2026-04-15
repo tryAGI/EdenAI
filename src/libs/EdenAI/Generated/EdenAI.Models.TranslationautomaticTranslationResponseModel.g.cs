@@ -29,14 +29,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -47,8 +47,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -62,10 +62,10 @@ namespace EdenAI
         /// <param name="microsoft"></param>
         /// <param name="deepl"></param>
         /// <param name="google"></param>
-        /// <param name="openai"></param>
-        /// <param name="amazon"></param>
-        /// <param name="modernmt"></param>
         /// <param name="xai"></param>
+        /// <param name="openai"></param>
+        /// <param name="modernmt"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -73,18 +73,18 @@ namespace EdenAI
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? microsoft,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? deepl,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? google,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? xai,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? openai,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? modernmt,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? xai)
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon)
         {
             this.Microsoft = microsoft;
             this.Deepl = deepl;
             this.Google = google;
-            this.Openai = openai;
-            this.Amazon = amazon;
-            this.Modernmt = modernmt;
             this.Xai = xai;
+            this.Openai = openai;
+            this.Modernmt = modernmt;
+            this.Amazon = amazon;
         }
 
         /// <summary>
