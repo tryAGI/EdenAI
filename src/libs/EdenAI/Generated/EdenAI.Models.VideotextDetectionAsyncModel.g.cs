@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("twelvelabs")]
-        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Twelvelabs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("twelvelabs")]
+        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Twelvelabs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,19 +36,19 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="VideotextDetectionAsyncModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
-        /// <param name="twelvelabs"></param>
         /// <param name="google"></param>
+        /// <param name="twelvelabs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideotextDetectionAsyncModel(
             global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? amazon,
-            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? twelvelabs,
-            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? google)
+            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? google,
+            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? twelvelabs)
         {
             this.Amazon = amazon;
-            this.Twelvelabs = twelvelabs;
             this.Google = google;
+            this.Twelvelabs = twelvelabs;
         }
 
         /// <summary>
