@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Oneai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -41,14 +41,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -60,31 +60,31 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TextnamedEntityRecognitionResponseModel" /> class.
         /// </summary>
         /// <param name="openai"></param>
-        /// <param name="oneai"></param>
-        /// <param name="amazon"></param>
-        /// <param name="tenstorrent"></param>
-        /// <param name="google"></param>
         /// <param name="xai"></param>
         /// <param name="microsoft"></param>
+        /// <param name="tenstorrent"></param>
+        /// <param name="google"></param>
+        /// <param name="oneai"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextnamedEntityRecognitionResponseModel(
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? openai,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? oneai,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? amazon,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? xai,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? microsoft,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? tenstorrent,
             global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? google,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? xai,
-            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? microsoft)
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? oneai,
+            global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? amazon)
         {
             this.Openai = openai;
-            this.Oneai = oneai;
-            this.Amazon = amazon;
-            this.Tenstorrent = tenstorrent;
-            this.Google = google;
             this.Xai = xai;
             this.Microsoft = microsoft;
+            this.Tenstorrent = tenstorrent;
+            this.Google = google;
+            this.Oneai = oneai;
+            this.Amazon = amazon;
         }
 
         /// <summary>
