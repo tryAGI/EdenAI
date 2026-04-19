@@ -11,12 +11,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TextmoderationModerationDataClass? Google { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TextmoderationModerationDataClass? Openai { get; set; }
 
@@ -27,6 +21,12 @@ namespace EdenAI
         public global::EdenAI.TextmoderationModerationDataClass? Microsoft { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TextmoderationModerationDataClass? Google { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,20 +35,20 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextmoderationResponseModel" /> class.
         /// </summary>
-        /// <param name="google"></param>
         /// <param name="openai"></param>
         /// <param name="microsoft"></param>
+        /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextmoderationResponseModel(
-            global::EdenAI.TextmoderationModerationDataClass? google,
             global::EdenAI.TextmoderationModerationDataClass? openai,
-            global::EdenAI.TextmoderationModerationDataClass? microsoft)
+            global::EdenAI.TextmoderationModerationDataClass? microsoft,
+            global::EdenAI.TextmoderationModerationDataClass? google)
         {
-            this.Google = google;
             this.Openai = openai;
             this.Microsoft = microsoft;
+            this.Google = google;
         }
 
         /// <summary>
