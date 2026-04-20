@@ -23,14 +23,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Extracta { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Mindee { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Mindee { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Extracta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,21 +43,21 @@ namespace EdenAI
         /// </summary>
         /// <param name="veryfi"></param>
         /// <param name="base64"></param>
-        /// <param name="extracta"></param>
         /// <param name="mindee"></param>
+        /// <param name="extracta"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrbankCheckParsingResponseModel(
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? veryfi,
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? base64,
-            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? extracta,
-            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? mindee)
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? mindee,
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? extracta)
         {
             this.Veryfi = veryfi;
             this.Base64 = base64;
-            this.Extracta = extracta;
             this.Mindee = mindee;
+            this.Extracta = extracta;
         }
 
         /// <summary>
