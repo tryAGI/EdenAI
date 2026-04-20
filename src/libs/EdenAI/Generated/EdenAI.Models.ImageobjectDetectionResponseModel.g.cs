@@ -35,14 +35,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Sentisight { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Google { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Sentisight { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,8 +57,8 @@ namespace EdenAI
         /// <param name="amazon"></param>
         /// <param name="api4ai"></param>
         /// <param name="clarifai"></param>
-        /// <param name="sentisight"></param>
         /// <param name="google"></param>
+        /// <param name="sentisight"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -67,15 +67,15 @@ namespace EdenAI
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? amazon,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? api4ai,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? clarifai,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? sentisight,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? google)
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? google,
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? sentisight)
         {
             this.Microsoft = microsoft;
             this.Amazon = amazon;
             this.Api4ai = api4ai;
             this.Clarifai = clarifai;
-            this.Sentisight = sentisight;
             this.Google = google;
+            this.Sentisight = sentisight;
         }
 
         /// <summary>
