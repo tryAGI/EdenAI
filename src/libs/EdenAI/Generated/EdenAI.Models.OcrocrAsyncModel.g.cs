@@ -29,14 +29,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Oneai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,8 +50,8 @@ namespace EdenAI
         /// <param name="microsoft"></param>
         /// <param name="mistral"></param>
         /// <param name="amazon"></param>
-        /// <param name="google"></param>
         /// <param name="oneai"></param>
+        /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -59,14 +59,14 @@ namespace EdenAI
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? microsoft,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? mistral,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? oneai)
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? oneai,
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google)
         {
             this.Microsoft = microsoft;
             this.Mistral = mistral;
             this.Amazon = amazon;
-            this.Google = google;
             this.Oneai = oneai;
+            this.Google = google;
         }
 
         /// <summary>
