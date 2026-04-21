@@ -60,7 +60,10 @@ namespace EdenAI
             ref string content);
 
         /// <summary>
-        /// Monitor Consumptions
+        /// Monitor Consumptions<br/>
+        /// Returns aggregated consumption over time.<br/>
+        /// Only `feature`, `subfeature`, `provider`, and `phase` are accepted as row filters; any other unknown query parameter returns 400.<br/>
+        /// When called with a custom API key, results are automatically scoped to that token — the `user`, `token`, and `group_by=user` query parameters are not allowed and return 400/403.
         /// </summary>
         /// <param name="begin"></param>
         /// <param name="end"></param>
