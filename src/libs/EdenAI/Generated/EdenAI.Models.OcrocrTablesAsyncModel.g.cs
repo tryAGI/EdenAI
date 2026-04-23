@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,19 +36,19 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="OcrocrTablesAsyncModel" /> class.
         /// </summary>
         /// <param name="microsoft"></param>
-        /// <param name="amazon"></param>
         /// <param name="google"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrTablesAsyncModel(
             global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? microsoft,
-            global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? amazon,
-            global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? google)
+            global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? google,
+            global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? amazon)
         {
             this.Microsoft = microsoft;
-            this.Amazon = amazon;
             this.Google = google;
+            this.Amazon = amazon;
         }
 
         /// <summary>
