@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -41,21 +41,21 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TexttopicExtractionResponseModel" /> class.
         /// </summary>
-        /// <param name="openai"></param>
         /// <param name="tenstorrent"></param>
+        /// <param name="openai"></param>
         /// <param name="google"></param>
         /// <param name="xai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TexttopicExtractionResponseModel(
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? openai,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent,
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? openai,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai)
         {
-            this.Openai = openai;
             this.Tenstorrent = tenstorrent;
+            this.Openai = openai;
             this.Google = google;
             this.Xai = xai;
         }
