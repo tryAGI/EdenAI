@@ -11,12 +11,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Google { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Openai { get; set; }
 
@@ -25,6 +19,12 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
         public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Google { get; set; }
 
         /// <summary>
         /// 
@@ -41,22 +41,22 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TexttopicExtractionResponseModel" /> class.
         /// </summary>
-        /// <param name="google"></param>
         /// <param name="openai"></param>
         /// <param name="tenstorrent"></param>
+        /// <param name="google"></param>
         /// <param name="xai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TexttopicExtractionResponseModel(
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? openai,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent,
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai)
         {
-            this.Google = google;
             this.Openai = openai;
             this.Tenstorrent = tenstorrent;
+            this.Google = google;
             this.Xai = xai;
         }
 
