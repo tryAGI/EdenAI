@@ -152,7 +152,7 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2UpdateProjectPartialUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     request: request);
 
                 return __httpRequest;

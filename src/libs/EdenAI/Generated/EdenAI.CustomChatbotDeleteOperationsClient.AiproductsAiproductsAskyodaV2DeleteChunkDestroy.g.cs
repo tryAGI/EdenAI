@@ -156,7 +156,7 @@ namespace EdenAI
                     httpRequestMessage: __httpRequest,
                     chunkIds: chunkIds,
                     id: id,
-                    projectId: projectId);
+                    projectId: projectId!);
 
                 return __httpRequest;
             }

@@ -138,8 +138,8 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2ConversationsRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId,
-                    projectId: projectId);
+                    conversationId: conversationId!,
+                    projectId: projectId!);
 
                 return __httpRequest;
             }

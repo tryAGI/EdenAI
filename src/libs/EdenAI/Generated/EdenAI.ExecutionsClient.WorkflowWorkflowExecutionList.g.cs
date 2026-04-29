@@ -140,7 +140,7 @@ namespace EdenAI
                     httpRequestMessage: __httpRequest,
                     page: page,
                     pageSize: pageSize,
-                    workflowId: workflowId);
+                    workflowId: workflowId!);
 
                 return __httpRequest;
             }

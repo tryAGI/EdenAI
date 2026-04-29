@@ -138,7 +138,7 @@ namespace EdenAI
                 PrepareWorkflowWorkflowWebhookUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    workflowId: workflowId,
+                    workflowId: workflowId!,
                     request: request);
 
                 return __httpRequest;

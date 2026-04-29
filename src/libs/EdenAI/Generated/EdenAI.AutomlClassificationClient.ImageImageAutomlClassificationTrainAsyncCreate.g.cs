@@ -135,7 +135,7 @@ namespace EdenAI
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Settings}"),
+                                    content: new global::System.Net.Http.StringContent(request.Settings ?? string.Empty),
                                     name: "\"settings\"");
                             }
                             __httpRequestContent.Add(
@@ -152,39 +152,39 @@ namespace EdenAI
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ShowOriginalResponse}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowOriginalResponse, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_original_response\"");
                             } 
                             if (request.WebhookReceiver != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.WebhookReceiver}"),
+                                    content: new global::System.Net.Http.StringContent(request.WebhookReceiver ?? string.Empty),
                                     name: "\"webhook_receiver\"");
                             } 
                             if (request.UsersWebhookParameters != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.UsersWebhookParameters}"),
+                                    content: new global::System.Net.Http.StringContent(request.UsersWebhookParameters.ToString() ?? string.Empty),
                                     name: "\"users_webhook_parameters\"");
                             } 
                             if (request.SendWebhookData != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.SendWebhookData}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.SendWebhookData, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"send_webhook_data\"");
                             } 
                             if (request.ShowBase64 != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ShowBase64}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowBase64, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_base_64\"");
                             }
                             __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent($"{request.ProjectId}"),
+                                content: new global::System.Net.Http.StringContent(request.ProjectId ?? string.Empty),
                                 name: "\"project_id\"");
                             __httpRequest.Content = __httpRequestContent;
                 global::EdenAI.AutoSDKRequestOptionsSupport.ApplyHeaders(

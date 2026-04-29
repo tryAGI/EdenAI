@@ -358,7 +358,7 @@ namespace EdenAI
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Settings}"),
+                                    content: new global::System.Net.Http.StringContent(request.Settings ?? string.Empty),
                                     name: "\"settings\"");
                             }
                             __httpRequestContent.Add(
@@ -375,101 +375,101 @@ namespace EdenAI
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ResponseAsDict}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ResponseAsDict, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"response_as_dict\"");
                             } 
                             if (request.AttributesAsList != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.AttributesAsList}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.AttributesAsList, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"attributes_as_list\"");
                             } 
                             if (request.ShowBase64 != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ShowBase64}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowBase64, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_base_64\"");
                             } 
                             if (request.ShowOriginalResponse != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ShowOriginalResponse}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowOriginalResponse, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_original_response\"");
                             }
                             __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent($"{request.Text}"),
+                                content: new global::System.Net.Http.StringContent(request.Text ?? string.Empty),
                                 name: "\"text\"");
                             if (request.Language != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Language}"),
+                                    content: new global::System.Net.Http.StringContent(request.Language ?? string.Empty),
                                     name: "\"language\"");
                             } 
                             if (request.Option != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent(request.Option?.ToString() ?? string.Empty),
+                                    content: new global::System.Net.Http.StringContent(request.Option.ToString() ?? string.Empty),
                                     name: "\"option\"");
                             } 
                             if (request.Rate != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Rate}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.Rate, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"rate\"");
                             } 
                             if (request.Pitch != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Pitch}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.Pitch, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"pitch\"");
                             } 
                             if (request.Volume != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Volume}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.Volume, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"volume\"");
                             } 
                             if (request.AudioFormat != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.AudioFormat}"),
+                                    content: new global::System.Net.Http.StringContent(request.AudioFormat ?? string.Empty),
                                     name: "\"audio_format\"");
                             } 
                             if (request.SamplingRate != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.SamplingRate}"),
+                                    content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.SamplingRate, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"sampling_rate\"");
                             } 
                             if (request.WebhookReceiver != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.WebhookReceiver}"),
+                                    content: new global::System.Net.Http.StringContent(request.WebhookReceiver ?? string.Empty),
                                     name: "\"webhook_receiver\"");
                             } 
                             if (request.UsersWebhookParameters != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.UsersWebhookParameters}"),
+                                    content: new global::System.Net.Http.StringContent(request.UsersWebhookParameters.ToString() ?? string.Empty),
                                     name: "\"users_webhook_parameters\"");
                             } 
                             if (request.SendWebhookData != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.SendWebhookData}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.SendWebhookData, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"send_webhook_data\"");
                             }
                             __httpRequest.Content = __httpRequestContent;

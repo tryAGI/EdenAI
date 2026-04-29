@@ -124,8 +124,8 @@ namespace EdenAI
                 PrepareResourcesResourcesAssetDestroyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    asset: asset,
-                    resource: resource);
+                    asset: asset!,
+                    resource: resource!);
 
                 return __httpRequest;
             }

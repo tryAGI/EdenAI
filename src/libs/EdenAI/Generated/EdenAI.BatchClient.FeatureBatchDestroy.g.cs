@@ -130,9 +130,9 @@ namespace EdenAI
                 PrepareFeatureBatchDestroyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feature: feature,
-                    name: name,
-                    subfeature: subfeature);
+                    feature: feature!,
+                    name: name!,
+                    subfeature: subfeature!);
 
                 return __httpRequest;
             }

@@ -133,8 +133,8 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2FilesDestroyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    fileId: fileId,
-                    projectId: projectId);
+                    fileId: fileId!,
+                    projectId: projectId!);
 
                 return __httpRequest;
             }

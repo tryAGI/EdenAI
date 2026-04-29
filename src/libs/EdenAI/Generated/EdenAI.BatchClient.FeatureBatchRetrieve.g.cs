@@ -162,13 +162,13 @@ namespace EdenAI
                 PrepareFeatureBatchRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feature: feature,
-                    name: name,
+                    feature: feature!,
+                    name: name!,
                     name2: name2,
                     page: page,
                     publicId: publicId,
                     status: status,
-                    subfeature: subfeature);
+                    subfeature: subfeature!);
 
                 return __httpRequest;
             }

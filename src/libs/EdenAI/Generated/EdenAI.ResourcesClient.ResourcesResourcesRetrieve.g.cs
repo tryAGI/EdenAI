@@ -124,7 +124,7 @@ namespace EdenAI
                 PrepareResourcesResourcesRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    resource: resource);
+                    resource: resource!);
 
                 return __httpRequest;
             }
