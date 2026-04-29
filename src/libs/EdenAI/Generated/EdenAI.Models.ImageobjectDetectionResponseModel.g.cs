@@ -17,14 +17,20 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Sentisight { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
         public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Clarifai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Sentisight { get; set; }
 
         /// <summary>
         /// 
@@ -39,12 +45,6 @@ namespace EdenAI
         public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Google { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Api4ai { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -54,28 +54,28 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="ImageobjectDetectionResponseModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
-        /// <param name="sentisight"></param>
+        /// <param name="api4ai"></param>
         /// <param name="clarifai"></param>
+        /// <param name="sentisight"></param>
         /// <param name="microsoft"></param>
         /// <param name="google"></param>
-        /// <param name="api4ai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageobjectDetectionResponseModel(
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? amazon,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? sentisight,
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? api4ai,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? clarifai,
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? sentisight,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? microsoft,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? google,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? api4ai)
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? google)
         {
             this.Amazon = amazon;
-            this.Sentisight = sentisight;
+            this.Api4ai = api4ai;
             this.Clarifai = clarifai;
+            this.Sentisight = sentisight;
             this.Microsoft = microsoft;
             this.Google = google;
-            this.Api4ai = api4ai;
         }
 
         /// <summary>
