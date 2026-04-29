@@ -11,12 +11,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alephalpha")]
-        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Alephalpha { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Openai { get; set; }
 
@@ -27,6 +21,12 @@ namespace EdenAI
         public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Google { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("alephalpha")]
+        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Alephalpha { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,20 +35,20 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagequestionAnswerResponseModel" /> class.
         /// </summary>
-        /// <param name="alephalpha"></param>
         /// <param name="openai"></param>
         /// <param name="google"></param>
+        /// <param name="alephalpha"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagequestionAnswerResponseModel(
-            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? alephalpha,
             global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? openai,
-            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? google)
+            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? google,
+            global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? alephalpha)
         {
-            this.Alephalpha = alephalpha;
             this.Openai = openai;
             this.Google = google;
+            this.Alephalpha = alephalpha;
         }
 
         /// <summary>
