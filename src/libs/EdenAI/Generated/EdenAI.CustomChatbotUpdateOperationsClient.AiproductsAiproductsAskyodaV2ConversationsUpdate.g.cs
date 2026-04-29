@@ -152,8 +152,8 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2ConversationsUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId,
-                    projectId: projectId,
+                    conversationId: conversationId!,
+                    projectId: projectId!,
                     request: request);
 
                 return __httpRequest;

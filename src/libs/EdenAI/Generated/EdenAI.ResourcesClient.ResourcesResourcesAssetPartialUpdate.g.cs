@@ -143,8 +143,8 @@ namespace EdenAI
                 PrepareResourcesResourcesAssetPartialUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    asset: asset,
-                    resource: resource,
+                    asset: asset!,
+                    resource: resource!,
                     request: request);
 
                 return __httpRequest;

@@ -139,8 +139,8 @@ namespace EdenAI
                 PrepareWorkflowWorkflowExecutionRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    executionId: executionId,
-                    workflowId: workflowId);
+                    executionId: executionId!,
+                    workflowId: workflowId!);
 
                 return __httpRequest;
             }

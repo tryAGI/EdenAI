@@ -138,8 +138,8 @@ namespace EdenAI
                 PreparePromptsPromptsHistoryRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    name: name);
+                    id: id!,
+                    name: name!);
 
                 return __httpRequest;
             }

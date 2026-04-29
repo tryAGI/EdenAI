@@ -211,9 +211,9 @@ namespace EdenAI
                 PrepareFeatureBatchCreateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feature: feature,
-                    name: name,
-                    subfeature: subfeature,
+                    feature: feature!,
+                    name: name!,
+                    subfeature: subfeature!,
                     request: request);
 
                 return __httpRequest;

@@ -174,13 +174,13 @@ namespace EdenAI
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     fileUrls: fileUrls,
-                    model: model,
-                    name: name,
+                    model: model!,
+                    name: name!,
                     @params: @params,
-                    projectId: projectId,
-                    promptName: promptName,
+                    projectId: projectId!,
+                    promptName: promptName!,
                     systemPrompt: systemPrompt,
-                    text: text);
+                    text: text!);
 
                 return __httpRequest;
             }

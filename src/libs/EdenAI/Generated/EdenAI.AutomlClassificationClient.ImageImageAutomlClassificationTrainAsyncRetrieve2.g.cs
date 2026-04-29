@@ -151,7 +151,7 @@ namespace EdenAI
                 PrepareImageImageAutomlClassificationTrainAsyncRetrieve2Request(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    publicId: publicId,
+                    publicId: publicId!,
                     responseAsDict: responseAsDict,
                     showBase64: showBase64,
                     showOriginalResponse: showOriginalResponse);

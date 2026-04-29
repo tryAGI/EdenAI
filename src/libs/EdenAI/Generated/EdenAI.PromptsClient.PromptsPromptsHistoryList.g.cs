@@ -147,7 +147,7 @@ namespace EdenAI
                 PreparePromptsPromptsHistoryListRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
+                    name: name!,
                     page: page,
                     pageSize: pageSize);
 

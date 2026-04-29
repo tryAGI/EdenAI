@@ -183,7 +183,7 @@ namespace EdenAI
                     httpRequestMessage: __httpRequest,
                     attributesAsList: attributesAsList,
                     fallbackProviders: fallbackProviders,
-                    providers: providers,
+                    providers: providers!,
                     responseAsDict: responseAsDict,
                     settings: settings,
                     showBase64: showBase64,

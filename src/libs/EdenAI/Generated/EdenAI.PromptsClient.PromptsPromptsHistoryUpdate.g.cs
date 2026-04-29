@@ -152,8 +152,8 @@ namespace EdenAI
                 PreparePromptsPromptsHistoryUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    name: name,
+                    id: id!,
+                    name: name!,
                     request: request);
 
                 return __httpRequest;

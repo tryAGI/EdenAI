@@ -143,7 +143,7 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2AddImageCreateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     request: request);
 
                 return __httpRequest;

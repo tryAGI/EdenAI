@@ -128,7 +128,7 @@ namespace EdenAI
                 PreparePromptsPromptsDestroyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name);
+                    name: name!);
 
                 return __httpRequest;
             }

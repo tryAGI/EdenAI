@@ -147,7 +147,7 @@ namespace EdenAI
                 PreparePromptsPromptsUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
+                    name: name!,
                     request: request);
 
                 return __httpRequest;

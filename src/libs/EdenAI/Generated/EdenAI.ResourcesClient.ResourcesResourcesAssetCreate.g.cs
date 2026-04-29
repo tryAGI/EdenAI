@@ -138,7 +138,7 @@ namespace EdenAI
                 PrepareResourcesResourcesAssetCreateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    resource: resource,
+                    resource: resource!,
                     request: request);
 
                 return __httpRequest;

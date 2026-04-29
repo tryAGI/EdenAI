@@ -119,7 +119,7 @@ namespace EdenAI
                 PrepareResourcesResourcesDestroyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    resource: resource);
+                    resource: resource!);
 
                 return __httpRequest;
             }

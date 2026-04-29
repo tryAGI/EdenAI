@@ -135,7 +135,7 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2DeleteAllChunksDestroyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId);
+                    projectId: projectId!);
 
                 return __httpRequest;
             }

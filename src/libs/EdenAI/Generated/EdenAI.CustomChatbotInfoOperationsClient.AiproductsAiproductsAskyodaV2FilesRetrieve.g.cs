@@ -138,8 +138,8 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2FilesRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    fileId: fileId,
-                    projectId: projectId);
+                    fileId: fileId!,
+                    projectId: projectId!);
 
                 return __httpRequest;
             }
