@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("iointelligence")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Iointelligence { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ai21labs")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Ai21labs { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("iointelligence")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Iointelligence { get; set; }
 
         /// <summary>
         /// 
@@ -29,14 +29,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Google { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ai21labs")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Ai21labs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Mistral { get; set; }
 
         /// <summary>
         /// 
@@ -47,8 +41,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Mistral { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Openai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,32 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextembeddingsResponseModel" /> class.
         /// </summary>
-        /// <param name="iointelligence"></param>
-        /// <param name="openai"></param>
-        /// <param name="jina"></param>
-        /// <param name="google"></param>
         /// <param name="ai21labs"></param>
-        /// <param name="cohere"></param>
+        /// <param name="iointelligence"></param>
+        /// <param name="jina"></param>
         /// <param name="mistral"></param>
+        /// <param name="cohere"></param>
+        /// <param name="google"></param>
+        /// <param name="openai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextembeddingsResponseModel(
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? iointelligence,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? openai,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? jina,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? google,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? ai21labs,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? iointelligence,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? jina,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? mistral,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? cohere,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? mistral)
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? google,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? openai)
         {
-            this.Iointelligence = iointelligence;
-            this.Openai = openai;
-            this.Jina = jina;
-            this.Google = google;
             this.Ai21labs = ai21labs;
-            this.Cohere = cohere;
+            this.Iointelligence = iointelligence;
+            this.Jina = jina;
             this.Mistral = mistral;
+            this.Cohere = cohere;
+            this.Google = google;
+            this.Openai = openai;
         }
 
         /// <summary>
