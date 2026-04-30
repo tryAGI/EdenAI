@@ -11,20 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
         public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Mistral { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
@@ -39,6 +33,12 @@ namespace EdenAI
         public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Google { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Amazon { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,26 +47,26 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrocrAsyncModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
-        /// <param name="mistral"></param>
         /// <param name="oneai"></param>
+        /// <param name="mistral"></param>
         /// <param name="microsoft"></param>
         /// <param name="google"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrAsyncModel(
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? mistral,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? oneai,
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? mistral,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? microsoft,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google)
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google,
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon)
         {
-            this.Amazon = amazon;
-            this.Mistral = mistral;
             this.Oneai = oneai;
+            this.Mistral = mistral;
             this.Microsoft = microsoft;
             this.Google = google;
+            this.Amazon = amazon;
         }
 
         /// <summary>
