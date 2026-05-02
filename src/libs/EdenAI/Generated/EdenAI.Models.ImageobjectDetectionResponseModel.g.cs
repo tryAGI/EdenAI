@@ -17,26 +17,26 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Google { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Api4ai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
         public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Clarifai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// 
@@ -54,27 +54,27 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="ImageobjectDetectionResponseModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
-        /// <param name="google"></param>
-        /// <param name="api4ai"></param>
         /// <param name="clarifai"></param>
+        /// <param name="google"></param>
         /// <param name="microsoft"></param>
+        /// <param name="api4ai"></param>
         /// <param name="sentisight"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageobjectDetectionResponseModel(
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? amazon,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? google,
-            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? api4ai,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? clarifai,
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? google,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? microsoft,
+            global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? api4ai,
             global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? sentisight)
         {
             this.Amazon = amazon;
-            this.Google = google;
-            this.Api4ai = api4ai;
             this.Clarifai = clarifai;
+            this.Google = google;
             this.Microsoft = microsoft;
+            this.Api4ai = api4ai;
             this.Sentisight = sentisight;
         }
 
