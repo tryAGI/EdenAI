@@ -11,6 +11,12 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Xai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modernmt")]
         public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Modernmt { get; set; }
 
@@ -23,14 +29,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Google { get; set; }
 
         /// <summary>
         /// 
@@ -41,14 +41,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,32 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TranslationlanguageDetectionResponseModel" /> class.
         /// </summary>
+        /// <param name="xai"></param>
         /// <param name="modernmt"></param>
         /// <param name="microsoft"></param>
-        /// <param name="amazon"></param>
-        /// <param name="xai"></param>
-        /// <param name="oneai"></param>
         /// <param name="google"></param>
+        /// <param name="oneai"></param>
         /// <param name="openai"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TranslationlanguageDetectionResponseModel(
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? xai,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? modernmt,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? microsoft,
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? amazon,
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? xai,
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? oneai,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? google,
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? openai)
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? oneai,
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? openai,
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? amazon)
         {
+            this.Xai = xai;
             this.Modernmt = modernmt;
             this.Microsoft = microsoft;
-            this.Amazon = amazon;
-            this.Xai = xai;
-            this.Oneai = oneai;
             this.Google = google;
+            this.Oneai = oneai;
             this.Openai = openai;
+            this.Amazon = amazon;
         }
 
         /// <summary>
