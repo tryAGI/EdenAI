@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImageembeddingsEmbeddingsDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("alephalpha")]
+        public global::EdenAI.ImageembeddingsEmbeddingsDataClass? Alephalpha { get; set; }
 
         /// <summary>
         /// 
@@ -23,8 +23,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alephalpha")]
-        public global::EdenAI.ImageembeddingsEmbeddingsDataClass? Alephalpha { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImageembeddingsEmbeddingsDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +35,20 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageembeddingsResponseModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
-        /// <param name="google"></param>
         /// <param name="alephalpha"></param>
+        /// <param name="google"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageembeddingsResponseModel(
-            global::EdenAI.ImageembeddingsEmbeddingsDataClass? amazon,
+            global::EdenAI.ImageembeddingsEmbeddingsDataClass? alephalpha,
             global::EdenAI.ImageembeddingsEmbeddingsDataClass? google,
-            global::EdenAI.ImageembeddingsEmbeddingsDataClass? alephalpha)
+            global::EdenAI.ImageembeddingsEmbeddingsDataClass? amazon)
         {
-            this.Amazon = amazon;
-            this.Google = google;
             this.Alephalpha = alephalpha;
+            this.Google = google;
+            this.Amazon = amazon;
         }
 
         /// <summary>
