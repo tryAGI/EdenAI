@@ -281,6 +281,149 @@ namespace EdenAI
         /// |**Portuguese (Portugal)**|`pt-pt`|<br/>
         /// &lt;/details&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.TextspellCheckResponseModel>> TextTextSpellCheckCreateAsResponseAsync(
+
+            global::EdenAI.TextspellCheckSpellCheckRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Spell Check<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**prowritingaid**|`v2`|10.0 (per 1000 request)|1 request<br/>
+        /// |**sapling**|`v1`|2.0 (per 1000000 char)|1 char<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Afrikaans**|`af`|<br/>
+        /// |**Albanian**|`sq`|<br/>
+        /// |**Amharic**|`am`|<br/>
+        /// |**Arabic**|`ar`|<br/>
+        /// |**Armenian**|`hy`|<br/>
+        /// |**Azerbaijani**|`az`|<br/>
+        /// |**Basque**|`eu`|<br/>
+        /// |**Belarusian**|`be`|<br/>
+        /// |**Bengali**|`bn`|<br/>
+        /// |**Bosnian**|`bs`|<br/>
+        /// |**Bulgarian**|`bg`|<br/>
+        /// |**Burmese**|`my`|<br/>
+        /// |**Catalan**|`ca`|<br/>
+        /// |**Cebuano**|`ceb`|<br/>
+        /// |**Chinese**|`zh`|<br/>
+        /// |**Corsican**|`co`|<br/>
+        /// |**Croatian**|`hr`|<br/>
+        /// |**Czech**|`cs`|<br/>
+        /// |**Danish**|`da`|<br/>
+        /// |**Dutch**|`nl`|<br/>
+        /// |**English**|`en`|<br/>
+        /// |**Esperanto**|`eo`|<br/>
+        /// |**Estonian**|`et`|<br/>
+        /// |**Finnish**|`fi`|<br/>
+        /// |**French**|`fr`|<br/>
+        /// |**Galician**|`gl`|<br/>
+        /// |**Georgian**|`ka`|<br/>
+        /// |**German**|`de`|<br/>
+        /// |**Gujarati**|`gu`|<br/>
+        /// |**Haitian**|`ht`|<br/>
+        /// |**Hausa**|`ha`|<br/>
+        /// |**Hawaiian**|`haw`|<br/>
+        /// |**Hebrew**|`he`|<br/>
+        /// |**Hindi**|`hi`|<br/>
+        /// |**Hmong**|`hmn`|<br/>
+        /// |**Hungarian**|`hu`|<br/>
+        /// |**Icelandic**|`is`|<br/>
+        /// |**Igbo**|`ig`|<br/>
+        /// |**Indonesian**|`id`|<br/>
+        /// |**Irish**|`ga`|<br/>
+        /// |**Italian**|`it`|<br/>
+        /// |**Japanese**|`ja`|<br/>
+        /// |**Javanese**|`jv`|<br/>
+        /// |**Kannada**|`kn`|<br/>
+        /// |**Kazakh**|`kk`|<br/>
+        /// |**Khmer**|`km`|<br/>
+        /// |**Kinyarwanda**|`rw`|<br/>
+        /// |**Kirghiz**|`ky`|<br/>
+        /// |**Korean**|`ko`|<br/>
+        /// |**Kurdish**|`ku`|<br/>
+        /// |**Lao**|`lo`|<br/>
+        /// |**Latin**|`la`|<br/>
+        /// |**Latvian**|`lv`|<br/>
+        /// |**Lithuanian**|`lt`|<br/>
+        /// |**Luxembourgish**|`lb`|<br/>
+        /// |**Macedonian**|`mk`|<br/>
+        /// |**Malagasy**|`mg`|<br/>
+        /// |**Malay (macrolanguage)**|`ms`|<br/>
+        /// |**Malayalam**|`ml`|<br/>
+        /// |**Maltese**|`mt`|<br/>
+        /// |**Maori**|`mi`|<br/>
+        /// |**Marathi**|`mr`|<br/>
+        /// |**Modern Greek (1453-)**|`el`|<br/>
+        /// |**Mongolian**|`mn`|<br/>
+        /// |**Nepali (macrolanguage)**|`ne`|<br/>
+        /// |**Norwegian**|`no`|<br/>
+        /// |**Norwegian Bokmål**|`nb`|<br/>
+        /// |**Nyanja**|`ny`|<br/>
+        /// |**Oriya (macrolanguage)**|`or`|<br/>
+        /// |**Panjabi**|`pa`|<br/>
+        /// |**Persian**|`fa`|<br/>
+        /// |**Polish**|`pl`|<br/>
+        /// |**Portuguese**|`pt`|<br/>
+        /// |**Pushto**|`ps`|<br/>
+        /// |**Romanian**|`ro`|<br/>
+        /// |**Russian**|`ru`|<br/>
+        /// |**Samoan**|`sm`|<br/>
+        /// |**Scottish Gaelic**|`gd`|<br/>
+        /// |**Serbian**|`sr`|<br/>
+        /// |**Shona**|`sn`|<br/>
+        /// |**Sindhi**|`sd`|<br/>
+        /// |**Sinhala**|`si`|<br/>
+        /// |**Slovak**|`sk`|<br/>
+        /// |**Slovenian**|`sl`|<br/>
+        /// |**Somali**|`so`|<br/>
+        /// |**Southern Sotho**|`st`|<br/>
+        /// |**Spanish**|`es`|<br/>
+        /// |**Sundanese**|`su`|<br/>
+        /// |**Swahili (macrolanguage)**|`sw`|<br/>
+        /// |**Swedish**|`sv`|<br/>
+        /// |**Tagalog**|`tl`|<br/>
+        /// |**Tajik**|`tg`|<br/>
+        /// |**Tamil**|`ta`|<br/>
+        /// |**Tatar**|`tt`|<br/>
+        /// |**Telugu**|`te`|<br/>
+        /// |**Thai**|`th`|<br/>
+        /// |**Turkish**|`tr`|<br/>
+        /// |**Turkmen**|`tk`|<br/>
+        /// |**Uighur**|`ug`|<br/>
+        /// |**Ukrainian**|`uk`|<br/>
+        /// |**Urdu**|`ur`|<br/>
+        /// |**Uzbek**|`uz`|<br/>
+        /// |**Vietnamese**|`vi`|<br/>
+        /// |**Welsh**|`cy`|<br/>
+        /// |**Western Frisian**|`fy`|<br/>
+        /// |**Xhosa**|`xh`|<br/>
+        /// |**Yiddish**|`yi`|<br/>
+        /// |**Yoruba**|`yo`|<br/>
+        /// |**Zulu**|`zu`|<br/>
+        /// |**jp**|`jp`|<br/>
+        /// &lt;/details&gt;&lt;details&gt;&lt;summary&gt;Supported Detailed Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Auto detection**|`auto-detect`|<br/>
+        /// |**Chinese (China)**|`zh-CN`|<br/>
+        /// |**Chinese (Simplified)**|`zh-hans`|<br/>
+        /// |**Chinese (Taiwan)**|`zh-TW`|<br/>
+        /// |**Chinese (Traditional)**|`zh-hant`|<br/>
+        /// |**English (United Kingdom)**|`en-gb`|<br/>
+        /// |**Portuguese (Brazil)**|`pt-br`|<br/>
+        /// |**Portuguese (Portugal)**|`pt-pt`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
         ///                      <br/>

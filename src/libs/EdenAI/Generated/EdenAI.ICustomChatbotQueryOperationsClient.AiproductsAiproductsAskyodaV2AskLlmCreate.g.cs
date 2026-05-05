@@ -28,6 +28,23 @@ namespace EdenAI
         /// ranked by their proximity to your query.
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.YodaQueryResponse>> AiproductsAiproductsAskyodaV2AskLlmCreateAsResponseAsync(
+            global::System.Guid projectId,
+
+            global::EdenAI.AskLLMRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Ask LLM<br/>
+        /// Retrieve a list of search query responses and compare them to your<br/>
+        /// input. Provide a query, and in return, receive scores for the most relevant items from your project,<br/>
+        /// ranked by their proximity to your query.
+        /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="query">
         /// Enter your question or query about the data. The large language model (LLM) will provide a response.
         /// </param>

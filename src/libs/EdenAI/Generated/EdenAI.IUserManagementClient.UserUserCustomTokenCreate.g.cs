@@ -19,6 +19,18 @@ namespace EdenAI
         /// <summary>
         /// Create new Token
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.CustomTokensCreate>> UserUserCustomTokenCreateAsResponseAsync(
+
+            global::EdenAI.CustomTokensCreateRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create new Token
+        /// </summary>
         /// <param name="name">
         /// The token name
         /// </param>

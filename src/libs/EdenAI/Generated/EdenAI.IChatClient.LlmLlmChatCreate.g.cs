@@ -783,6 +783,400 @@ namespace EdenAI
         /// |**cerebras**|`gpt-oss-120b`|<br/>
         /// &lt;/details&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LlmchatResponseModel>> LlmLlmChatCreateAsResponseAsync(
+
+            global::EdenAI.LlmchatllmchatChatRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Chat<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|**amazon.nova-lite-v1:0**|`llmengine (v2)`|0.24 (per 1000000 token)|1 token<br/>
+        /// |**amazon**|**amazon.nova-micro-v1:0**|`llmengine (v2)`|0.14 (per 1000000 token)|1 token<br/>
+        /// |**amazon**|**amazon.nova-pro-v1:0**|`llmengine (v2)`|3.2 (per 1000000 token)|1 token<br/>
+        /// |**anthropic**|**claude-opus-4-6**|`v1`|5e-06 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-sonnet-4-20250514**|`v1`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-opus-4-1-20250805**|`v1`|7.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-opus-4-5**|`v1`|2.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-3-7-sonnet-latest**|`v1`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-3-5-haiku-20241022**|`v1`|4e-06 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-3-5-haiku-latest**|`v1`|5e-06 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-haiku-4-5-20251001**|`v1`|5e-06 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-haiku-4-5**|`v1`|5e-06 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-3-7-sonnet-20250219**|`v1`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-3-haiku-20240307**|`v1`|1.25e-06 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-4-opus-20250514**|`v1`|7.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-4-sonnet-20250514**|`v1`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-sonnet-4-5**|`v1`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-sonnet-4-5-20250929**|`v1`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-opus-4-1**|`v1`|7.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-opus-4-20250514**|`v1`|7.5e-05 (per 1 token)|1 token<br/>
+        /// |**anthropic**|**claude-opus-4-5-20251101**|`v1`|2.5e-05 (per 1 token)|1 token<br/>
+        /// |**cohere**|**command-r7b-12-2024**|`llmengine (v2)`|0.15 (per 1000000 token)|1 token<br/>
+        /// |**cohere**|**command-r-08-2024**|`llmengine (v2)`|0.6 (per 1000000 token)|1 token<br/>
+        /// |**deepseek**|**deepseek-chat**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**deepseek**|**deepseek-reasoner**|`llmengine (v2)`|2.19e-06 (per 1 token)|1 token<br/>
+        /// |**deepseek**|**deepseek-coder**|`llmengine (v2)`|2.8e-07 (per 1 token)|1 token<br/>
+        /// |**meta**|**meta.llama3-1-405b-instruct-v1:0**|`llmengine (v2)`|2.4 (per 1000000 token)|1 token<br/>
+        /// |**meta**|**meta.llama3-1-70b-instruct-v1:0**|`llmengine (v2)`|0.72 (per 1000000 token)|1 token<br/>
+        /// |**meta**|**meta.llama3-1-8b-instruct-v1:0**|`llmengine (v2)`|0.22 (per 1000000 token)|1 token<br/>
+        /// |**mistral**|**magistral-medium-2506**|`llmengine (v2)`|5e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**magistral-small-2506**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-medium-latest**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**pixtral-large-latest**|`llmengine (v2)`|6e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-small-latest**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**codestral-latest**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-large-latest**|`llmengine (v2)`|6e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**codestral-2405**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**codestral-2508**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**devstral-medium-2507**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**devstral-small-2505**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**devstral-small-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**labs-devstral-small-2512**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**devstral-2512**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**magistral-medium-2509**|`llmengine (v2)`|5e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**magistral-medium-latest**|`llmengine (v2)`|5e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**magistral-small-latest**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-large-2402**|`llmengine (v2)`|1.2e-05 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-large-2407**|`llmengine (v2)`|9e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-large-2411**|`llmengine (v2)`|6e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-medium**|`llmengine (v2)`|8.1e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-medium-2312**|`llmengine (v2)`|8.1e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-medium-2505**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-small**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**mistral-tiny**|`llmengine (v2)`|2.5e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**open-mistral-7b**|`llmengine (v2)`|2.5e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**open-mistral-nemo**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**open-mistral-nemo-2407**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**open-mixtral-8x22b**|`llmengine (v2)`|6e-06 (per 1 token)|1 token<br/>
+        /// |**mistral**|**open-mixtral-8x7b**|`llmengine (v2)`|7e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**pixtral-12b-2409**|`llmengine (v2)`|1.5e-07 (per 1 token)|1 token<br/>
+        /// |**mistral**|**pixtral-large-2411**|`llmengine (v2)`|6e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**o4-mini**|`llmengine (v2)`|4.4e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-mini-2025-04-14**|`llmengine (v2)`|1.6e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-nano-2025-04-14**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5.1**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5-mini**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5-nano**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5-chat-latest**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5-pro**|`llmengine (v2)`|100.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**o4-mini-2025-04-16**|`llmengine (v2)`|4.4e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**o3**|`llmengine (v2)`|8e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4**|`llmengine (v2)`|6e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-mini**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-2024-05-13**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4-turbo**|`llmengine (v2)`|3e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**o1-2024-12-17**|`llmengine (v2)`|6e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**o1**|`llmengine (v2)`|6e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**o3-mini**|`llmengine (v2)`|4.4e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**o3-mini-2025-01-31**|`llmengine (v2)`|4.4e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-2024-08-06**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-mini-2024-07-18**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-3.5-turbo**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5.2**|`llmengine (v2)`|1.4e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**chatgpt-4o-latest**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-3.5-turbo-0125**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-3.5-turbo-1106**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-3.5-turbo-16k**|`llmengine (v2)`|4e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4-0125-preview**|`llmengine (v2)`|3e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4-0314**|`llmengine (v2)`|6e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4-0613**|`llmengine (v2)`|6e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4-1106-preview**|`llmengine (v2)`|3e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4-turbo-2024-04-09**|`llmengine (v2)`|3e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4-turbo-preview**|`llmengine (v2)`|3e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1**|`llmengine (v2)`|8e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-2025-04-14**|`llmengine (v2)`|8e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-mini**|`llmengine (v2)`|1.6e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-nano**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-2024-11-20**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-mini-search-preview**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-mini-search-preview-2025-03-11**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-search-preview**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-search-preview-2025-03-11**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5.1-2025-11-13**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5.1-chat-latest**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5.2-2025-12-11**|`llmengine (v2)`|1.4e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5.2-chat-latest**|`llmengine (v2)`|1.4e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5-2025-08-07**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5-mini-2025-08-07**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**openai**|**gpt-5-nano-2025-08-07**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**openai**|**o3-2025-04-16**|`llmengine (v2)`|8e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen2.5-72B-Instruct-Turbo**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo**|`llmengine (v2)`|1.8e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen2.5-72B-Instruct-Turbo**|`llmengine (v2)`|1.2 (per 1000000 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Llama-3.3-70B-Instruct-Turbo**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Llama-3.3-70B-Instruct-Turbo**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**mistralai/Mixtral-8x7B-Instruct-v0.1**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**openai/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen3-235B-A22B-fp8-tput**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**deepseek-ai/DeepSeek-R1**|`llmengine (v2)`|7e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**deepseek-ai/DeepSeek-R1-0528-tput**|`llmengine (v2)`|2.19e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**deepseek-ai/DeepSeek-V3**|`llmengine (v2)`|1.25e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**deepseek-ai/DeepSeek-V3.1**|`llmengine (v2)`|1.7e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8**|`llmengine (v2)`|8.5e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Llama-4-Scout-17B-16E-Instruct**|`llmengine (v2)`|5.9e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo**|`llmengine (v2)`|3.5e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo**|`llmengine (v2)`|1.8e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**mistralai/Mixtral-8x7B-Instruct-v0.1**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**moonshotai/Kimi-K2-Instruct**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**openai/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**zai-org/GLM-4.5-Air-FP8**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**zai-org/GLM-4.6**|`llmengine (v2)`|2.2e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**moonshotai/Kimi-K2-Instruct-0905**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen3-Next-80B-A3B-Instruct**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen3-Next-80B-A3B-Thinking**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**Qwen/Qwen3-235B-A22B-Instruct-2507-tput**|`llmengine (v2)`|6e-06 (per 1 token)|1 token<br/>
+        /// |**together_ai**|**meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo**|`llmengine (v2)`|3.5e-06 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision-1212**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-0709**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-0709**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision-1212**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision-latest**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision-latest**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-beta**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-fast-beta**|`llmengine (v2)`|2.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-fast-latest**|`llmengine (v2)`|2.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-latest**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-mini**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-mini-beta**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-mini-fast**|`llmengine (v2)`|4e-06 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-mini-fast-beta**|`llmengine (v2)`|4e-06 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-mini-fast-latest**|`llmengine (v2)`|4e-06 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-3-mini-latest**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-fast-reasoning**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-fast-non-reasoning**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-latest**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-1-fast**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-1-fast-reasoning**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-1-fast-reasoning-latest**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-1-fast-non-reasoning**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-4-1-fast-non-reasoning-latest**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-code-fast**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-code-fast-1**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**xai**|**grok-code-fast-1-0825**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-flash**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-3-pro-preview**|`llmengine (v2)`|1.2e-05 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-flash-image-preview**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-3.1-pro-preview**|`llmengine (v2)`|1.2e-05 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-flash-lite**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-3-pro-image-preview**|`llmengine (v2)`|12.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-3-flash-preview**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.0-flash-lite**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.0-flash**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.0-flash-001**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-flash-lite-preview-09-2025**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-flash-preview-09-2025**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-flash-latest**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-flash-lite-latest**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-pro**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**google**|**gemma-3-27b-it**|`llmengine (v2)`|0.0 (per 1 token)|1 token<br/>
+        /// |**groq**|**llama-3.1-8b-instant**|`v1`|8e-08 (per 1 token)|1 token<br/>
+        /// |**groq**|**openai/gpt-oss-120b**|`v1`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**groq**|**llama-3.3-70b-versatile**|`v1`|7.9e-07 (per 1 token)|1 token<br/>
+        /// |**groq**|**llama-3.3-70b-versatile**|`v1`|7.9e-07 (per 1 token)|1 token<br/>
+        /// |**groq**|**llama-3.1-8b-instant**|`v1`|8e-08 (per 1 token)|1 token<br/>
+        /// |**groq**|**meta-llama/llama-guard-4-12b**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**groq**|**meta-llama/llama-4-maverick-17b-128e-instruct**|`v1`|6e-07 (per 1 token)|1 token<br/>
+        /// |**groq**|**meta-llama/llama-4-scout-17b-16e-instruct**|`v1`|3.4e-07 (per 1 token)|1 token<br/>
+        /// |**groq**|**moonshotai/kimi-k2-instruct-0905**|`v1`|3e-06 (per 1 token)|1 token<br/>
+        /// |**groq**|**openai/gpt-oss-20b**|`v1`|5e-07 (per 1 token)|1 token<br/>
+        /// |**groq**|**qwen/qwen3-32b**|`v1`|5.9e-07 (per 1 token)|1 token<br/>
+        /// |**microsoft**|**gpt-4o**|`Azure AI Foundry`|5.0 (per 1000000 token)|1 token<br/>
+        /// |**microsoft**|**o3-mini**|`Azure AI Foundry`|4.4 (per 1000000 token)|1 token<br/>
+        /// |**microsoft**|**o1-mini**|`Azure AI Foundry`|12.0 (per 1000000 token)|1 token<br/>
+        /// |**microsoft**|**gpt-4o-mini**|`Azure AI Foundry`|0.66 (per 1000000 token)|1 token<br/>
+        /// |**microsoft**|**gpt-4**|`Azure AI Foundry`|60.0 (per 1000000 token)|1 token<br/>
+        /// |**microsoft**|**gpt-35-turbo-16k**|`Azure AI Foundry`|4.0 (per 1000000 token)|1 token<br/>
+        /// |**microsoft**|**gpt-35-turbo**|`Azure AI Foundry`|1.5 (per 1000000 token)|1 token<br/>
+        /// |**minimax**|**minimax-m1**|`v1`|2.2 (per 1000000 token)|1 token<br/>
+        /// |**minimax**|**minimax-text-01**|`v1`|1.1 (per 1000000 token)|1 token<br/>
+        /// |**minimax**|**MiniMax-M2.1**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**minimax**|**MiniMax-M2.1-lightning**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**minimax**|**MiniMax-M2**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**bytedance**|**seed-1-6-250915**|`llmengine (v2)`|2.0 (per 1000000 token)|1 token<br/>
+        /// |**perplexityai**|**sonar**|`llmengine (v2)`|1.0 (per 1000000 token)|1 token<br/>
+        /// |**perplexityai**|**sonar**|`llmengine (v2)`|1e-06 (per 1 token)|1 token<br/>
+        /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**perplexityai**|**sonar-deep-research**|`llmengine (v2)`|8e-06 (per 1 token)|1 token<br/>
+        /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**perplexityai**|**sonar-reasoning-pro**|`llmengine (v2)`|8e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Gryphe/MythoMax-L2-13b**|`v1`|9e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**NousResearch/Hermes-3-Llama-3.1-405B**|`v1`|1e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**NousResearch/Hermes-3-Llama-3.1-70B**|`v1`|3e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/QwQ-32B**|`v1`|4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen2.5-72B-Instruct**|`v1`|3.9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen2.5-7B-Instruct**|`v1`|1e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen2.5-VL-32B-Instruct**|`v1`|6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-14B**|`v1`|2.4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-235B-A22B**|`v1`|5.4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-235B-A22B-Instruct-2507**|`v1`|6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`v1`|2.9e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-30B-A3B**|`v1`|2.9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-32B**|`v1`|2.8e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-Coder-480B-A35B-Instruct**|`v1`|1.6e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Qwen/Qwen3-Next-80B-A3B-Instruct**|`v1`|1.4e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Sao10K/L3-8B-Lunaris-v1-Turbo**|`v1`|5e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Sao10K/L3.1-70B-Euryale-v2.2**|`v1`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Sao10K/L3.3-70B-Euryale-v2.3**|`v1`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**anthropic/claude-3-7-sonnet-latest**|`v1`|1.65e-05 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**anthropic/claude-4-opus**|`v1`|8.25e-05 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**anthropic/claude-4-sonnet**|`v1`|1.65e-05 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-R1**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**nvidia/Llama-3.3-Nemotron-Super-49B-v1.5**|`v1`|4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-R1-0528**|`v1`|2.15e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-R1-Distill-Llama-70B**|`v1`|6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-R1-Distill-Qwen-32B**|`v1`|2.7e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-R1-Turbo**|`v1`|3e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-V3**|`v1`|8.9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-V3-0324**|`v1`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-V3.1**|`v1`|1e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-V3.1-Terminus**|`v1`|1e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**google/gemini-2.0-flash-001**|`v1`|4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**google/gemini-2.5-flash**|`v1`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**google/gemini-2.5-pro**|`v1`|1e-05 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**google/gemma-3-12b-it**|`v1`|1e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**google/gemma-3-27b-it**|`v1`|1.6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**google/gemma-3-4b-it**|`v1`|8e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-3.2-11B-Vision-Instruct**|`v1`|4.9e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-3.2-3B-Instruct**|`v1`|2e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-3.3-70B-Instruct**|`v1`|4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-3.3-70B-Instruct-Turbo**|`v1`|3.9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8**|`v1`|6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-4-Scout-17B-16E-Instruct**|`v1`|3e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-Guard-3-8B**|`v1`|5.5e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-Guard-4-12B**|`v1`|1.8e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3-8B-Instruct**|`v1`|6e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3.1-70B-Instruct**|`v1`|4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo**|`v1`|2.8e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3.1-8B-Instruct**|`v1`|5e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo**|`v1`|3e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**microsoft/WizardLM-2-8x22B**|`v1`|4.8e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**microsoft/phi-4**|`v1`|1.4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**mistralai/Mistral-Nemo-Instruct-2407**|`v1`|4e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**mistralai/Mistral-Small-24B-Instruct-2501**|`v1`|8e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**mistralai/Mistral-Small-3.2-24B-Instruct-2506**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**mistralai/Mixtral-8x7B-Instruct-v0.1**|`v1`|4e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**moonshotai/Kimi-K2-Instruct**|`v1`|2e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**moonshotai/Kimi-K2-Instruct-0905**|`v1`|2e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**nvidia/Llama-3.1-Nemotron-70B-Instruct**|`v1`|6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**nvidia/NVIDIA-Nemotron-Nano-9B-v2**|`v1`|1.6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**openai/gpt-oss-120b**|`v1`|4.5e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**openai/gpt-oss-20b**|`v1`|1.5e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**zai-org/GLM-4.5**|`v1`|1.6e-06 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**lizpreciatior/lzlv_70b_fp16_hf**|`v1`|9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Gryphe/MythoMax-L2-13b**|`v1`|2.2e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**mistralai/Mistral-7B-Instruct-v0.1**|`v1`|1.3e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-2-70b-chat-hf**|`v1`|9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**cognitivecomputations/dolphin-2.6-mixtral-8x7b**|`v1`|2.7e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**Phind/Phind-CodeLlama-34B-v2**|`v1`|6e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**mistralai/Mixtral-8x7B-Instruct-v0.1**|`v1`|2.7e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Llama-2-13b-chat-hf**|`v1`|2.2e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3-8B-Instruct**|`v1`|8e-08 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3-70B-Instruct**|`v1`|7.9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**meta-llama/Meta-Llama-3.1-405B-Instruct**|`v1`|9e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**openchat/openchat_3.5**|`v1`|1.3e-07 (per 1 token)|1 token<br/>
+        /// |**deepinfra**|**deepseek-ai/DeepSeek-R1-0528-Turbo**|`v1`|3e-06 (per 1 token)|1 token<br/>
+        /// |**cerebras**|**llama3.1-8b**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
+        /// |**cerebras**|**gpt-oss-120b**|`llmengine (v2)`|6.9e-07 (per 1 token)|1 token<br/>
+        /// |**cloudflare**|**@cf/meta/llama-2-7b-chat-fp16**|`llmengine (v2)`|1.923e-06 (per 1 token)|1 token<br/>
+        /// |**cloudflare**|**@cf/meta/llama-2-7b-chat-int8**|`llmengine (v2)`|1.923e-06 (per 1 token)|1 token<br/>
+        /// |**cloudflare**|**@cf/mistral/mistral-7b-instruct-v0.1**|`llmengine (v2)`|1.923e-06 (per 1 token)|1 token<br/>
+        /// |**cloudflare**|**@hf/thebloke/codellama-7b-instruct-awq**|`llmengine (v2)`|1.923e-06 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-claude-3-7-sonnet**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-claude-haiku-4-5**|`llmengine (v2)`|5e-06 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-claude-opus-4-1**|`llmengine (v2)`|7.5e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-claude-opus-4-5**|`llmengine (v2)`|2.5e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-claude-sonnet-4**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-claude-sonnet-4-5**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gemini-2-5-flash**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gemini-2-5-pro**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gemma-3-12b**|`llmengine (v2)`|5e-07 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gpt-5**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gpt-5-1**|`llmengine (v2)`|1e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gpt-5-mini**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gpt-5-nano**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-gpt-oss-20b**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-llama-4-maverick**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-meta-llama-3-1-405b-instruct**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-meta-llama-3-1-8b-instruct**|`llmengine (v2)`|4.5e-07 (per 1 token)|1 token<br/>
+        /// |**databricks**|**databricks-meta-llama-3-3-70b-instruct**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen2p5-vl-32b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-235b-a22b**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-235b-a22b-instruct-2507**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-235b-a22b-thinking-2507**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-8b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-vl-235b-a22b-instruct**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-vl-235b-a22b-thinking**|`llmengine (v2)`|8.8e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-vl-30b-a3b-instruct**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-vl-30b-a3b-thinking**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/deepseek-r1-0528**|`llmengine (v2)`|8e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/deepseek-v3-0324**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/deepseek-v3p1**|`llmengine (v2)`|1.68e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/deepseek-v3p1-terminus**|`llmengine (v2)`|1.68e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/deepseek-v3p2**|`llmengine (v2)`|1.68e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/glm-4p6**|`llmengine (v2)`|2.19e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/kimi-k2-instruct-0905**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/kimi-k2-thinking**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/qwen3-coder-480b-a35b-instruct**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/llama-v3p3-70b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/minimax-m2**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**fireworks_ai**|**accounts/fireworks/models/mixtral-8x22b-instruct**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**DeepSeek-R1-Distill-Llama-70B**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Llama-3.1-8B-Instruct**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Meta-Llama-3_3-70B-Instruct**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Mistral-7B-Instruct-v0.3**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Mistral-Nemo-Instruct-2407**|`llmengine (v2)`|1.3e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Mistral-Small-3.2-24B-Instruct-2506**|`llmengine (v2)`|2.8e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Mixtral-8x7B-Instruct-v0.1**|`llmengine (v2)`|6.3e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Qwen2.5-Coder-32B-Instruct**|`llmengine (v2)`|8.7e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Qwen2.5-VL-72B-Instruct**|`llmengine (v2)`|9.1e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**Qwen3-32B**|`llmengine (v2)`|2.3e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**gpt-oss-120b**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**ovhcloud**|**gpt-oss-20b**|`llmengine (v2)`|1.5e-07 (per 1 token)|1 token<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;a href='https://old-app.edenai.run/v2/models?technology=llm-chat' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**amazon**|`amazon.nova-pro-v1:0`|<br/>
+        /// |**anthropic**|`claude-3-7-sonnet-latest`|<br/>
+        /// |**cohere**|`command-r`|<br/>
+        /// |**deepseek**|`deepseek-chat`|<br/>
+        /// |**meta**|`meta.llama3-1-70b-instruct-v1:0`|<br/>
+        /// |**mistral**|`mistral-large-latest`|<br/>
+        /// |**openai**|`gpt-4o`|<br/>
+        /// |**together_ai**|`Qwen/Qwen2.5-72B-Instruct-Turbo`|<br/>
+        /// |**xai**|`grok-2-latest`|<br/>
+        /// |**google**|`gemini-2.0-flash`|<br/>
+        /// |**groq**|`llama-3.3-70b-versatile`|<br/>
+        /// |**microsoft**|`gpt-4o`|<br/>
+        /// |**minimax**|`MiniMax-M1`|<br/>
+        /// |**bytedance**|`seed-1-6-250915`|<br/>
+        /// |**perplexityai**|`sonar`|<br/>
+        /// |**deepinfra**|`nvidia/Llama-3.3-Nemotron-Super-49B-v1.5`|<br/>
+        /// |**cerebras**|`gpt-oss-120b`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
         /// <param name="messages">
         /// A list containing all the conversations between the user and the assistant.<br/>
         /// Each item in the list should be a dictionary with two keys: 'role' and 'message'.<br/>

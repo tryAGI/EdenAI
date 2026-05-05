@@ -25,6 +25,22 @@ namespace EdenAI
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.PromptHistory>> PromptsPromptsHistoryUpdateAsResponseAsync(
+            int id,
+            string name,
+
+            global::EdenAI.PromptHistoryRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update Prompt History
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
         /// <param name="text">
         /// The text used for the prompt<br/>
         /// You can include prompt variables with {{ my_variable }}. These variables are injected when you later call your prompt.<br/>

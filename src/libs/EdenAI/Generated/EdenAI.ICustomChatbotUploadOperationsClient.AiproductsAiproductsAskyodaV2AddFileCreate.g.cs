@@ -62,6 +62,40 @@ namespace EdenAI
         /// - **XML**
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse> AiproductsAiproductsAskyodaV2AddFileCreateAsResponseAsync(
+            global::System.Guid projectId,
+
+            global::EdenAI.AddFileRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Add File<br/>
+        /// This endpoint enables you to upload files (**CSV**, **AUDIO**, **PDF**, or **XML**) into your project.  Upon upload, the file will be processed and stored as text embeddings within the project's database. <br/>
+        /// ### Supported File Types<br/>
+        /// - **CSV**: Comma-separated values files.<br/>
+        /// - **Audio**: Supported audio formats for transcription to text.<br/>
+        /// - **PDF**: Portable Document Format files.<br/>
+        /// - **XML**: Extensible Markup Language files.<br/>
+        /// ### OCR Processing and Speech-to-Text<br/>
+        /// If the uploaded file is a PDF, it will undergo Optical Character Recognition (OCR) processing using the default provider chosen during the project creation step. <br/>
+        /// Similarly, audio files will be converted to text using Speech-to-Text, also utilizing the default provider configured during project setup.<br/>
+        /// ### Accepted File Extensions<br/>
+        /// - **PDF**<br/>
+        /// - **CSV**<br/>
+        /// - **AMR**<br/>
+        /// - **FLAC**<br/>
+        /// - **WAV**<br/>
+        /// - **OGG**<br/>
+        /// - **MP3**<br/>
+        /// - **MP4**<br/>
+        /// - **WEBM**<br/>
+        /// - **XML**
+        /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="dataType">
         /// * `pdf` - pdf<br/>
         /// * `audio` - audio<br/>

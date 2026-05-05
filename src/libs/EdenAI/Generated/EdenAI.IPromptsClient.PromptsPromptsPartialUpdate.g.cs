@@ -22,6 +22,20 @@ namespace EdenAI
         /// Update Prompt
         /// </summary>
         /// <param name="name"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.PromptUpdate>> PromptsPromptsPartialUpdateAsResponseAsync(
+            string name,
+
+            global::EdenAI.PatchedPromptUpdateRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update Prompt
+        /// </summary>
+        /// <param name="name"></param>
         /// <param name="requestName">
         /// The unique identifier for the prompt. Must contain only alphanumeric characters, underscores (_) and hyphens (-). No spaces allowed.
         /// </param>
