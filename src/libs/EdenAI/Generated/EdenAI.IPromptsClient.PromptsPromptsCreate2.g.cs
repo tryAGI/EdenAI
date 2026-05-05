@@ -24,6 +24,21 @@ namespace EdenAI
         /// Call prompt with your variables in prompt_context. You can override params saved in the prompt and specifiy file urls
         /// </summary>
         /// <param name="name"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.PromptUpdate>> PromptsPromptsCreate2AsResponseAsync(
+            string name,
+
+            global::EdenAI.PromptCallRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Call prompt<br/>
+        /// Call prompt with your variables in prompt_context. You can override params saved in the prompt and specifiy file urls
+        /// </summary>
+        /// <param name="name"></param>
         /// <param name="model">
         /// Optional model override (e.g., 'openai/gpt-4o'). If not provided, the model specified in the prompt will be used.
         /// </param>

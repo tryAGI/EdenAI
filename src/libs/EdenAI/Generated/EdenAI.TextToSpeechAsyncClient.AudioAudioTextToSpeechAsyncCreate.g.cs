@@ -291,6 +291,256 @@ namespace EdenAI
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await AudioAudioTextToSpeechAsyncCreateAsResponseAsync(
+
+                request: request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Text to Speech launch job<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**lovoai**|-|`v1`|0.16 (per 1000 char)|1 char<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|4.0 (per 1000000 char)|1 char<br/>
+        /// |**amazon**|**Neural**|`boto3 (v1.15.18)`|16.0 (per 1000000 char)|1 char<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Afrikaans**|`af`|<br/>
+        /// |**Albanian**|`sq`|<br/>
+        /// |**Amharic**|`am`|<br/>
+        /// |**Arabic**|`ar`|<br/>
+        /// |**Armenian**|`hy`|<br/>
+        /// |**Azerbaijani**|`az`|<br/>
+        /// |**Basque**|`eu`|<br/>
+        /// |**Bengali**|`bn`|<br/>
+        /// |**Bosnian**|`bs`|<br/>
+        /// |**Burmese**|`my`|<br/>
+        /// |**Catalan**|`ca`|<br/>
+        /// |**Chinese**|`zh`|<br/>
+        /// |**Croatian**|`hr`|<br/>
+        /// |**Czech**|`cs`|<br/>
+        /// |**Danish**|`da`|<br/>
+        /// |**Dutch**|`nl`|<br/>
+        /// |**English**|`en`|<br/>
+        /// |**Estonian**|`et`|<br/>
+        /// |**Filipino**|`fil`|<br/>
+        /// |**Finnish**|`fi`|<br/>
+        /// |**French**|`fr`|<br/>
+        /// |**Galician**|`gl`|<br/>
+        /// |**Georgian**|`ka`|<br/>
+        /// |**German**|`de`|<br/>
+        /// |**Hebrew**|`he`|<br/>
+        /// |**Hindi**|`hi`|<br/>
+        /// |**Hungarian**|`hu`|<br/>
+        /// |**Icelandic**|`is`|<br/>
+        /// |**Indonesian**|`id`|<br/>
+        /// |**Irish**|`ga`|<br/>
+        /// |**Italian**|`it`|<br/>
+        /// |**Japanese**|`ja`|<br/>
+        /// |**Javanese**|`jv`|<br/>
+        /// |**Kazakh**|`kk`|<br/>
+        /// |**Khmer**|`km`|<br/>
+        /// |**Korean**|`ko`|<br/>
+        /// |**Lao**|`lo`|<br/>
+        /// |**Latvian**|`lv`|<br/>
+        /// |**Lithuanian**|`lt`|<br/>
+        /// |**Macedonian**|`mk`|<br/>
+        /// |**Malay (macrolanguage)**|`ms`|<br/>
+        /// |**Malayalam**|`ml`|<br/>
+        /// |**Maltese**|`mt`|<br/>
+        /// |**Mandarin Chinese**|`cmn`|<br/>
+        /// |**Marathi**|`mr`|<br/>
+        /// |**Mongolian**|`mn`|<br/>
+        /// |**Nepali (macrolanguage)**|`ne`|<br/>
+        /// |**Norwegian Bokmål**|`nb`|<br/>
+        /// |**Persian**|`fa`|<br/>
+        /// |**Polish**|`pl`|<br/>
+        /// |**Portuguese**|`pt`|<br/>
+        /// |**Pushto**|`ps`|<br/>
+        /// |**Romanian**|`ro`|<br/>
+        /// |**Russian**|`ru`|<br/>
+        /// |**Serbian**|`sr`|<br/>
+        /// |**Sinhala**|`si`|<br/>
+        /// |**Slovak**|`sk`|<br/>
+        /// |**Slovenian**|`sl`|<br/>
+        /// |**Somali**|`so`|<br/>
+        /// |**Spanish**|`es`|<br/>
+        /// |**Standard Arabic**|`arb`|<br/>
+        /// |**Sundanese**|`su`|<br/>
+        /// |**Swahili (macrolanguage)**|`sw`|<br/>
+        /// |**Swedish**|`sv`|<br/>
+        /// |**Tamil**|`ta`|<br/>
+        /// |**Telugu**|`te`|<br/>
+        /// |**Thai**|`th`|<br/>
+        /// |**Turkish**|`tr`|<br/>
+        /// |**Ukrainian**|`uk`|<br/>
+        /// |**Urdu**|`ur`|<br/>
+        /// |**Uzbek**|`uz`|<br/>
+        /// |**Vietnamese**|`vi`|<br/>
+        /// |**Welsh**|`cy`|<br/>
+        /// |**Wu Chinese**|`wuu`|<br/>
+        /// |**Xhosa**|`xh`|<br/>
+        /// |**Yue Chinese**|`yue`|<br/>
+        /// |**Zulu**|`zu`|<br/>
+        /// &lt;/details&gt;&lt;details&gt;&lt;summary&gt;Supported Detailed Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Afrikaans (South Africa)**|`af-ZA`|<br/>
+        /// |**Albanian (Albania)**|`sq-AL`|<br/>
+        /// |**Amharic (Ethiopia)**|`am-ET`|<br/>
+        /// |**Arabic (Algeria)**|`ar-DZ`|<br/>
+        /// |**Arabic (Bahrain)**|`ar-BH`|<br/>
+        /// |**Arabic (Egypt)**|`ar-EG`|<br/>
+        /// |**Arabic (Iraq)**|`ar-IQ`|<br/>
+        /// |**Arabic (Jordan)**|`ar-JO`|<br/>
+        /// |**Arabic (Kuwait)**|`ar-KW`|<br/>
+        /// |**Arabic (Lebanon)**|`ar-LB`|<br/>
+        /// |**Arabic (Libya)**|`ar-LY`|<br/>
+        /// |**Arabic (Morocco)**|`ar-MA`|<br/>
+        /// |**Arabic (Oman)**|`ar-OM`|<br/>
+        /// |**Arabic (Qatar)**|`ar-QA`|<br/>
+        /// |**Arabic (Saudi Arabia)**|`ar-SA`|<br/>
+        /// |**Arabic (Tunisia)**|`ar-TN`|<br/>
+        /// |**Arabic (United Arab Emirates)**|`ar-AE`|<br/>
+        /// |**Armenian (Armenia)**|`hy-AM`|<br/>
+        /// |**Azerbaijani (Azerbaijan)**|`az-AZ`|<br/>
+        /// |**Bangla (India)**|`bn-IN`|<br/>
+        /// |**Basque (Spain)**|`eu-ES`|<br/>
+        /// |**Bosnian (Bosnia &amp; Herzegovina)**|`bs-BA`|<br/>
+        /// |**Burmese (Myanmar (Burma))**|`my-MM`|<br/>
+        /// |**Cantonese (China)**|`yue-CN`|<br/>
+        /// |**Catalan (Spain)**|`ca-ES`|<br/>
+        /// |**Chinese (China)**|`zh-CN`|<br/>
+        /// |**Chinese (China)**|`zh-CN-henan`|<br/>
+        /// |**Chinese (China)**|`zh-CN-shandong`|<br/>
+        /// |**Chinese (China)**|`zh-CN-sichuan`|<br/>
+        /// |**Chinese (Hong Kong SAR China)**|`zh-HK`|<br/>
+        /// |**Chinese (Taiwan)**|`zh-TW`|<br/>
+        /// |**Croatian (Croatia)**|`hr-HR`|<br/>
+        /// |**Czech (Czechia)**|`cs-CZ`|<br/>
+        /// |**Danish (Denmark)**|`da-DK`|<br/>
+        /// |**Dutch (Belgium)**|`nl-BE`|<br/>
+        /// |**Dutch (Netherlands)**|`nl-NL`|<br/>
+        /// |**English (Australia)**|`en-AU`|<br/>
+        /// |**English (Canada)**|`en-CA`|<br/>
+        /// |**English (Curaçao)**|`en-AN`|<br/>
+        /// |**English (Hong Kong SAR China)**|`en-HK`|<br/>
+        /// |**English (India)**|`en-IN`|<br/>
+        /// |**English (Ireland)**|`en-IE`|<br/>
+        /// |**English (Kenya)**|`en-KE`|<br/>
+        /// |**English (New Zealand)**|`en-NZ`|<br/>
+        /// |**English (Nigeria)**|`en-NG`|<br/>
+        /// |**English (Philippines)**|`en-PH`|<br/>
+        /// |**English (Singapore)**|`en-SG`|<br/>
+        /// |**English (South Africa)**|`en-ZA`|<br/>
+        /// |**English (Tanzania)**|`en-TZ`|<br/>
+        /// |**English (United Kingdom)**|`en-GB`|<br/>
+        /// |**English (United States)**|`en-US`|<br/>
+        /// |**Estonian (Estonia)**|`et-EE`|<br/>
+        /// |**Filipino (Philippines)**|`fil-PH`|<br/>
+        /// |**Finnish (Finland)**|`fi-FI`|<br/>
+        /// |**French (Belgium)**|`fr-BE`|<br/>
+        /// |**French (Canada)**|`fr-CA`|<br/>
+        /// |**French (France)**|`fr-FR`|<br/>
+        /// |**French (Switzerland)**|`fr-CH`|<br/>
+        /// |**Galician (Spain)**|`gl-ES`|<br/>
+        /// |**Georgian (Georgia)**|`ka-GE`|<br/>
+        /// |**German (Austria)**|`de-AT`|<br/>
+        /// |**German (Germany)**|`de-DE`|<br/>
+        /// |**German (Switzerland)**|`de-CH`|<br/>
+        /// |**Hebrew (Israel)**|`he-IL`|<br/>
+        /// |**Hindi (India)**|`hi-IN`|<br/>
+        /// |**Hungarian (Hungary)**|`hu-HU`|<br/>
+        /// |**Icelandic (Iceland)**|`is-IS`|<br/>
+        /// |**Indonesian (Indonesia)**|`id-ID`|<br/>
+        /// |**Irish (Ireland)**|`ga-IE`|<br/>
+        /// |**Italian (Italy)**|`it-IT`|<br/>
+        /// |**Japanese (Japan)**|`ja-JP`|<br/>
+        /// |**Javanese (Indonesia)**|`jv-ID`|<br/>
+        /// |**Kazakh (Kazakhstan)**|`kk-KZ`|<br/>
+        /// |**Khmer (Cambodia)**|`km-KH`|<br/>
+        /// |**Korean (South Korea)**|`ko-KR`|<br/>
+        /// |**Lao (Laos)**|`lo-LA`|<br/>
+        /// |**Latvian (Latvia)**|`lv-LV`|<br/>
+        /// |**Lithuanian (Lithuania)**|`lt-LT`|<br/>
+        /// |**Macedonian (North Macedonia)**|`mk-MK`|<br/>
+        /// |**Malay (Malaysia)**|`ms-MY`|<br/>
+        /// |**Malayalam (India)**|`ml-IN`|<br/>
+        /// |**Maltese (Malta)**|`mt-MT`|<br/>
+        /// |**Mandarin Chinese (China)**|`cmn-CN`|<br/>
+        /// |**Marathi (India)**|`mr-IN`|<br/>
+        /// |**Mongolian (Mongolia)**|`mn-MN`|<br/>
+        /// |**Nepali (Nepal)**|`ne-NP`|<br/>
+        /// |**Norwegian Bokmål (Norway)**|`nb-NO`|<br/>
+        /// |**Pashto (Afghanistan)**|`ps-AF`|<br/>
+        /// |**Persian (Iran)**|`fa-IR`|<br/>
+        /// |**Polish (Poland)**|`pl-PL`|<br/>
+        /// |**Portuguese (Brazil)**|`pt-BR`|<br/>
+        /// |**Portuguese (Portugal)**|`pt-PT`|<br/>
+        /// |**Romanian (Romania)**|`ro-RO`|<br/>
+        /// |**Russian (Russia)**|`ru-RU`|<br/>
+        /// |**Serbian (Serbia)**|`sr-RS`|<br/>
+        /// |**Sinhala (Sri Lanka)**|`si-LK`|<br/>
+        /// |**Slovak (Slovakia)**|`sk-SK`|<br/>
+        /// |**Slovenian (Slovenia)**|`sl-SI`|<br/>
+        /// |**Somali (Somalia)**|`so-SO`|<br/>
+        /// |**Spanish (Argentina)**|`es-AR`|<br/>
+        /// |**Spanish (Bolivia)**|`es-BO`|<br/>
+        /// |**Spanish (Chile)**|`es-CL`|<br/>
+        /// |**Spanish (Colombia)**|`es-CO`|<br/>
+        /// |**Spanish (Costa Rica)**|`es-CR`|<br/>
+        /// |**Spanish (Cuba)**|`es-CU`|<br/>
+        /// |**Spanish (Ecuador)**|`es-EC`|<br/>
+        /// |**Spanish (El Salvador)**|`es-SV`|<br/>
+        /// |**Spanish (Equatorial Guinea)**|`es-GQ`|<br/>
+        /// |**Spanish (Guatemala)**|`es-GT`|<br/>
+        /// |**Spanish (Mexico)**|`es-MX`|<br/>
+        /// |**Spanish (Nicaragua)**|`es-NI`|<br/>
+        /// |**Spanish (Panama)**|`es-PA`|<br/>
+        /// |**Spanish (Paraguay)**|`es-PY`|<br/>
+        /// |**Spanish (Puerto Rico)**|`es-PR`|<br/>
+        /// |**Spanish (Spain)**|`es-ES`|<br/>
+        /// |**Spanish (United States)**|`es-US`|<br/>
+        /// |**Spanish (Uruguay)**|`es-UY`|<br/>
+        /// |**Spanish (Venezuela)**|`es-VE`|<br/>
+        /// |**Sundanese (Indonesia)**|`su-ID`|<br/>
+        /// |**Swahili (Kenya)**|`sw-KE`|<br/>
+        /// |**Swahili (Tanzania)**|`sw-TZ`|<br/>
+        /// |**Swedish (Sweden)**|`sv-SE`|<br/>
+        /// |**Tamil (India)**|`ta-IN`|<br/>
+        /// |**Tamil (Malaysia)**|`ta-MY`|<br/>
+        /// |**Tamil (Singapore)**|`ta-SG`|<br/>
+        /// |**Telugu (India)**|`te-IN`|<br/>
+        /// |**Thai (Thailand)**|`th-TH`|<br/>
+        /// |**Turkish (Türkiye)**|`tr-TR`|<br/>
+        /// |**Ukrainian (Ukraine)**|`uk-UA`|<br/>
+        /// |**Urdu (India)**|`ur-IN`|<br/>
+        /// |**Urdu (Pakistan)**|`ur-PK`|<br/>
+        /// |**Uzbek (United Kingdom)**|`uz-UK`|<br/>
+        /// |**Vietnamese (Vietnam)**|`vi-VN`|<br/>
+        /// |**Welsh (United Kingdom)**|`cy-GB`|<br/>
+        /// |**Wu Chinese (China)**|`wuu-CN`|<br/>
+        /// |**Xhosa (South Africa)**|`xh-ZA`|<br/>
+        /// |**Zulu (South Africa)**|`zu-ZA`|<br/>
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=audio-text_to_speech_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>> AudioAudioTextToSpeechAsyncCreateAsResponseAsync(
+
+            global::EdenAI.TextToSpeechAsyncRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -317,10 +567,11 @@ namespace EdenAI
             var __maxAttempts = global::EdenAI.AutoSDKRequestOptionsSupport.GetMaxAttempts(
                 clientOptions: Options,
                 requestOptions: requestOptions,
-                supportsRetry: true);
+                supportsRetry: false);
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::EdenAI.PathBuilder(
                                 path: "/audio/text_to_speech_async/",
                                 baseUri: HttpClient.BaseAddress);
@@ -353,6 +604,7 @@ namespace EdenAI
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             if (request.Settings != default)
                             {
@@ -360,119 +612,139 @@ namespace EdenAI
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.Settings ?? string.Empty),
                                     name: "\"settings\"");
+
                             }
                             __httpRequestContent.Add(
                                 content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Providers, x => x))}]"),
                                 name: "\"providers\"");
+
                             if (request.FallbackProviders != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.FallbackProviders, x => x))}]"),
                                     name: "\"fallback_providers\"");
-                            } 
+
+                            }
                             if (request.ResponseAsDict != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ResponseAsDict, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"response_as_dict\"");
-                            } 
+
+                            }
                             if (request.AttributesAsList != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.AttributesAsList, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"attributes_as_list\"");
-                            } 
+
+                            }
                             if (request.ShowBase64 != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowBase64, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_base_64\"");
-                            } 
+
+                            }
                             if (request.ShowOriginalResponse != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowOriginalResponse, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_original_response\"");
+
                             }
                             __httpRequestContent.Add(
                                 content: new global::System.Net.Http.StringContent(request.Text ?? string.Empty),
                                 name: "\"text\"");
+
                             if (request.Language != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.Language ?? string.Empty),
                                     name: "\"language\"");
-                            } 
+
+                            }
                             if (request.Option != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.Option.ToString() ?? string.Empty),
                                     name: "\"option\"");
-                            } 
+
+                            }
                             if (request.Rate != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.Rate, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"rate\"");
-                            } 
+
+                            }
                             if (request.Pitch != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.Pitch, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"pitch\"");
-                            } 
+
+                            }
                             if (request.Volume != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.Volume, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"volume\"");
-                            } 
+
+                            }
                             if (request.AudioFormat != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.AudioFormat ?? string.Empty),
                                     name: "\"audio_format\"");
-                            } 
+
+                            }
                             if (request.SamplingRate != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(global::System.Convert.ToString(request.SamplingRate, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty),
                                     name: "\"sampling_rate\"");
-                            } 
+
+                            }
                             if (request.WebhookReceiver != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.WebhookReceiver ?? string.Empty),
                                     name: "\"webhook_receiver\"");
-                            } 
+
+                            }
                             if (request.UsersWebhookParameters != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.UsersWebhookParameters.ToString() ?? string.Empty),
                                     name: "\"users_webhook_parameters\"");
-                            } 
+
+                            }
                             if (request.SendWebhookData != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.SendWebhookData, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"send_webhook_data\"");
+
                             }
+
                             __httpRequest.Content = __httpRequestContent;
+
                 global::EdenAI.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -514,6 +786,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -524,6 +798,11 @@ namespace EdenAI
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -541,6 +820,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -550,8 +831,7 @@ namespace EdenAI
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -560,6 +840,11 @@ namespace EdenAI
                         __attempt < __maxAttempts &&
                         global::EdenAI.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -576,14 +861,15 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -623,6 +909,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -643,6 +931,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
 
@@ -667,9 +957,13 @@ namespace EdenAI
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::EdenAI.LaunchAsyncJobResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::EdenAI.LaunchAsyncJobResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -697,9 +991,13 @@ namespace EdenAI
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::EdenAI.LaunchAsyncJobResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::EdenAI.LaunchAsyncJobResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

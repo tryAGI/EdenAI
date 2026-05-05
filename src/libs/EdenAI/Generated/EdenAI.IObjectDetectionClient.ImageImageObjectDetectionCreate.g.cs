@@ -53,6 +53,35 @@ namespace EdenAI
         /// |**clarifai**|`general-image-detection`|<br/>
         /// &lt;/details&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.ImageobjectDetectionResponseModel>> ImageImageObjectDetectionCreateAsResponseAsync(
+
+            global::EdenAI.ImageobjectDetectionObjectDetectionRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Object Detection<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|1.0 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|-|`1.9.2`|0.5 (per 1000 file)|1 file<br/>
+        /// |**clarifai**|-|`8.0.0`|2.0 (per 1000 file)|1 file<br/>
+        /// |**clarifai**|**general-image-detection**|`8.0.0`|2.0 (per 1000 file)|1 file<br/>
+        /// |**google**|-|`v1`|2.25 (per 1000 file)|1 file<br/>
+        /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
+        /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-object_detection' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**clarifai**|`general-image-detection`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
         ///                      <br/>

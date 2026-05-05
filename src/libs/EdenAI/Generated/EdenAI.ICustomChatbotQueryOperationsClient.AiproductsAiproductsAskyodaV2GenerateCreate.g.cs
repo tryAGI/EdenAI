@@ -26,6 +26,22 @@ namespace EdenAI
         /// LLM API.
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.YodaQueryResponse>> AiproductsAiproductsAskyodaV2GenerateCreateAsResponseAsync(
+            global::System.Guid projectId,
+
+            global::EdenAI.GenerateRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Generate<br/>
+        /// Interact with different LLM providers, this endpoint is based on the structure of the<br/>
+        /// LLM API.
+        /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="messages">
         /// A list containing all the conversations between the user and the assistant.<br/>
         /// Each item in the list should be a dictionary with two keys: 'role' and 'message'.<br/>
