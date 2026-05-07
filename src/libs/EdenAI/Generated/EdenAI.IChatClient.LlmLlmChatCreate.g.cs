@@ -222,6 +222,16 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-M2.1-lightning**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
         /// |**minimax**|**MiniMax-M2**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**bytedance**|**seed-1-6-250915**|`llmengine (v2)`|2.0 (per 1000000 token)|1 token<br/>
+        /// |**dashscope**|**qwen3-max**|`v1`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**dashscope**|**qwen-max**|`v1`|6.4e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-01-25**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-04-28**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-07-14**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-2024-11-01**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-2025-04-28**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-latest**|`v1`|2e-07 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1.0 (per 1000000 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1e-06 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
@@ -384,6 +394,7 @@ namespace EdenAI
         /// |**microsoft**|`gpt-4o`|<br/>
         /// |**minimax**|`MiniMax-M1`|<br/>
         /// |**bytedance**|`seed-1-6-250915`|<br/>
+        /// |**dashscope**|`qwen3-max`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**deepinfra**|`nvidia/Llama-3.3-Nemotron-Super-49B-v1.5`|<br/>
         /// |**cerebras**|`gpt-oss-120b`|<br/>
@@ -616,6 +627,16 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-M2.1-lightning**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
         /// |**minimax**|**MiniMax-M2**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**bytedance**|**seed-1-6-250915**|`llmengine (v2)`|2.0 (per 1000000 token)|1 token<br/>
+        /// |**dashscope**|**qwen3-max**|`v1`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**dashscope**|**qwen-max**|`v1`|6.4e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-01-25**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-04-28**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-07-14**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-2024-11-01**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-2025-04-28**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-latest**|`v1`|2e-07 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1.0 (per 1000000 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1e-06 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
@@ -778,6 +799,7 @@ namespace EdenAI
         /// |**microsoft**|`gpt-4o`|<br/>
         /// |**minimax**|`MiniMax-M1`|<br/>
         /// |**bytedance**|`seed-1-6-250915`|<br/>
+        /// |**dashscope**|`qwen3-max`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**deepinfra**|`nvidia/Llama-3.3-Nemotron-Super-49B-v1.5`|<br/>
         /// |**cerebras**|`gpt-oss-120b`|<br/>
@@ -1010,6 +1032,16 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-M2.1-lightning**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
         /// |**minimax**|**MiniMax-M2**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**bytedance**|**seed-1-6-250915**|`llmengine (v2)`|2.0 (per 1000000 token)|1 token<br/>
+        /// |**dashscope**|**qwen3-max**|`v1`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**dashscope**|**qwen-max**|`v1`|6.4e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-01-25**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-04-28**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-plus-2025-07-14**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-2024-11-01**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-2025-04-28**|`v1`|2e-07 (per 1 token)|1 token<br/>
+        /// |**dashscope**|**qwen-turbo-latest**|`v1`|2e-07 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1.0 (per 1000000 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1e-06 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
@@ -1172,6 +1204,7 @@ namespace EdenAI
         /// |**microsoft**|`gpt-4o`|<br/>
         /// |**minimax**|`MiniMax-M1`|<br/>
         /// |**bytedance**|`seed-1-6-250915`|<br/>
+        /// |**dashscope**|`qwen3-max`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**deepinfra**|`nvidia/Llama-3.3-Nemotron-Super-49B-v1.5`|<br/>
         /// |**cerebras**|`gpt-oss-120b`|<br/>
