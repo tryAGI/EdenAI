@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Clarifai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Clarifai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// 
@@ -47,8 +47,8 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagefaceDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
         /// <param name="clarifai"></param>
+        /// <param name="amazon"></param>
         /// <param name="api4ai"></param>
         /// <param name="google"></param>
         /// <param name="microsoft"></param>
@@ -56,14 +56,14 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagefaceDetectionResponseModel(
-            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? clarifai,
+            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? api4ai,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? google,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? microsoft)
         {
-            this.Amazon = amazon;
             this.Clarifai = clarifai;
+            this.Amazon = amazon;
             this.Api4ai = api4ai;
             this.Google = google;
             this.Microsoft = microsoft;
