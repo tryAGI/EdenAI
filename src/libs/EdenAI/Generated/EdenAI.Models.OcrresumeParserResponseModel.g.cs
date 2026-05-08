@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("senseloaf")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Senseloaf { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Klippa { get; set; }
 
         /// <summary>
         /// 
@@ -23,14 +23,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Klippa { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("hireability")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Hireability { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Extracta { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("senseloaf")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Senseloaf { get; set; }
 
         /// <summary>
         /// 
@@ -41,8 +41,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hireability")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Hireability { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Extracta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,29 +53,29 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrresumeParserResponseModel" /> class.
         /// </summary>
-        /// <param name="senseloaf"></param>
-        /// <param name="openai"></param>
         /// <param name="klippa"></param>
-        /// <param name="extracta"></param>
-        /// <param name="affinda"></param>
+        /// <param name="openai"></param>
         /// <param name="hireability"></param>
+        /// <param name="senseloaf"></param>
+        /// <param name="affinda"></param>
+        /// <param name="extracta"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrresumeParserResponseModel(
-            global::EdenAI.OcrresumeParserResumeParserDataClass? senseloaf,
-            global::EdenAI.OcrresumeParserResumeParserDataClass? openai,
             global::EdenAI.OcrresumeParserResumeParserDataClass? klippa,
-            global::EdenAI.OcrresumeParserResumeParserDataClass? extracta,
+            global::EdenAI.OcrresumeParserResumeParserDataClass? openai,
+            global::EdenAI.OcrresumeParserResumeParserDataClass? hireability,
+            global::EdenAI.OcrresumeParserResumeParserDataClass? senseloaf,
             global::EdenAI.OcrresumeParserResumeParserDataClass? affinda,
-            global::EdenAI.OcrresumeParserResumeParserDataClass? hireability)
+            global::EdenAI.OcrresumeParserResumeParserDataClass? extracta)
         {
-            this.Senseloaf = senseloaf;
-            this.Openai = openai;
             this.Klippa = klippa;
-            this.Extracta = extracta;
-            this.Affinda = affinda;
+            this.Openai = openai;
             this.Hireability = hireability;
+            this.Senseloaf = senseloaf;
+            this.Affinda = affinda;
+            this.Extracta = extracta;
         }
 
         /// <summary>
