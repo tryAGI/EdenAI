@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("modernmt")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Modernmt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
@@ -23,8 +23,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("modernmt")]
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Modernmt { get; set; }
 
         /// <summary>
         /// 
@@ -41,12 +47,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Google { get; set; }
 
@@ -59,31 +59,31 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TranslationlanguageDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="modernmt"></param>
-        /// <param name="microsoft"></param>
         /// <param name="xai"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="amazon"></param>
+        /// <param name="modernmt"></param>
         /// <param name="oneai"></param>
         /// <param name="openai"></param>
-        /// <param name="amazon"></param>
         /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TranslationlanguageDetectionResponseModel(
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? modernmt,
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? microsoft,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? xai,
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? microsoft,
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? amazon,
+            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? modernmt,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? oneai,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? openai,
-            global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? amazon,
             global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? google)
         {
-            this.Modernmt = modernmt;
-            this.Microsoft = microsoft;
             this.Xai = xai;
+            this.Microsoft = microsoft;
+            this.Amazon = amazon;
+            this.Modernmt = modernmt;
             this.Oneai = oneai;
             this.Openai = openai;
-            this.Amazon = amazon;
             this.Google = google;
         }
 
