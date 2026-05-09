@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -23,14 +23,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Sapling { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
@@ -41,14 +35,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Emvista { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ibm")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Ibm { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -59,14 +53,20 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ibm")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Ibm { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Sapling { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Emvista { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -77,41 +77,41 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextsentimentAnalysisResponseModel" /> class.
         /// </summary>
-        /// <param name="openai"></param>
-        /// <param name="tenstorrent"></param>
         /// <param name="microsoft"></param>
-        /// <param name="sapling"></param>
-        /// <param name="oneai"></param>
-        /// <param name="emvista"></param>
+        /// <param name="tenstorrent"></param>
         /// <param name="xai"></param>
-        /// <param name="amazon"></param>
+        /// <param name="oneai"></param>
         /// <param name="ibm"></param>
+        /// <param name="openai"></param>
+        /// <param name="amazon"></param>
+        /// <param name="sapling"></param>
         /// <param name="google"></param>
+        /// <param name="emvista"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextsentimentAnalysisResponseModel(
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? openai,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? tenstorrent,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? microsoft,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? sapling,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? oneai,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? emvista,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? tenstorrent,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? xai,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? amazon,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? oneai,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? ibm,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? google)
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? openai,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? amazon,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? sapling,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? google,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? emvista)
         {
-            this.Openai = openai;
-            this.Tenstorrent = tenstorrent;
             this.Microsoft = microsoft;
-            this.Sapling = sapling;
-            this.Oneai = oneai;
-            this.Emvista = emvista;
+            this.Tenstorrent = tenstorrent;
             this.Xai = xai;
-            this.Amazon = amazon;
+            this.Oneai = oneai;
             this.Ibm = ibm;
+            this.Openai = openai;
+            this.Amazon = amazon;
+            this.Sapling = sapling;
             this.Google = google;
+            this.Emvista = emvista;
         }
 
         /// <summary>
