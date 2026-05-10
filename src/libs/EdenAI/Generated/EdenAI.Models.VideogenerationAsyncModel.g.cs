@@ -23,14 +23,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Minimax { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Minimax { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -55,8 +55,8 @@ namespace EdenAI
         /// </summary>
         /// <param name="bytedance"></param>
         /// <param name="microsoft"></param>
-        /// <param name="openai"></param>
         /// <param name="minimax"></param>
+        /// <param name="openai"></param>
         /// <param name="amazon"></param>
         /// <param name="google"></param>
 #if NET7_0_OR_GREATER
@@ -65,15 +65,15 @@ namespace EdenAI
         public VideogenerationAsyncModel(
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? minimax,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? google)
         {
             this.Bytedance = bytedance;
             this.Microsoft = microsoft;
-            this.Openai = openai;
             this.Minimax = minimax;
+            this.Openai = openai;
             this.Amazon = amazon;
             this.Google = google;
         }
