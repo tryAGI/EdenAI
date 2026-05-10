@@ -86,5 +86,6 @@ namespace EdenAI
         public PersonTracking()
         {
         }
+
     }
 }

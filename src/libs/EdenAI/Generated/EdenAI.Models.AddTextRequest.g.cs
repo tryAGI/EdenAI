@@ -53,5 +53,6 @@ namespace EdenAI
         public AddTextRequest()
         {
         }
+
     }
 }

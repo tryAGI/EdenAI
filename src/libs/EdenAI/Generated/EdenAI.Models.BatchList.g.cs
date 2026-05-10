@@ -141,5 +141,6 @@ namespace EdenAI
         public BatchList()
         {
         }
+
     }
 }

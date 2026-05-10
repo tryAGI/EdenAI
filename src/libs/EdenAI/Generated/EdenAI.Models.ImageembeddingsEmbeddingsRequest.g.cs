@@ -196,5 +196,6 @@ namespace EdenAI
         public ImageembeddingsEmbeddingsRequest()
         {
         }
+
     }
 }

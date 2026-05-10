@@ -99,5 +99,6 @@ namespace EdenAI
         public AsyncJobList()
         {
         }
+
     }
 }

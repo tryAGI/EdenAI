@@ -169,5 +169,6 @@ namespace EdenAI
         public PromptUpdate()
         {
         }
+
     }
 }

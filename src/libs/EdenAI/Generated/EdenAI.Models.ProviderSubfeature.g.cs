@@ -205,5 +205,6 @@ namespace EdenAI
         public ProviderSubfeature()
         {
         }
+
     }
 }

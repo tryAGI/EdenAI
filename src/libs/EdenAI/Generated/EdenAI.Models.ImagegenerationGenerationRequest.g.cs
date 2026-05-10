@@ -181,5 +181,6 @@ namespace EdenAI
         public ImagegenerationGenerationRequest()
         {
         }
+
     }
 }

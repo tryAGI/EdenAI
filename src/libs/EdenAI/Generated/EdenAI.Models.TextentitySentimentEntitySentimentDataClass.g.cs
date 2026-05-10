@@ -64,5 +64,6 @@ namespace EdenAI
         public TextentitySentimentEntitySentimentDataClass()
         {
         }
+
     }
 }

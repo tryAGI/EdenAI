@@ -168,5 +168,6 @@ namespace EdenAI
         public TextpromptOptimizationPromptOptimizationRequest()
         {
         }
+
     }
 }

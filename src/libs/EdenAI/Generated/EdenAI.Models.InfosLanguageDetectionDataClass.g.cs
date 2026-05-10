@@ -60,5 +60,6 @@ namespace EdenAI
         public InfosLanguageDetectionDataClass()
         {
         }
+
     }
 }

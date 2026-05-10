@@ -156,5 +156,6 @@ namespace EdenAI
         public ImagefaceRecognitiondeleteFaceFaceRecognitionDeleteFaceRequest()
         {
         }
+
     }
 }

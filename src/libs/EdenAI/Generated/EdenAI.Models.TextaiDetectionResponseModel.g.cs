@@ -57,5 +57,6 @@ namespace EdenAI
         public TextaiDetectionResponseModel()
         {
         }
+
     }
 }

@@ -98,5 +98,6 @@ namespace EdenAI
         public AddImageRequest()
         {
         }
+
     }
 }

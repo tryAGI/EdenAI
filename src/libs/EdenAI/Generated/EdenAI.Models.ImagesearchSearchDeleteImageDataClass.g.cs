@@ -54,5 +54,6 @@ namespace EdenAI
         public ImagesearchSearchDeleteImageDataClass()
         {
         }
+
     }
 }

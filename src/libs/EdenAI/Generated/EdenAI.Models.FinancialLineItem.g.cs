@@ -251,5 +251,6 @@ namespace EdenAI
         public FinancialLineItem()
         {
         }
+
     }
 }

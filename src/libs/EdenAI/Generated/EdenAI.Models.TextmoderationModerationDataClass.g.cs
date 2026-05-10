@@ -83,5 +83,6 @@ namespace EdenAI
         public TextmoderationModerationDataClass()
         {
         }
+
     }
 }

@@ -114,5 +114,6 @@ namespace EdenAI
         public ResumeExtractedData()
         {
         }
+
     }
 }

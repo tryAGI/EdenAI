@@ -77,5 +77,6 @@ namespace EdenAI
         public VideoLabel()
         {
         }
+
     }
 }

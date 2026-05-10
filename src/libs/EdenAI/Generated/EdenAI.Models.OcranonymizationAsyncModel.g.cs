@@ -11,12 +11,6 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("readyredact")]
-        public global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? Readyredact { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privateai")]
         public global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? Privateai { get; set; }
 
@@ -27,6 +21,12 @@ namespace EdenAI
         public global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? Base64 { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readyredact")]
+        public global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? Readyredact { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,20 +35,20 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcranonymizationAsyncModel" /> class.
         /// </summary>
-        /// <param name="readyredact"></param>
         /// <param name="privateai"></param>
         /// <param name="base64"></param>
+        /// <param name="readyredact"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcranonymizationAsyncModel(
-            global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? readyredact,
             global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? privateai,
-            global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? base64)
+            global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? base64,
+            global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? readyredact)
         {
-            this.Readyredact = readyredact;
             this.Privateai = privateai;
             this.Base64 = base64;
+            this.Readyredact = readyredact;
         }
 
         /// <summary>
@@ -57,5 +57,6 @@ namespace EdenAI
         public OcranonymizationAsyncModel()
         {
         }
+
     }
 }

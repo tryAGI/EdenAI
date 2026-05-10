@@ -50,5 +50,6 @@ namespace EdenAI
         public ShotFrame()
         {
         }
+
     }
 }
