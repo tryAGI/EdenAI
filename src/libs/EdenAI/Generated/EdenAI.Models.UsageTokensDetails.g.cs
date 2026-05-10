@@ -126,5 +126,6 @@ namespace EdenAI
         public UsageTokensDetails()
         {
         }
+
     }
 }

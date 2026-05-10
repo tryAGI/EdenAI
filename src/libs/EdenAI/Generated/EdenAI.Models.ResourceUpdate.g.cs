@@ -91,5 +91,6 @@ namespace EdenAI
         public ResourceUpdate()
         {
         }
+
     }
 }

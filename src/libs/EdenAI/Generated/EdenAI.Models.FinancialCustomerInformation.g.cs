@@ -420,5 +420,6 @@ namespace EdenAI
         public FinancialCustomerInformation()
         {
         }
+
     }
 }

@@ -89,5 +89,6 @@ namespace EdenAI
         public SpellCheckItem()
         {
         }
+
     }
 }

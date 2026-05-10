@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideopersonTrackingAsyncModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
         /// <param name="google"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideopersonTrackingAsyncModel(
-            global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? amazon,
-            global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? google)
+            global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? google,
+            global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? amazon)
         {
-            this.Amazon = amazon;
             this.Google = google;
+            this.Amazon = amazon;
         }
 
         /// <summary>
@@ -48,5 +48,6 @@ namespace EdenAI
         public VideopersonTrackingAsyncModel()
         {
         }
+
     }
 }

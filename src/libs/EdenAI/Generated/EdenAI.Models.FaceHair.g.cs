@@ -59,5 +59,6 @@ namespace EdenAI
         public FaceHair()
         {
         }
+
     }
 }

@@ -762,5 +762,6 @@ namespace EdenAI
         public LlmchatllmchatChatRequest()
         {
         }
+
     }
 }

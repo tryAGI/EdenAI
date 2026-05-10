@@ -177,5 +177,6 @@ namespace EdenAI
         public ImagefaceRecognitionrecognizeFaceRecognitionDetectFaceRequest()
         {
         }
+
     }
 }

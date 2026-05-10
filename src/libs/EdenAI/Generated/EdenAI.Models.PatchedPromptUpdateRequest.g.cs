@@ -133,5 +133,6 @@ namespace EdenAI
         public PatchedPromptUpdateRequest()
         {
         }
+
     }
 }

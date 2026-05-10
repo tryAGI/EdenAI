@@ -270,5 +270,6 @@ namespace EdenAI
         public SpeechToTextAsyncRequest()
         {
         }
+
     }
 }

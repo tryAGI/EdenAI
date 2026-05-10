@@ -194,5 +194,6 @@ namespace EdenAI
         public OcrTablesAsyncRequest()
         {
         }
+
     }
 }

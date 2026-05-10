@@ -121,5 +121,6 @@ namespace EdenAI
         public FinancialBankInformation()
         {
         }
+
     }
 }

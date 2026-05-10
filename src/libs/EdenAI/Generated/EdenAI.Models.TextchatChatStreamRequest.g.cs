@@ -287,5 +287,6 @@ namespace EdenAI
         public TextchatChatStreamRequest()
         {
         }
+
     }
 }

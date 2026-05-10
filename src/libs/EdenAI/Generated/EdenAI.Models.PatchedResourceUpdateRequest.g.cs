@@ -75,5 +75,6 @@ namespace EdenAI
         public PatchedResourceUpdateRequest()
         {
         }
+
     }
 }

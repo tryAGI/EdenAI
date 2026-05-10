@@ -73,5 +73,6 @@ namespace EdenAI
         public TextemotionDetectionEmotionDetectionDataClass()
         {
         }
+
     }
 }

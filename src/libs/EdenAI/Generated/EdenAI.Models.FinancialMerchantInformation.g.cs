@@ -355,5 +355,6 @@ namespace EdenAI
         public FinancialMerchantInformation()
         {
         }
+
     }
 }

@@ -240,5 +240,6 @@ namespace EdenAI
         public AudiotextToSpeechTextToSpeechRequest()
         {
         }
+
     }
 }

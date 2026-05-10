@@ -63,5 +63,6 @@ namespace EdenAI
         public TexttopicExtractionTopicExtractionDataClass()
         {
         }
+
     }
 }

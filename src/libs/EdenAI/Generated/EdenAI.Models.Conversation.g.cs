@@ -51,5 +51,6 @@ namespace EdenAI
         public Conversation()
         {
         }
+
     }
 }

@@ -61,5 +61,6 @@ namespace EdenAI
         public PatchedCustomTokenUpdateRequest()
         {
         }
+
     }
 }

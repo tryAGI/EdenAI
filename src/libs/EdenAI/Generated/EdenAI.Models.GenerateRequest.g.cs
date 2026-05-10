@@ -823,5 +823,6 @@ namespace EdenAI
         public GenerateRequest()
         {
         }
+
     }
 }

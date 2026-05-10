@@ -152,5 +152,6 @@ namespace EdenAI
         public PricingSerialzier()
         {
         }
+
     }
 }

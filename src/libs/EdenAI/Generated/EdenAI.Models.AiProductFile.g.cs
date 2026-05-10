@@ -143,5 +143,18 @@ namespace EdenAI
         public AiProductFile()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="AiProductFile"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static AiProductFile FromFileType(string fileType)
+        {
+            return new AiProductFile
+            {
+                FileType = fileType,
+            };
+        }
+
     }
 }

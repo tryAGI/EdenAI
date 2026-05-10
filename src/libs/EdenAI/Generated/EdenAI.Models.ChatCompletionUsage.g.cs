@@ -62,5 +62,6 @@ namespace EdenAI
         public ChatCompletionUsage()
         {
         }
+
     }
 }

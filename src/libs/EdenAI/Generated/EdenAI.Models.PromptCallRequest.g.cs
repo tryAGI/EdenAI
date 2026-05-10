@@ -106,5 +106,6 @@ namespace EdenAI
         public PromptCallRequest()
         {
         }
+
     }
 }
