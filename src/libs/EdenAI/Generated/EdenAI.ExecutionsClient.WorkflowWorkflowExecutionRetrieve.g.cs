@@ -167,6 +167,8 @@ namespace EdenAI
                     executionId: executionId!,
                     workflowId: workflowId!);
 
+                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 

@@ -178,6 +178,8 @@ namespace EdenAI
                     page: page,
                     pageSize: pageSize);
 
+                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 
