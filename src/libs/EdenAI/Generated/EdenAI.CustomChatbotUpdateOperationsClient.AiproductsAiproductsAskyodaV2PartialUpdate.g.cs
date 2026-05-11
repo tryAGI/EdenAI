@@ -224,6 +224,8 @@ namespace EdenAI
                     systemPrompt: systemPrompt,
                     text: text!);
 
+                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 

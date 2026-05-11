@@ -158,6 +158,8 @@ namespace EdenAI
                     id: id!,
                     name: name!);
 
+                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 

@@ -158,6 +158,8 @@ namespace EdenAI
                     conversationId: conversationId!,
                     projectId: projectId!);
 
+                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 

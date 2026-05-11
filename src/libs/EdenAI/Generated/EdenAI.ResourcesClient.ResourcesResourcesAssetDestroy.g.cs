@@ -149,6 +149,8 @@ namespace EdenAI
                     asset: asset!,
                     resource: resource!);
 
+                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 
