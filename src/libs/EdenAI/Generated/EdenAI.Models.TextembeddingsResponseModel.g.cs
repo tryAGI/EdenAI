@@ -17,20 +17,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Openai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Mistral { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TextembeddingsEmbeddingsDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Cohere { get; set; }
 
         /// <summary>
         /// 
@@ -41,8 +35,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Mistral { get; set; }
 
         /// <summary>
         /// 
@@ -60,30 +60,30 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TextembeddingsResponseModel" /> class.
         /// </summary>
         /// <param name="iointelligence"></param>
+        /// <param name="google"></param>
+        /// <param name="cohere"></param>
+        /// <param name="jina"></param>
         /// <param name="openai"></param>
         /// <param name="mistral"></param>
-        /// <param name="google"></param>
-        /// <param name="jina"></param>
-        /// <param name="cohere"></param>
         /// <param name="ai21labs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextembeddingsResponseModel(
             global::EdenAI.TextembeddingsEmbeddingsDataClass? iointelligence,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? google,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? cohere,
+            global::EdenAI.TextembeddingsEmbeddingsDataClass? jina,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? openai,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? mistral,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? google,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? jina,
-            global::EdenAI.TextembeddingsEmbeddingsDataClass? cohere,
             global::EdenAI.TextembeddingsEmbeddingsDataClass? ai21labs)
         {
             this.Iointelligence = iointelligence;
+            this.Google = google;
+            this.Cohere = cohere;
+            this.Jina = jina;
             this.Openai = openai;
             this.Mistral = mistral;
-            this.Google = google;
-            this.Jina = jina;
-            this.Cohere = cohere;
             this.Ai21labs = ai21labs;
         }
 
