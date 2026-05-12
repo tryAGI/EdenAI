@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("winstonai")]
-        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Winstonai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
+        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Originalityai { get; set; }
 
         /// <summary>
         /// 
@@ -23,8 +23,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
-        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Originalityai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("winstonai")]
+        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Winstonai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +35,20 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextaiDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="winstonai"></param>
-        /// <param name="sapling"></param>
         /// <param name="originalityai"></param>
+        /// <param name="sapling"></param>
+        /// <param name="winstonai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextaiDetectionResponseModel(
-            global::EdenAI.TextaiDetectionAiDetectionDataClass? winstonai,
+            global::EdenAI.TextaiDetectionAiDetectionDataClass? originalityai,
             global::EdenAI.TextaiDetectionAiDetectionDataClass? sapling,
-            global::EdenAI.TextaiDetectionAiDetectionDataClass? originalityai)
+            global::EdenAI.TextaiDetectionAiDetectionDataClass? winstonai)
         {
-            this.Winstonai = winstonai;
-            this.Sapling = sapling;
             this.Originalityai = originalityai;
+            this.Sapling = sapling;
+            this.Winstonai = winstonai;
         }
 
         /// <summary>
