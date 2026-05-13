@@ -11,14 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Api4ai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Clarifai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Anthropic { get; set; }
 
         /// <summary>
         /// 
@@ -29,14 +23,20 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Anthropic { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Api4ai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("smartclick")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Smartclick { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Clarifai { get; set; }
 
         /// <summary>
         /// 
@@ -47,8 +47,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("smartclick")]
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Smartclick { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,32 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagelogoDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="api4ai"></param>
-        /// <param name="clarifai"></param>
-        /// <param name="microsoft"></param>
         /// <param name="anthropic"></param>
-        /// <param name="smartclick"></param>
-        /// <param name="openai"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="api4ai"></param>
         /// <param name="google"></param>
+        /// <param name="clarifai"></param>
+        /// <param name="openai"></param>
+        /// <param name="smartclick"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagelogoDetectionResponseModel(
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? api4ai,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? clarifai,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? microsoft,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? anthropic,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? smartclick,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? microsoft,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? api4ai,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? google,
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? clarifai,
             global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? openai,
-            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? google)
+            global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? smartclick)
         {
-            this.Api4ai = api4ai;
-            this.Clarifai = clarifai;
-            this.Microsoft = microsoft;
             this.Anthropic = anthropic;
-            this.Smartclick = smartclick;
-            this.Openai = openai;
+            this.Microsoft = microsoft;
+            this.Api4ai = api4ai;
             this.Google = google;
+            this.Clarifai = clarifai;
+            this.Openai = openai;
+            this.Smartclick = smartclick;
         }
 
         /// <summary>
