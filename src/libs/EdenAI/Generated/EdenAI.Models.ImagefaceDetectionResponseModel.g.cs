@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Clarifai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Google { get; set; }
 
         /// <summary>
         /// 
@@ -29,8 +29,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Clarifai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -47,25 +47,25 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagefaceDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="google"></param>
-        /// <param name="microsoft"></param>
-        /// <param name="amazon"></param>
         /// <param name="clarifai"></param>
+        /// <param name="google"></param>
+        /// <param name="amazon"></param>
+        /// <param name="microsoft"></param>
         /// <param name="api4ai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagefaceDetectionResponseModel(
-            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? google,
-            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? microsoft,
-            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? clarifai,
+            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? google,
+            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
+            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? microsoft,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? api4ai)
         {
-            this.Google = google;
-            this.Microsoft = microsoft;
-            this.Amazon = amazon;
             this.Clarifai = clarifai;
+            this.Google = google;
+            this.Amazon = amazon;
+            this.Microsoft = microsoft;
             this.Api4ai = api4ai;
         }
 
