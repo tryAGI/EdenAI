@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrdataExtractionDataExtractionDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
+        public global::EdenAI.OcrdataExtractionDataExtractionDataClass? Base64 { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
-        public global::EdenAI.OcrdataExtractionDataExtractionDataClass? Base64 { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrdataExtractionDataExtractionDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrdataExtractionResponseModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
         /// <param name="base64"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrdataExtractionResponseModel(
-            global::EdenAI.OcrdataExtractionDataExtractionDataClass? amazon,
-            global::EdenAI.OcrdataExtractionDataExtractionDataClass? base64)
+            global::EdenAI.OcrdataExtractionDataExtractionDataClass? base64,
+            global::EdenAI.OcrdataExtractionDataExtractionDataClass? amazon)
         {
-            this.Amazon = amazon;
             this.Base64 = base64;
+            this.Amazon = amazon;
         }
 
         /// <summary>
