@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Emvista { get; set; }
 
         /// <summary>
         /// 
@@ -29,14 +29,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Amazon { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
@@ -47,8 +41,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Emvista { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Amazon { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Xai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,32 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextanonymizationResponseModel" /> class.
         /// </summary>
-        /// <param name="openai"></param>
+        /// <param name="emvista"></param>
         /// <param name="oneai"></param>
         /// <param name="microsoft"></param>
+        /// <param name="openai"></param>
+        /// <param name="privateai"></param>
         /// <param name="amazon"></param>
         /// <param name="xai"></param>
-        /// <param name="privateai"></param>
-        /// <param name="emvista"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextanonymizationResponseModel(
-            global::EdenAI.TextanonymizationAnonymizationDataClass? openai,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista,
             global::EdenAI.TextanonymizationAnonymizationDataClass? oneai,
             global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? amazon,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? xai,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? openai,
             global::EdenAI.TextanonymizationAnonymizationDataClass? privateai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? emvista)
+            global::EdenAI.TextanonymizationAnonymizationDataClass? amazon,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? xai)
         {
-            this.Openai = openai;
+            this.Emvista = emvista;
             this.Oneai = oneai;
             this.Microsoft = microsoft;
+            this.Openai = openai;
+            this.Privateai = privateai;
             this.Amazon = amazon;
             this.Xai = xai;
-            this.Privateai = privateai;
-            this.Emvista = emvista;
         }
 
         /// <summary>
