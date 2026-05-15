@@ -11,14 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Bytedance { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -35,14 +29,20 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Bytedance { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Openai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,29 +53,29 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideogenerationAsyncModel" /> class.
         /// </summary>
-        /// <param name="bytedance"></param>
-        /// <param name="amazon"></param>
+        /// <param name="microsoft"></param>
         /// <param name="minimax"></param>
         /// <param name="google"></param>
+        /// <param name="bytedance"></param>
         /// <param name="openai"></param>
-        /// <param name="microsoft"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideogenerationAsyncModel(
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? minimax,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? google,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft)
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon)
         {
-            this.Bytedance = bytedance;
-            this.Amazon = amazon;
+            this.Microsoft = microsoft;
             this.Minimax = minimax;
             this.Google = google;
+            this.Bytedance = bytedance;
             this.Openai = openai;
-            this.Microsoft = microsoft;
+            this.Amazon = amazon;
         }
 
         /// <summary>
