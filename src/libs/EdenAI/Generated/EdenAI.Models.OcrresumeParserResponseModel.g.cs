@@ -23,6 +23,12 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("senseloaf")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Senseloaf { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
         public global::EdenAI.OcrresumeParserResumeParserDataClass? Affinda { get; set; }
 
@@ -31,12 +37,6 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
         public global::EdenAI.OcrresumeParserResumeParserDataClass? Extracta { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("senseloaf")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Senseloaf { get; set; }
 
         /// <summary>
         /// 
@@ -55,9 +55,9 @@ namespace EdenAI
         /// </summary>
         /// <param name="klippa"></param>
         /// <param name="openai"></param>
+        /// <param name="senseloaf"></param>
         /// <param name="affinda"></param>
         /// <param name="extracta"></param>
-        /// <param name="senseloaf"></param>
         /// <param name="hireability"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -65,16 +65,16 @@ namespace EdenAI
         public OcrresumeParserResponseModel(
             global::EdenAI.OcrresumeParserResumeParserDataClass? klippa,
             global::EdenAI.OcrresumeParserResumeParserDataClass? openai,
+            global::EdenAI.OcrresumeParserResumeParserDataClass? senseloaf,
             global::EdenAI.OcrresumeParserResumeParserDataClass? affinda,
             global::EdenAI.OcrresumeParserResumeParserDataClass? extracta,
-            global::EdenAI.OcrresumeParserResumeParserDataClass? senseloaf,
             global::EdenAI.OcrresumeParserResumeParserDataClass? hireability)
         {
             this.Klippa = klippa;
             this.Openai = openai;
+            this.Senseloaf = senseloaf;
             this.Affinda = affinda;
             this.Extracta = extracta;
-            this.Senseloaf = senseloaf;
             this.Hireability = hireability;
         }
 
