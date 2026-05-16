@@ -17,14 +17,26 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Tenstorrent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
         public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Emvista { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Tenstorrent { get; set; }
 
         /// <summary>
         /// 
@@ -57,18 +69,6 @@ namespace EdenAI
         public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Xai { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Google { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Oneai { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -78,40 +78,40 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TextsentimentAnalysisResponseModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
-        /// <param name="tenstorrent"></param>
+        /// <param name="google"></param>
+        /// <param name="oneai"></param>
         /// <param name="emvista"></param>
+        /// <param name="tenstorrent"></param>
         /// <param name="ibm"></param>
         /// <param name="microsoft"></param>
         /// <param name="sapling"></param>
         /// <param name="openai"></param>
         /// <param name="xai"></param>
-        /// <param name="google"></param>
-        /// <param name="oneai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextsentimentAnalysisResponseModel(
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? amazon,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? tenstorrent,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? google,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? oneai,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? emvista,
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? tenstorrent,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? ibm,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? microsoft,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? sapling,
             global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? openai,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? xai,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? google,
-            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? oneai)
+            global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? xai)
         {
             this.Amazon = amazon;
-            this.Tenstorrent = tenstorrent;
+            this.Google = google;
+            this.Oneai = oneai;
             this.Emvista = emvista;
+            this.Tenstorrent = tenstorrent;
             this.Ibm = ibm;
             this.Microsoft = microsoft;
             this.Sapling = sapling;
             this.Openai = openai;
             this.Xai = xai;
-            this.Google = google;
-            this.Oneai = oneai;
         }
 
         /// <summary>
