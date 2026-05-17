@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
-        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Sapling { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
+        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Originalityai { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
-        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Originalityai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sapling")]
+        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Sapling { get; set; }
 
         /// <summary>
         /// 
@@ -35,19 +35,19 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextaiDetectionResponseModel" /> class.
         /// </summary>
-        /// <param name="sapling"></param>
         /// <param name="originalityai"></param>
+        /// <param name="sapling"></param>
         /// <param name="winstonai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextaiDetectionResponseModel(
-            global::EdenAI.TextaiDetectionAiDetectionDataClass? sapling,
             global::EdenAI.TextaiDetectionAiDetectionDataClass? originalityai,
+            global::EdenAI.TextaiDetectionAiDetectionDataClass? sapling,
             global::EdenAI.TextaiDetectionAiDetectionDataClass? winstonai)
         {
-            this.Sapling = sapling;
             this.Originalityai = originalityai;
+            this.Sapling = sapling;
             this.Winstonai = winstonai;
         }
 
