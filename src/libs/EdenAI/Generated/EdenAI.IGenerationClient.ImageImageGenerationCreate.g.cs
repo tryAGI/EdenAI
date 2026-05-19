@@ -9,18 +9,11 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Model|Version|Resolution|Price|Billing unit|<br/>
         /// |----|----|-------|------|-----|------------|<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1024x1024`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`512x512`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`256x256`|0.016 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`1024x1024`|0.02 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1024x1024`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
+        /// |**openai**|-|`v1Beta`|`1024x1024`|0.034 (per 1 image)|1 image<br/>
         /// |**openai**|**gpt-image-2**|`v1Beta`|`1024x1024`|0.053 (per 1 image)|1 image<br/>
+        /// |**openai**|**gpt-image-1**|`v1Beta`|`1024x1024`|0.042 (per 1 image)|None image<br/>
+        /// |**openai**|**gpt-image-1.5**|`v1Beta`|`1024x1024`|0.034 (per 1 image)|None image<br/>
+        /// |**openai**|**gpt-image-1-mini**|`v1Beta`|`1024x1024`|0.011 (per 1 image)|None image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|-|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1152x896`|15.0 (per 1000 image)|1 image<br/>
@@ -70,7 +63,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**openai**|`dall-e-3`|<br/>
+        /// |**openai**|`gpt-image-1.5`|<br/>
         /// |**stabilityai**|`stable-diffusion-xl-1024-v1-0`|<br/>
         /// |**replicate**|`classic`|<br/>
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
@@ -92,18 +85,11 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Model|Version|Resolution|Price|Billing unit|<br/>
         /// |----|----|-------|------|-----|------------|<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1024x1024`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`512x512`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`256x256`|0.016 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`1024x1024`|0.02 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1024x1024`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
+        /// |**openai**|-|`v1Beta`|`1024x1024`|0.034 (per 1 image)|1 image<br/>
         /// |**openai**|**gpt-image-2**|`v1Beta`|`1024x1024`|0.053 (per 1 image)|1 image<br/>
+        /// |**openai**|**gpt-image-1**|`v1Beta`|`1024x1024`|0.042 (per 1 image)|None image<br/>
+        /// |**openai**|**gpt-image-1.5**|`v1Beta`|`1024x1024`|0.034 (per 1 image)|None image<br/>
+        /// |**openai**|**gpt-image-1-mini**|`v1Beta`|`1024x1024`|0.011 (per 1 image)|None image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|-|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1152x896`|15.0 (per 1000 image)|1 image<br/>
@@ -153,7 +139,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**openai**|`dall-e-3`|<br/>
+        /// |**openai**|`gpt-image-1.5`|<br/>
         /// |**stabilityai**|`stable-diffusion-xl-1024-v1-0`|<br/>
         /// |**replicate**|`classic`|<br/>
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
@@ -175,18 +161,11 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Model|Version|Resolution|Price|Billing unit|<br/>
         /// |----|----|-------|------|-----|------------|<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1024x1024`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`512x512`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`256x256`|0.016 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-2**|`v1Beta`|`1024x1024`|0.02 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|**dall-e-3**|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1024x1024`|0.04 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
-        /// |**openai**|-|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
+        /// |**openai**|-|`v1Beta`|`1024x1024`|0.034 (per 1 image)|1 image<br/>
         /// |**openai**|**gpt-image-2**|`v1Beta`|`1024x1024`|0.053 (per 1 image)|1 image<br/>
+        /// |**openai**|**gpt-image-1**|`v1Beta`|`1024x1024`|0.042 (per 1 image)|None image<br/>
+        /// |**openai**|**gpt-image-1.5**|`v1Beta`|`1024x1024`|0.034 (per 1 image)|None image<br/>
+        /// |**openai**|**gpt-image-1-mini**|`v1Beta`|`1024x1024`|0.011 (per 1 image)|None image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|-|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1152x896`|15.0 (per 1000 image)|1 image<br/>
@@ -236,7 +215,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**openai**|`dall-e-3`|<br/>
+        /// |**openai**|`gpt-image-1.5`|<br/>
         /// |**stabilityai**|`stable-diffusion-xl-1024-v1-0`|<br/>
         /// |**replicate**|`classic`|<br/>
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
