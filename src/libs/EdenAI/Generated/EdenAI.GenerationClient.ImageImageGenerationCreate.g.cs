@@ -57,6 +57,7 @@ namespace EdenAI
         /// |**openai**|-|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
         /// |**openai**|-|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
         /// |**openai**|-|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
+        /// |**openai**|**gpt-image-2**|`v1Beta`|`1024x1024`|0.053 (per 1 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|-|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1152x896`|15.0 (per 1000 image)|1 image<br/>
@@ -149,6 +150,7 @@ namespace EdenAI
         /// |**openai**|-|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
         /// |**openai**|-|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
         /// |**openai**|-|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
+        /// |**openai**|**gpt-image-2**|`v1Beta`|`1024x1024`|0.053 (per 1 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|-|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1152x896`|15.0 (per 1000 image)|1 image<br/>
@@ -743,6 +745,7 @@ namespace EdenAI
         /// |**openai**|-|`v1Beta`|`512x512`|0.018 (per 1 image)|1 image<br/>
         /// |**openai**|-|`v1Beta`|`1024x1792`|0.08 (per 1 image)|1 image<br/>
         /// |**openai**|-|`v1Beta`|`1792x1024`|0.08 (per 1 image)|1 image<br/>
+        /// |**openai**|**gpt-image-2**|`v1Beta`|`1024x1024`|0.053 (per 1 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|-|`v1Beta`|`1024x1024`|15.0 (per 1000 image)|1 image<br/>
         /// |**stabilityai**|**stable-diffusion-xl-1024-v1-0**|`v1Beta`|`1152x896`|15.0 (per 1000 image)|1 image<br/>

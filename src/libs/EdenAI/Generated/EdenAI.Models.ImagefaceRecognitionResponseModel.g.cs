@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("facepp")]
+        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Facepp { get; set; }
 
         /// <summary>
         /// 
@@ -23,8 +23,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("facepp")]
-        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Facepp { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +35,20 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagefaceRecognitionResponseModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
-        /// <param name="microsoft"></param>
         /// <param name="facepp"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagefaceRecognitionResponseModel(
-            global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? amazon,
+            global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? facepp,
             global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? microsoft,
-            global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? facepp)
+            global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? amazon)
         {
-            this.Amazon = amazon;
-            this.Microsoft = microsoft;
             this.Facepp = facepp;
+            this.Microsoft = microsoft;
+            this.Amazon = amazon;
         }
 
         /// <summary>
