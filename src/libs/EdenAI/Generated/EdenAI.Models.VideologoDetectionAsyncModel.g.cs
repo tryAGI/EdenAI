@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("twelvelabs")]
-        public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Twelvelabs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("twelvelabs")]
+        public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Twelvelabs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideologoDetectionAsyncModel" /> class.
         /// </summary>
-        /// <param name="twelvelabs"></param>
         /// <param name="google"></param>
+        /// <param name="twelvelabs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideologoDetectionAsyncModel(
-            global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? twelvelabs,
-            global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? google)
+            global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? google,
+            global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? twelvelabs)
         {
-            this.Twelvelabs = twelvelabs;
             this.Google = google;
+            this.Twelvelabs = twelvelabs;
         }
 
         /// <summary>
