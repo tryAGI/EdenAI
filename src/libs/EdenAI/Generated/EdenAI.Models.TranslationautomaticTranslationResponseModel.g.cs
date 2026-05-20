@@ -17,14 +17,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Google { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
@@ -35,8 +29,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Google { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
@@ -60,10 +60,10 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TranslationautomaticTranslationResponseModel" /> class.
         /// </summary>
         /// <param name="openai"></param>
+        /// <param name="xai"></param>
+        /// <param name="amazon"></param>
         /// <param name="google"></param>
         /// <param name="microsoft"></param>
-        /// <param name="amazon"></param>
-        /// <param name="xai"></param>
         /// <param name="deepl"></param>
         /// <param name="modernmt"></param>
 #if NET7_0_OR_GREATER
@@ -71,18 +71,18 @@ namespace EdenAI
 #endif
         public TranslationautomaticTranslationResponseModel(
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? openai,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? xai,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? google,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? microsoft,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? xai,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? deepl,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? modernmt)
         {
             this.Openai = openai;
+            this.Xai = xai;
+            this.Amazon = amazon;
             this.Google = google;
             this.Microsoft = microsoft;
-            this.Amazon = amazon;
-            this.Xai = xai;
             this.Deepl = deepl;
             this.Modernmt = modernmt;
         }
