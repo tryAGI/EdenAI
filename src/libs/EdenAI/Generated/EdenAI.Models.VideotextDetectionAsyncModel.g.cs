@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// 
@@ -35,19 +35,19 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideotextDetectionAsyncModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
         /// <param name="google"></param>
+        /// <param name="amazon"></param>
         /// <param name="twelvelabs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideotextDetectionAsyncModel(
-            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? amazon,
             global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? google,
+            global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? amazon,
             global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? twelvelabs)
         {
-            this.Amazon = amazon;
             this.Google = google;
+            this.Amazon = amazon;
             this.Twelvelabs = twelvelabs;
         }
 
