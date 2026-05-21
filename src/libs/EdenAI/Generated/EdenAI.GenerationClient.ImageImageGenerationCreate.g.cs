@@ -95,6 +95,16 @@ namespace EdenAI
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-3-0-t2i-250415**|`v3`|-|0.03 (per 1 request)|1 request<br/>
+        /// |**google**|-|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**gemini-2.5-flash-image**|`v1`|-|0.039 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-capability-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-ultra-generate-001**|`v1`|-|0.06 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-generate-002**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
+        /// |**google**|**gemini-3-pro-image-preview**|`v1`|-|0.039 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -106,6 +116,7 @@ namespace EdenAI
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
         /// |**minimax**|`image-01`|<br/>
         /// |**bytedance**|`seedream-3-0-t2i-250415`|<br/>
+        /// |**google**|`imagen-4.0-generate-001`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -181,6 +192,16 @@ namespace EdenAI
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-3-0-t2i-250415**|`v3`|-|0.03 (per 1 request)|1 request<br/>
+        /// |**google**|-|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**gemini-2.5-flash-image**|`v1`|-|0.039 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-capability-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-ultra-generate-001**|`v1`|-|0.06 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-generate-002**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
+        /// |**google**|**gemini-3-pro-image-preview**|`v1`|-|0.039 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -192,6 +213,7 @@ namespace EdenAI
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
         /// |**minimax**|`image-01`|<br/>
         /// |**bytedance**|`seedream-3-0-t2i-250415`|<br/>
+        /// |**google**|`imagen-4.0-generate-001`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -769,6 +791,16 @@ namespace EdenAI
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-3-0-t2i-250415**|`v3`|-|0.03 (per 1 request)|1 request<br/>
+        /// |**google**|-|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**gemini-2.5-flash-image**|`v1`|-|0.039 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-capability-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-ultra-generate-001**|`v1`|-|0.06 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-4.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-generate-002**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
+        /// |**google**|**imagen-3.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
+        /// |**google**|**gemini-3-pro-image-preview**|`v1`|-|0.039 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -780,6 +812,7 @@ namespace EdenAI
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
         /// |**minimax**|`image-01`|<br/>
         /// |**bytedance**|`seedream-3-0-t2i-250415`|<br/>
+        /// |**google**|`imagen-4.0-generate-001`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
