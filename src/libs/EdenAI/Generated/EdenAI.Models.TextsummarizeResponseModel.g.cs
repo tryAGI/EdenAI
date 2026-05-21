@@ -17,14 +17,26 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("meaningcloud")]
+        public global::EdenAI.TextsummarizeSummarizeDataClass? Meaningcloud { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextsummarizeSummarizeDataClass? Oneai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.TextsummarizeSummarizeDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("writesonic")]
-        public global::EdenAI.TextsummarizeSummarizeDataClass? Writesonic { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextsummarizeSummarizeDataClass? Xai { get; set; }
 
         /// <summary>
         /// 
@@ -41,6 +53,12 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("writesonic")]
+        public global::EdenAI.TextsummarizeSummarizeDataClass? Writesonic { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
         public global::EdenAI.TextsummarizeSummarizeDataClass? Cohere { get; set; }
 
@@ -49,24 +67,6 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
         public global::EdenAI.TextsummarizeSummarizeDataClass? Emvista { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextsummarizeSummarizeDataClass? Xai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("meaningcloud")]
-        public global::EdenAI.TextsummarizeSummarizeDataClass? Meaningcloud { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextsummarizeSummarizeDataClass? Oneai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -78,40 +78,40 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TextsummarizeResponseModel" /> class.
         /// </summary>
         /// <param name="alephalpha"></param>
-        /// <param name="microsoft"></param>
-        /// <param name="writesonic"></param>
-        /// <param name="anthropic"></param>
-        /// <param name="openai"></param>
-        /// <param name="cohere"></param>
-        /// <param name="emvista"></param>
-        /// <param name="xai"></param>
         /// <param name="meaningcloud"></param>
         /// <param name="oneai"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="xai"></param>
+        /// <param name="anthropic"></param>
+        /// <param name="openai"></param>
+        /// <param name="writesonic"></param>
+        /// <param name="cohere"></param>
+        /// <param name="emvista"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextsummarizeResponseModel(
             global::EdenAI.TextsummarizeSummarizeDataClass? alephalpha,
+            global::EdenAI.TextsummarizeSummarizeDataClass? meaningcloud,
+            global::EdenAI.TextsummarizeSummarizeDataClass? oneai,
             global::EdenAI.TextsummarizeSummarizeDataClass? microsoft,
-            global::EdenAI.TextsummarizeSummarizeDataClass? writesonic,
+            global::EdenAI.TextsummarizeSummarizeDataClass? xai,
             global::EdenAI.TextsummarizeSummarizeDataClass? anthropic,
             global::EdenAI.TextsummarizeSummarizeDataClass? openai,
+            global::EdenAI.TextsummarizeSummarizeDataClass? writesonic,
             global::EdenAI.TextsummarizeSummarizeDataClass? cohere,
-            global::EdenAI.TextsummarizeSummarizeDataClass? emvista,
-            global::EdenAI.TextsummarizeSummarizeDataClass? xai,
-            global::EdenAI.TextsummarizeSummarizeDataClass? meaningcloud,
-            global::EdenAI.TextsummarizeSummarizeDataClass? oneai)
+            global::EdenAI.TextsummarizeSummarizeDataClass? emvista)
         {
             this.Alephalpha = alephalpha;
-            this.Microsoft = microsoft;
-            this.Writesonic = writesonic;
-            this.Anthropic = anthropic;
-            this.Openai = openai;
-            this.Cohere = cohere;
-            this.Emvista = emvista;
-            this.Xai = xai;
             this.Meaningcloud = meaningcloud;
             this.Oneai = oneai;
+            this.Microsoft = microsoft;
+            this.Xai = xai;
+            this.Anthropic = anthropic;
+            this.Openai = openai;
+            this.Writesonic = writesonic;
+            this.Cohere = cohere;
+            this.Emvista = emvista;
         }
 
         /// <summary>
