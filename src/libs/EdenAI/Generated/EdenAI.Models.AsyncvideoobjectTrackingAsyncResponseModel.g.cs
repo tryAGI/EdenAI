@@ -70,5 +70,6 @@ namespace EdenAI
         public AsyncvideoobjectTrackingAsyncResponseModel()
         {
         }
+
     }
 }

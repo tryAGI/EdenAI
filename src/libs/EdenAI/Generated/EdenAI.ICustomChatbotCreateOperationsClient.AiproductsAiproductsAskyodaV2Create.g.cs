@@ -39,6 +39,28 @@ namespace EdenAI
         /// |**jina**|`jina-embeddings-v3`|<br/>
         /// &lt;/details&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.YodaCreateProjectResponse>> AiproductsAiproductsAskyodaV2CreateAsResponseAsync(
+
+            global::EdenAI.AskYourDataProjectRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create Project<br/>
+        /// Allows you to create a new Ask YODA project with specified details.<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Embedding Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**openai**|`text-embedding-3-large`|<br/>
+        /// |**cohere**|`embed-multilingual-v3.0`|<br/>
+        /// |**google**|`text-multilingual-embedding-002`|<br/>
+        /// |**mistral**|`mistral-embed`|<br/>
+        /// |**jina**|`jina-embeddings-v3`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
         /// <param name="credential">
         /// The credential resource name
         /// </param>

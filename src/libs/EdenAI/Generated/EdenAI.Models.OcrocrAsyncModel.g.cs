@@ -23,8 +23,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
@@ -35,8 +35,8 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Oneai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,24 +49,24 @@ namespace EdenAI
         /// </summary>
         /// <param name="microsoft"></param>
         /// <param name="google"></param>
-        /// <param name="amazon"></param>
-        /// <param name="mistral"></param>
         /// <param name="oneai"></param>
+        /// <param name="mistral"></param>
+        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrAsyncModel(
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? microsoft,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon,
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? oneai,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? mistral,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? oneai)
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon)
         {
             this.Microsoft = microsoft;
             this.Google = google;
-            this.Amazon = amazon;
-            this.Mistral = mistral;
             this.Oneai = oneai;
+            this.Mistral = mistral;
+            this.Amazon = amazon;
         }
 
         /// <summary>
@@ -75,5 +75,6 @@ namespace EdenAI
         public OcrocrAsyncModel()
         {
         }
+
     }
 }

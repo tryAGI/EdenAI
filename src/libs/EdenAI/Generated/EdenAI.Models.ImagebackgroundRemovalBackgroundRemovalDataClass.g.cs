@@ -78,5 +78,6 @@ namespace EdenAI
         public ImagebackgroundRemovalBackgroundRemovalDataClass()
         {
         }
+
     }
 }

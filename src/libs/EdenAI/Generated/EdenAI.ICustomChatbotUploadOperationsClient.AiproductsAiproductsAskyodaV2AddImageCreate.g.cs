@@ -24,6 +24,21 @@ namespace EdenAI
         /// This endpoint enables you to upload images into your project.  Upon upload, the file will be processed and stored as text embeddings within the project's database.
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse> AiproductsAiproductsAskyodaV2AddImageCreateAsResponseAsync(
+            global::System.Guid projectId,
+
+            global::EdenAI.AddImageRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Add Image<br/>
+        /// This endpoint enables you to upload images into your project.  Upon upload, the file will be processed and stored as text embeddings within the project's database.
+        /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="metadata">
         /// Optional parameter: Attach metadata to the uploaded data in your database. Provide a stringified JSON with key-value pairs. Useful in `filter_document` when querying the language model, it allows you to filter data with your Chatbot by considering only documents that have the specified metadata. Key 'collection_name' is not allowed.
         /// </param>

@@ -197,5 +197,6 @@ namespace EdenAI
         public InfosIdentityParserDataClass()
         {
         }
+
     }
 }

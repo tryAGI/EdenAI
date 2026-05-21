@@ -52,5 +52,18 @@ namespace EdenAI
         public AssetList()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="AssetList"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static AssetList FromSubResource(string subResource)
+        {
+            return new AssetList
+            {
+                SubResource = subResource,
+            };
+        }
+
     }
 }

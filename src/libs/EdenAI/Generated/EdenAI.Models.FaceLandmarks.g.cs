@@ -498,5 +498,6 @@ namespace EdenAI
         public FaceLandmarks()
         {
         }
+
     }
 }

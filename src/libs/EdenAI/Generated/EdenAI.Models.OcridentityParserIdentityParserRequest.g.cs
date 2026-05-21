@@ -201,5 +201,6 @@ namespace EdenAI
         public OcridentityParserIdentityParserRequest()
         {
         }
+
     }
 }

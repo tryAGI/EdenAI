@@ -40,5 +40,6 @@ namespace EdenAI
         public YodaListChunksIdsResponse()
         {
         }
+
     }
 }

@@ -213,5 +213,6 @@ namespace EdenAI
         public AutomlClassificationUploadDataRequest()
         {
         }
+
     }
 }

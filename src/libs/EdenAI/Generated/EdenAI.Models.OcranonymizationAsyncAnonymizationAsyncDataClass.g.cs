@@ -95,5 +95,6 @@ namespace EdenAI
         public OcranonymizationAsyncAnonymizationAsyncDataClass()
         {
         }
+
     }
 }

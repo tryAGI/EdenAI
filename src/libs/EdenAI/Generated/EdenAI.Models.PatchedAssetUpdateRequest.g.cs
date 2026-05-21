@@ -48,5 +48,6 @@ namespace EdenAI
         public PatchedAssetUpdateRequest()
         {
         }
+
     }
 }

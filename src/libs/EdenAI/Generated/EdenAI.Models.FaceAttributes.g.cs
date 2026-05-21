@@ -120,5 +120,6 @@ namespace EdenAI
         public FaceAttributes()
         {
         }
+
     }
 }

@@ -172,5 +172,6 @@ namespace EdenAI
         public AsyncVideoAnalysisRequest()
         {
         }
+
     }
 }

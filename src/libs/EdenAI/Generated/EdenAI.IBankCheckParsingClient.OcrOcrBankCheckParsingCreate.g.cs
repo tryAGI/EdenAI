@@ -35,6 +35,26 @@ namespace EdenAI
         /// |**extracta**|`v1`|0.1 (per 1 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.OcrbankCheckParsingResponseModel>> OcrOcrBankCheckParsingCreateAsResponseAsync(
+
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Bank Check Parsing<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**base64**|`latest`|0.25 (per 1 page)|1 page<br/>
+        /// |**veryfi**|`v8`|0.16 (per 1 request)|1 request<br/>
+        /// |**mindee**|`v1`|0.1 (per 1 page)|1 page<br/>
+        /// |**extracta**|`v1`|0.1 (per 1 page)|1 page<br/>
+        /// &lt;/details&gt;
+        /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
         ///                      <br/>

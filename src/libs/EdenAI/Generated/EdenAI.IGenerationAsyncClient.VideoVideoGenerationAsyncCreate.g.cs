@@ -81,6 +81,49 @@ namespace EdenAI
         /// |**openai**|`sora-2`|<br/>
         /// &lt;/details&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>> VideoVideoGenerationAsyncCreateAsResponseAsync(
+
+            global::EdenAI.GenerationAsyncRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Generation Launch Job<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|**amazon.nova-reel-v1:1**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**amazon**|**amazon.nova-reel-v1:0**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**amazon**|-|`boto3`|0.5 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|-|`v1`|0.56 (per 1 request)|1 request<br/>
+        /// |**minimax**|**S2V-01**|`v1`|0.65 (per 1 request)|1 request<br/>
+        /// |**minimax**|**T2V/I2V-01-Director**|`v1`|0.43 (per 1 request)|1 request<br/>
+        /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|0.62 (per 1 request)|1 request<br/>
+        /// |**bytedance**|-|`v3`|1.8 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-0-lite-t2v-250428**|`v3`|1.8 (per 1000000 token)|1 token<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-generate-001**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.15 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
+        /// |**openai**|-|`v1`|5.0 (per 1 request)|1 request<br/>
+        /// |**openai**|**sora-2**|`v1`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**amazon**|`amazon.nova-reel-v1:1`|<br/>
+        /// |**minimax**|`MiniMax-Hailuo-2.3`|<br/>
+        /// |**bytedance**|`seedance-1-0-pro-250528`|<br/>
+        /// |**google**|`veo-3.1-generate-preview`|<br/>
+        /// |**openai**|`sora-2`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
         ///                      <br/>

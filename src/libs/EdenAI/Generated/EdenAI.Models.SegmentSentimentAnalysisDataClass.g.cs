@@ -65,5 +65,6 @@ namespace EdenAI
         public SegmentSentimentAnalysisDataClass()
         {
         }
+
     }
 }

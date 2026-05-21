@@ -90,5 +90,6 @@ namespace EdenAI
         public BatchLaunchResponse()
         {
         }
+
     }
 }

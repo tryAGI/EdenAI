@@ -28,6 +28,23 @@ namespace EdenAI
         /// to your collection
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.YodaAskLlmResponse>> AiproductsAiproductsAskyodaV2QueryCreateAsResponseAsync(
+            global::System.Guid projectId,
+
+            global::EdenAI.AskLLMRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Query<br/>
+        /// Interact with your data by selecting your preferred Language Model <br/>
+        /// provider. The chosen provider will then respond to queries based on the data you have added<br/>
+        /// to your collection
+        /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="query">
         /// Enter your question or query about the data. The large language model (LLM) will provide a response.
         /// </param>

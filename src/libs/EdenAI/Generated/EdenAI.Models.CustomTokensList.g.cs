@@ -96,5 +96,6 @@ namespace EdenAI
         public CustomTokensList()
         {
         }
+
     }
 }

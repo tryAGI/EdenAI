@@ -178,5 +178,6 @@ namespace EdenAI
         public TextsummarizeSummarizeRequest()
         {
         }
+
     }
 }

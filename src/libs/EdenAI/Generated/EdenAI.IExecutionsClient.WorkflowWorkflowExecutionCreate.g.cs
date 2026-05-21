@@ -32,6 +32,25 @@ namespace EdenAI
         ///     
         /// </summary>
         /// <param name="workflowId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.ExecutionExampleSuccessCreate>> WorkflowWorkflowExecutionCreateAsResponseAsync(
+            global::System.Guid workflowId,
+
+            global::EdenAI.ExecutionFakeCreateRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create an Execution<br/>
+        /// Launch a workflow Execution.<br/>
+        /// if you set `input` in your workflow, you will need to launch the execution with these inputs as parameters<br/>
+        /// For example if you set a file_url as input with name "my_invoice", your request body will look like this:<br/>
+        ///     { my_invoice: "https://example.com/public/invoice_123.pdf" }<br/>
+        ///     
+        /// </summary>
+        /// <param name="workflowId"></param>
         /// <param name="webhookReceiver">
         /// Webhook receiver should be a valid https URL (ex : https://your.listner.com/endpoint).             After the processing is done, the webhook endpoint will receive a POST request with the result.
         /// </param>

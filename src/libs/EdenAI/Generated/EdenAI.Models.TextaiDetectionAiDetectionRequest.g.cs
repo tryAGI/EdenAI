@@ -193,5 +193,6 @@ namespace EdenAI
         public TextaiDetectionAiDetectionRequest()
         {
         }
+
     }
 }

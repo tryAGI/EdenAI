@@ -232,5 +232,6 @@ namespace EdenAI
         public OcrfinancialParserFinancialParserRequest()
         {
         }
+
     }
 }

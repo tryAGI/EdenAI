@@ -214,5 +214,6 @@ namespace EdenAI
         public ImagequestionAnswerQuestionAnswerRequest()
         {
         }
+
     }
 }

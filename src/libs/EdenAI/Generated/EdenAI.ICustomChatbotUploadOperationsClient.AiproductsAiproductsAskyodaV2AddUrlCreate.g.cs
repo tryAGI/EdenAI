@@ -26,6 +26,22 @@ namespace EdenAI
         /// they will be processed and stored as text embeddings within your project.
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse> AiproductsAiproductsAskyodaV2AddUrlCreateAsResponseAsync(
+            global::System.Guid projectId,
+
+            global::EdenAI.AddUrlRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Add Urls<br/>
+        /// Add a list of URLs into your projects,<br/>
+        /// they will be processed and stored as text embeddings within your project.
+        /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="urls">
         /// Add multiple urls into the database, it loads all the text from HTML webpages into a document format.
         /// </param>

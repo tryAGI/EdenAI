@@ -88,5 +88,6 @@ namespace EdenAI
         public BoundingBox()
         {
         }
+
     }
 }

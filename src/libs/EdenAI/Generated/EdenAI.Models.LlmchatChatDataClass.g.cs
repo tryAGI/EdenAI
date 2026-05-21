@@ -138,5 +138,6 @@ namespace EdenAI
         public LlmchatChatDataClass()
         {
         }
+
     }
 }

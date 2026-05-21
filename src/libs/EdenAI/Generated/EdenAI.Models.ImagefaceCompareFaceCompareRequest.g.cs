@@ -210,5 +210,6 @@ namespace EdenAI
         public ImagefaceCompareFaceCompareRequest()
         {
         }
+
     }
 }

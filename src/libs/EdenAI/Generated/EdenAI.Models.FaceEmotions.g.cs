@@ -140,5 +140,6 @@ namespace EdenAI
         public FaceEmotions()
         {
         }
+
     }
 }

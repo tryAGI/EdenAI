@@ -69,5 +69,6 @@ namespace EdenAI
         public FinancialDocumentMetadata()
         {
         }
+
     }
 }

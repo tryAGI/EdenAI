@@ -233,5 +233,6 @@ namespace EdenAI
         public GenerationAsyncRequest()
         {
         }
+
     }
 }

@@ -110,6 +110,84 @@ namespace EdenAI
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await MultimodalMultimodalChatCreateAsResponseAsync(
+
+                request: request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Chat<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**anthropic**|**claude-3-5-haiku-latest**|`bedrock-2023-05-31`|4.0 (per 1000000 token)|1 token<br/>
+        /// |**anthropic**|-|`bedrock-2023-05-31`|15.0 (per 1000000 token)|1 token<br/>
+        /// |**anthropic**|**claude-3-7-sonnet-20250219**|`bedrock-2023-05-31`|15.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-1.5-flash**|`v1`|0.6 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-1.5-pro**|`v1`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-1.5-flash-latest**|`v1`|0.6 (per 1000000 token)|1 token<br/>
+        /// |**google**|-|`v1`|0.6 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-2.0-flash-lite**|`v1`|0.3 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-flash**|`v1`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-3-pro-preview**|`v1`|18.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-2.0-flash**|`v1`|0.4 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-pro**|`v1`|15.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-pro-preview-03-25**|`v1`|15.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-1.5-pro-latest**|`v1`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-2.0-flash-exp**|`v1`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**google**|**gemini-2.5-pro-exp-03-25**|`v1`|0.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**o1**|`v1Beta`|60.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-4o**|`v1Beta`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-4-turbo**|`v1Beta`|30.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|-|`v1Beta`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-2025-04-14**|`v1Beta`|8.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-mini-2025-04-14**|`v1Beta`|1.6 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-4.1-nano-2025-04-14**|`v1Beta`|0.4 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-4o-mini**|`v1Beta`|0.6 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-5.2**|`v1Beta`|14.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-5**|`v1Beta`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-5-mini**|`v1Beta`|2.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-5-nano**|`v1Beta`|0.4 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**gpt-5-chat-latest**|`v1Beta`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**o1-mini**|`v1Beta`|12.0 (per 1000000 token)|1 token<br/>
+        /// |**openai**|**o1-2024-12-17**|`v1Beta`|60.0 (per 1000000 token)|1 token<br/>
+        /// |**xai**|-|`v1`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision**|`v1`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision-latest**|`v1`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**xai**|**grok-2-vision-1212**|`v1`|10.0 (per 1000000 token)|1 token<br/>
+        /// |**amazon**|-|`boto3 (v1.29.6)`|3.2 (per 1000000 token)|1 token<br/>
+        /// |**amazon**|**amazon.nova-pro-v1:0**|`boto3 (v1.29.6)`|3.2 (per 1000000 token)|1 token<br/>
+        /// |**mistral**|-|`v0.0.1`|6.0 (per 1000000 token)|1 token<br/>
+        /// |**mistral**|**pixtral-large-latest**|`v0.0.1`|6.0 (per 1000000 token)|1 token<br/>
+        /// |**microsoft**|**gpt-4o**|`Azure AI Foundry`|15.0 (per 1000000 token)|1 token<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;a href='https://old-app.edenai.run/v2/models?technology=multimodal-chat' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**anthropic**|`claude-3-5-sonnet-latest`|<br/>
+        /// |**google**|`gemini-2.0-flash`|<br/>
+        /// |**openai**|`gpt-4o`|<br/>
+        /// |**xai**|`grok-2-vision-latest`|<br/>
+        /// |**amazon**|`amazon.nova-pro-v1:0`|<br/>
+        /// |**mistral**|`pixtral-large-latest`|<br/>
+        /// |**microsoft**|`gpt-4o`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.MultimodalchatResponseModel>> MultimodalMultimodalChatCreateAsResponseAsync(
+
+            global::EdenAI.MultimodalchatChatRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -140,6 +218,7 @@ namespace EdenAI
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::EdenAI.PathBuilder(
                                 path: "/multimodal/chat/",
                                 baseUri: HttpClient.BaseAddress);
@@ -219,6 +298,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -229,6 +310,11 @@ namespace EdenAI
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -246,6 +332,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -255,8 +343,7 @@ namespace EdenAI
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -265,6 +352,11 @@ namespace EdenAI
                         __attempt < __maxAttempts &&
                         global::EdenAI.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -281,14 +373,15 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -328,6 +421,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -348,6 +443,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
@@ -524,9 +621,13 @@ namespace EdenAI
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::EdenAI.MultimodalchatResponseModel.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::EdenAI.MultimodalchatResponseModel.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.MultimodalchatResponseModel>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -554,9 +655,13 @@ namespace EdenAI
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::EdenAI.MultimodalchatResponseModel.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::EdenAI.MultimodalchatResponseModel.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.MultimodalchatResponseModel>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

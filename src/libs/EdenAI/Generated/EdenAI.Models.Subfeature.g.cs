@@ -58,5 +58,6 @@ namespace EdenAI
         public Subfeature()
         {
         }
+
     }
 }

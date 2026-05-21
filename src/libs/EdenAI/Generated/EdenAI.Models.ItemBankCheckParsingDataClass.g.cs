@@ -150,5 +150,6 @@ namespace EdenAI
         public ItemBankCheckParsingDataClass()
         {
         }
+
     }
 }

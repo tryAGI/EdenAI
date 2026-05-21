@@ -179,5 +179,6 @@ namespace EdenAI
         public TranslationautomaticTranslationAutomaticTranslationRequest()
         {
         }
+
     }
 }

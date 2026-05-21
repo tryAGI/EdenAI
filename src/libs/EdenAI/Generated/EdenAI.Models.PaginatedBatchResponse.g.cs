@@ -166,5 +166,6 @@ namespace EdenAI
         public PaginatedBatchResponse()
         {
         }
+
     }
 }

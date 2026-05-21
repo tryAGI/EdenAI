@@ -84,5 +84,6 @@ namespace EdenAI
         public VideopersonTrackingAsyncPersonTrackingAsyncDataClass()
         {
         }
+
     }
 }

@@ -55,5 +55,6 @@ namespace EdenAI
         public ThinkingRequest()
         {
         }
+
     }
 }

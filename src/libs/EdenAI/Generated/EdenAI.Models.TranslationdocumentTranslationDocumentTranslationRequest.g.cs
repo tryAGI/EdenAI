@@ -211,5 +211,6 @@ namespace EdenAI
         public TranslationdocumentTranslationDocumentTranslationRequest()
         {
         }
+
     }
 }

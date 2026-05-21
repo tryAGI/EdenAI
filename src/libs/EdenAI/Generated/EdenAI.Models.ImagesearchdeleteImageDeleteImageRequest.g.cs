@@ -154,5 +154,6 @@ namespace EdenAI
         public ImagesearchdeleteImageDeleteImageRequest()
         {
         }
+
     }
 }

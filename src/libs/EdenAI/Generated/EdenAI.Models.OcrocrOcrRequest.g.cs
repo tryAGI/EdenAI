@@ -199,5 +199,6 @@ namespace EdenAI
         public OcrocrOcrRequest()
         {
         }
+
     }
 }

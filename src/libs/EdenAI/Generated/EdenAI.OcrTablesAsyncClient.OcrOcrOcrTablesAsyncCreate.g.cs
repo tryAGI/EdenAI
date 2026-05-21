@@ -252,6 +252,217 @@ namespace EdenAI
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await OcrOcrOcrTablesAsyncCreateAsResponseAsync(
+
+                request: request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// OCR Tables Launch Job<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**amazon**|`boto3 (v1.15.18)`|15.0 (per 1000 page)|1 page<br/>
+        /// |**google**|`DocumentAI v1 beta3`|65.0 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|`rest API 4.0 (2024-02-29-preview)`|10.0 (per 1000 page)|1 page<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Afrikaans**|`af`|<br/>
+        /// |**Albanian**|`sq`|<br/>
+        /// |**Angika**|`anp`|<br/>
+        /// |**Arabic**|`ar`|<br/>
+        /// |**Asturian**|`ast`|<br/>
+        /// |**Awadhi**|`awa`|<br/>
+        /// |**Azerbaijani**|`az`|<br/>
+        /// |**Bagheli**|`bfy`|<br/>
+        /// |**Basque**|`eu`|<br/>
+        /// |**Belarusian**|`be`|<br/>
+        /// |**Bhojpuri**|`bho`|<br/>
+        /// |**Bislama**|`bi`|<br/>
+        /// |**Bodo (India)**|`brx`|<br/>
+        /// |**Bosnian**|`bs`|<br/>
+        /// |**Braj**|`bra`|<br/>
+        /// |**Breton**|`br`|<br/>
+        /// |**Bulgarian**|`bg`|<br/>
+        /// |**Bundeli**|`bns`|<br/>
+        /// |**Buriat**|`bua`|<br/>
+        /// |**Camling**|`rab`|<br/>
+        /// |**Catalan**|`ca`|<br/>
+        /// |**Cebuano**|`ceb`|<br/>
+        /// |**Chamorro**|`ch`|<br/>
+        /// |**Chhattisgarhi**|`hne`|<br/>
+        /// |**Chinese**|`zh`|<br/>
+        /// |**Cornish**|`kw`|<br/>
+        /// |**Corsican**|`co`|<br/>
+        /// |**Crimean Tatar**|`crh`|<br/>
+        /// |**Croatian**|`hr`|<br/>
+        /// |**Czech**|`cs`|<br/>
+        /// |**Danish**|`da`|<br/>
+        /// |**Dari**|`prs`|<br/>
+        /// |**Dhimal**|`dhi`|<br/>
+        /// |**Dogri (macrolanguage)**|`doi`|<br/>
+        /// |**Dutch**|`nl`|<br/>
+        /// |**English**|`en`|<br/>
+        /// |**Erzya**|`myv`|<br/>
+        /// |**Estonian**|`et`|<br/>
+        /// |**Faroese**|`fo`|<br/>
+        /// |**Fijian**|`fj`|<br/>
+        /// |**Filipino**|`fil`|<br/>
+        /// |**Finnish**|`fi`|<br/>
+        /// |**French**|`fr`|<br/>
+        /// |**Friulian**|`fur`|<br/>
+        /// |**Gagauz**|`gag`|<br/>
+        /// |**Galician**|`gl`|<br/>
+        /// |**German**|`de`|<br/>
+        /// |**Gilbertese**|`gil`|<br/>
+        /// |**Gondi**|`gon`|<br/>
+        /// |**Gurung**|`gvr`|<br/>
+        /// |**Haitian**|`ht`|<br/>
+        /// |**Halbi**|`hlb`|<br/>
+        /// |**Hani**|`hni`|<br/>
+        /// |**Haryanvi**|`bgc`|<br/>
+        /// |**Hawaiian**|`haw`|<br/>
+        /// |**Hindi**|`hi`|<br/>
+        /// |**Hmong Daw**|`mww`|<br/>
+        /// |**Ho**|`hoc`|<br/>
+        /// |**Hungarian**|`hu`|<br/>
+        /// |**Icelandic**|`is`|<br/>
+        /// |**Inari Sami**|`smn`|<br/>
+        /// |**Indonesian**|`id`|<br/>
+        /// |**Interlingua (International Auxiliary Language Association)**|`ia`|<br/>
+        /// |**Inuktitut**|`iu`|<br/>
+        /// |**Irish**|`ga`|<br/>
+        /// |**Italian**|`it`|<br/>
+        /// |**Japanese**|`ja`|<br/>
+        /// |**Jaunsari**|`jns`|<br/>
+        /// |**Javanese**|`jv`|<br/>
+        /// |**K'iche'**|`quc`|<br/>
+        /// |**Kabuverdianu**|`kea`|<br/>
+        /// |**Kachin**|`kac`|<br/>
+        /// |**Kalaallisut**|`kl`|<br/>
+        /// |**Kangri**|`xnr`|<br/>
+        /// |**Kara-Kalpak**|`kaa`|<br/>
+        /// |**Karachay-Balkar**|`krc`|<br/>
+        /// |**Kashubian**|`csb`|<br/>
+        /// |**Kazakh**|`kk`|<br/>
+        /// |**Khaling**|`klr`|<br/>
+        /// |**Khasi**|`kha`|<br/>
+        /// |**Kirghiz**|`ky`|<br/>
+        /// |**Korean**|`ko`|<br/>
+        /// |**Korku**|`kfq`|<br/>
+        /// |**Koryak**|`kpy`|<br/>
+        /// |**Kosraean**|`kos`|<br/>
+        /// |**Kumarbhag Paharia**|`kmj`|<br/>
+        /// |**Kumyk**|`kum`|<br/>
+        /// |**Kurdish**|`ku`|<br/>
+        /// |**Kurukh**|`kru`|<br/>
+        /// |**Kölsch**|`ksh`|<br/>
+        /// |**Lakota**|`lkt`|<br/>
+        /// |**Latin**|`la`|<br/>
+        /// |**Latvian**|`lv`|<br/>
+        /// |**Lithuanian**|`lt`|<br/>
+        /// |**Lower Sorbian**|`dsb`|<br/>
+        /// |**Lule Sami**|`smj`|<br/>
+        /// |**Luxembourgish**|`lb`|<br/>
+        /// |**Mahasu Pahari**|`bfz`|<br/>
+        /// |**Malay (macrolanguage)**|`ms`|<br/>
+        /// |**Maltese**|`mt`|<br/>
+        /// |**Manx**|`gv`|<br/>
+        /// |**Maori**|`mi`|<br/>
+        /// |**Marathi**|`mr`|<br/>
+        /// |**Mongolian**|`mn`|<br/>
+        /// |**Montenegrin**|`cnr`|<br/>
+        /// |**Neapolitan**|`nap`|<br/>
+        /// |**Nepali (macrolanguage)**|`ne`|<br/>
+        /// |**Niuean**|`niu`|<br/>
+        /// |**Nogai**|`nog`|<br/>
+        /// |**Northern Sami**|`se`|<br/>
+        /// |**Norwegian**|`no`|<br/>
+        /// |**Occitan (post 1500)**|`oc`|<br/>
+        /// |**Ossetian**|`os`|<br/>
+        /// |**Panjabi**|`pa`|<br/>
+        /// |**Persian**|`fa`|<br/>
+        /// |**Polish**|`pl`|<br/>
+        /// |**Portuguese**|`pt`|<br/>
+        /// |**Pushto**|`ps`|<br/>
+        /// |**Romanian**|`ro`|<br/>
+        /// |**Romansh**|`rm`|<br/>
+        /// |**Russian**|`ru`|<br/>
+        /// |**Sadri**|`sck`|<br/>
+        /// |**Samoan**|`sm`|<br/>
+        /// |**Sanskrit**|`sa`|<br/>
+        /// |**Santali**|`sat`|<br/>
+        /// |**Scots**|`sco`|<br/>
+        /// |**Scottish Gaelic**|`gd`|<br/>
+        /// |**Serbian**|`sr`|<br/>
+        /// |**Sherpa**|`xsr`|<br/>
+        /// |**Sirmauri**|`srx`|<br/>
+        /// |**Skolt Sami**|`sms`|<br/>
+        /// |**Slovak**|`sk`|<br/>
+        /// |**Slovenian**|`sl`|<br/>
+        /// |**Somali**|`so`|<br/>
+        /// |**Southern Sami**|`sma`|<br/>
+        /// |**Spanish**|`es`|<br/>
+        /// |**Swahili (macrolanguage)**|`sw`|<br/>
+        /// |**Swedish**|`sv`|<br/>
+        /// |**Tagalog**|`tl`|<br/>
+        /// |**Tajik**|`tg`|<br/>
+        /// |**Tatar**|`tt`|<br/>
+        /// |**Tetum**|`tet`|<br/>
+        /// |**Thangmi**|`thf`|<br/>
+        /// |**Tonga (Tonga Islands)**|`to`|<br/>
+        /// |**Turkish**|`tr`|<br/>
+        /// |**Turkmen**|`tk`|<br/>
+        /// |**Tuvinian**|`tyv`|<br/>
+        /// |**Uighur**|`ug`|<br/>
+        /// |**Upper Sorbian**|`hsb`|<br/>
+        /// |**Urdu**|`ur`|<br/>
+        /// |**Uzbek**|`uz`|<br/>
+        /// |**Vietnamese**|`vi`|<br/>
+        /// |**Volapük**|`vo`|<br/>
+        /// |**Walser**|`wae`|<br/>
+        /// |**Welsh**|`cy`|<br/>
+        /// |**Western Frisian**|`fy`|<br/>
+        /// |**Yucateco**|`yua`|<br/>
+        /// |**Zhuang**|`za`|<br/>
+        /// |**Zulu**|`zu`|<br/>
+        /// &lt;/details&gt;&lt;details&gt;&lt;summary&gt;Supported Detailed Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Auto detection**|`auto-detect`|<br/>
+        /// |**Belarusian**|`be-Cyrl`|<br/>
+        /// |**Belarusian (Latin)**|`be-Latn`|<br/>
+        /// |**Chinese (Simplified)**|`zh-Hans`|<br/>
+        /// |**Chinese (Traditional)**|`zh-Hant`|<br/>
+        /// |**Kara-Kalpak (Cyrillic)**|`kaa-Cyrl`|<br/>
+        /// |**Kazakh**|`kk-Cyrl`|<br/>
+        /// |**Kazakh (Latin)**|`kk-Latn`|<br/>
+        /// |**Kurdish (Arabic)**|`ku-Arab`|<br/>
+        /// |**Kurdish (Latin)**|`ku-Latn`|<br/>
+        /// |**Serbian (Cyrillic)**|`sr-Cyrl`|<br/>
+        /// |**Serbian (Cyrillic, Montenegro)**|`sr-Cyrl-ME`|<br/>
+        /// |**Serbian (Latin)**|`sr-Latn`|<br/>
+        /// |**Serbian (Latin, Montenegro)**|`sr-Latn-ME`|<br/>
+        /// |**Uzbek (Arabic)**|`uz-Arab`|<br/>
+        /// |**Uzbek (Cyrillic)**|`uz-cyrl`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>> OcrOcrOcrTablesAsyncCreateAsResponseAsync(
+
+            global::EdenAI.OcrTablesAsyncRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -278,10 +489,11 @@ namespace EdenAI
             var __maxAttempts = global::EdenAI.AutoSDKRequestOptionsSupport.GetMaxAttempts(
                 clientOptions: Options,
                 requestOptions: requestOptions,
-                supportsRetry: true);
+                supportsRetry: false);
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::EdenAI.PathBuilder(
                                 path: "/ocr/ocr_tables_async/",
                                 baseUri: HttpClient.BaseAddress);
@@ -314,6 +526,7 @@ namespace EdenAI
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
+
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             if (request.Settings != default)
                             {
@@ -321,52 +534,60 @@ namespace EdenAI
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.Settings ?? string.Empty),
                                     name: "\"settings\"");
+
                             }
                             __httpRequestContent.Add(
                                 content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Providers, x => x))}]"),
                                 name: "\"providers\"");
+
                             if (request.FallbackProviders != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.FallbackProviders, x => x))}]"),
                                     name: "\"fallback_providers\"");
-                            } 
+
+                            }
                             if (request.ShowOriginalResponse != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowOriginalResponse, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_original_response\"");
-                            } 
+
+                            }
                             if (request.WebhookReceiver != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.WebhookReceiver ?? string.Empty),
                                     name: "\"webhook_receiver\"");
-                            } 
+
+                            }
                             if (request.UsersWebhookParameters != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.UsersWebhookParameters.ToString() ?? string.Empty),
                                     name: "\"users_webhook_parameters\"");
-                            } 
+
+                            }
                             if (request.SendWebhookData != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.SendWebhookData, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"send_webhook_data\"");
-                            } 
+
+                            }
                             if (request.ShowBase64 != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.ShowBase64, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"show_base_64\"");
-                            } 
+
+                            }
                             if (request.File != default)
                             {
 
@@ -407,29 +628,35 @@ namespace EdenAI
                                 {
                                     __contentFile.Headers.ContentDisposition.FileNameStar = null;
                                 }
-                            } 
+
+                            }
                             if (request.FileUrl != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.FileUrl ?? string.Empty),
                                     name: "\"file_url\"");
-                            } 
+
+                            }
                             if (request.FilePassword != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.FilePassword ?? string.Empty),
                                     name: "\"file_password\"");
-                            } 
+
+                            }
                             if (request.Language != default)
                             {
 
                                 __httpRequestContent.Add(
                                     content: new global::System.Net.Http.StringContent(request.Language ?? string.Empty),
                                     name: "\"language\"");
+
                             }
+
                             __httpRequest.Content = __httpRequestContent;
+
                 global::EdenAI.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -442,6 +669,8 @@ namespace EdenAI
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     request: request);
+
+                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
 
                 return __httpRequest;
             }
@@ -471,6 +700,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -481,6 +712,11 @@ namespace EdenAI
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -498,6 +734,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -507,8 +745,7 @@ namespace EdenAI
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -517,6 +754,11 @@ namespace EdenAI
                         __attempt < __maxAttempts &&
                         global::EdenAI.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -533,14 +775,15 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -580,6 +823,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -600,6 +845,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
 
@@ -624,9 +871,13 @@ namespace EdenAI
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::EdenAI.LaunchAsyncJobResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::EdenAI.LaunchAsyncJobResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -654,9 +905,13 @@ namespace EdenAI
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::EdenAI.LaunchAsyncJobResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::EdenAI.LaunchAsyncJobResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

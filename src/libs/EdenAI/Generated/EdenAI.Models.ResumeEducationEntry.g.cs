@@ -110,5 +110,6 @@ namespace EdenAI
         public ResumeEducationEntry()
         {
         }
+
     }
 }

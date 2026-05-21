@@ -17,8 +17,26 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Tenstorrent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
         public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Emvista { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Openai { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Oneai { get; set; }
 
         /// <summary>
         /// 
@@ -39,24 +57,6 @@ namespace EdenAI
         public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Corticalio { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Oneai { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Tenstorrent { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Openai { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -66,34 +66,34 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TextkeywordExtractionResponseModel" /> class.
         /// </summary>
         /// <param name="microsoft"></param>
+        /// <param name="tenstorrent"></param>
         /// <param name="emvista"></param>
+        /// <param name="openai"></param>
+        /// <param name="oneai"></param>
         /// <param name="xai"></param>
         /// <param name="amazon"></param>
         /// <param name="corticalio"></param>
-        /// <param name="oneai"></param>
-        /// <param name="tenstorrent"></param>
-        /// <param name="openai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextkeywordExtractionResponseModel(
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? microsoft,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? tenstorrent,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? emvista,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? openai,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? oneai,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? xai,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? amazon,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? corticalio,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? oneai,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? tenstorrent,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? openai)
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? corticalio)
         {
             this.Microsoft = microsoft;
+            this.Tenstorrent = tenstorrent;
             this.Emvista = emvista;
+            this.Openai = openai;
+            this.Oneai = oneai;
             this.Xai = xai;
             this.Amazon = amazon;
             this.Corticalio = corticalio;
-            this.Oneai = oneai;
-            this.Tenstorrent = tenstorrent;
-            this.Openai = openai;
         }
 
         /// <summary>
@@ -102,5 +102,6 @@ namespace EdenAI
         public TextkeywordExtractionResponseModel()
         {
         }
+
     }
 }

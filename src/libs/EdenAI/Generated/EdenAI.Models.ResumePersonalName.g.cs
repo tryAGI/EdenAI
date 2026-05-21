@@ -100,5 +100,6 @@ namespace EdenAI
         public ResumePersonalName()
         {
         }
+
     }
 }

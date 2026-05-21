@@ -92,5 +92,6 @@ namespace EdenAI
         public PatchedAskYodaProjectUpdateRequest()
         {
         }
+
     }
 }

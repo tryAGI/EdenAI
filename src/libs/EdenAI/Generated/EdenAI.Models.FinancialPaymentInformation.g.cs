@@ -303,5 +303,6 @@ namespace EdenAI
         public FinancialPaymentInformation()
         {
         }
+
     }
 }

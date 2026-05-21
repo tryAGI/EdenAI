@@ -190,5 +190,6 @@ namespace EdenAI
         public ImagebackgroundRemovalBackgroundRemovalRequest()
         {
         }
+
     }
 }

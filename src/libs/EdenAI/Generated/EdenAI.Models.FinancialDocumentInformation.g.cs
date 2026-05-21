@@ -184,5 +184,6 @@ namespace EdenAI
         public FinancialDocumentInformation()
         {
         }
+
     }
 }

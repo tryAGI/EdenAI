@@ -220,5 +220,6 @@ namespace EdenAI
         public AnonymizationAsyncRequest()
         {
         }
+
     }
 }

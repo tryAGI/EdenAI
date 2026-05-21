@@ -335,6 +335,176 @@ namespace EdenAI
         /// |**openai**|`gpt-4o`|<br/>
         /// &lt;/details&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.OcrfinancialParserResponseModel>> OcrOcrFinancialParserCreateAsResponseAsync(
+
+            global::EdenAI.OcrfinancialParserFinancialParserRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Financial Parser<br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Model|Version|Document Type|Price|Billing unit|<br/>
+        /// |----|----|-------|------|-----|------------|<br/>
+        /// |**affinda**|-|`v3`|`invoice`|0.08 (per 1 page)|1 page<br/>
+        /// |**affinda**|-|`v3`|`receipt`|0.07 (per 1 page)|1 page<br/>
+        /// |**amazon**|-|`boto3 1.26.8`|-|0.01 (per 1 page)|1 page<br/>
+        /// |**base64**|-|`latest`|-|0.25 (per 1 page)|1 page<br/>
+        /// |**google**|-|`DocumentAI v1 beta3`|`invoice`|0.01 (per 1 page)|10 page<br/>
+        /// |**google**|-|`DocumentAI v1 beta3`|`receipt`|0.01 (per 1 page)|10 page<br/>
+        /// |**klippa**|-|`v1`|-|0.1 (per 1 file)|1 file<br/>
+        /// |**microsoft**|-|`rest API 4.0 (2024-02-29-preview)`|-|0.01 (per 1 page)|1 page<br/>
+        /// |**mindee**|-|`v1.2`|-|0.1 (per 1 page)|1 page<br/>
+        /// |**tabscanner**|-|`latest`|-|0.08 (per 1 page)|1 page<br/>
+        /// |**veryfi**|-|`v8`|`receipt`|0.08 (per 1 file)|1 file<br/>
+        /// |**veryfi**|-|`v8`|`invoice`|0.16 (per 1 file)|1 file<br/>
+        /// |**eagledoc**|-|`v1`|-|0.03 (per 1 page)|1 page<br/>
+        /// |**extracta**|-|`v1`|-|0.1 (per 1 page)|1 page<br/>
+        /// |**openai**|**gpt-4o**|`v1.0`|-|0.04 (per 1 page)|1 page<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Afrikaans**|`af`|<br/>
+        /// |**Albanian**|`sq`|<br/>
+        /// |**Amharic**|`am`|<br/>
+        /// |**Arabic**|`ar`|<br/>
+        /// |**Armenian**|`hy`|<br/>
+        /// |**Azerbaijani**|`az`|<br/>
+        /// |**Basque**|`eu`|<br/>
+        /// |**Belarusian**|`be`|<br/>
+        /// |**Bengali**|`bn`|<br/>
+        /// |**Bosnian**|`bs`|<br/>
+        /// |**Bulgarian**|`bg`|<br/>
+        /// |**Burmese**|`my`|<br/>
+        /// |**Catalan**|`ca`|<br/>
+        /// |**Cebuano**|`ceb`|<br/>
+        /// |**Chinese**|`zh`|<br/>
+        /// |**Corsican**|`co`|<br/>
+        /// |**Croatian**|`hr`|<br/>
+        /// |**Czech**|`cs`|<br/>
+        /// |**Danish**|`da`|<br/>
+        /// |**Dutch**|`nl`|<br/>
+        /// |**English**|`en`|<br/>
+        /// |**Esperanto**|`eo`|<br/>
+        /// |**Estonian**|`et`|<br/>
+        /// |**Finnish**|`fi`|<br/>
+        /// |**French**|`fr`|<br/>
+        /// |**Galician**|`gl`|<br/>
+        /// |**Georgian**|`ka`|<br/>
+        /// |**German**|`de`|<br/>
+        /// |**Gujarati**|`gu`|<br/>
+        /// |**Haitian**|`ht`|<br/>
+        /// |**Hausa**|`ha`|<br/>
+        /// |**Hawaiian**|`haw`|<br/>
+        /// |**Hebrew**|`he`|<br/>
+        /// |**Hindi**|`hi`|<br/>
+        /// |**Hmong**|`hmn`|<br/>
+        /// |**Hungarian**|`hu`|<br/>
+        /// |**Icelandic**|`is`|<br/>
+        /// |**Igbo**|`ig`|<br/>
+        /// |**Indonesian**|`id`|<br/>
+        /// |**Irish**|`ga`|<br/>
+        /// |**Italian**|`it`|<br/>
+        /// |**Japanese**|`ja`|<br/>
+        /// |**Javanese**|`jv`|<br/>
+        /// |**Kannada**|`kn`|<br/>
+        /// |**Kazakh**|`kk`|<br/>
+        /// |**Khmer**|`km`|<br/>
+        /// |**Kinyarwanda**|`rw`|<br/>
+        /// |**Kirghiz**|`ky`|<br/>
+        /// |**Korean**|`ko`|<br/>
+        /// |**Kurdish**|`ku`|<br/>
+        /// |**Lao**|`lo`|<br/>
+        /// |**Latin**|`la`|<br/>
+        /// |**Latvian**|`lv`|<br/>
+        /// |**Lithuanian**|`lt`|<br/>
+        /// |**Luxembourgish**|`lb`|<br/>
+        /// |**Macedonian**|`mk`|<br/>
+        /// |**Malagasy**|`mg`|<br/>
+        /// |**Malay (macrolanguage)**|`ms`|<br/>
+        /// |**Malayalam**|`ml`|<br/>
+        /// |**Maltese**|`mt`|<br/>
+        /// |**Maori**|`mi`|<br/>
+        /// |**Marathi**|`mr`|<br/>
+        /// |**Modern Greek (1453-)**|`el`|<br/>
+        /// |**Mongolian**|`mn`|<br/>
+        /// |**Nepali (macrolanguage)**|`ne`|<br/>
+        /// |**Norwegian**|`no`|<br/>
+        /// |**Nyanja**|`ny`|<br/>
+        /// |**Oriya (macrolanguage)**|`or`|<br/>
+        /// |**Panjabi**|`pa`|<br/>
+        /// |**Persian**|`fa`|<br/>
+        /// |**Polish**|`pl`|<br/>
+        /// |**Portuguese**|`pt`|<br/>
+        /// |**Pushto**|`ps`|<br/>
+        /// |**Romanian**|`ro`|<br/>
+        /// |**Russian**|`ru`|<br/>
+        /// |**Samoan**|`sm`|<br/>
+        /// |**Scottish Gaelic**|`gd`|<br/>
+        /// |**Serbian**|`sr`|<br/>
+        /// |**Shona**|`sn`|<br/>
+        /// |**Sindhi**|`sd`|<br/>
+        /// |**Sinhala**|`si`|<br/>
+        /// |**Slovak**|`sk`|<br/>
+        /// |**Slovenian**|`sl`|<br/>
+        /// |**Somali**|`so`|<br/>
+        /// |**Southern Sotho**|`st`|<br/>
+        /// |**Spanish**|`es`|<br/>
+        /// |**Sundanese**|`su`|<br/>
+        /// |**Swahili (macrolanguage)**|`sw`|<br/>
+        /// |**Swedish**|`sv`|<br/>
+        /// |**Tagalog**|`tl`|<br/>
+        /// |**Tajik**|`tg`|<br/>
+        /// |**Tamil**|`ta`|<br/>
+        /// |**Tatar**|`tt`|<br/>
+        /// |**Telugu**|`te`|<br/>
+        /// |**Thai**|`th`|<br/>
+        /// |**Turkish**|`tr`|<br/>
+        /// |**Turkmen**|`tk`|<br/>
+        /// |**Uighur**|`ug`|<br/>
+        /// |**Ukrainian**|`uk`|<br/>
+        /// |**Urdu**|`ur`|<br/>
+        /// |**Uzbek**|`uz`|<br/>
+        /// |**Vietnamese**|`vi`|<br/>
+        /// |**Welsh**|`cy`|<br/>
+        /// |**Western Frisian**|`fy`|<br/>
+        /// |**Xhosa**|`xh`|<br/>
+        /// |**Yiddish**|`yi`|<br/>
+        /// |**Yoruba**|`yo`|<br/>
+        /// |**Zulu**|`zu`|<br/>
+        /// &lt;/details&gt;&lt;details&gt;&lt;summary&gt;Supported Detailed Languages&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**Auto detection**|`auto-detect`|<br/>
+        /// |**Catalan (Spain)**|`ca-ES`|<br/>
+        /// |**Chinese (China)**|`zh-CN`|<br/>
+        /// |**Chinese (China)**|`zh-cn`|<br/>
+        /// |**Chinese (Taiwan)**|`zh-TW`|<br/>
+        /// |**Chinese (Taiwan)**|`zh-tw`|<br/>
+        /// |**Danish (Denmark)**|`da-DK`|<br/>
+        /// |**Dutch (Netherlands)**|`nl-NL`|<br/>
+        /// |**English (United Kingdom)**|`en-GB`|<br/>
+        /// |**English (United States)**|`en-US`|<br/>
+        /// |**French (Canada)**|`fr-CA`|<br/>
+        /// |**French (France)**|`fr-FR`|<br/>
+        /// |**French (Switzerland)**|`fr-CH`|<br/>
+        /// |**German (Germany)**|`de-DE`|<br/>
+        /// |**German (Switzerland)**|`de-CH`|<br/>
+        /// |**Italian (Italy)**|`it-IT`|<br/>
+        /// |**Italian (Switzerland)**|`it-CH`|<br/>
+        /// |**Portuguese (Portugal)**|`pt-PT`|<br/>
+        /// |**Spanish (Spain)**|`es-ES`|<br/>
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-financial_parser' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**openai**|`gpt-4o`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
         ///                      <br/>

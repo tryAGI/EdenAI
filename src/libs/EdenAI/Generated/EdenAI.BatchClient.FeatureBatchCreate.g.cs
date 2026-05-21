@@ -129,6 +129,100 @@ namespace EdenAI
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await FeatureBatchCreateAsResponseAsync(
+                feature: feature,
+                name: name,
+                subfeature: subfeature,
+
+                request: request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Launch Batch Job<br/>
+        /// Launch a async Batch job, given a job name that will be used as its id.<br/>
+        /// Each request should have the same parameters as you would normally pass to a feature.<br/>
+        /// You can also pass an optional paramater `name` to help better identify each requests you send.<br/>
+        /// Example with `text`/`sentiment_analysis`:<br/>
+        /// ```json<br/>
+        /// "requests": [<br/>
+        ///     {<br/>
+        ///         "text": "It's -25 outside and I am so hot.",<br/>
+        ///         "language": "en",<br/>
+        ///         "providers": "google,amazon"<br/>
+        ///     },<br/>
+        ///     {<br/>
+        ///         "name": "mixed",<br/>
+        ///         "text": "Overall I am satisfied with my experience at Amazon, but two areas of major improvement needed.",<br/>
+        ///         "language": "en",<br/>
+        ///         "providers": "google"<br/>
+        ///     },<br/>
+        ///     ...<br/>
+        /// ]<br/>
+        /// ```<br/>
+        /// ### Limitations:<br/>
+        /// You can have up to `5` concurrent running Jobs &amp; input up to `500` requests per Batch<br/>
+        ///         <br/>
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Features&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Feature Name|Subfeature Name|<br/>
+        /// |------------|---------------|<br/>
+        /// |`translation`|`language_detection`|<br/>
+        /// |`image`|`face_detection`|<br/>
+        /// |`text`|`chat`|<br/>
+        /// |`ocr`|`receipt_parser`|<br/>
+        /// |`image`|`anonymization`|<br/>
+        /// |`audio`|`text_to_speech`|<br/>
+        /// |`translation`|`document_translation`|<br/>
+        /// |`image`|`logo_detection`|<br/>
+        /// |`image`|`landmark_detection`|<br/>
+        /// |`image`|`background_removal`|<br/>
+        /// |`text`|`topic_extraction`|<br/>
+        /// |`text`|`embeddings`|<br/>
+        /// |`text`|`custom_classification`|<br/>
+        /// |`text`|`anonymization`|<br/>
+        /// |`text`|`summarize`|<br/>
+        /// |`text`|`custom_named_entity_recognition`|<br/>
+        /// |`text`|`generation`|<br/>
+        /// |`text`|`code_generation`|<br/>
+        /// |`text`|`moderation`|<br/>
+        /// |`image`|`generation`|<br/>
+        /// |`translation`|`automatic_translation`|<br/>
+        /// |`text`|`search`|<br/>
+        /// |`text`|`spell_check`|<br/>
+        /// |`image`|`object_detection`|<br/>
+        /// |`ocr`|`identity_parser`|<br/>
+        /// |`image`|`explicit_content`|<br/>
+        /// |`ocr`|`invoice_parser`|<br/>
+        /// |`ocr`|`resume_parser`|<br/>
+        /// |`audio`|`speech_to_text_async`|<br/>
+        /// |`ocr`|`ocr_tables_async`|<br/>
+        /// |`video`|`text_detection_async`|<br/>
+        /// |`text`|`question_answer`|<br/>
+        /// |`text`|`keyword_extraction`|<br/>
+        /// |`text`|`named_entity_recognition`|<br/>
+        /// |`text`|`syntax_analysis`|<br/>
+        /// |`text`|`sentiment_analysis`|<br/>
+        /// &lt;/details&gt;
+        /// </summary>
+        /// <param name="feature"></param>
+        /// <param name="name"></param>
+        /// <param name="subfeature"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.BatchLaunchResponse>> FeatureBatchCreateAsResponseAsync(
+            string feature,
+            string name,
+            string subfeature,
+
+            global::EdenAI.BatchRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -162,6 +256,7 @@ namespace EdenAI
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::EdenAI.PathBuilder(
                                 path: $"/{feature}/{subfeature}/batch/{name}/",
                                 baseUri: HttpClient.BaseAddress);
@@ -244,6 +339,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -254,6 +351,11 @@ namespace EdenAI
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -271,6 +373,8 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -280,8 +384,7 @@ namespace EdenAI
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -290,6 +393,11 @@ namespace EdenAI
                         __attempt < __maxAttempts &&
                         global::EdenAI.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::EdenAI.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -306,14 +414,15 @@ namespace EdenAI
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::EdenAI.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -353,6 +462,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -373,6 +484,8 @@ namespace EdenAI
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
@@ -549,9 +662,13 @@ namespace EdenAI
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::EdenAI.BatchLaunchResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::EdenAI.BatchLaunchResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.BatchLaunchResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -579,9 +696,13 @@ namespace EdenAI
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::EdenAI.BatchLaunchResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::EdenAI.BatchLaunchResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.BatchLaunchResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

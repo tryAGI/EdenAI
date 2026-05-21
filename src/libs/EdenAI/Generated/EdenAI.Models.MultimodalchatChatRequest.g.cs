@@ -314,5 +314,6 @@ namespace EdenAI
         public MultimodalchatChatRequest()
         {
         }
+
     }
 }

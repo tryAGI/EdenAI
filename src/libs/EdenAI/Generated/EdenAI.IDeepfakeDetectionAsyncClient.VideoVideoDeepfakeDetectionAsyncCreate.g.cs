@@ -21,6 +21,19 @@ namespace EdenAI
         /// Deepfake Detection Launch Job<br/>
         /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.LaunchAsyncJobResponse>> VideoVideoDeepfakeDetectionAsyncCreateAsResponseAsync(
+
+            global::EdenAI.AsyncVideoAnalysisRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Deepfake Detection Launch Job<br/>
+        /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
+        /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
         ///                      <br/>

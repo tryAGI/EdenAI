@@ -101,5 +101,18 @@ namespace EdenAI
         public PromptCreate()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="PromptCreate"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static PromptCreate FromName(string name)
+        {
+            return new PromptCreate
+            {
+                Name = name,
+            };
+        }
+
     }
 }

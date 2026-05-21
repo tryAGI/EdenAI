@@ -41,5 +41,6 @@ namespace EdenAI
         public NotFoundResponse()
         {
         }
+
     }
 }

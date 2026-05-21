@@ -23,6 +23,20 @@ namespace EdenAI
         /// Streamed version of Chat feature, the raw text will be streamed chunk by chunk.<br/>
         /// NOTE: For this feature, you an only request one provider at a time.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::EdenAI.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<string>> TextTextChatStreamCreateAsResponseAsync(
+
+            global::EdenAI.TextchatChatStreamRequest request,
+            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Chat Stream<br/>
+        /// Streamed version of Chat feature, the raw text will be streamed chunk by chunk.<br/>
+        /// NOTE: For this feature, you an only request one provider at a time.
+        /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
         ///                      <br/>
