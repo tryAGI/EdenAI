@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideofaceDetectionAsyncModel" /> class.
         /// </summary>
-        /// <param name="google"></param>
         /// <param name="amazon"></param>
+        /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideofaceDetectionAsyncModel(
-            global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? google,
-            global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? amazon)
+            global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? amazon,
+            global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? google)
         {
-            this.Google = google;
             this.Amazon = amazon;
+            this.Google = google;
         }
 
         /// <summary>
