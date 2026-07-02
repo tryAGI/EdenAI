@@ -11,6 +11,12 @@ namespace EdenAI
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("resemble")]
+        public global::EdenAI.ImageaiDetectionAiDetectionDataClass? Resemble { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("winstonai")]
         public global::EdenAI.ImageaiDetectionAiDetectionDataClass? Winstonai { get; set; }
 
@@ -23,13 +29,16 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageaiDetectionResponseModel" /> class.
         /// </summary>
+        /// <param name="resemble"></param>
         /// <param name="winstonai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageaiDetectionResponseModel(
+            global::EdenAI.ImageaiDetectionAiDetectionDataClass? resemble,
             global::EdenAI.ImageaiDetectionAiDetectionDataClass? winstonai)
         {
+            this.Resemble = resemble;
             this.Winstonai = winstonai;
         }
 

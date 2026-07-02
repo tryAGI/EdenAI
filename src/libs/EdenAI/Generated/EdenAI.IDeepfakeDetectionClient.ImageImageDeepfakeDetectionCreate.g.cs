@@ -9,7 +9,8 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
-        /// |**sightengine**|`v1beta`|0.002 (per 1 image)|1 image<br/>
+        /// |**sightengine**|`v1beta`|0.0145 (per 1 image)|1 image<br/>
+        /// |**resemble**|`v2`|0.04 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -26,7 +27,8 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
-        /// |**sightengine**|`v1beta`|0.002 (per 1 image)|1 image<br/>
+        /// |**sightengine**|`v1beta`|0.0145 (per 1 image)|1 image<br/>
+        /// |**resemble**|`v2`|0.04 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -43,7 +45,8 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
-        /// |**sightengine**|`v1beta`|0.002 (per 1 image)|1 image<br/>
+        /// |**sightengine**|`v1beta`|0.0145 (per 1 image)|1 image<br/>
+        /// |**resemble**|`v2`|0.04 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">

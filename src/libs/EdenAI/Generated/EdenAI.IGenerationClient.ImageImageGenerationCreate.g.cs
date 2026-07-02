@@ -51,9 +51,10 @@ namespace EdenAI
         /// |**leonardo**|**SDXL 0.9**|`v1`|`1024x1024`|0.017 (per 1 image)|1 image<br/>
         /// |**leonardo**|-|`v1`|`512x512`|0.014 (per 1 image)|1 image<br/>
         /// |**leonardo**|-|`v1`|`1024x1024`|0.017 (per 1 image)|1 image<br/>
+        /// |**leonardo**|**AlbedoBase XL**|`v1`|-|0.017 (per 1 image)|1 image<br/>
         /// |**minimax**|**image-01**|`v1`|-|0.0035 (per 1 image)|1 image<br/>
         /// |**minimax**|-|`v1`|-|0.0035 (per 1 image)|1 image<br/>
-        /// |**bytedance**|**seedream-5-0-260128**|`v3`|-|0.035 (per 1 token)|1 token<br/>
+        /// |**bytedance**|**seedream-5-0-260128**|`v3`|-|0.035 (per 1 image)|1 image<br/>
         /// |**bytedance**|**seedream-4-0-250828**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
@@ -138,9 +139,10 @@ namespace EdenAI
         /// |**leonardo**|**SDXL 0.9**|`v1`|`1024x1024`|0.017 (per 1 image)|1 image<br/>
         /// |**leonardo**|-|`v1`|`512x512`|0.014 (per 1 image)|1 image<br/>
         /// |**leonardo**|-|`v1`|`1024x1024`|0.017 (per 1 image)|1 image<br/>
+        /// |**leonardo**|**AlbedoBase XL**|`v1`|-|0.017 (per 1 image)|1 image<br/>
         /// |**minimax**|**image-01**|`v1`|-|0.0035 (per 1 image)|1 image<br/>
         /// |**minimax**|-|`v1`|-|0.0035 (per 1 image)|1 image<br/>
-        /// |**bytedance**|**seedream-5-0-260128**|`v3`|-|0.035 (per 1 token)|1 token<br/>
+        /// |**bytedance**|**seedream-5-0-260128**|`v3`|-|0.035 (per 1 image)|1 image<br/>
         /// |**bytedance**|**seedream-4-0-250828**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
@@ -225,9 +227,10 @@ namespace EdenAI
         /// |**leonardo**|**SDXL 0.9**|`v1`|`1024x1024`|0.017 (per 1 image)|1 image<br/>
         /// |**leonardo**|-|`v1`|`512x512`|0.014 (per 1 image)|1 image<br/>
         /// |**leonardo**|-|`v1`|`1024x1024`|0.017 (per 1 image)|1 image<br/>
+        /// |**leonardo**|**AlbedoBase XL**|`v1`|-|0.017 (per 1 image)|1 image<br/>
         /// |**minimax**|**image-01**|`v1`|-|0.0035 (per 1 image)|1 image<br/>
         /// |**minimax**|-|`v1`|-|0.0035 (per 1 image)|1 image<br/>
-        /// |**bytedance**|**seedream-5-0-260128**|`v3`|-|0.035 (per 1 token)|1 token<br/>
+        /// |**bytedance**|**seedream-5-0-260128**|`v3`|-|0.035 (per 1 image)|1 image<br/>
         /// |**bytedance**|**seedream-4-0-250828**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>

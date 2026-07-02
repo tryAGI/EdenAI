@@ -56,7 +56,7 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-02-29-preview)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
         /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
@@ -85,7 +85,7 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-02-29-preview)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
         /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
@@ -509,17 +509,15 @@ namespace EdenAI
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -556,17 +554,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 
@@ -583,7 +579,7 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-02-29-preview)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
         /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
