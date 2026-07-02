@@ -363,6 +363,27 @@ namespace EdenAI
         /// |**fireworks_ai**|**accounts/fireworks/models/llama-v3p3-70b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/minimax-m2**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/mixtral-8x22b-instruct**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**MiniMaxAI/MiniMax-M2.1**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Instruct**|`llmengine (v2)`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Thinking**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-405B**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-70B**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Llama-3_1-Nemotron-Ultra-253B-v1**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Nemotron-Nano-V2-12b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**PrimeIntellect/INTELLECT-3**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen2.5-VL-72B-Instruct**|`llmengine (v2)`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Instruct-2507**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`llmengine (v2)`|8e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Instruct-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Thinking-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-32B**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-30B-A3B-Instruct**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-480B-A35B-Instruct**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Next-80B-A3B-Thinking**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5**|`llmengine (v2)`|2.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5-Air**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**DeepSeek-R1-Distill-Llama-70B**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Llama-3.1-8B-Instruct**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Meta-Llama-3_3-70B-Instruct**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
@@ -768,6 +789,27 @@ namespace EdenAI
         /// |**fireworks_ai**|**accounts/fireworks/models/llama-v3p3-70b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/minimax-m2**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/mixtral-8x22b-instruct**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**MiniMaxAI/MiniMax-M2.1**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Instruct**|`llmengine (v2)`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Thinking**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-405B**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-70B**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Llama-3_1-Nemotron-Ultra-253B-v1**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Nemotron-Nano-V2-12b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**PrimeIntellect/INTELLECT-3**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen2.5-VL-72B-Instruct**|`llmengine (v2)`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Instruct-2507**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`llmengine (v2)`|8e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Instruct-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Thinking-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-32B**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-30B-A3B-Instruct**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-480B-A35B-Instruct**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Next-80B-A3B-Thinking**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5**|`llmengine (v2)`|2.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5-Air**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**DeepSeek-R1-Distill-Llama-70B**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Llama-3.1-8B-Instruct**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Meta-Llama-3_3-70B-Instruct**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
@@ -1173,6 +1215,27 @@ namespace EdenAI
         /// |**fireworks_ai**|**accounts/fireworks/models/llama-v3p3-70b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/minimax-m2**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/mixtral-8x22b-instruct**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**MiniMaxAI/MiniMax-M2.1**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Instruct**|`llmengine (v2)`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Thinking**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-405B**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-70B**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Llama-3_1-Nemotron-Ultra-253B-v1**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Nemotron-Nano-V2-12b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**PrimeIntellect/INTELLECT-3**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen2.5-VL-72B-Instruct**|`llmengine (v2)`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Instruct-2507**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`llmengine (v2)`|8e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Instruct-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Thinking-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-32B**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-30B-A3B-Instruct**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-480B-A35B-Instruct**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Next-80B-A3B-Thinking**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5**|`llmengine (v2)`|2.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5-Air**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**DeepSeek-R1-Distill-Llama-70B**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Llama-3.1-8B-Instruct**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Meta-Llama-3_3-70B-Instruct**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>

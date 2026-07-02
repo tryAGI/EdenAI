@@ -58,20 +58,51 @@ namespace EdenAI
         /// |**amazon**|**amazon.nova-reel-v1:1**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|**amazon.nova-reel-v1:0**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|-|`boto3`|0.5 (per 1 request)|1 request<br/>
-        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|0.28 (per 1 request)|1 request<br/>
-        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|0.28 (per 1 request)|1 request<br/>
         /// |**minimax**|-|`v1`|0.56 (per 1 request)|1 request<br/>
         /// |**minimax**|**S2V-01**|`v1`|0.65 (per 1 request)|1 request<br/>
         /// |**minimax**|**T2V/I2V-01-Director**|`v1`|0.43 (per 1 request)|1 request<br/>
-        /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|0.62 (per 1 request)|1 request<br/>
-        /// |**bytedance**|-|`v3`|1.8 (per 1000000 token)|1 token<br/>
-        /// |**bytedance**|**seedance-1-0-lite-t2v-250428**|`v3`|1.8 (per 1000000 token)|1 token<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
+        /// |**bytedance**|-|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-2-0-260128**|`v3`|6.79 (per 1000000 token)|1 token<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.0-generate-001**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.15 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1280x720`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1920x1080`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|-|`v1`|5.0 (per 1 request)|1 request<br/>
-        /// |**openai**|**sora-2**|`v1`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2**|`v1`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`720x1280`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1280x720`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1024x1792`|0.5 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1792x1024`|0.5 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1080x1920`|0.7 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1920x1080`|0.7 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2**|`v1`|`720x1280`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**pixverse**|-|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v6**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**c1**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v5.5**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v5**|`v2`|0.004 (per 1 token)|None token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -82,6 +113,7 @@ namespace EdenAI
         /// |**bytedance**|`seedance-1-0-pro-250528`|<br/>
         /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
+        /// |**pixverse**|`v6`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -111,20 +143,51 @@ namespace EdenAI
         /// |**amazon**|**amazon.nova-reel-v1:1**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|**amazon.nova-reel-v1:0**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|-|`boto3`|0.5 (per 1 request)|1 request<br/>
-        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|0.28 (per 1 request)|1 request<br/>
-        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|0.28 (per 1 request)|1 request<br/>
         /// |**minimax**|-|`v1`|0.56 (per 1 request)|1 request<br/>
         /// |**minimax**|**S2V-01**|`v1`|0.65 (per 1 request)|1 request<br/>
         /// |**minimax**|**T2V/I2V-01-Director**|`v1`|0.43 (per 1 request)|1 request<br/>
-        /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|0.62 (per 1 request)|1 request<br/>
-        /// |**bytedance**|-|`v3`|1.8 (per 1000000 token)|1 token<br/>
-        /// |**bytedance**|**seedance-1-0-lite-t2v-250428**|`v3`|1.8 (per 1000000 token)|1 token<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
+        /// |**bytedance**|-|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-2-0-260128**|`v3`|6.79 (per 1000000 token)|1 token<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.0-generate-001**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.15 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1280x720`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1920x1080`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|-|`v1`|5.0 (per 1 request)|1 request<br/>
-        /// |**openai**|**sora-2**|`v1`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2**|`v1`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`720x1280`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1280x720`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1024x1792`|0.5 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1792x1024`|0.5 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1080x1920`|0.7 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1920x1080`|0.7 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2**|`v1`|`720x1280`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**pixverse**|-|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v6**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**c1**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v5.5**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v5**|`v2`|0.004 (per 1 token)|None token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -135,6 +198,7 @@ namespace EdenAI
         /// |**bytedance**|`seedance-1-0-pro-250528`|<br/>
         /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
+        /// |**pixverse**|`v6`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -577,17 +641,15 @@ namespace EdenAI
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -624,17 +686,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 
@@ -653,20 +713,51 @@ namespace EdenAI
         /// |**amazon**|**amazon.nova-reel-v1:1**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|**amazon.nova-reel-v1:0**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|-|`boto3`|0.5 (per 1 request)|1 request<br/>
-        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|0.28 (per 1 request)|1 request<br/>
-        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|0.28 (per 1 request)|1 request<br/>
         /// |**minimax**|-|`v1`|0.56 (per 1 request)|1 request<br/>
         /// |**minimax**|**S2V-01**|`v1`|0.65 (per 1 request)|1 request<br/>
         /// |**minimax**|**T2V/I2V-01-Director**|`v1`|0.43 (per 1 request)|1 request<br/>
-        /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|0.62 (per 1 request)|1 request<br/>
-        /// |**bytedance**|-|`v3`|1.8 (per 1000000 token)|1 token<br/>
-        /// |**bytedance**|**seedance-1-0-lite-t2v-250428**|`v3`|1.8 (per 1000000 token)|1 token<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-02**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
+        /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
+        /// |**bytedance**|-|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**seedance-2-0-260128**|`v3`|6.79 (per 1000000 token)|1 token<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.0-generate-001**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.15 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1280x720`|0.4 (per 1 seconde)|1 seconde<br/>
+        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1920x1080`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|-|`v1`|5.0 (per 1 request)|1 request<br/>
-        /// |**openai**|**sora-2**|`v1`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2**|`v1`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`720x1280`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1280x720`|0.3 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1024x1792`|0.5 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1792x1024`|0.5 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1080x1920`|0.7 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2-pro**|`v1`|`1920x1080`|0.7 (per 1 seconde)|1 seconde<br/>
+        /// |**openai**|**sora-2**|`v1`|`720x1280`|0.1 (per 1 seconde)|1 seconde<br/>
+        /// |**pixverse**|-|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v6**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**c1**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v5.5**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pixverse**|**v5**|`v2`|0.004 (per 1 token)|None token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -677,6 +768,7 @@ namespace EdenAI
         /// |**bytedance**|`seedance-1-0-pro-250528`|<br/>
         /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
+        /// |**pixverse**|`v6`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">

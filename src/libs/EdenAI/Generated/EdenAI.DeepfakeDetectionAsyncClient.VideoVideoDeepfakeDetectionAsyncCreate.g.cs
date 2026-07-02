@@ -52,7 +52,11 @@ namespace EdenAI
 
         /// <summary>
         /// Deepfake Detection Launch Job<br/>
-        /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**resemble**|`v2`|0.07 (per 1 seconde)|1 seconde<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -75,7 +79,11 @@ namespace EdenAI
         }
         /// <summary>
         /// Deepfake Detection Launch Job<br/>
-        /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**resemble**|`v2`|0.07 (per 1 seconde)|1 seconde<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -489,17 +497,15 @@ namespace EdenAI
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -536,17 +542,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 
@@ -559,7 +563,11 @@ namespace EdenAI
         }
         /// <summary>
         /// Deepfake Detection Launch Job<br/>
-        /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**resemble**|`v2`|0.07 (per 1 seconde)|1 seconde<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
