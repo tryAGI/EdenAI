@@ -5,16 +5,26 @@ namespace EdenAI
 {
     /// <summary>
     /// * `resolution` - Resolution<br/>
-    /// * `document_type` - Document Type
+    /// * `document_type` - Document Type<br/>
+    /// * `depth` - Depth<br/>
+    /// * `reasoning_depth` - Reasoning Depth
     /// </summary>
     public enum DetailTypeEnum
     {
         /// <summary>
-        /// 
+        ///
+        /// </summary>
+        Depth,
+        /// <summary>
+        ///
         /// </summary>
         DocumentType,
         /// <summary>
-        /// 
+        ///
+        /// </summary>
+        ReasoningDepth,
+        /// <summary>
+        ///
         /// </summary>
         Resolution,
     }
@@ -31,7 +41,9 @@ namespace EdenAI
         {
             return value switch
             {
+                DetailTypeEnum.Depth => "depth",
                 DetailTypeEnum.DocumentType => "document_type",
+                DetailTypeEnum.ReasoningDepth => "reasoning_depth",
                 DetailTypeEnum.Resolution => "resolution",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -43,7 +55,9 @@ namespace EdenAI
         {
             return value switch
             {
+                "depth" => DetailTypeEnum.Depth,
                 "document_type" => DetailTypeEnum.DocumentType,
+                "reasoning_depth" => DetailTypeEnum.ReasoningDepth,
                 "resolution" => DetailTypeEnum.Resolution,
                 _ => null,
             };

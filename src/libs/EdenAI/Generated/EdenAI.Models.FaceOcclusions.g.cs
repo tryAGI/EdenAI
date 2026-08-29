@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceOcclusions
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eye_occluded")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool EyeOccluded { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("forehead_occluded")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ForeheadOccluded { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_occluded")]
         [global::System.Text.Json.Serialization.JsonRequired]

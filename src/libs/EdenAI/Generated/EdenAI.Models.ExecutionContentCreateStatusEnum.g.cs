@@ -11,15 +11,15 @@ namespace EdenAI
     public enum ExecutionContentCreateStatusEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

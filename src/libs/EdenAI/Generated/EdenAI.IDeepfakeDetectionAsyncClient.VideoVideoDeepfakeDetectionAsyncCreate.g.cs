@@ -6,7 +6,11 @@ namespace EdenAI
     {
         /// <summary>
         /// Deepfake Detection Launch Job<br/>
-        /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**resemble**|`v2`|0.07 (per 1 seconde)|1 seconde<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -19,7 +23,11 @@ namespace EdenAI
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Deepfake Detection Launch Job<br/>
-        /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**resemble**|`v2`|0.07 (per 1 seconde)|1 seconde<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -32,7 +40,11 @@ namespace EdenAI
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Deepfake Detection Launch Job<br/>
-        /// &lt;strong style='color: #ac3737'&gt;No Provider Available&lt;/strong&gt;
+        /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
+        /// |Provider|Version|Price|Billing unit|<br/>
+        /// |----|-------|-----|------------|<br/>
+        /// |**resemble**|`v2`|0.07 (per 1 seconde)|1 seconde<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>

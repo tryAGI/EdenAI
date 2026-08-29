@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceFacialHair
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("moustache")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Moustache { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("beard")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Beard { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sideburns")]
         [global::System.Text.Json.Serialization.JsonRequired]

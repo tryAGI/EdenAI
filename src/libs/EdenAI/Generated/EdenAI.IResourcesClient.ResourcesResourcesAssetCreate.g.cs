@@ -5,7 +5,7 @@ namespace EdenAI
     public partial interface IResourcesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="resource"></param>
         /// <param name="request"></param>
@@ -19,7 +19,7 @@ namespace EdenAI
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="resource"></param>
         /// <param name="request"></param>
@@ -33,7 +33,7 @@ namespace EdenAI
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="resource"></param>
         /// <param name="subResource"></param>

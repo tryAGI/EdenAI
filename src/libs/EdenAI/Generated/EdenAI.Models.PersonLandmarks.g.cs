@@ -4,120 +4,120 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PersonLandmarks
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eye_left")]
         public global::System.Collections.Generic.IList<int>? EyeLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eye_right")]
         public global::System.Collections.Generic.IList<int>? EyeRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose")]
         public global::System.Collections.Generic.IList<int>? Nose { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ear_left")]
         public global::System.Collections.Generic.IList<int>? EarLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ear_right")]
         public global::System.Collections.Generic.IList<int>? EarRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shoulder_left")]
         public global::System.Collections.Generic.IList<int>? ShoulderLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shoulder_right")]
         public global::System.Collections.Generic.IList<int>? ShoulderRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("elbow_left")]
         public global::System.Collections.Generic.IList<int>? ElbowLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("elbow_right")]
         public global::System.Collections.Generic.IList<int>? ElbowRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("wrist_left")]
         public global::System.Collections.Generic.IList<int>? WristLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("wrist_right")]
         public global::System.Collections.Generic.IList<int>? WristRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hip_left")]
         public global::System.Collections.Generic.IList<int>? HipLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hip_right")]
         public global::System.Collections.Generic.IList<int>? HipRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("knee_left")]
         public global::System.Collections.Generic.IList<int>? KneeLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("knee_right")]
         public global::System.Collections.Generic.IList<int>? KneeRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ankle_left")]
         public global::System.Collections.Generic.IList<int>? AnkleLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ankle_right")]
         public global::System.Collections.Generic.IList<int>? AnkleRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_left")]
         public global::System.Collections.Generic.IList<int>? MouthLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_right")]
         public global::System.Collections.Generic.IList<int>? MouthRight { get; set; }

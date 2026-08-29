@@ -4,23 +4,22 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoquestionAnswerAsyncQuestionAnswerAsyncDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("answer")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Answer { get; set; }
 
         /// <summary>
-        /// 
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("finish_reason")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FinishReason { get; set; }
+        public string? FinishReason { get; set; }
 
         /// <summary>
         /// original response sent by the provider, hidden by default, show it by passing the `show_original_response` field to `true` in your request<br/>
@@ -30,14 +29,14 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("final_status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter))]
@@ -60,9 +59,11 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="VideoquestionAnswerAsyncQuestionAnswerAsyncDataClass" /> class.
         /// </summary>
         /// <param name="answer"></param>
-        /// <param name="finishReason"></param>
         /// <param name="id"></param>
         /// <param name="finalStatus"></param>
+        /// <param name="finishReason">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="originalResponse">
         /// original response sent by the provider, hidden by default, show it by passing the `show_original_response` field to `true` in your request<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -75,14 +76,14 @@ namespace EdenAI
 #endif
         public VideoquestionAnswerAsyncQuestionAnswerAsyncDataClass(
             string answer,
-            string finishReason,
             string id,
             global::EdenAI.FinalStatusEnum finalStatus,
+            string? finishReason,
             object? originalResponse,
             object? error)
         {
             this.Answer = answer ?? throw new global::System.ArgumentNullException(nameof(answer));
-            this.FinishReason = finishReason ?? throw new global::System.ArgumentNullException(nameof(finishReason));
+            this.FinishReason = finishReason;
             this.OriginalResponse = originalResponse;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.FinalStatus = finalStatus;

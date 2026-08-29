@@ -4,172 +4,172 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubCategoryType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AWSKeys,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Address,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Age,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anonymized,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureKeys,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BankAccountNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BankRoutingNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuisnessNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CardExpiry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompanyName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompanyNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreditCard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Date,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DateTime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DriverLicenseNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Duration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LicensePlate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Location,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NationalHealthService,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NationalIdentificationNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nerd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PassportNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Password,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PersonType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Phone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResidentRegistrationNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SocialSecurityNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SwiftCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TaxIdentificationNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Time,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VehicleIdentificationNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoterNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wsd,
     }

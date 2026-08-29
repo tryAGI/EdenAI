@@ -10,11 +10,11 @@ namespace EdenAI
     public enum TypeOfDataEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Test,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Training,
     }

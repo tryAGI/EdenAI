@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AudiotextToSpeechAsyncModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lovoai")]
         public global::EdenAI.AudiotextToSpeechAsyncTextToSpeechAsyncDataClass? Lovoai { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.AudiotextToSpeechAsyncTextToSpeechAsyncDataClass? Amazon { get; set; }

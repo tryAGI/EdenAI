@@ -4,33 +4,33 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AsyncJobList
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providers")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Providers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nb")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Nb { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nb_ok")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int NbOk { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("public_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -48,7 +48,7 @@ namespace EdenAI
         public required global::EdenAI.StateEnum State { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
         [global::System.Text.Json.Serialization.JsonRequired]

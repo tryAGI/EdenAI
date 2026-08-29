@@ -4,25 +4,25 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Table
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rows")]
         public global::System.Collections.Generic.IList<global::EdenAI.Row>? Rows { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_rows")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int NumRows { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("num_cols")]
         [global::System.Text.Json.Serialization.JsonRequired]

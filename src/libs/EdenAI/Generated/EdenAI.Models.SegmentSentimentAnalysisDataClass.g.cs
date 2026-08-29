@@ -13,14 +13,14 @@ namespace EdenAI
     public sealed partial class SegmentSentimentAnalysisDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segment")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Segment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentiment")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.SentimentEbfEnumJsonConverter))]
@@ -28,7 +28,7 @@ namespace EdenAI
         public required global::EdenAI.SentimentEbfEnum Sentiment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentiment_rate")]
         [global::System.Text.Json.Serialization.JsonRequired]

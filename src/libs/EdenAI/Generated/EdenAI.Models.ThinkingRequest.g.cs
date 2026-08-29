@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ThinkingRequest
     {
@@ -18,7 +18,7 @@ namespace EdenAI
         public required global::EdenAI.ThinkingTypeEnum Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("budget_tokens")]
         [global::System.Text.Json.Serialization.JsonRequired]

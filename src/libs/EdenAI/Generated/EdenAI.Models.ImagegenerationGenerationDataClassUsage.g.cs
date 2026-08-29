@@ -4,9 +4,9 @@
 namespace EdenAI
 {
     /// <summary>
-    /// Json data that contains of additional parameters that will be sent back to the webhook receiver             (ex: api key for security or client's data ID to link the result internally).             Will only be used when webhook_receiver is set.
+    /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
     /// </summary>
-    public sealed partial class ExecutionFakeCreateRequestUsersWebhookParameters
+    public sealed partial class ImagegenerationGenerationDataClassUsage
     {
 
         /// <summary>

@@ -10,11 +10,11 @@ namespace EdenAI
     public enum ThinkingTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

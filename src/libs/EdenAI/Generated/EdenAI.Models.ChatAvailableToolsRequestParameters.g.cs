@@ -21,7 +21,7 @@ namespace EdenAI
     ///       },<br/>
     ///       "required": ["location"]<br/>
     ///     }<br/>
-    ///     
+    ///
     /// </summary>
     public sealed partial class ChatAvailableToolsRequestParameters
     {

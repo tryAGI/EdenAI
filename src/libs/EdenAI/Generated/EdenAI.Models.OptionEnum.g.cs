@@ -10,11 +10,11 @@ namespace EdenAI
     public enum OptionEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Female,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Male,
     }

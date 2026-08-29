@@ -10,7 +10,6 @@ namespace EdenAI
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.0 (per 1000 file)|1 file<br/>
-        /// |**clarifai**|-|`8.0.0`|2.0 (per 1000 file)|1 file<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
         /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
@@ -39,7 +38,6 @@ namespace EdenAI
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.0 (per 1000 file)|1 file<br/>
-        /// |**clarifai**|-|`8.0.0`|2.0 (per 1000 file)|1 file<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
         /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
@@ -68,7 +66,6 @@ namespace EdenAI
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.0 (per 1000 file)|1 file<br/>
-        /// |**clarifai**|-|`8.0.0`|2.0 (per 1000 file)|1 file<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
         /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>

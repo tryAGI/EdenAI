@@ -9,39 +9,39 @@ namespace EdenAI
     public enum CategoryType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Content,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DrugAndAlcohol,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HateAndExtremism,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Safe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sexual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Toxic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Violence,
     }

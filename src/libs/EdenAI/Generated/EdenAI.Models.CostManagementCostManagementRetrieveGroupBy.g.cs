@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CostManagementCostManagementRetrieveGroupBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

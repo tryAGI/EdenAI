@@ -4,20 +4,20 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SentimentEbfEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Negative,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neutral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Positive,
     }

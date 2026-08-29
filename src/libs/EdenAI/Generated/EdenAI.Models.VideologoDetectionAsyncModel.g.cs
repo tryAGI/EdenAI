@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideologoDetectionAsyncModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("twelvelabs")]
         public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Twelvelabs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Google { get; set; }

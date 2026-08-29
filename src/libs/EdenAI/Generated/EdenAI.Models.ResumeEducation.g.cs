@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ResumeEducation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_years_education")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int TotalYearsEducation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entries")]
         public global::System.Collections.Generic.IList<global::EdenAI.ResumeEducationEntry>? Entries { get; set; }

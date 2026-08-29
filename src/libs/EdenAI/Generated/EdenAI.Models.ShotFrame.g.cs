@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ShotFrame
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startTimeOffset")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int StartTimeOffset { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endTimeOffset")]
         [global::System.Text.Json.Serialization.JsonRequired]

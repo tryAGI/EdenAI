@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatAvailableToolsRequest
     {
@@ -15,7 +15,7 @@ namespace EdenAI
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public string? Description { get; set; }
@@ -38,7 +38,7 @@ namespace EdenAI
         ///       },<br/>
         ///       "required": ["location"]<br/>
         ///     }<br/>
-        ///     
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters")]
         public object? Parameters { get; set; }
@@ -74,7 +74,7 @@ namespace EdenAI
         ///       },<br/>
         ///       "required": ["location"]<br/>
         ///     }<br/>
-        ///     
+        ///
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

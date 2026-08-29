@@ -12,19 +12,19 @@ namespace EdenAI
     public enum DataTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Audio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Csv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pdf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xml,
     }

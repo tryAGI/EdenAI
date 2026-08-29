@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SpeechDiarization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_speakers")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int TotalSpeakers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entries")]
         public global::System.Collections.Generic.IList<global::EdenAI.SpeechDiarizationEntry>? Entries { get; set; }

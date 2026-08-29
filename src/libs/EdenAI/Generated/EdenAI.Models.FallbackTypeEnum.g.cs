@@ -10,11 +10,11 @@ namespace EdenAI
     public enum FallbackTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Continue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rerun,
     }

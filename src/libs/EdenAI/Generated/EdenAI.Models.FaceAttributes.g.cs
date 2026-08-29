@@ -4,68 +4,68 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("headwear")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Headwear { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("frontal_gaze")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int FrontalGaze { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eyes_visible")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int EyesVisible { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("glasses")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Glasses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_open")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int MouthOpen { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("smiling")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Smiling { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brightness")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Brightness { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharpness")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Sharpness { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pose")]
         [global::System.Text.Json.Serialization.JsonRequired]

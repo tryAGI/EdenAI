@@ -4,63 +4,63 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ResumeExtractedData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("personal_infos")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ResumePersonalInfo PersonalInfos { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("education")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ResumeEducation Education { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("work_experience")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ResumeWorkExp WorkExperience { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("languages")]
         public global::System.Collections.Generic.IList<global::EdenAI.ResumeLang>? Languages { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skills")]
         public global::System.Collections.Generic.IList<global::EdenAI.ResumeSkill>? Skills { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("certifications")]
         public global::System.Collections.Generic.IList<global::EdenAI.ResumeSkill>? Certifications { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("courses")]
         public global::System.Collections.Generic.IList<global::EdenAI.ResumeSkill>? Courses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("publications")]
         public global::System.Collections.Generic.IList<global::EdenAI.ResumeSkill>? Publications { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("interests")]
         public global::System.Collections.Generic.IList<global::EdenAI.ResumeSkill>? Interests { get; set; }

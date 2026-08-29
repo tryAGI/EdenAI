@@ -11,28 +11,12 @@ namespace EdenAI
             new global::EdenAI.EndPointSecurityRequirement
             {
                 Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
-                {                    new global::EdenAI.EndPointAuthorizationRequirement
-                    {
-                        Type = "Http",
-                        SchemeId = "FeatureApiAuth",
-                        Location = "Header",
-                        Name = "Bearer",
-                        FriendlyName = "Bearer",
-                    },
-                },
-            };
-
-        private static readonly global::EdenAI.EndPointSecurityRequirement s_PromptsPromptsRetrieveSecurityRequirement1 =
-            new global::EdenAI.EndPointSecurityRequirement
-            {
-                Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
-                { 
+                {
                 },
             };
         private static readonly global::EdenAI.EndPointSecurityRequirement[] s_PromptsPromptsRetrieveSecurityRequirements =
             new global::EdenAI.EndPointSecurityRequirement[]
             {                s_PromptsPromptsRetrieveSecurityRequirement0,
-                s_PromptsPromptsRetrieveSecurityRequirement1,
             };
         partial void PreparePromptsPromptsRetrieveArguments(
             global::System.Net.Http.HttpClient httpClient,
@@ -126,23 +110,6 @@ namespace EdenAI
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
                 __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
-
-            foreach (var __authorization in __authorizations)
-            {
-                if (__authorization.Type == "Http" ||
-                    __authorization.Type == "OAuth2" ||
-                    __authorization.Type == "OpenIdConnect")
-                {
-                    __httpRequest.Headers.Authorization = new global::System.Net.Http.Headers.AuthenticationHeaderValue(
-                        scheme: __authorization.Name,
-                        parameter: __authorization.Value);
-                }
-                else if (__authorization.Type == "ApiKey" &&
-                         __authorization.Location == "Header")
-                {
-                    __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
-            }
                 global::EdenAI.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -155,8 +122,6 @@ namespace EdenAI
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     name: name!);
-
-                global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
 
                 return __httpRequest;
             }
@@ -367,17 +332,15 @@ namespace EdenAI
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -414,17 +377,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 

@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TextModerationItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("label")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Label { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("likelihood")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -31,7 +31,7 @@ namespace EdenAI
         public required global::EdenAI.CategoryType Category { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subcategory")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.SubCategoryTypeJsonConverter))]
@@ -39,7 +39,7 @@ namespace EdenAI
         public required global::EdenAI.SubCategoryType Subcategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("likelihood_score")]
         [global::System.Text.Json.Serialization.JsonRequired]

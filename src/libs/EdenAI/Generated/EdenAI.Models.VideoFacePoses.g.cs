@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoFacePoses
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pitch")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Pitch { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("roll")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Roll { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("yawn")]
         [global::System.Text.Json.Serialization.JsonRequired]

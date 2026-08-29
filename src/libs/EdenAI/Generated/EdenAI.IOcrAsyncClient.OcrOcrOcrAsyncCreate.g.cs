@@ -10,7 +10,7 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-02-29-preview)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
         /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
@@ -29,7 +29,7 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-02-29-preview)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
         /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
@@ -48,7 +48,7 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-02-29-preview)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
         /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>

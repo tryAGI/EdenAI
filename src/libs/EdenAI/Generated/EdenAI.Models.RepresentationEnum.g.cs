@@ -11,15 +11,15 @@ namespace EdenAI
     public enum RepresentationEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Document,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Query,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Symetric,
     }

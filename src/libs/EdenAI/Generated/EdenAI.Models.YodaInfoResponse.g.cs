@@ -4,40 +4,40 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class YodaInfoResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("db_provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DbProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("embeddings_provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EmbeddingsProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("llm_provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string LlmProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("llm_model")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string LlmModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("collection_size")]
         [global::System.Text.Json.Serialization.JsonRequired]

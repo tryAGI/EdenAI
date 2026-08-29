@@ -10,7 +10,6 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 1.26.8`|free|-<br/>
-        /// |**facepp**|`v3`|0.1 (per 1000 request)|1 request<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="attributesAsList">
@@ -51,7 +50,6 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 1.26.8`|free|-<br/>
-        /// |**facepp**|`v3`|0.1 (per 1000 request)|1 request<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="attributesAsList">
