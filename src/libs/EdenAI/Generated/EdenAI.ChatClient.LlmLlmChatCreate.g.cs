@@ -259,16 +259,6 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-M2.1-lightning**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
         /// |**minimax**|**MiniMax-M2**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**bytedance**|**seed-1-6-250915**|`llmengine (v2)`|2.0 (per 1000000 token)|1 token<br/>
-        /// |**dashscope**|**qwen3-max**|`v1`|2.5 (per 1000000 token)|1 token<br/>
-        /// |**dashscope**|**qwen-max**|`v1`|6.4e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-01-25**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-04-28**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-07-14**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-2024-11-01**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-2025-04-28**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-latest**|`v1`|2e-07 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1.0 (per 1000000 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1e-06 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
@@ -400,6 +390,27 @@ namespace EdenAI
         /// |**fireworks_ai**|**accounts/fireworks/models/llama-v3p3-70b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/minimax-m2**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/mixtral-8x22b-instruct**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**MiniMaxAI/MiniMax-M2.1**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Instruct**|`llmengine (v2)`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Thinking**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-405B**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-70B**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Llama-3_1-Nemotron-Ultra-253B-v1**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Nemotron-Nano-V2-12b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**PrimeIntellect/INTELLECT-3**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen2.5-VL-72B-Instruct**|`llmengine (v2)`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Instruct-2507**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`llmengine (v2)`|8e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Instruct-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Thinking-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-32B**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-30B-A3B-Instruct**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-480B-A35B-Instruct**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Next-80B-A3B-Thinking**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5**|`llmengine (v2)`|2.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5-Air**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**DeepSeek-R1-Distill-Llama-70B**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Llama-3.1-8B-Instruct**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Meta-Llama-3_3-70B-Instruct**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
@@ -431,7 +442,6 @@ namespace EdenAI
         /// |**microsoft**|`gpt-4o`|<br/>
         /// |**minimax**|`MiniMax-M1`|<br/>
         /// |**bytedance**|`seed-1-6-250915`|<br/>
-        /// |**dashscope**|`qwen3-max`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**deepinfra**|`nvidia/Llama-3.3-Nemotron-Super-49B-v1.5`|<br/>
         /// |**cerebras**|`gpt-oss-120b`|<br/>
@@ -674,16 +684,6 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-M2.1-lightning**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
         /// |**minimax**|**MiniMax-M2**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**bytedance**|**seed-1-6-250915**|`llmengine (v2)`|2.0 (per 1000000 token)|1 token<br/>
-        /// |**dashscope**|**qwen3-max**|`v1`|2.5 (per 1000000 token)|1 token<br/>
-        /// |**dashscope**|**qwen-max**|`v1`|6.4e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-01-25**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-04-28**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-07-14**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-2024-11-01**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-2025-04-28**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-latest**|`v1`|2e-07 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1.0 (per 1000000 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1e-06 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
@@ -815,6 +815,27 @@ namespace EdenAI
         /// |**fireworks_ai**|**accounts/fireworks/models/llama-v3p3-70b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/minimax-m2**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/mixtral-8x22b-instruct**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**MiniMaxAI/MiniMax-M2.1**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Instruct**|`llmengine (v2)`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Thinking**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-405B**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-70B**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Llama-3_1-Nemotron-Ultra-253B-v1**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Nemotron-Nano-V2-12b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**PrimeIntellect/INTELLECT-3**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen2.5-VL-72B-Instruct**|`llmengine (v2)`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Instruct-2507**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`llmengine (v2)`|8e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Instruct-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Thinking-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-32B**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-30B-A3B-Instruct**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-480B-A35B-Instruct**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Next-80B-A3B-Thinking**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5**|`llmengine (v2)`|2.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5-Air**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**DeepSeek-R1-Distill-Llama-70B**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Llama-3.1-8B-Instruct**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Meta-Llama-3_3-70B-Instruct**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
@@ -846,7 +867,6 @@ namespace EdenAI
         /// |**microsoft**|`gpt-4o`|<br/>
         /// |**minimax**|`MiniMax-M1`|<br/>
         /// |**bytedance**|`seed-1-6-250915`|<br/>
-        /// |**dashscope**|`qwen3-max`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**deepinfra**|`nvidia/Llama-3.3-Nemotron-Super-49B-v1.5`|<br/>
         /// |**cerebras**|`gpt-oss-120b`|<br/>
@@ -923,7 +943,7 @@ namespace EdenAI
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
@@ -1121,7 +1141,7 @@ namespace EdenAI
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -1146,20 +1166,19 @@ namespace EdenAI
                                     __exception_400 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.BadRequest>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.BadRequest>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_400,
-                                    ResponseObject = __value_400,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_400,
+                                    responseObject: __value_400,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
@@ -1184,20 +1203,19 @@ namespace EdenAI
                                     __exception_500 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.Error>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.Error>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_500,
-                                    ResponseObject = __value_500,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_500,
+                                    responseObject: __value_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -1222,20 +1240,19 @@ namespace EdenAI
                                     __exception_403 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.Error>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.Error>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_403,
-                                    ResponseObject = __value_403,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_403,
+                                    responseObject: __value_403,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 404)
                             {
                                 string? __content_404 = null;
@@ -1260,18 +1277,17 @@ namespace EdenAI
                                     __exception_404 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.NotFoundResponse>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.NotFoundResponse>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_404,
-                                    ResponseObject = __value_404,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_404,
+                                    responseObject: __value_404,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
 
                             if (__effectiveReadResponseAsString)
@@ -1305,17 +1321,15 @@ namespace EdenAI
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -1352,17 +1366,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 
@@ -1591,16 +1603,6 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-M2.1-lightning**|`v1`|2.4e-06 (per 1 token)|1 token<br/>
         /// |**minimax**|**MiniMax-M2**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**bytedance**|**seed-1-6-250915**|`llmengine (v2)`|2.0 (per 1000000 token)|1 token<br/>
-        /// |**dashscope**|**qwen3-max**|`v1`|2.5 (per 1000000 token)|1 token<br/>
-        /// |**dashscope**|**qwen-max**|`v1`|6.4e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-01-25**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-04-28**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-plus-2025-07-14**|`v1`|1.2e-06 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-2024-11-01**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-2025-04-28**|`v1`|2e-07 (per 1 token)|1 token<br/>
-        /// |**dashscope**|**qwen-turbo-latest**|`v1`|2e-07 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1.0 (per 1000000 token)|1 token<br/>
         /// |**perplexityai**|**sonar**|`llmengine (v2)`|1e-06 (per 1 token)|1 token<br/>
         /// |**perplexityai**|**sonar-pro**|`llmengine (v2)`|1.5e-05 (per 1 token)|1 token<br/>
@@ -1732,6 +1734,27 @@ namespace EdenAI
         /// |**fireworks_ai**|**accounts/fireworks/models/llama-v3p3-70b-instruct**|`llmengine (v2)`|9e-07 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/minimax-m2**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**fireworks_ai**|**accounts/fireworks/models/mixtral-8x22b-instruct**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**MiniMaxAI/MiniMax-M2.1**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Instruct**|`llmengine (v2)`|2.4e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**moonshotai/Kimi-K2-Thinking**|`llmengine (v2)`|2.5e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-405B**|`llmengine (v2)`|3e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**NousResearch/Hermes-4-70B**|`llmengine (v2)`|4e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Llama-3_1-Nemotron-Ultra-253B-v1**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**nvidia/Nemotron-Nano-V2-12b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-120b**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**openai/gpt-oss-20b**|`llmengine (v2)`|2e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**PrimeIntellect/INTELLECT-3**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen2.5-VL-72B-Instruct**|`llmengine (v2)`|7.5e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Instruct-2507**|`llmengine (v2)`|6e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-235B-A22B-Thinking-2507**|`llmengine (v2)`|8e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Instruct-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-30B-A3B-Thinking-2507**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-32B**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-30B-A3B-Instruct**|`llmengine (v2)`|3e-07 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Coder-480B-A35B-Instruct**|`llmengine (v2)`|1.8e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**Qwen/Qwen3-Next-80B-A3B-Thinking**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5**|`llmengine (v2)`|2.2e-06 (per 1 token)|1 token<br/>
+        /// |**nebius**|**zai-org/GLM-4.5-Air**|`llmengine (v2)`|1.2e-06 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**DeepSeek-R1-Distill-Llama-70B**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Llama-3.1-8B-Instruct**|`llmengine (v2)`|1e-07 (per 1 token)|1 token<br/>
         /// |**ovhcloud**|**Meta-Llama-3_3-70B-Instruct**|`llmengine (v2)`|6.7e-07 (per 1 token)|1 token<br/>
@@ -1763,7 +1786,6 @@ namespace EdenAI
         /// |**microsoft**|`gpt-4o`|<br/>
         /// |**minimax**|`MiniMax-M1`|<br/>
         /// |**bytedance**|`seed-1-6-250915`|<br/>
-        /// |**dashscope**|`qwen3-max`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**deepinfra**|`nvidia/Llama-3.3-Nemotron-Super-49B-v1.5`|<br/>
         /// |**cerebras**|`gpt-oss-120b`|<br/>

@@ -4,106 +4,106 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ResumePersonalInfo
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ResumePersonalName Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("address")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ResumeLocation Address { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("self_summary")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SelfSummary { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objective")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Objective { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("date_of_birth")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DateOfBirth { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("place_of_birth")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PlaceOfBirth { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("phones")]
         public global::System.Collections.Generic.IList<string>? Phones { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mails")]
         public global::System.Collections.Generic.IList<string>? Mails { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("urls")]
         public global::System.Collections.Generic.IList<string>? Urls { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fax")]
         public global::System.Collections.Generic.IList<string>? Fax { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("current_profession")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CurrentProfession { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gender")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Gender { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nationality")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Nationality { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("martial_status")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MartialStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("current_salary")]
         [global::System.Text.Json.Serialization.JsonRequired]

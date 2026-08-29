@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceHairColor
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("color")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Color { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]

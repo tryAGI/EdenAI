@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class LogoItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bounding_poly")]
         public global::EdenAI.LogoBoundingPoly? BoundingPoly { get; set; }

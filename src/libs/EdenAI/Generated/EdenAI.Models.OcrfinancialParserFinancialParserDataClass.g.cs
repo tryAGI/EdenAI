@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class OcrfinancialParserFinancialParserDataClass
     {
@@ -22,7 +22,7 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.Status549EnumJsonConverter))]

@@ -4,16 +4,16 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PredictionB20Enum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepfake,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Original,
     }

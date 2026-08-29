@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TextentitySentimentResponseModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TextentitySentimentEntitySentimentDataClass? Google { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.TextentitySentimentEntitySentimentDataClass? Amazon { get; set; }

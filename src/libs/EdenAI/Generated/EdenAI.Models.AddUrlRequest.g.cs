@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AddUrlRequest
     {
@@ -22,7 +22,7 @@ namespace EdenAI
         public global::System.Collections.Generic.IList<bool>? JsRender { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         public global::System.Collections.Generic.IList<object>? Metadata { get; set; }

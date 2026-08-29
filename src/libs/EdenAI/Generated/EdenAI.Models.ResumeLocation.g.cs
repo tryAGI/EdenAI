@@ -4,75 +4,75 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ResumeLocation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("formatted_location")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FormattedLocation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("postal_code")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PostalCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Region { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("country")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Country { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("country_code")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CountryCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("raw_input_location")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RawInputLocation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("street")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Street { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("street_number")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string StreetNumber { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appartment_number")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AppartmentNumber { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("city")]
         [global::System.Text.Json.Serialization.JsonRequired]

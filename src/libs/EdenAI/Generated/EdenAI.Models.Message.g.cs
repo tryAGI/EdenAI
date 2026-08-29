@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Message
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_text")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string UserText { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("assistant_text")]
         public string? AssistantText { get; set; }

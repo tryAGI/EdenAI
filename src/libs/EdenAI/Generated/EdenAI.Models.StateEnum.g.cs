@@ -12,19 +12,19 @@ namespace EdenAI
     public enum StateEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TimeoutError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finished,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
     }

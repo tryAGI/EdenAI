@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ImagequestionAnswerQuestionAnswerDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("answers")]
         public global::System.Collections.Generic.IList<string>? Answers { get; set; }
@@ -22,7 +22,7 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.Status549EnumJsonConverter))]

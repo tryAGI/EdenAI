@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProviderSubfeatureLanguage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string LanguageName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language_code")]
         [global::System.Text.Json.Serialization.JsonRequired]

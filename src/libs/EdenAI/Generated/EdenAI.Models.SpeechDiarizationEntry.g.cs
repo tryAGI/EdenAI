@@ -4,40 +4,40 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SpeechDiarizationEntry
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("segment")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Segment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("start_time")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string StartTime { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("end_time")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EndTime { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speaker")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Speaker { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]

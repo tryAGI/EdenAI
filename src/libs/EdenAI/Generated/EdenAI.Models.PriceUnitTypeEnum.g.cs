@@ -21,55 +21,55 @@ namespace EdenAI
     public enum PriceUnitTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Char,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExecTime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         File,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Free,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hour,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Image,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minute,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Page,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Request,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Seconde,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Size,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Token,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

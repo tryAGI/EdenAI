@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Entity
     {
@@ -23,7 +23,7 @@ namespace EdenAI
         public required string Text { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentiment")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.EntitySentimentEnumJsonConverter))]

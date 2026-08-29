@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class OcrocrAsyncOcrAsyncDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("raw_text")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -36,14 +36,14 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("final_status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter))]

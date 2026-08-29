@@ -4,103 +4,103 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Confidence { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("landmarks")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceLandmarks Landmarks { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emotions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceEmotions Emotions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("poses")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FacePoses Poses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("age")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Age { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gender")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Gender { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bounding_box")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceBoundingBox BoundingBox { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hair")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceHair Hair { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("facial_hair")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceFacialHair FacialHair { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("quality")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceQuality Quality { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("makeup")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceMakeup Makeup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessories")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceAccessories Accessories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("occlusions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FaceOcclusions Occlusions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("features")]
         [global::System.Text.Json.Serialization.JsonRequired]

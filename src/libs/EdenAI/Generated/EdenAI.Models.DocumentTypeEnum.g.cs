@@ -11,15 +11,15 @@ namespace EdenAI
     public enum DocumentTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoDetect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Invoice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Receipt,
     }

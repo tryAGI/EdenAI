@@ -4,40 +4,40 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MicrModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("raw")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Raw { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("account_number")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AccountNumber { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("routing_number")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RoutingNumber { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serial_number")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SerialNumber { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("check_number")]
         [global::System.Text.Json.Serialization.JsonRequired]

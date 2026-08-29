@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AskYourDataProjectRequest
     {
@@ -45,13 +45,13 @@ namespace EdenAI
         public string? LlmModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunk_size")]
         public int? ChunkSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunk_separators")]
         public global::System.Collections.Generic.IList<string>? ChunkSeparators { get; set; }

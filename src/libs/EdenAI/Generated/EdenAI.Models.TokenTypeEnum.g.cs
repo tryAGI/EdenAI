@@ -10,11 +10,11 @@ namespace EdenAI
     public enum TokenTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiToken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxApiToken,
     }

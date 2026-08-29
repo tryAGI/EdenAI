@@ -4,47 +4,47 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ObjectItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("label")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Label { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Confidence { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("x_min")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int XMin { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("x_max")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int XMax { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("y_min")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int YMin { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("y_max")]
         [global::System.Text.Json.Serialization.JsonRequired]

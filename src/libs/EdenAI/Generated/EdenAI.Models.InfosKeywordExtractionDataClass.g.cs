@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InfosKeywordExtractionDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyword")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Keyword { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importance")]
         [global::System.Text.Json.Serialization.JsonRequired]

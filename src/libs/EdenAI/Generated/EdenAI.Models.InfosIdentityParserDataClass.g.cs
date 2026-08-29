@@ -4,121 +4,121 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InfosIdentityParserDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass LastName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("given_names")]
         public global::System.Collections.Generic.IList<global::EdenAI.ItemIdentityParserDataClass>? GivenNames { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("birth_place")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass BirthPlace { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("birth_date")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass BirthDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("issuance_date")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass IssuanceDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expire_date")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass ExpireDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("document_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass DocumentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("issuing_state")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass IssuingState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("address")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass Address { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("age")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass Age { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("country")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.Country Country { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("document_type")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass DocumentType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gender")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass Gender { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_id")]
         public global::System.Collections.Generic.IList<global::EdenAI.ItemIdentityParserDataClass>? ImageId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_signature")]
         public global::System.Collections.Generic.IList<global::EdenAI.ItemIdentityParserDataClass>? ImageSignature { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mrz")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.ItemIdentityParserDataClass Mrz { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nationality")]
         [global::System.Text.Json.Serialization.JsonRequired]

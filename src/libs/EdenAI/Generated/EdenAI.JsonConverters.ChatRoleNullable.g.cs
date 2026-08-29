@@ -20,7 +20,7 @@ namespace EdenAI.JsonConverters
                     {
                         return global::EdenAI.ChatRoleExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

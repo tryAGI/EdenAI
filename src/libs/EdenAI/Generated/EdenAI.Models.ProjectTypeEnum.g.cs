@@ -11,15 +11,15 @@ namespace EdenAI
     public enum ProjectTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AskYoDa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Translathor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XMerge,
     }

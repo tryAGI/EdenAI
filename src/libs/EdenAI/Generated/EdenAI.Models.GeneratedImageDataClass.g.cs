@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GeneratedImageDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Image { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_resource_url")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -11,15 +11,15 @@ namespace EdenAI
     public enum ToolChoiceEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Required,
     }

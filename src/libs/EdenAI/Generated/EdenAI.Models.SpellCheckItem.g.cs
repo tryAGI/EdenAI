@@ -19,35 +19,35 @@ namespace EdenAI
     public sealed partial class SpellCheckItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Text { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("offset")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Offset { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("length")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Length { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("suggestions")]
         public global::System.Collections.Generic.IList<global::EdenAI.SuggestionItem>? Suggestions { get; set; }

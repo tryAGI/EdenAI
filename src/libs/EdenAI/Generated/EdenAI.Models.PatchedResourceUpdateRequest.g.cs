@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PatchedResourceUpdateRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resource")]
         public string? Resource { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public object? Data { get; set; }
@@ -31,7 +31,7 @@ namespace EdenAI
         public global::EdenAI.TypeDe8Enum? Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         public string? Provider { get; set; }

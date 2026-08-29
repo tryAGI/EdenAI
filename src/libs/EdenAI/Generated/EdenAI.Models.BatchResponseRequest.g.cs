@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BatchResponseRequest
     {
@@ -26,19 +26,19 @@ namespace EdenAI
         public global::EdenAI.Status889Enum? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errors")]
         public object? Errors { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response")]
         public object? Response { get; set; }

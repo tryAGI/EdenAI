@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CustomTokenUpdate
     {
@@ -31,7 +31,7 @@ namespace EdenAI
         public double? Balance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expire_time")]
         public global::System.DateTime? ExpireTime { get; set; }
@@ -41,6 +41,23 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("active_balance")]
         public bool? ActiveBalance { get; set; }
+
+        /// <summary>
+        /// The amount this token's balance is reset to at the start of each balance_reset_period. Null when balance_reset_period is 'none'.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("balance_reset_amount")]
+        public double? BalanceResetAmount { get; set; }
+
+        /// <summary>
+        /// How often this token's balance is reinitialized to balance_reset_amount. 'none' = one-time balance (default, current behaviour).<br/>
+        /// * `none` - None<br/>
+        /// * `daily` - Daily<br/>
+        /// * `weekly` - Weekly<br/>
+        /// * `monthly` - Monthly
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("balance_reset_period")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.BalanceResetPeriodEnumJsonConverter))]
+        public global::EdenAI.BalanceResetPeriodEnum? BalanceResetPeriod { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,6 +75,16 @@ namespace EdenAI
         /// <param name="activeBalance">
         /// Weither to use the balance field or not.
         /// </param>
+        /// <param name="balanceResetAmount">
+        /// The amount this token's balance is reset to at the start of each balance_reset_period. Null when balance_reset_period is 'none'.
+        /// </param>
+        /// <param name="balanceResetPeriod">
+        /// How often this token's balance is reinitialized to balance_reset_amount. 'none' = one-time balance (default, current behaviour).<br/>
+        /// * `none` - None<br/>
+        /// * `daily` - Daily<br/>
+        /// * `weekly` - Weekly<br/>
+        /// * `monthly` - Monthly
+        /// </param>
         /// <param name="name">
         /// The token name<br/>
         /// Included only in responses
@@ -72,6 +99,8 @@ namespace EdenAI
             double? balance,
             global::System.DateTime? expireTime,
             bool? activeBalance,
+            double? balanceResetAmount,
+            global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod,
             string name = default!,
             global::EdenAI.TokenTypeEnum tokenType = default!)
         {
@@ -80,6 +109,8 @@ namespace EdenAI
             this.Balance = balance;
             this.ExpireTime = expireTime;
             this.ActiveBalance = activeBalance;
+            this.BalanceResetAmount = balanceResetAmount;
+            this.BalanceResetPeriod = balanceResetPeriod;
         }
 
         /// <summary>

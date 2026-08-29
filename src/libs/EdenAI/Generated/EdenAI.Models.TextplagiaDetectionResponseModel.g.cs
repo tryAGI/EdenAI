@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TextplagiaDetectionResponseModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("winstonai")]
         public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Winstonai { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originalityai")]
         public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Originalityai { get; set; }

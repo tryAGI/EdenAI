@@ -3,11 +3,11 @@
 
 namespace EdenAI
 {
-    public partial class ExecutionsClient
+    public partial class UserManagementClient
     {
 
 
-        private static readonly global::EdenAI.EndPointSecurityRequirement s_WorkflowWorkflowExecutionCreateSecurityRequirement0 =
+        private static readonly global::EdenAI.EndPointSecurityRequirement s_UserUserCustomTokenMeRetrieveSecurityRequirement0 =
             new global::EdenAI.EndPointSecurityRequirement
             {
                 Authorizations = new global::EdenAI.EndPointAuthorizationRequirement[]
@@ -21,92 +21,64 @@ namespace EdenAI
                     },
                 },
             };
-        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_WorkflowWorkflowExecutionCreateSecurityRequirements =
+        private static readonly global::EdenAI.EndPointSecurityRequirement[] s_UserUserCustomTokenMeRetrieveSecurityRequirements =
             new global::EdenAI.EndPointSecurityRequirement[]
-            {                s_WorkflowWorkflowExecutionCreateSecurityRequirement0,
+            {                s_UserUserCustomTokenMeRetrieveSecurityRequirement0,
             };
-        partial void PrepareWorkflowWorkflowExecutionCreateArguments(
+        partial void PrepareUserUserCustomTokenMeRetrieveArguments(
+            global::System.Net.Http.HttpClient httpClient);
+        partial void PrepareUserUserCustomTokenMeRetrieveRequest(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::System.Guid workflowId,
-            global::EdenAI.ExecutionFakeCreateRequest request);
-        partial void PrepareWorkflowWorkflowExecutionCreateRequest(
-            global::System.Net.Http.HttpClient httpClient,
-            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::System.Guid workflowId,
-            global::EdenAI.ExecutionFakeCreateRequest request);
-        partial void ProcessWorkflowWorkflowExecutionCreateResponse(
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage);
+        partial void ProcessUserUserCustomTokenMeRetrieveResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessWorkflowWorkflowExecutionCreateResponseContent(
-            global::System.Net.Http.HttpClient httpClient,
-            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
-            ref string content);
-
         /// <summary>
-        /// Create an Execution<br/>
-        /// Launch a workflow Execution.<br/>
-        /// if you set `input` in your workflow, you will need to launch the execution with these inputs as parameters<br/>
-        /// For example if you set a file_url as input with name "my_invoice", your request body will look like this:<br/>
-        ///     { my_invoice: "https://example.com/public/invoice_123.pdf" }<br/>
-        ///     
+        /// Inspect the calling API key<br/>
+        /// Return info about the API key used to authenticate *this* request — its<br/>
+        /// label, masking, budget and remaining balance. The introspection counterpart<br/>
+        /// to OpenRouter's ``GET /key``: authenticated BY the key itself (FeatureAuth),<br/>
+        /// never by a session, and it can only ever see its own row. Key management<br/>
+        /// (list/create/rotate/delete) lives on the session-only endpoints.
         /// </summary>
-        /// <param name="workflowId"></param>
-        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::EdenAI.ExecutionExampleSuccessCreate> WorkflowWorkflowExecutionCreateAsync(
-            global::System.Guid workflowId,
-
-            global::EdenAI.ExecutionFakeCreateRequest request,
+        public async global::System.Threading.Tasks.Task UserUserCustomTokenMeRetrieveAsync(
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await WorkflowWorkflowExecutionCreateAsResponseAsync(
-                workflowId: workflowId,
-
-                request: request,
+            await UserUserCustomTokenMeRetrieveAsResponseAsync(
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
-
-            return __response.Body;
         }
         /// <summary>
-        /// Create an Execution<br/>
-        /// Launch a workflow Execution.<br/>
-        /// if you set `input` in your workflow, you will need to launch the execution with these inputs as parameters<br/>
-        /// For example if you set a file_url as input with name "my_invoice", your request body will look like this:<br/>
-        ///     { my_invoice: "https://example.com/public/invoice_123.pdf" }<br/>
-        ///     
+        /// Inspect the calling API key<br/>
+        /// Return info about the API key used to authenticate *this* request — its<br/>
+        /// label, masking, budget and remaining balance. The introspection counterpart<br/>
+        /// to OpenRouter's ``GET /key``: authenticated BY the key itself (FeatureAuth),<br/>
+        /// never by a session, and it can only ever see its own row. Key management<br/>
+        /// (list/create/rotate/delete) lives on the session-only endpoints.
         /// </summary>
-        /// <param name="workflowId"></param>
-        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::EdenAI.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse<global::EdenAI.ExecutionExampleSuccessCreate>> WorkflowWorkflowExecutionCreateAsResponseAsync(
-            global::System.Guid workflowId,
-
-            global::EdenAI.ExecutionFakeCreateRequest request,
+        public async global::System.Threading.Tasks.Task<global::EdenAI.AutoSDKHttpResponse> UserUserCustomTokenMeRetrieveAsResponseAsync(
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
-
             PrepareArguments(
                 client: HttpClient);
-            PrepareWorkflowWorkflowExecutionCreateArguments(
-                httpClient: HttpClient,
-                workflowId: ref workflowId,
-                request: request);
+            PrepareUserUserCustomTokenMeRetrieveArguments(
+                httpClient: HttpClient);
 
 
             var __authorizations = global::EdenAI.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_WorkflowWorkflowExecutionCreateSecurityRequirements,
-                operationName: "WorkflowWorkflowExecutionCreateAsync");
+                securityRequirements: s_UserUserCustomTokenMeRetrieveSecurityRequirements,
+                operationName: "UserUserCustomTokenMeRetrieveAsync");
 
             using var __timeoutCancellationTokenSource = global::EdenAI.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -126,7 +98,7 @@ namespace EdenAI
             {
 
                             var __pathBuilder = new global::EdenAI.PathBuilder(
-                                path: $"/workflow/{workflowId}/execution/",
+                                path: "/user/custom_token/me/",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::EdenAI.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -134,7 +106,7 @@ namespace EdenAI
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Post,
+                    method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -155,14 +127,8 @@ namespace EdenAI
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
-                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
-                            var __httpRequestContent = new global::System.Net.Http.StringContent(
-                                content: __httpRequestContentBody,
-                                encoding: global::System.Text.Encoding.UTF8,
-                                mediaType: "application/json");
-                            __httpRequest.Content = __httpRequestContent;
                 global::EdenAI.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -171,11 +137,9 @@ namespace EdenAI
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareWorkflowWorkflowExecutionCreateRequest(
+                PrepareUserUserCustomTokenMeRetrieveRequest(
                     httpClient: HttpClient,
-                    httpRequestMessage: __httpRequest,
-                    workflowId: workflowId!,
-                    request: request);
+                    httpRequestMessage: __httpRequest);
 
                 return __httpRequest;
             }
@@ -192,10 +156,10 @@ namespace EdenAI
                     await global::EdenAI.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "WorkflowWorkflowExecutionCreate",
-                                methodName: "WorkflowWorkflowExecutionCreateAsync",
-                                pathTemplate: "$\"/workflow/{workflowId}/execution/\"",
-                                httpMethod: "POST",
+                                operationId: "UserUserCustomTokenMeRetrieve",
+                                methodName: "UserUserCustomTokenMeRetrieveAsync",
+                                pathTemplate: "\"/user/custom_token/me/\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -226,10 +190,10 @@ namespace EdenAI
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "WorkflowWorkflowExecutionCreate",
-                                methodName: "WorkflowWorkflowExecutionCreateAsync",
-                                pathTemplate: "$\"/workflow/{workflowId}/execution/\"",
-                                httpMethod: "POST",
+                                operationId: "UserUserCustomTokenMeRetrieve",
+                                methodName: "UserUserCustomTokenMeRetrieveAsync",
+                                pathTemplate: "\"/user/custom_token/me/\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -267,10 +231,10 @@ namespace EdenAI
                         await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "WorkflowWorkflowExecutionCreate",
-                                methodName: "WorkflowWorkflowExecutionCreateAsync",
-                                pathTemplate: "$\"/workflow/{workflowId}/execution/\"",
-                                httpMethod: "POST",
+                                operationId: "UserUserCustomTokenMeRetrieve",
+                                methodName: "UserUserCustomTokenMeRetrieveAsync",
+                                pathTemplate: "\"/user/custom_token/me/\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -307,7 +271,7 @@ namespace EdenAI
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessWorkflowWorkflowExecutionCreateResponse(
+                ProcessUserUserCustomTokenMeRetrieveResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -315,10 +279,10 @@ namespace EdenAI
                     await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "WorkflowWorkflowExecutionCreate",
-                                methodName: "WorkflowWorkflowExecutionCreateAsync",
-                                pathTemplate: "$\"/workflow/{workflowId}/execution/\"",
-                                httpMethod: "POST",
+                                operationId: "UserUserCustomTokenMeRetrieve",
+                                methodName: "UserUserCustomTokenMeRetrieveAsync",
+                                pathTemplate: "\"/user/custom_token/me/\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -337,10 +301,10 @@ namespace EdenAI
                     await global::EdenAI.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::EdenAI.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "WorkflowWorkflowExecutionCreate",
-                                methodName: "WorkflowWorkflowExecutionCreateAsync",
-                                pathTemplate: "$\"/workflow/{workflowId}/execution/\"",
-                                httpMethod: "POST",
+                                operationId: "UserUserCustomTokenMeRetrieve",
+                                methodName: "UserUserCustomTokenMeRetrieveAsync",
+                                pathTemplate: "\"/user/custom_token/me/\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -367,36 +331,27 @@ namespace EdenAI
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessWorkflowWorkflowExecutionCreateResponseContent(
-                                    httpClient: HttpClient,
-                                    httpResponseMessage: __response,
-                                    content: ref __content);
 
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::EdenAI.ExecutionExampleSuccessCreate.FromJson(__content, JsonSerializerContext) ??
-                                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.ExecutionExampleSuccessCreate>(
+                return new global::EdenAI.AutoSDKHttpResponse(
                                         statusCode: __response.StatusCode,
                                         headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri,
-                                        body: __value);
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -404,19 +359,10 @@ namespace EdenAI
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
-                                    using var __content = await __response.Content.ReadAsStreamAsync(
-                #if NET5_0_OR_GREATER
-                                        __effectiveCancellationToken
-                #endif
-                                    ).ConfigureAwait(false);
-
-                                    var __value = await global::EdenAI.ExecutionExampleSuccessCreate.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
-                                        throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::EdenAI.AutoSDKHttpResponse<global::EdenAI.ExecutionExampleSuccessCreate>(
+                                    return new global::EdenAI.AutoSDKHttpResponse(
                                         statusCode: __response.StatusCode,
                                         headers: global::EdenAI.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri,
-                                        body: __value);
+                                        requestUri: __response.RequestMessage?.RequestUri);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -433,17 +379,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 
@@ -453,55 +397,6 @@ namespace EdenAI
             {
                 __httpRequest?.Dispose();
             }
-        }
-        /// <summary>
-        /// Create an Execution<br/>
-        /// Launch a workflow Execution.<br/>
-        /// if you set `input` in your workflow, you will need to launch the execution with these inputs as parameters<br/>
-        /// For example if you set a file_url as input with name "my_invoice", your request body will look like this:<br/>
-        ///     { my_invoice: "https://example.com/public/invoice_123.pdf" }<br/>
-        ///     
-        /// </summary>
-        /// <param name="workflowId"></param>
-        /// <param name="webhookReceiver">
-        /// Webhook receiver should be a valid https URL (ex : https://your.listner.com/endpoint).             After the processing is done, the webhook endpoint will receive a POST request with the result.
-        /// </param>
-        /// <param name="usersWebhookParameters">
-        /// Json data that contains of additional parameters that will be sent back to the webhook receiver             (ex: api key for security or client's data ID to link the result internally).             Will only be used when webhook_receiver is set.
-        /// </param>
-        /// <param name="sendWebhookData">
-        /// If set to false the webhook will not contain the result data. Use if your webhook receiver has a request size limit.<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="myInvoice">
-        /// An example of an input parameter specified in the input node<br/>
-        /// Default Value: https://example.com/public/invoice_123.pdf
-        /// </param>
-        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
-        /// <param name="cancellationToken">The token to cancel the operation with</param>
-        /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::EdenAI.ExecutionExampleSuccessCreate> WorkflowWorkflowExecutionCreateAsync(
-            global::System.Guid workflowId,
-            string? webhookReceiver = default,
-            object? usersWebhookParameters = default,
-            bool? sendWebhookData = default,
-            string? myInvoice = default,
-            global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
-            global::System.Threading.CancellationToken cancellationToken = default)
-        {
-            var __request = new global::EdenAI.ExecutionFakeCreateRequest
-            {
-                WebhookReceiver = webhookReceiver,
-                UsersWebhookParameters = usersWebhookParameters,
-                SendWebhookData = sendWebhookData,
-                MyInvoice = myInvoice,
-            };
-
-            return await WorkflowWorkflowExecutionCreateAsync(
-                workflowId: workflowId,
-                request: __request,
-                requestOptions: requestOptions,
-                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }

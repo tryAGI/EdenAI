@@ -45,6 +45,16 @@ namespace EdenAI
         /// <param name="activeBalance">
         /// Weither to use the balance field or not.
         /// </param>
+        /// <param name="balanceResetAmount">
+        /// The amount this token's balance is reset to at the start of each balance_reset_period. Null when balance_reset_period is 'none'.
+        /// </param>
+        /// <param name="balanceResetPeriod">
+        /// How often this token's balance is reinitialized to balance_reset_amount. 'none' = one-time balance (default, current behaviour).<br/>
+        /// * `none` - None<br/>
+        /// * `daily` - Daily<br/>
+        /// * `weekly` - Weekly<br/>
+        /// * `monthly` - Monthly
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -54,6 +64,8 @@ namespace EdenAI
             string? balance = default,
             global::System.DateTime? expireTime = default,
             bool? activeBalance = default,
+            string? balanceResetAmount = default,
+            global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod = default,
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

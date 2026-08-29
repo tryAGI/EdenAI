@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideodeepfakeDetectionAsyncDeepfakeDetectionAsyncDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("average_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int AverageScore { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prediction")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.PredictionB20EnumJsonConverter))]
@@ -24,7 +24,7 @@ namespace EdenAI
         public required global::EdenAI.PredictionB20Enum Prediction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("details_per_frame")]
         public global::System.Collections.Generic.IList<global::EdenAI.DetailPerFrame>? DetailsPerFrame { get; set; }
@@ -37,14 +37,14 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("final_status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter))]

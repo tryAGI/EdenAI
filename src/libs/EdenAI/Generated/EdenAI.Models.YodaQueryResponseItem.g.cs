@@ -4,40 +4,40 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class YodaQueryResponseItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Version { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Score { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("payload")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.YodaQueryResponsePayload Payload { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vector")]
         [global::System.Text.Json.Serialization.JsonRequired]

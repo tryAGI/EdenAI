@@ -4,47 +4,47 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FinancialParserObjectDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customer_information")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FinancialCustomerInformation CustomerInformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("merchant_information")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FinancialMerchantInformation MerchantInformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("payment_information")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FinancialPaymentInformation PaymentInformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("financial_document_information")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FinancialDocumentInformation FinancialDocumentInformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("local")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.FinancialLocalInformation Local { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bank")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -57,7 +57,7 @@ namespace EdenAI
         public global::System.Collections.Generic.IList<global::EdenAI.FinancialLineItem>? ItemLines { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("document_metadata")]
         [global::System.Text.Json.Serialization.JsonRequired]

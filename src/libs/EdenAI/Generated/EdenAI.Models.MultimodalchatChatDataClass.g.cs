@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MultimodalchatChatDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("generated_text")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string GeneratedText { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("messages")]
         public global::System.Collections.Generic.IList<global::EdenAI.ChatMessageDataClass>? Messages { get; set; }
@@ -29,7 +29,7 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.Status549EnumJsonConverter))]

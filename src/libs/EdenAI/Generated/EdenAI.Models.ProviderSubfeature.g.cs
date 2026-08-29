@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProviderSubfeature
     {
@@ -23,46 +23,46 @@ namespace EdenAI
         public string Version { get; set; } = default!;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pricings")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::EdenAI.PricingSerialzier> Pricings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_working")]
         public bool? IsWorking { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description_title")]
         public string? DescriptionTitle { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description_content")]
         public string? DescriptionContent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.Provider Provider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("feature")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.Feature Feature { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subfeature")]
         [global::System.Text.Json.Serialization.JsonRequired]

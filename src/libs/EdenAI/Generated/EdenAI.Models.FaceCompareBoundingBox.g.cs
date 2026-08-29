@@ -4,33 +4,33 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceCompareBoundingBox
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("top")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Top { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Left { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("height")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Height { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("width")]
         [global::System.Text.Json.Serialization.JsonRequired]

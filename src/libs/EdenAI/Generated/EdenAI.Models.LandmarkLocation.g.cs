@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class LandmarkLocation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lat_lng")]
         [global::System.Text.Json.Serialization.JsonRequired]

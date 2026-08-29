@@ -4,16 +4,16 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum Status549Enum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sucess,
     }

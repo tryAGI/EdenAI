@@ -59,7 +59,6 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 1.26.8`|free|-<br/>
-        /// |**facepp**|`v3`|0.1 (per 1000 request)|1 request<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="attributesAsList">
@@ -115,7 +114,6 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 1.26.8`|free|-<br/>
-        /// |**facepp**|`v3`|0.1 (per 1000 request)|1 request<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="attributesAsList">
@@ -225,7 +223,7 @@ namespace EdenAI
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::EdenAI.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
@@ -423,7 +421,7 @@ namespace EdenAI
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -448,20 +446,19 @@ namespace EdenAI
                                     __exception_400 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.BadRequest>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.BadRequest>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_400,
-                                    ResponseObject = __value_400,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_400,
+                                    responseObject: __value_400,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
@@ -486,20 +483,19 @@ namespace EdenAI
                                     __exception_500 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.Error>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.Error>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_500,
-                                    ResponseObject = __value_500,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_500,
+                                    responseObject: __value_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -524,20 +520,19 @@ namespace EdenAI
                                     __exception_403 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.Error>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.Error>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_403,
-                                    ResponseObject = __value_403,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_403,
+                                    responseObject: __value_403,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 404)
                             {
                                 string? __content_404 = null;
@@ -562,18 +557,17 @@ namespace EdenAI
                                     __exception_404 = __ex;
                                 }
 
-                                throw new global::EdenAI.ApiException<global::EdenAI.NotFoundResponse>(
+
+                                throw global::EdenAI.ApiException<global::EdenAI.NotFoundResponse>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_404,
-                                    ResponseObject = __value_404,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_404,
+                                    responseObject: __value_404,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
 
                             if (__effectiveReadResponseAsString)
@@ -607,17 +601,15 @@ namespace EdenAI
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -654,17 +646,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 

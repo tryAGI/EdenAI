@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ContentNSFW
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Timestamp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Confidence { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("category")]
         [global::System.Text.Json.Serialization.JsonRequired]

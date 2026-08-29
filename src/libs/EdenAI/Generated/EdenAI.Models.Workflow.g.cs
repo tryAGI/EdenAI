@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Workflow
     {
@@ -16,19 +16,19 @@ namespace EdenAI
         public global::System.Guid Id { get; set; } = default!;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public string? Description { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         public global::System.Collections.Generic.IList<object>? Content { get; set; }
@@ -46,7 +46,7 @@ namespace EdenAI
         public global::System.DateTime? UpdatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output_node")]
         public string? OutputNode { get; set; }
@@ -59,13 +59,13 @@ namespace EdenAI
         public bool IsEmpty { get; set; } = default!;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("template")]
         public int? Template { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         public object? Code { get; set; }

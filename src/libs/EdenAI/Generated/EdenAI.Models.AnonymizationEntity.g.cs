@@ -16,14 +16,14 @@ namespace EdenAI
     public sealed partial class AnonymizationEntity
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("offset")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Offset { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("length")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -38,7 +38,7 @@ namespace EdenAI
         public required global::EdenAI.CategoryType Category { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subcategory")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.SubCategoryTypeJsonConverter))]
@@ -46,21 +46,21 @@ namespace EdenAI
         public required global::EdenAI.SubCategoryType Subcategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("original_label")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OriginalLabel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Content { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence_score")]
         [global::System.Text.Json.Serialization.JsonRequired]

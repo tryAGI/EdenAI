@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AudiotextToSpeechAsyncTextToSpeechAsyncDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audio")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Audio { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("voice_type")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int VoiceType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audio_resource_url")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -37,14 +37,14 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("final_status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter))]

@@ -12,19 +12,19 @@ namespace EdenAI
     public enum TypeDe8Enum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Db,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DbVector,
     }

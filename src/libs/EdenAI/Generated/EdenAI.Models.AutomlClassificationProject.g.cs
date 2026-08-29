@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AutomlClassificationProject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonRequired]

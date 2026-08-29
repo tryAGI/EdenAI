@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AiProductFile
     {
@@ -30,7 +30,7 @@ namespace EdenAI
         public string Project { get; set; } = default!;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_type")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -44,38 +44,38 @@ namespace EdenAI
         public global::System.DateTime CreatedAt { get; set; } = default!;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>))]
-        public global::EdenAI.OneOf<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>? Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>))]
+        public global::EdenAI.OneOf<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         public string? Error { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task_id")]
         public string? TaskId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task_started_at")]
         public global::System.DateTime? TaskStartedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_path")]
         public string? FilePath { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file_name")]
         public string? FileName { get; set; }
@@ -113,7 +113,7 @@ namespace EdenAI
 #endif
         public AiProductFile(
             string fileType,
-            global::EdenAI.OneOf<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>? status,
+            global::EdenAI.OneOf<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>? status,
             string? error,
             string? taskId,
             global::System.DateTime? taskStartedAt,

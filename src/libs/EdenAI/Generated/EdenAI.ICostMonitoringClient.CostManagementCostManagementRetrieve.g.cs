@@ -8,7 +8,8 @@ namespace EdenAI
         /// Monitor Consumptions<br/>
         /// Returns aggregated consumption over time.<br/>
         /// Only `feature`, `subfeature`, `provider`, and `phase` are accepted as row filters; any other unknown query parameter returns 400.<br/>
-        /// When called with a custom API key, results are automatically scoped to that token — the `user`, `token`, and `group_by=user` query parameters are not allowed and return 400/403.
+        /// Results are scoped by the caller's role: an organization owner or a member with members:manage sees the whole organization and may narrow with `user`, `token` or `group_by=user`; a regular member always sees only their own consumption and receives 403 if it sends `user` or `group_by=user`.<br/>
+        /// `token` matches by key NAME, not by key identity. Names are unique per user and only among non-revoked keys, so a name shared by several members of the organization aggregates all of them, and a name reused after a rotation also includes the rotated-out key's history. Use `base_token` to select consumption not attributed to any key.
         /// </summary>
         /// <param name="begin"></param>
         /// <param name="end"></param>
@@ -40,7 +41,8 @@ namespace EdenAI
         /// Monitor Consumptions<br/>
         /// Returns aggregated consumption over time.<br/>
         /// Only `feature`, `subfeature`, `provider`, and `phase` are accepted as row filters; any other unknown query parameter returns 400.<br/>
-        /// When called with a custom API key, results are automatically scoped to that token — the `user`, `token`, and `group_by=user` query parameters are not allowed and return 400/403.
+        /// Results are scoped by the caller's role: an organization owner or a member with members:manage sees the whole organization and may narrow with `user`, `token` or `group_by=user`; a regular member always sees only their own consumption and receives 403 if it sends `user` or `group_by=user`.<br/>
+        /// `token` matches by key NAME, not by key identity. Names are unique per user and only among non-revoked keys, so a name shared by several members of the organization aggregates all of them, and a name reused after a rotation also includes the rotated-out key's history. Use `base_token` to select consumption not attributed to any key.
         /// </summary>
         /// <param name="begin"></param>
         /// <param name="end"></param>

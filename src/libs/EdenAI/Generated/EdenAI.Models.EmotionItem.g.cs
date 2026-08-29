@@ -12,14 +12,14 @@ namespace EdenAI
     public sealed partial class EmotionItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emotion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Emotion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emotion_score")]
         [global::System.Text.Json.Serialization.JsonRequired]

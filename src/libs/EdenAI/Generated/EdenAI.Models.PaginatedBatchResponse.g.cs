@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PaginatedBatchResponse
     {
@@ -23,7 +23,7 @@ namespace EdenAI
         public required int CurrentPage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_page")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -37,33 +37,33 @@ namespace EdenAI
         public required int PerPage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("From")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int From { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("to")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int To { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prev_page_url")]
         public string? PrevPageUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("next_page_url")]
         public string? NextPageUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requests")]
         [global::System.Text.Json.Serialization.JsonRequired]

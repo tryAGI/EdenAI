@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class YodaListChunksIdsResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunks_ids")]
         [global::System.Text.Json.Serialization.JsonRequired]

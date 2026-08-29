@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoPersonQuality
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brightness")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Brightness { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharpness")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -16,14 +16,14 @@ namespace EdenAI
     public sealed partial class SuggestionItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("suggestion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Suggestion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score")]
         [global::System.Text.Json.Serialization.JsonRequired]

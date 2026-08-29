@@ -4,15 +4,21 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ImagegenerationGenerationDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         public global::System.Collections.Generic.IList<global::EdenAI.GeneratedImageDataClass>? Items { get; set; }
+
+        /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("usage")]
+        public object? Usage { get; set; }
 
         /// <summary>
         /// original response sent by the provider, hidden by default, show it by passing the `show_original_response` field to `true` in your request<br/>
@@ -22,7 +28,7 @@ namespace EdenAI
         public object? OriginalResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.Status549EnumJsonConverter))]
@@ -40,6 +46,9 @@ namespace EdenAI
         /// </summary>
         /// <param name="status"></param>
         /// <param name="items"></param>
+        /// <param name="usage">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="originalResponse">
         /// original response sent by the provider, hidden by default, show it by passing the `show_original_response` field to `true` in your request<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -50,9 +59,11 @@ namespace EdenAI
         public ImagegenerationGenerationDataClass(
             global::EdenAI.Status549Enum status,
             global::System.Collections.Generic.IList<global::EdenAI.GeneratedImageDataClass>? items,
+            object? usage,
             object? originalResponse)
         {
             this.Items = items;
+            this.Usage = usage;
             this.OriginalResponse = originalResponse;
             this.Status = status;
         }

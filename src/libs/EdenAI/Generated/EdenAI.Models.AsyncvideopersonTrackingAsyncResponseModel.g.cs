@@ -4,33 +4,33 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AsyncvideopersonTrackingAsyncResponseModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::EdenAI.VideopersonTrackingAsyncModel Results { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Error { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("public_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid PublicId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -7,156 +7,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::EdenAI.JsonConverters.BlankEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.BlankEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CategoryTypeJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CategoryTypeNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ChatRoleJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ChatRoleNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DataTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DataTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DbProviderEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DbProviderEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DetailTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DetailTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DocumentTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DocumentTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EmbeddingsProviderEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EmbeddingsProviderEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EntitySentimentEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EntitySentimentEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FallbackTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FallbackTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FinalStatusEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.GeneralSentimentEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.GeneralSentimentEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.OptionEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.OptionEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PredictionB20EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PredictionB20EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PriceUnitTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PriceUnitTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ProjectTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ProjectTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ReasoningEffortEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ReasoningEffortEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.RepresentationEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.RepresentationEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SentimentEbfEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SentimentEbfEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ServiceTierEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ServiceTierEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.StateEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.StateEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status549EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status549EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status889EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status889EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SubCategoryTypeJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SubCategoryTypeNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ThinkingTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ThinkingTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TokenTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TokenTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ToolChoiceEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ToolChoiceEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeDe8EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeDe8EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeOfDataEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeOfDataEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>),
-
-            typeof(global::EdenAI.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsyntaxAnalysistextsentimentAnalysisTextAnalysisRequest), TypeInfoPropertyName = "TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsy_2d9618c64ac15db3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.JsonSerializerContextTypes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.AIProject))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -177,9 +39,9 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.AiDetectionItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.AiProductFile))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OneOf<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>), TypeInfoPropertyName = "OneOfStatus889EnumNullEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OneOf<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>), TypeInfoPropertyName = "OneOfStatus889EnumNullEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.Status889Enum), TypeInfoPropertyName = "Status889Enum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.NullEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.NullEnum), TypeInfoPropertyName = "NullEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.AnonymizationAsyncRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.AnonymizationBoundingBox))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.AnonymizationEntity))]
@@ -211,6 +73,7 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TypeOfDataEnum), TypeInfoPropertyName = "TypeOfDataEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.BadRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.NestedBadRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.BalanceResetPeriodEnum), TypeInfoPropertyName = "BalanceResetPeriodEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.BatchLaunchFailedRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.BatchLaunchResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.BatchLaunchFailedRequest>))]
@@ -271,7 +134,6 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExecutionContentCreate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExecutionContentCreateStatusEnum), TypeInfoPropertyName = "ExecutionContentCreateStatusEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExecutionExampleSuccessCreate))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExecutionFakeCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExecutionList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExplicitItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExtractedTopic))]
@@ -395,7 +257,7 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionCandidate>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.PriceUnitTypeEnum), TypeInfoPropertyName = "PriceUnitTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.PricingSerialzier))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>), TypeInfoPropertyName = "OneOfDetailTypeEnumBlankEnumNullEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>), TypeInfoPropertyName = "OneOfDetailTypeEnumBlankEnumNullEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.PromptCallRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.PromptCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.PromptDataClass))]
@@ -652,163 +514,22 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.InfosNamedEntityRecognitionDataClass>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextnamedEntityRecognitionResponseModel))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionRequest))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::EdenAI.JsonConverters.BlankEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.BlankEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CategoryTypeJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CategoryTypeNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ChatRoleJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ChatRoleNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DataTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DataTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DbProviderEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DbProviderEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DetailTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DetailTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DocumentTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.DocumentTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EmbeddingsProviderEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EmbeddingsProviderEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EntitySentimentEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.EntitySentimentEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FallbackTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FallbackTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FinalStatusEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.GeneralSentimentEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.GeneralSentimentEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.OptionEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.OptionEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PredictionB20EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PredictionB20EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PriceUnitTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.PriceUnitTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ProjectTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ProjectTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ReasoningEffortEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ReasoningEffortEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.RepresentationEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.RepresentationEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SentimentEbfEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SentimentEbfEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ServiceTierEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ServiceTierEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.StateEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.StateEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status549EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status549EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status889EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.Status889EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SubCategoryTypeJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.SubCategoryTypeNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ThinkingTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ThinkingTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TokenTypeEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TokenTypeEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ToolChoiceEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.ToolChoiceEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeDe8EnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeDe8EnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeOfDataEnumJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.TypeOfDataEnumNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByNullableJsonConverter),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>),
-
-            typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>),
-
-            typeof(global::EdenAI.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsyntaxAnalysistextsentimentAnalysisTextAnalysisRequest), TypeInfoPropertyName = "TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsy_2d9618c64ac15db3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionResponseModel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextpromptOptimizationPromptOptimizationDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.PromptDataClass>))]
@@ -870,8 +591,51 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.ResourceList>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.CustomTokensList>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.Workflow>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ProjectTypeEnum?), TypeInfoPropertyName = "NullableProjectTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.DataTypeEnum?), TypeInfoPropertyName = "NullableDataTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OneOf<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>?), TypeInfoPropertyName = "NullableOneOfStatus889EnumNullEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.Status889Enum?), TypeInfoPropertyName = "NullableStatus889Enum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.NullEnum?), TypeInfoPropertyName = "NullableNullEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.CategoryType?), TypeInfoPropertyName = "NullableCategoryType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.SubCategoryType?), TypeInfoPropertyName = "NullableSubCategoryType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.DbProviderEnum?), TypeInfoPropertyName = "NullableDbProviderEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.EmbeddingsProviderEnum?), TypeInfoPropertyName = "NullableEmbeddingsProviderEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.StateEnum?), TypeInfoPropertyName = "NullableStateEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TypeOfDataEnum?), TypeInfoPropertyName = "NullableTypeOfDataEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.BalanceResetPeriodEnum?), TypeInfoPropertyName = "NullableBalanceResetPeriodEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.BlankEnum?), TypeInfoPropertyName = "NullableBlankEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ChatRole?), TypeInfoPropertyName = "NullableChatRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TokenTypeEnum?), TypeInfoPropertyName = "NullableTokenTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.PredictionB20Enum?), TypeInfoPropertyName = "NullablePredictionB20Enum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.DetailTypeEnum?), TypeInfoPropertyName = "NullableDetailTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.DocumentTypeEnum?), TypeInfoPropertyName = "NullableDocumentTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.EntitySentimentEnum?), TypeInfoPropertyName = "NullableEntitySentimentEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ExecutionContentCreateStatusEnum?), TypeInfoPropertyName = "NullableExecutionContentCreateStatusEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.FallbackTypeEnum?), TypeInfoPropertyName = "NullableFallbackTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.FinalStatusEnum?), TypeInfoPropertyName = "NullableFinalStatusEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.GeneralSentimentEnum?), TypeInfoPropertyName = "NullableGeneralSentimentEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ReasoningEffortEnum?), TypeInfoPropertyName = "NullableReasoningEffortEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ServiceTierEnum?), TypeInfoPropertyName = "NullableServiceTierEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ImageaiDetectionAiDetectionDataClassPredictionEnum?), TypeInfoPropertyName = "NullableImageaiDetectionAiDetectionDataClassPredictionEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OptionEnum?), TypeInfoPropertyName = "NullableOptionEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TypeDe8Enum?), TypeInfoPropertyName = "NullableTypeDe8Enum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.PriceUnitTypeEnum?), TypeInfoPropertyName = "NullablePriceUnitTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>?), TypeInfoPropertyName = "NullableOneOfDetailTypeEnumBlankEnumNullEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.RepresentationEnum?), TypeInfoPropertyName = "NullableRepresentationEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.SentimentEbfEnum?), TypeInfoPropertyName = "NullableSentimentEbfEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.Status549Enum?), TypeInfoPropertyName = "NullableStatus549Enum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OneOf<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>?), TypeInfoPropertyName = "NullableOneOfOptionEnumBlankEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ThinkingTypeEnum?), TypeInfoPropertyName = "NullableThinkingTypeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.ToolChoiceEnum?), TypeInfoPropertyName = "NullableToolChoiceEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTimeOffset?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.FeatureBatchRetrieveStatus?), TypeInfoPropertyName = "NullableFeatureBatchRetrieveStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.CostManagementCostManagementRetrieveGroupBy?), TypeInfoPropertyName = "NullableCostManagementCostManagementRetrieveGroupBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<bool>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::EdenAI.AutomlClassificationProject>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::EdenAI.BatchLaunchFailedRequest>))]
@@ -971,20 +735,16 @@ namespace EdenAI
     {
     }
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
-            SourceGenerationContextChunk0.Default,
-
-            SourceGenerationContextChunk1.Default
-            );
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SourceGenerationContext Default { get; } = new(DefaultOptions);
 
@@ -1009,79 +769,566 @@ namespace EdenAI
                 DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
                 TypeInfoResolver = Resolver,
             };
-            options.Converters.Add(new global::EdenAI.JsonConverters.BlankEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.BlankEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.CategoryTypeJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.CategoryTypeNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ChatRoleJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ChatRoleNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DataTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DataTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DbProviderEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DbProviderEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DetailTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DetailTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DocumentTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.DocumentTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.EmbeddingsProviderEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.EmbeddingsProviderEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.EntitySentimentEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.EntitySentimentEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.FallbackTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.FallbackTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.FinalStatusEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.GeneralSentimentEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.GeneralSentimentEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.OptionEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.OptionEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.PredictionB20EnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.PredictionB20EnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.PriceUnitTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.PriceUnitTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ProjectTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ProjectTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ReasoningEffortEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ReasoningEffortEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.RepresentationEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.RepresentationEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.SentimentEbfEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.SentimentEbfEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ServiceTierEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ServiceTierEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.StateEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.StateEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.Status549EnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.Status549EnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.Status889EnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.Status889EnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.SubCategoryTypeJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.SubCategoryTypeNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ThinkingTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ThinkingTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.TokenTypeEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.TokenTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ToolChoiceEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.ToolChoiceEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.TypeDe8EnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.TypeDe8EnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.TypeOfDataEnumJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.TypeOfDataEnumNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByNullableJsonConverter());
-            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum>());
-            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>());
+            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>());
+            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>());
             options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>());
             options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>());
             options.Converters.Add(new global::EdenAI.JsonConverters.UnixTimestampJsonConverter());
 
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
+
             return options;
+        }
+
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::EdenAI.BalanceResetPeriodEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.BalanceResetPeriodEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.BlankEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.BlankEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.CategoryType)
+
+                    || typeToConvert == typeof(global::EdenAI.CategoryType?)
+
+                    || typeToConvert == typeof(global::EdenAI.ChatRole)
+
+                    || typeToConvert == typeof(global::EdenAI.ChatRole?)
+
+                    || typeToConvert == typeof(global::EdenAI.DataTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.DataTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.DbProviderEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.DbProviderEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.DetailTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.DetailTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.DocumentTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.DocumentTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.EmbeddingsProviderEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.EmbeddingsProviderEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.EntitySentimentEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.EntitySentimentEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.ExecutionContentCreateStatusEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.ExecutionContentCreateStatusEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.FallbackTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.FallbackTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.FinalStatusEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.FinalStatusEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.GeneralSentimentEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.GeneralSentimentEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.ImageaiDetectionAiDetectionDataClassPredictionEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.ImageaiDetectionAiDetectionDataClassPredictionEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.NullEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.NullEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.OptionEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.OptionEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.PredictionB20Enum)
+
+                    || typeToConvert == typeof(global::EdenAI.PredictionB20Enum?)
+
+                    || typeToConvert == typeof(global::EdenAI.PriceUnitTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.PriceUnitTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.ProjectTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.ProjectTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.ReasoningEffortEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.ReasoningEffortEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.RepresentationEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.RepresentationEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.SentimentEbfEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.SentimentEbfEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.ServiceTierEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.ServiceTierEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.StateEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.StateEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.Status549Enum)
+
+                    || typeToConvert == typeof(global::EdenAI.Status549Enum?)
+
+                    || typeToConvert == typeof(global::EdenAI.Status889Enum)
+
+                    || typeToConvert == typeof(global::EdenAI.Status889Enum?)
+
+                    || typeToConvert == typeof(global::EdenAI.SubCategoryType)
+
+                    || typeToConvert == typeof(global::EdenAI.SubCategoryType?)
+
+                    || typeToConvert == typeof(global::EdenAI.ThinkingTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.ThinkingTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.TokenTypeEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.TokenTypeEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.ToolChoiceEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.ToolChoiceEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.TypeDe8Enum)
+
+                    || typeToConvert == typeof(global::EdenAI.TypeDe8Enum?)
+
+                    || typeToConvert == typeof(global::EdenAI.TypeOfDataEnum)
+
+                    || typeToConvert == typeof(global::EdenAI.TypeOfDataEnum?)
+
+                    || typeToConvert == typeof(global::EdenAI.FeatureBatchRetrieveStatus)
+
+                    || typeToConvert == typeof(global::EdenAI.FeatureBatchRetrieveStatus?)
+
+                    || typeToConvert == typeof(global::EdenAI.CostManagementCostManagementRetrieveGroupBy)
+
+                    || typeToConvert == typeof(global::EdenAI.CostManagementCostManagementRetrieveGroupBy?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::EdenAI.BalanceResetPeriodEnum))
+                {
+                    return new global::EdenAI.JsonConverters.BalanceResetPeriodEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.BalanceResetPeriodEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.BalanceResetPeriodEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.BlankEnum))
+                {
+                    return new global::EdenAI.JsonConverters.BlankEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.BlankEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.BlankEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.CategoryType))
+                {
+                    return new global::EdenAI.JsonConverters.CategoryTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.CategoryType?))
+                {
+                    return new global::EdenAI.JsonConverters.CategoryTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ChatRole))
+                {
+                    return new global::EdenAI.JsonConverters.ChatRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ChatRole?))
+                {
+                    return new global::EdenAI.JsonConverters.ChatRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DataTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.DataTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DataTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.DataTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DbProviderEnum))
+                {
+                    return new global::EdenAI.JsonConverters.DbProviderEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DbProviderEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.DbProviderEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DetailTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.DetailTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DetailTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.DetailTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DocumentTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.DocumentTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.DocumentTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.DocumentTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.EmbeddingsProviderEnum))
+                {
+                    return new global::EdenAI.JsonConverters.EmbeddingsProviderEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.EmbeddingsProviderEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.EmbeddingsProviderEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.EntitySentimentEnum))
+                {
+                    return new global::EdenAI.JsonConverters.EntitySentimentEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.EntitySentimentEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.EntitySentimentEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ExecutionContentCreateStatusEnum))
+                {
+                    return new global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ExecutionContentCreateStatusEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.ExecutionContentCreateStatusEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.FallbackTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.FallbackTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.FallbackTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.FallbackTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.FinalStatusEnum))
+                {
+                    return new global::EdenAI.JsonConverters.FinalStatusEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.FinalStatusEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.FinalStatusEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.GeneralSentimentEnum))
+                {
+                    return new global::EdenAI.JsonConverters.GeneralSentimentEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.GeneralSentimentEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.GeneralSentimentEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ImageaiDetectionAiDetectionDataClassPredictionEnum))
+                {
+                    return new global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ImageaiDetectionAiDetectionDataClassPredictionEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.ImageaiDetectionAiDetectionDataClassPredictionEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.NullEnum))
+                {
+                    return new global::EdenAI.JsonConverters.NullEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.NullEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.NullEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.OptionEnum))
+                {
+                    return new global::EdenAI.JsonConverters.OptionEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.OptionEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.OptionEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.PredictionB20Enum))
+                {
+                    return new global::EdenAI.JsonConverters.PredictionB20EnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.PredictionB20Enum?))
+                {
+                    return new global::EdenAI.JsonConverters.PredictionB20EnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.PriceUnitTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.PriceUnitTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.PriceUnitTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.PriceUnitTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ProjectTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.ProjectTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ProjectTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.ProjectTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ReasoningEffortEnum))
+                {
+                    return new global::EdenAI.JsonConverters.ReasoningEffortEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ReasoningEffortEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.ReasoningEffortEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.RepresentationEnum))
+                {
+                    return new global::EdenAI.JsonConverters.RepresentationEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.RepresentationEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.RepresentationEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.SentimentEbfEnum))
+                {
+                    return new global::EdenAI.JsonConverters.SentimentEbfEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.SentimentEbfEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.SentimentEbfEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ServiceTierEnum))
+                {
+                    return new global::EdenAI.JsonConverters.ServiceTierEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ServiceTierEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.ServiceTierEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.StateEnum))
+                {
+                    return new global::EdenAI.JsonConverters.StateEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.StateEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.StateEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.Status549Enum))
+                {
+                    return new global::EdenAI.JsonConverters.Status549EnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.Status549Enum?))
+                {
+                    return new global::EdenAI.JsonConverters.Status549EnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.Status889Enum))
+                {
+                    return new global::EdenAI.JsonConverters.Status889EnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.Status889Enum?))
+                {
+                    return new global::EdenAI.JsonConverters.Status889EnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.SubCategoryType))
+                {
+                    return new global::EdenAI.JsonConverters.SubCategoryTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.SubCategoryType?))
+                {
+                    return new global::EdenAI.JsonConverters.SubCategoryTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ThinkingTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.ThinkingTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ThinkingTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.ThinkingTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.TokenTypeEnum))
+                {
+                    return new global::EdenAI.JsonConverters.TokenTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.TokenTypeEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.TokenTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ToolChoiceEnum))
+                {
+                    return new global::EdenAI.JsonConverters.ToolChoiceEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.ToolChoiceEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.ToolChoiceEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.TypeDe8Enum))
+                {
+                    return new global::EdenAI.JsonConverters.TypeDe8EnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.TypeDe8Enum?))
+                {
+                    return new global::EdenAI.JsonConverters.TypeDe8EnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.TypeOfDataEnum))
+                {
+                    return new global::EdenAI.JsonConverters.TypeOfDataEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.TypeOfDataEnum?))
+                {
+                    return new global::EdenAI.JsonConverters.TypeOfDataEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.FeatureBatchRetrieveStatus))
+                {
+                    return new global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.FeatureBatchRetrieveStatus?))
+                {
+                    return new global::EdenAI.JsonConverters.FeatureBatchRetrieveStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.CostManagementCostManagementRetrieveGroupBy))
+                {
+                    return new global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::EdenAI.CostManagementCostManagementRetrieveGroupBy?))
+                {
+                    return new global::EdenAI.JsonConverters.CostManagementCostManagementRetrieveGroupByNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
+        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
+        {
+            private readonly object _gate = new();
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+
+            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
+                global::System.Type type,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                for (var index = 0; index < _resolvers.Length; index++)
+                {
+                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
+                    if (typeInfo is not null)
+                    {
+                        return typeInfo;
+                    }
+                }
+
+                return null;
+            }
+
+            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
+            {
+                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
+                if (resolver is not null)
+                {
+                    return resolver;
+                }
+
+                lock (_gate)
+                {
+                    return _resolvers[index] ??= CreateResolver(index);
+                }
+            }
+
+            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
+            {
+                return index switch
+                {
+                    0 => new SourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => new SourceGenerationContextChunk1(new global::System.Text.Json.JsonSerializerOptions()),
+                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
+                };
+            }
         }
     }
 }

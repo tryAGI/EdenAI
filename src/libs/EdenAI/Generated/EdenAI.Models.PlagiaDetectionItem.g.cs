@@ -4,19 +4,19 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PlagiaDetectionItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("text")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Text { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("candidates")]
         public global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionCandidate>? Candidates { get; set; }

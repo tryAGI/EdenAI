@@ -13,23 +13,23 @@ namespace EdenAI
     public enum EmbeddingsProviderEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cohere,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jina,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mistral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
     }

@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoexplicitContentDetectionAsyncModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.VideoexplicitContentDetectionAsyncExplicitContentDetectionAsyncDataClass? Google { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.VideoexplicitContentDetectionAsyncExplicitContentDetectionAsyncDataClass? Amazon { get; set; }

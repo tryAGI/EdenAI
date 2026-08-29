@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PricingSerialzier
     {
@@ -15,19 +15,19 @@ namespace EdenAI
         public string? ModelName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("price")]
         public string? Price { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("price_unit_quantity")]
         public int? PriceUnitQuantity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("min_price_quantity")]
         public int? MinPriceQuantity { get; set; }
@@ -54,11 +54,13 @@ namespace EdenAI
         /// <summary>
         /// (Optional) type of extra value, MUST be the same name as the feature parameter name. eg: resolution<br/>
         /// * `resolution` - Resolution<br/>
-        /// * `document_type` - Document Type
+        /// * `document_type` - Document Type<br/>
+        /// * `depth` - Depth<br/>
+        /// * `reasoning_depth` - Reasoning Depth
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detail_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>))]
-        public global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>? DetailType { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>))]
+        public global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>? DetailType { get; set; }
 
         /// <summary>
         /// (Optional) extra value for detailed pricing, eg: 250x250 for resolution
@@ -74,7 +76,7 @@ namespace EdenAI
         public string GetDetailTypeDisplay { get; set; } = default!;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("is_post_call")]
         public bool? IsPostCall { get; set; }
@@ -112,7 +114,9 @@ namespace EdenAI
         /// <param name="detailType">
         /// (Optional) type of extra value, MUST be the same name as the feature parameter name. eg: resolution<br/>
         /// * `resolution` - Resolution<br/>
-        /// * `document_type` - Document Type
+        /// * `document_type` - Document Type<br/>
+        /// * `depth` - Depth<br/>
+        /// * `reasoning_depth` - Reasoning Depth
         /// </param>
         /// <param name="detailValue">
         /// (Optional) extra value for detailed pricing, eg: 250x250 for resolution
@@ -130,7 +134,7 @@ namespace EdenAI
             int? priceUnitQuantity,
             int? minPriceQuantity,
             global::EdenAI.PriceUnitTypeEnum? priceUnitType,
-            global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum>? detailType,
+            global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>? detailType,
             string? detailValue,
             bool? isPostCall,
             string getDetailTypeDisplay = default!)

@@ -4,32 +4,32 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatMessageRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Role { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required object Message { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tools")]
         public global::System.Collections.Generic.IList<global::EdenAI.ChatAvailableToolsRequest>? Tools { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_calls")]
         public global::System.Collections.Generic.IList<global::EdenAI.ChatToolCallsRequest>? ToolCalls { get; set; }

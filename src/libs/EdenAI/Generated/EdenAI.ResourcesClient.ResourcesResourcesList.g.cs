@@ -40,7 +40,7 @@ namespace EdenAI
             ref string content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -57,7 +57,7 @@ namespace EdenAI
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -124,7 +124,7 @@ namespace EdenAI
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::EdenAI.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
@@ -349,17 +349,15 @@ namespace EdenAI
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -396,17 +394,15 @@ namespace EdenAI
                                     {
                                     }
 
-                                    throw new global::EdenAI.ApiException(
+                                    throw global::EdenAI.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 

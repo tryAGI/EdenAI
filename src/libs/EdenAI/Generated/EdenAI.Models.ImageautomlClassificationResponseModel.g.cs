@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ImageautomlClassificationResponseModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nyckel")]
         public global::EdenAI.ImageautomlClassificationAutomlClassificationCreateProjectDataClass? Nyckel { get; set; }

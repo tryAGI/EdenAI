@@ -72,11 +72,11 @@ namespace EdenAI
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::EdenAI.PromptCreate> PromptsPromptsCreateAsync(
             string name,
-            string text,
-            string model,
-            object @params,
-            global::System.Collections.Generic.IList<string> fileUrls,
-            string systemPrompt,
+            string? text = default,
+            string? model = default,
+            object? @params = default,
+            global::System.Collections.Generic.IList<string>? fileUrls = default,
+            string? systemPrompt = default,
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

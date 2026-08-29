@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ExecutionContentCreate
     {
@@ -19,14 +19,14 @@ namespace EdenAI
         public required global::EdenAI.ExecutionContentCreateStatusEnum Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required object Results { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_node_executed")]
         [global::System.Text.Json.Serialization.JsonRequired]

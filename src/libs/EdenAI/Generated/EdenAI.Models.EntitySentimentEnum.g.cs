@@ -4,24 +4,24 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EntitySentimentEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mixed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Negative,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neutral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Positive,
     }

@@ -4,82 +4,82 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceEmotions
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("joy")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Joy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sorrow")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Sorrow { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("anger")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Anger { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("surprise")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Surprise { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disgust")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Disgust { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fear")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Fear { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confusion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Confusion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("calm")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Calm { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("unknown")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Unknown { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("neutral")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Neutral { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contempt")]
         [global::System.Text.Json.Serialization.JsonRequired]

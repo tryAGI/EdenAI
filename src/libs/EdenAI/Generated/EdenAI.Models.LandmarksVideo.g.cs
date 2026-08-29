@@ -4,36 +4,36 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class LandmarksVideo
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eye_left")]
         public global::System.Collections.Generic.IList<int>? EyeLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eye_right")]
         public global::System.Collections.Generic.IList<int>? EyeRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose")]
         public global::System.Collections.Generic.IList<int>? Nose { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_left")]
         public global::System.Collections.Generic.IList<int>? MouthLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_right")]
         public global::System.Collections.Generic.IList<int>? MouthRight { get; set; }

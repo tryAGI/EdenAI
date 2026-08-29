@@ -4,7 +4,7 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TextToSpeechAsyncRequest
     {
@@ -83,7 +83,7 @@ namespace EdenAI
         public string? Language { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("option")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>))]

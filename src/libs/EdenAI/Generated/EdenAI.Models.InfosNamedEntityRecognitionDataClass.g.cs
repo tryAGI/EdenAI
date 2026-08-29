@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InfosNamedEntityRecognitionDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entity")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Entity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("category")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Category { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importance")]
         [global::System.Text.Json.Serialization.JsonRequired]

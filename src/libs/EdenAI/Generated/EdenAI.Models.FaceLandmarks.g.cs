@@ -4,318 +4,318 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceLandmarks
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eye")]
         public global::System.Collections.Generic.IList<int>? LeftEye { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eye_top")]
         public global::System.Collections.Generic.IList<int>? LeftEyeTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eye_right")]
         public global::System.Collections.Generic.IList<int>? LeftEyeRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eye_bottom")]
         public global::System.Collections.Generic.IList<int>? LeftEyeBottom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eye_left")]
         public global::System.Collections.Generic.IList<int>? LeftEyeLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eye")]
         public global::System.Collections.Generic.IList<int>? RightEye { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eye_top")]
         public global::System.Collections.Generic.IList<int>? RightEyeTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eye_right")]
         public global::System.Collections.Generic.IList<int>? RightEyeRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eye_bottom")]
         public global::System.Collections.Generic.IList<int>? RightEyeBottom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eye_left")]
         public global::System.Collections.Generic.IList<int>? RightEyeLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eyebrow_left")]
         public global::System.Collections.Generic.IList<int>? LeftEyebrowLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eyebrow_right")]
         public global::System.Collections.Generic.IList<int>? LeftEyebrowRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_eyebrow_top")]
         public global::System.Collections.Generic.IList<int>? LeftEyebrowTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eyebrow_left")]
         public global::System.Collections.Generic.IList<int>? RightEyebrowLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eyebrow_right")]
         public global::System.Collections.Generic.IList<int>? RightEyebrowRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_pupil")]
         public global::System.Collections.Generic.IList<int>? LeftPupil { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_pupil")]
         public global::System.Collections.Generic.IList<int>? RightPupil { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_tip")]
         public global::System.Collections.Generic.IList<int>? NoseTip { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_bottom_right")]
         public global::System.Collections.Generic.IList<int>? NoseBottomRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_bottom_left")]
         public global::System.Collections.Generic.IList<int>? NoseBottomLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_left")]
         public global::System.Collections.Generic.IList<int>? MouthLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_right")]
         public global::System.Collections.Generic.IList<int>? MouthRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_eyebrow_top")]
         public global::System.Collections.Generic.IList<int>? RightEyebrowTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("midpoint_between_eyes")]
         public global::System.Collections.Generic.IList<int>? MidpointBetweenEyes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_bottom_center")]
         public global::System.Collections.Generic.IList<int>? NoseBottomCenter { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_left_alar_out_tip")]
         public global::System.Collections.Generic.IList<int>? NoseLeftAlarOutTip { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_left_alar_top")]
         public global::System.Collections.Generic.IList<int>? NoseLeftAlarTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_right_alar_out_tip")]
         public global::System.Collections.Generic.IList<int>? NoseRightAlarOutTip { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_right_alar_top")]
         public global::System.Collections.Generic.IList<int>? NoseRightAlarTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_root_left")]
         public global::System.Collections.Generic.IList<int>? NoseRootLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose_root_right")]
         public global::System.Collections.Generic.IList<int>? NoseRootRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upper_lip")]
         public global::System.Collections.Generic.IList<int>? UpperLip { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("under_lip")]
         public global::System.Collections.Generic.IList<int>? UnderLip { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("under_lip_bottom")]
         public global::System.Collections.Generic.IList<int>? UnderLipBottom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("under_lip_top")]
         public global::System.Collections.Generic.IList<int>? UnderLipTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upper_lip_bottom")]
         public global::System.Collections.Generic.IList<int>? UpperLipBottom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upper_lip_top")]
         public global::System.Collections.Generic.IList<int>? UpperLipTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_center")]
         public global::System.Collections.Generic.IList<int>? MouthCenter { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_top")]
         public global::System.Collections.Generic.IList<int>? MouthTop { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_bottom")]
         public global::System.Collections.Generic.IList<int>? MouthBottom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_ear_tragion")]
         public global::System.Collections.Generic.IList<int>? LeftEarTragion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_ear_tragion")]
         public global::System.Collections.Generic.IList<int>? RightEarTragion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("forehead_glabella")]
         public global::System.Collections.Generic.IList<int>? ForeheadGlabella { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chin_gnathion")]
         public global::System.Collections.Generic.IList<int>? ChinGnathion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chin_left_gonion")]
         public global::System.Collections.Generic.IList<int>? ChinLeftGonion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chin_right_gonion")]
         public global::System.Collections.Generic.IList<int>? ChinRightGonion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upper_jawline_left")]
         public global::System.Collections.Generic.IList<int>? UpperJawlineLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mid_jawline_left")]
         public global::System.Collections.Generic.IList<int>? MidJawlineLeft { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mid_jawline_right")]
         public global::System.Collections.Generic.IList<int>? MidJawlineRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upper_jawline_right")]
         public global::System.Collections.Generic.IList<int>? UpperJawlineRight { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left_cheek_center")]
         public global::System.Collections.Generic.IList<int>? LeftCheekCenter { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right_cheek_center")]
         public global::System.Collections.Generic.IList<int>? RightCheekCenter { get; set; }

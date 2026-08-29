@@ -4,16 +4,16 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ImageaiDetectionAiDetectionDataClassPredictionEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGenerated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Original,
     }

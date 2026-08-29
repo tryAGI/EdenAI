@@ -11,7 +11,7 @@ namespace EdenAI
     public sealed partial class EdenAIClient : global::EdenAI.IEdenAIClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.edenai.run/v2";
 
@@ -34,658 +34,665 @@ namespace EdenAI
 
         /// <inheritdoc/>
         public global::EdenAI.AutoSDKClientOptions Options { get; }
+
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::EdenAI.SourceGenerationContext.Default);
+
         /// <summary>
-        /// 
+        ///
         /// </summary>
-        public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; } = global::EdenAI.SourceGenerationContext.Default;
+        public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
+        {
+            get => JsonSerializerContextProvider.Value;
+            set => JsonSerializerContextProvider = new(() => value);
+        }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AiDetectionClient AiDetection => new AiDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AnonymizationClient Anonymization => new AnonymizationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AnonymizationAsyncClient AnonymizationAsync => new AnonymizationAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AutomaticTranslationClient AutomaticTranslation => new AutomaticTranslationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AutomlClassificationClient AutomlClassification => new AutomlClassificationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BackgroundRemovalClient BackgroundRemoval => new BackgroundRemovalClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BankCheckParsingClient BankCheckParsing => new BankCheckParsingClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BatchClient Batch => new BatchClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatClient Chat => new ChatClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeGenerationClient CodeGeneration => new CodeGenerationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CostMonitoringClient CostMonitoring => new CostMonitoringClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomChatbotCreateOperationsClient CustomChatbotCreateOperations => new CustomChatbotCreateOperationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomChatbotDeleteOperationsClient CustomChatbotDeleteOperations => new CustomChatbotDeleteOperationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomChatbotInfoOperationsClient CustomChatbotInfoOperations => new CustomChatbotInfoOperationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomChatbotQueryOperationsClient CustomChatbotQueryOperations => new CustomChatbotQueryOperationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomChatbotUpdateOperationsClient CustomChatbotUpdateOperations => new CustomChatbotUpdateOperationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomChatbotUploadOperationsClient CustomChatbotUploadOperations => new CustomChatbotUploadOperationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomDocumentParsingAsyncClient CustomDocumentParsingAsync => new CustomDocumentParsingAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DataExtractionClient DataExtraction => new DataExtractionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeepfakeDetectionClient DeepfakeDetection => new DeepfakeDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeepfakeDetectionAsyncClient DeepfakeDetectionAsync => new DeepfakeDetectionAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentTranslationClient DocumentTranslation => new DocumentTranslationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EmbeddingsClient Embeddings => new EmbeddingsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EmotionDetectionClient EmotionDetection => new EmotionDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnabledFeaturesClient EnabledFeatures => new EnabledFeaturesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EntitySentimentClient EntitySentiment => new EntitySentimentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionsClient Executions => new ExecutionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExplicitContentClient ExplicitContent => new ExplicitContentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExplicitContentDetectionAsyncClient ExplicitContentDetectionAsync => new ExplicitContentDetectionAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FaceCompareClient FaceCompare => new FaceCompareClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FaceDetectionClient FaceDetection => new FaceDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FaceDetectionAsyncClient FaceDetectionAsync => new FaceDetectionAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FaceRecognitionClient FaceRecognition => new FaceRecognitionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FinancialParserClient FinancialParser => new FinancialParserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenerationClient Generation => new GenerationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GenerationAsyncClient GenerationAsync => new GenerationAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IdentityParserClient IdentityParser => new IdentityParserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InfosClient Infos => new InfosClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public KeywordExtractionClient KeywordExtraction => new KeywordExtractionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LabelDetectionAsyncClient LabelDetectionAsync => new LabelDetectionAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LandmarkDetectionClient LandmarkDetection => new LandmarkDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LanguageDetectionClient LanguageDetection => new LanguageDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogoDetectionClient LogoDetection => new LogoDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogoDetectionAsyncClient LogoDetectionAsync => new LogoDetectionAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModerationClient Moderation => new ModerationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedEntityRecognitionClient NamedEntityRecognition => new NamedEntityRecognitionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ObjectDetectionClient ObjectDetection => new ObjectDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ObjectTrackingAsyncClient ObjectTrackingAsync => new ObjectTrackingAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OcrClient Ocr => new OcrClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OcrAsyncClient OcrAsync => new OcrAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OcrTablesAsyncClient OcrTablesAsync => new OcrTablesAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PersonTrackingAsyncClient PersonTrackingAsync => new PersonTrackingAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlagiaDetectionClient PlagiaDetection => new PlagiaDetectionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptOptimizationClient PromptOptimization => new PromptOptimizationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptsClient Prompts => new PromptsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public QuestionAnswerClient QuestionAnswer => new QuestionAnswerClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public QuestionAnswerAsyncClient QuestionAnswerAsync => new QuestionAnswerAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResourcesClient Resources => new ResourcesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResumeParserClient ResumeParser => new ResumeParserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchClient Search => new SearchClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SentimentAnalysisClient SentimentAnalysis => new SentimentAnalysisClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ShotChangeDetectionAsyncClient ShotChangeDetectionAsync => new ShotChangeDetectionAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpeechToTextAsyncClient SpeechToTextAsync => new SpeechToTextAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpellCheckClient SpellCheck => new SpellCheckClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SummarizeClient Summarize => new SummarizeClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextDetectionAsyncClient TextDetectionAsync => new TextDetectionAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToSpeechClient TextToSpeech => new TextToSpeechClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToSpeechAsyncClient TextToSpeechAsync => new TextToSpeechAsyncClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TopicExtractionClient TopicExtraction => new TopicExtractionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserManagementClient UserManagement => new UserManagementClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhookClient Webhook => new WebhookClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowsClient Workflows => new WorkflowsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
         };
 
         /// <summary>

@@ -4,89 +4,89 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ItemBankCheckParsingDataClass
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Amount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount_text")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AmountText { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bank_address")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BankAddress { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bank_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BankName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("date")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Date { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("memo")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Memo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("payer_address")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PayerAddress { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("payer_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PayerName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("receiver_address")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReceiverAddress { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("receiver_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReceiverName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Currency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("micr")]
         [global::System.Text.Json.Serialization.JsonRequired]

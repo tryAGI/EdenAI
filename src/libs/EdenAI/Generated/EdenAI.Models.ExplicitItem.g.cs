@@ -4,26 +4,26 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ExplicitItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("label")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Label { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("likelihood")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Likelihood { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("likelihood_score")]
         [global::System.Text.Json.Serialization.JsonRequired]

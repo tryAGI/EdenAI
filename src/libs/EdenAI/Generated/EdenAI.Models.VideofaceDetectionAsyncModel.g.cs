@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideofaceDetectionAsyncModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Google { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Amazon { get; set; }

@@ -4,18 +4,18 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PersonAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upper_cloths")]
         public global::System.Collections.Generic.IList<global::EdenAI.UpperCloth>? UpperCloths { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lower_cloths")]
         public global::System.Collections.Generic.IList<global::EdenAI.LowerCloth>? LowerCloths { get; set; }

@@ -4,40 +4,40 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FaceQuality
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("noise")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Noise { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("exposure")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Exposure { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blur")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Blur { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brightness")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Brightness { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharpness")]
         [global::System.Text.Json.Serialization.JsonRequired]

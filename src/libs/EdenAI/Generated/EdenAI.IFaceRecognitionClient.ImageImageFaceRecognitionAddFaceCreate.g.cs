@@ -10,7 +10,6 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 1.26.8`|1.0 (per 1000 image)|1 image<br/>
-        /// |**facepp**|`v3`|0.6 (per 1000 request)|1 request<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -28,7 +27,6 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 1.26.8`|1.0 (per 1000 image)|1 image<br/>
-        /// |**facepp**|`v3`|0.6 (per 1000 request)|1 request<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -46,7 +44,6 @@ namespace EdenAI
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 1.26.8`|1.0 (per 1000 image)|1 image<br/>
-        /// |**facepp**|`v3`|0.6 (per 1000 request)|1 request<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">

@@ -4,12 +4,12 @@
 namespace EdenAI
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoTrackingPerson
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tracked")]
         public global::System.Collections.Generic.IList<global::EdenAI.PersonTracking>? Tracked { get; set; }

@@ -10,11 +10,11 @@ namespace EdenAI
     public enum DbProviderEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Qdrant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Supabase,
     }
