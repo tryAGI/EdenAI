@@ -23,24 +23,6 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Replicate { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("leonardo")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Leonardo { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Bytedance { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.ImagegenerationGenerationDataClass? Google { get; set; }
 
@@ -53,8 +35,26 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Replicate { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.ImagegenerationGenerationDataClass? Amazon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Bytedance { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("leonardo")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Leonardo { get; set; }
 
         /// <summary>
         ///
@@ -73,12 +73,12 @@ namespace EdenAI
         /// </summary>
         /// <param name="deepai"></param>
         /// <param name="minimax"></param>
-        /// <param name="replicate"></param>
-        /// <param name="leonardo"></param>
-        /// <param name="bytedance"></param>
         /// <param name="google"></param>
         /// <param name="openai"></param>
+        /// <param name="replicate"></param>
         /// <param name="amazon"></param>
+        /// <param name="bytedance"></param>
+        /// <param name="leonardo"></param>
         /// <param name="stabilityai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -86,22 +86,22 @@ namespace EdenAI
         public ImagegenerationResponseModel(
             global::EdenAI.ImagegenerationGenerationDataClass? deepai,
             global::EdenAI.ImagegenerationGenerationDataClass? minimax,
-            global::EdenAI.ImagegenerationGenerationDataClass? replicate,
-            global::EdenAI.ImagegenerationGenerationDataClass? leonardo,
-            global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
             global::EdenAI.ImagegenerationGenerationDataClass? google,
             global::EdenAI.ImagegenerationGenerationDataClass? openai,
+            global::EdenAI.ImagegenerationGenerationDataClass? replicate,
             global::EdenAI.ImagegenerationGenerationDataClass? amazon,
+            global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
+            global::EdenAI.ImagegenerationGenerationDataClass? leonardo,
             global::EdenAI.ImagegenerationGenerationDataClass? stabilityai)
         {
             this.Deepai = deepai;
             this.Minimax = minimax;
-            this.Replicate = replicate;
-            this.Leonardo = leonardo;
-            this.Bytedance = bytedance;
             this.Google = google;
             this.Openai = openai;
+            this.Replicate = replicate;
             this.Amazon = amazon;
+            this.Bytedance = bytedance;
+            this.Leonardo = leonardo;
             this.Stabilityai = stabilityai;
         }
 
