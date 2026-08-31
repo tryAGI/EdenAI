@@ -103,6 +103,28 @@ namespace EdenAI
         /// |**pixverse**|**c1**|`v2`|0.004 (per 1 token)|None token<br/>
         /// |**pixverse**|**v5.5**|`v2`|0.004 (per 1 token)|None token<br/>
         /// |**pixverse**|**v5**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pruna**|-|`v1`|`1280x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x1280`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`960x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x960`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x1080`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1365x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1365`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1024x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1024`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1152x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1152`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1920x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1920`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1440x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1440`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1620x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1620`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|0.02 (per 1 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -188,6 +210,28 @@ namespace EdenAI
         /// |**pixverse**|**c1**|`v2`|0.004 (per 1 token)|None token<br/>
         /// |**pixverse**|**v5.5**|`v2`|0.004 (per 1 token)|None token<br/>
         /// |**pixverse**|**v5**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pruna**|-|`v1`|`1280x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x1280`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`960x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x960`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x1080`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1365x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1365`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1024x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1024`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1152x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1152`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1920x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1920`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1440x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1440`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1620x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1620`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|0.02 (per 1 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -758,6 +802,28 @@ namespace EdenAI
         /// |**pixverse**|**c1**|`v2`|0.004 (per 1 token)|None token<br/>
         /// |**pixverse**|**v5.5**|`v2`|0.004 (per 1 token)|None token<br/>
         /// |**pixverse**|**v5**|`v2`|0.004 (per 1 token)|None token<br/>
+        /// |**pruna**|-|`v1`|`1280x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x1280`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`960x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x960`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x1080`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`720x720`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1365x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1365`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1024x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1024`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1152x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x1152`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`768x768`|0.02 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1920x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1920`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1440x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1440`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1620x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1620`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|`1080x1080`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|-|`v1`|0.02 (per 1 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
