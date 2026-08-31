@@ -11,8 +11,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Affinda { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Base64 { get; set; }
 
         /// <summary>
         ///
@@ -23,14 +29,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Base64 { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Affinda { get; set; }
 
         /// <summary>
         ///
@@ -59,10 +59,10 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcridentityParserResponseModel" /> class.
         /// </summary>
-        /// <param name="affinda"></param>
-        /// <param name="mindee"></param>
         /// <param name="openai"></param>
         /// <param name="base64"></param>
+        /// <param name="mindee"></param>
+        /// <param name="affinda"></param>
         /// <param name="klippa"></param>
         /// <param name="amazon"></param>
         /// <param name="microsoft"></param>
@@ -70,18 +70,18 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcridentityParserResponseModel(
-            global::EdenAI.OcridentityParserIdentityParserDataClass? affinda,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? mindee,
             global::EdenAI.OcridentityParserIdentityParserDataClass? openai,
             global::EdenAI.OcridentityParserIdentityParserDataClass? base64,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? mindee,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? affinda,
             global::EdenAI.OcridentityParserIdentityParserDataClass? klippa,
             global::EdenAI.OcridentityParserIdentityParserDataClass? amazon,
             global::EdenAI.OcridentityParserIdentityParserDataClass? microsoft)
         {
-            this.Affinda = affinda;
-            this.Mindee = mindee;
             this.Openai = openai;
             this.Base64 = base64;
+            this.Mindee = mindee;
+            this.Affinda = affinda;
             this.Klippa = klippa;
             this.Amazon = amazon;
             this.Microsoft = microsoft;
