@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("pixverse")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Pixverse { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pixverse")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Pixverse { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
@@ -35,8 +35,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pruna")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Pruna { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Minimax { get; set; }
 
         /// <summary>
         ///
@@ -47,8 +47,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Minimax { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("pruna")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Pruna { get; set; }
 
         /// <summary>
         ///
@@ -66,33 +66,33 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="VideogenerationAsyncModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
-        /// <param name="microsoft"></param>
         /// <param name="pixverse"></param>
+        /// <param name="microsoft"></param>
         /// <param name="bytedance"></param>
-        /// <param name="pruna"></param>
-        /// <param name="openai"></param>
         /// <param name="minimax"></param>
+        /// <param name="openai"></param>
+        /// <param name="pruna"></param>
         /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideogenerationAsyncModel(
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pixverse,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pruna,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? minimax,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pruna,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? google)
         {
             this.Amazon = amazon;
-            this.Microsoft = microsoft;
             this.Pixverse = pixverse;
+            this.Microsoft = microsoft;
             this.Bytedance = bytedance;
-            this.Pruna = pruna;
-            this.Openai = openai;
             this.Minimax = minimax;
+            this.Openai = openai;
+            this.Pruna = pruna;
             this.Google = google;
         }
 
