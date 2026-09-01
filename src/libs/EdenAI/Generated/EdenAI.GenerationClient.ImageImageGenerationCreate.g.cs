@@ -116,8 +116,8 @@ namespace EdenAI
         /// |**replicate**|`classic`|<br/>
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
         /// |**minimax**|`image-01`|<br/>
-        /// |**bytedance**|`seedream-3-0-t2i-250415`|<br/>
-        /// |**google**|`imagen-4.0-generate-001`|<br/>
+        /// |**bytedance**|`seedream-4-0-250828`|<br/>
+        /// |**google**|`gemini-3.1-flash-image`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -214,8 +214,8 @@ namespace EdenAI
         /// |**replicate**|`classic`|<br/>
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
         /// |**minimax**|`image-01`|<br/>
-        /// |**bytedance**|`seedream-3-0-t2i-250415`|<br/>
-        /// |**google**|`imagen-4.0-generate-001`|<br/>
+        /// |**bytedance**|`seedream-4-0-250828`|<br/>
+        /// |**google**|`gemini-3.1-flash-image`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -806,8 +806,8 @@ namespace EdenAI
         /// |**replicate**|`classic`|<br/>
         /// |**leonardo**|`Leonardo Phoenix`|<br/>
         /// |**minimax**|`image-01`|<br/>
-        /// |**bytedance**|`seedream-3-0-t2i-250415`|<br/>
-        /// |**google**|`imagen-4.0-generate-001`|<br/>
+        /// |**bytedance**|`seedream-4-0-250828`|<br/>
+        /// |**google**|`gemini-3.1-flash-image`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">

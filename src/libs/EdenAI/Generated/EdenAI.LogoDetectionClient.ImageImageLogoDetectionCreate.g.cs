@@ -50,7 +50,7 @@ namespace EdenAI
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
         /// |**api4ai**|-|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**api4ai**|**v1**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|**v2**|`v1.0.0`|2.5 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|**v2**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4-turbo**|`v1`|48.0 (per 1000 file)|1 file<br/>
@@ -59,7 +59,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**api4ai**|`v1`|<br/>
+        /// |**api4ai**|`v2`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// &lt;/details&gt;
         /// </summary>
@@ -91,7 +91,7 @@ namespace EdenAI
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
         /// |**api4ai**|-|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**api4ai**|**v1**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|**v2**|`v1.0.0`|2.5 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|**v2**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4-turbo**|`v1`|48.0 (per 1000 file)|1 file<br/>
@@ -100,7 +100,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**api4ai**|`v1`|<br/>
+        /// |**api4ai**|`v2`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// &lt;/details&gt;
         /// </summary>
@@ -727,7 +727,7 @@ namespace EdenAI
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
         /// |**api4ai**|-|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**api4ai**|**v1**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|**v2**|`v1.0.0`|2.5 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|**v2**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4-turbo**|`v1`|48.0 (per 1000 file)|1 file<br/>
@@ -736,7 +736,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
-        /// |**api4ai**|`v1`|<br/>
+        /// |**api4ai**|`v2`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// &lt;/details&gt;
         /// </summary>
