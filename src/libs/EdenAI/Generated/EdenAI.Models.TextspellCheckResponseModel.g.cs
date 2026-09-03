@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
 
         /// <summary>
         ///
@@ -54,8 +54,8 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TextspellCheckResponseModel" /> class.
         /// </summary>
         /// <param name="microsoft"></param>
-        /// <param name="cohere"></param>
         /// <param name="prowritingaid"></param>
+        /// <param name="cohere"></param>
         /// <param name="openai"></param>
         /// <param name="xai"></param>
         /// <param name="sapling"></param>
@@ -64,15 +64,15 @@ namespace EdenAI
 #endif
         public TextspellCheckResponseModel(
             global::EdenAI.TextspellCheckSpellCheckDataClass? microsoft,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
             global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
             global::EdenAI.TextspellCheckSpellCheckDataClass? openai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? xai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? sapling)
         {
             this.Microsoft = microsoft;
-            this.Cohere = cohere;
             this.Prowritingaid = prowritingaid;
+            this.Cohere = cohere;
             this.Openai = openai;
             this.Xai = xai;
             this.Sapling = sapling;
