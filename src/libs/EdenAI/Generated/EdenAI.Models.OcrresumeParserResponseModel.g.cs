@@ -11,14 +11,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Extracta { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Affinda { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("affinda")]
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Affinda { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Extracta { get; set; }
 
         /// <summary>
         ///
@@ -53,8 +53,8 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrresumeParserResponseModel" /> class.
         /// </summary>
-        /// <param name="extracta"></param>
         /// <param name="affinda"></param>
+        /// <param name="extracta"></param>
         /// <param name="klippa"></param>
         /// <param name="hireability"></param>
         /// <param name="openai"></param>
@@ -63,15 +63,15 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrresumeParserResponseModel(
-            global::EdenAI.OcrresumeParserResumeParserDataClass? extracta,
             global::EdenAI.OcrresumeParserResumeParserDataClass? affinda,
+            global::EdenAI.OcrresumeParserResumeParserDataClass? extracta,
             global::EdenAI.OcrresumeParserResumeParserDataClass? klippa,
             global::EdenAI.OcrresumeParserResumeParserDataClass? hireability,
             global::EdenAI.OcrresumeParserResumeParserDataClass? openai,
             global::EdenAI.OcrresumeParserResumeParserDataClass? senseloaf)
         {
-            this.Extracta = extracta;
             this.Affinda = affinda;
+            this.Extracta = extracta;
             this.Klippa = klippa;
             this.Hireability = hireability;
             this.Openai = openai;

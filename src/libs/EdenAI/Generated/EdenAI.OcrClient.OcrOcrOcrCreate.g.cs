@@ -51,7 +51,7 @@ namespace EdenAI
         /// |**microsoft**|`v3.2`|1.0 (per 1000 page)|1 page<br/>
         /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**api4ai**|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
-        /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|`v1`|4.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -305,7 +305,7 @@ namespace EdenAI
         /// |**microsoft**|`v3.2`|1.0 (per 1000 page)|1 page<br/>
         /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**api4ai**|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
-        /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|`v1`|4.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -1170,7 +1170,7 @@ namespace EdenAI
         /// |**microsoft**|`v3.2`|1.0 (per 1000 page)|1 page<br/>
         /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**api4ai**|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
-        /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|`v1`|4.0 (per 1000 page)|1 page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
