@@ -58,10 +58,8 @@ namespace EdenAI
         /// |**bytedance**|**seedream-4-0-250828**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
-        /// |**bytedance**|**seedream-3-0-t2i-250415**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**google**|-|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**gemini-2.5-flash-image**|`v1`|-|0.039 (per 1 image)|1 image<br/>
-        /// |**google**|**imagen-4.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-3.0-capability-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-4.0-ultra-generate-001**|`v1`|-|0.06 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-4.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
@@ -146,10 +144,8 @@ namespace EdenAI
         /// |**bytedance**|**seedream-4-0-250828**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
-        /// |**bytedance**|**seedream-3-0-t2i-250415**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**google**|-|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**gemini-2.5-flash-image**|`v1`|-|0.039 (per 1 image)|1 image<br/>
-        /// |**google**|**imagen-4.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-3.0-capability-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-4.0-ultra-generate-001**|`v1`|-|0.06 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-4.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
@@ -234,10 +230,8 @@ namespace EdenAI
         /// |**bytedance**|**seedream-4-0-250828**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|**seedream-4-5-251128**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**bytedance**|-|`v3`|-|0.03 (per 1 request)|1 request<br/>
-        /// |**bytedance**|**seedream-3-0-t2i-250415**|`v3`|-|0.03 (per 1 request)|1 request<br/>
         /// |**google**|-|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**gemini-2.5-flash-image**|`v1`|-|0.039 (per 1 image)|1 image<br/>
-        /// |**google**|**imagen-4.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-3.0-capability-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-4.0-ultra-generate-001**|`v1`|-|0.06 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-4.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>

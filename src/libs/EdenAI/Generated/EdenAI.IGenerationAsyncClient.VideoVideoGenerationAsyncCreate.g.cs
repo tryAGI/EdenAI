@@ -34,7 +34,6 @@ namespace EdenAI
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-generate-001**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
         /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
@@ -154,7 +153,6 @@ namespace EdenAI
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-generate-001**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
         /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
@@ -274,7 +272,6 @@ namespace EdenAI
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-generate-001**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
         /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
