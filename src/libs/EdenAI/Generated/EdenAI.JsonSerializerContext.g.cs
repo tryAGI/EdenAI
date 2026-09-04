@@ -741,6 +741,7 @@ namespace EdenAI
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
+
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
         /// <summary>
@@ -762,6 +763,16 @@ namespace EdenAI
             return Resolver.GetTypeInfo(type, Options);
         }
 
+         static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
+        {
+            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>());
+            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>());
+            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>());
+            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>());
+            options.Converters.Add(new global::EdenAI.JsonConverters.UnixTimestampJsonConverter());
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
+        }
+
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
         {
             var options = new global::System.Text.Json.JsonSerializerOptions
@@ -769,13 +780,7 @@ namespace EdenAI
                 DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
                 TypeInfoResolver = Resolver,
             };
-            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.Status889Enum?, global::EdenAI.NullEnum?>());
-            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>());
-            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>());
-            options.Converters.Add(new global::EdenAI.JsonConverters.OneOfJsonConverter<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>());
-            options.Converters.Add(new global::EdenAI.JsonConverters.UnixTimestampJsonConverter());
-
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            AddConverters(options);
 
             return options;
         }
