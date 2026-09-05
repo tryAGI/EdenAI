@@ -11,20 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.MultimodalchatChatDataClass? Xai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.MultimodalchatChatDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
-        public global::EdenAI.MultimodalchatChatDataClass? Anthropic { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.MultimodalchatChatDataClass? Openai { get; set; }
 
         /// <summary>
         ///
@@ -35,8 +23,20 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.MultimodalchatChatDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
+        public global::EdenAI.MultimodalchatChatDataClass? Anthropic { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.MultimodalchatChatDataClass? Xai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.MultimodalchatChatDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
@@ -59,30 +59,30 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="MultimodalchatResponseModel" /> class.
         /// </summary>
+        /// <param name="openai"></param>
+        /// <param name="amazon"></param>
+        /// <param name="anthropic"></param>
         /// <param name="xai"></param>
         /// <param name="microsoft"></param>
-        /// <param name="anthropic"></param>
-        /// <param name="amazon"></param>
-        /// <param name="openai"></param>
         /// <param name="mistral"></param>
         /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public MultimodalchatResponseModel(
+            global::EdenAI.MultimodalchatChatDataClass? openai,
+            global::EdenAI.MultimodalchatChatDataClass? amazon,
+            global::EdenAI.MultimodalchatChatDataClass? anthropic,
             global::EdenAI.MultimodalchatChatDataClass? xai,
             global::EdenAI.MultimodalchatChatDataClass? microsoft,
-            global::EdenAI.MultimodalchatChatDataClass? anthropic,
-            global::EdenAI.MultimodalchatChatDataClass? amazon,
-            global::EdenAI.MultimodalchatChatDataClass? openai,
             global::EdenAI.MultimodalchatChatDataClass? mistral,
             global::EdenAI.MultimodalchatChatDataClass? google)
         {
+            this.Openai = openai;
+            this.Amazon = amazon;
+            this.Anthropic = anthropic;
             this.Xai = xai;
             this.Microsoft = microsoft;
-            this.Anthropic = anthropic;
-            this.Amazon = amazon;
-            this.Openai = openai;
             this.Mistral = mistral;
             this.Google = google;
         }
