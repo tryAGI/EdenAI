@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Amazon { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
@@ -48,8 +48,8 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="ImagefaceDetectionResponseModel" /> class.
         /// </summary>
         /// <param name="api4ai"></param>
-        /// <param name="microsoft"></param>
         /// <param name="amazon"></param>
+        /// <param name="microsoft"></param>
         /// <param name="google"></param>
         /// <param name="clarifai"></param>
 #if NET7_0_OR_GREATER
@@ -57,14 +57,14 @@ namespace EdenAI
 #endif
         public ImagefaceDetectionResponseModel(
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? api4ai,
-            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? microsoft,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
+            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? microsoft,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? google,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? clarifai)
         {
             this.Api4ai = api4ai;
-            this.Microsoft = microsoft;
             this.Amazon = amazon;
+            this.Microsoft = microsoft;
             this.Google = google;
             this.Clarifai = clarifai;
         }
