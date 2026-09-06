@@ -17,14 +17,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Google { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("elevenlabs")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Elevenlabs { get; set; }
 
         /// <summary>
         ///
@@ -47,8 +41,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("elevenlabs")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Elevenlabs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Google { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -60,31 +60,31 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="AudiotextToSpeechResponseModel" /> class.
         /// </summary>
         /// <param name="openai"></param>
-        /// <param name="google"></param>
-        /// <param name="microsoft"></param>
+        /// <param name="elevenlabs"></param>
         /// <param name="deepgram"></param>
         /// <param name="amazon"></param>
         /// <param name="lovoai"></param>
-        /// <param name="elevenlabs"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudiotextToSpeechResponseModel(
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? openai,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? google,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? microsoft,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? elevenlabs,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? amazon,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? lovoai,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? elevenlabs)
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? microsoft,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? google)
         {
             this.Openai = openai;
-            this.Google = google;
-            this.Microsoft = microsoft;
+            this.Elevenlabs = elevenlabs;
             this.Deepgram = deepgram;
             this.Amazon = amazon;
             this.Lovoai = lovoai;
-            this.Elevenlabs = elevenlabs;
+            this.Microsoft = microsoft;
+            this.Google = google;
         }
 
         /// <summary>
