@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Deepgram { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Openai { get; set; }
 
         /// <summary>
         ///
@@ -35,14 +35,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Deepgram { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Google { get; set; }
 
         /// <summary>
         ///
@@ -60,30 +60,30 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="AudiotextToSpeechResponseModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
-        /// <param name="deepgram"></param>
+        /// <param name="openai"></param>
         /// <param name="lovoai"></param>
         /// <param name="elevenlabs"></param>
+        /// <param name="deepgram"></param>
         /// <param name="google"></param>
-        /// <param name="openai"></param>
         /// <param name="microsoft"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudiotextToSpeechResponseModel(
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? amazon,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? openai,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? lovoai,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? elevenlabs,
+            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? deepgram,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? google,
-            global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? openai,
             global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? microsoft)
         {
             this.Amazon = amazon;
-            this.Deepgram = deepgram;
+            this.Openai = openai;
             this.Lovoai = lovoai;
             this.Elevenlabs = elevenlabs;
+            this.Deepgram = deepgram;
             this.Google = google;
-            this.Openai = openai;
             this.Microsoft = microsoft;
         }
 
