@@ -64,7 +64,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int ConfidenceScore { get; set; }
+        public required double ConfidenceScore { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -94,7 +94,7 @@ namespace EdenAI
             global::EdenAI.SubCategoryType subcategory,
             string originalLabel,
             string content,
-            int confidenceScore)
+            double confidenceScore)
         {
             this.Offset = offset;
             this.Length = length;

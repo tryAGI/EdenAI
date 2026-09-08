@@ -18,7 +18,7 @@ namespace EdenAI
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public int? Confidence { get; set; }
+        public double? Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,7 +40,7 @@ namespace EdenAI
 #endif
         public ItemIdentityParserDataClass(
             string? value,
-            int? confidence)
+            double? confidence)
         {
             this.Value = value;
             this.Confidence = confidence;

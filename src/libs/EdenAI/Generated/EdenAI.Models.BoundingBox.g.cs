@@ -23,28 +23,28 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Left { get; set; }
+        public required double Left { get; set; }
 
         /// <summary>
         /// Top coordinate of the bounding box
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("top")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Top { get; set; }
+        public required double Top { get; set; }
 
         /// <summary>
         /// Width of the bounding box
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("width")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Width { get; set; }
+        public required double Width { get; set; }
 
         /// <summary>
         /// Height of the bounding box
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("height")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Height { get; set; }
+        public required double Height { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -71,10 +71,10 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BoundingBox(
-            int left,
-            int top,
-            int width,
-            int height)
+            double left,
+            double top,
+            double width,
+            double height)
         {
             this.Left = left;
             this.Top = top;

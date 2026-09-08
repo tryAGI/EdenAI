@@ -13,14 +13,14 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latitude")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Latitude { get; set; }
+        public required double Latitude { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("longitude")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Longitude { get; set; }
+        public required double Longitude { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,8 +37,8 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LandmarkLatLng(
-            int latitude,
-            int longitude)
+            double latitude,
+            double longitude)
         {
             this.Latitude = latitude;
             this.Longitude = longitude;

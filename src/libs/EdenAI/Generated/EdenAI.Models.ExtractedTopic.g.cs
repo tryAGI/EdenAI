@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importance")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Importance { get; set; }
+        public required double Importance { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,7 +38,7 @@ namespace EdenAI
 #endif
         public ExtractedTopic(
             string category,
-            int importance)
+            double importance)
         {
             this.Category = category ?? throw new global::System.ArgumentNullException(nameof(category));
             this.Importance = importance;

@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int AiScore { get; set; }
+        public required double AiScore { get; set; }
 
         /// <summary>
         ///
@@ -56,7 +56,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextaiDetectionAiDetectionDataClass(
-            int aiScore,
+            double aiScore,
             global::EdenAI.Status549Enum status,
             global::System.Collections.Generic.IList<global::EdenAI.AiDetectionItem>? items,
             object? originalResponse)

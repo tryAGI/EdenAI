@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Amount { get; set; }
+        public required double Amount { get; set; }
 
         /// <summary>
         ///
@@ -117,7 +117,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ItemBankCheckParsingDataClass(
-            int amount,
+            double amount,
             string amountText,
             string bankAddress,
             string bankName,

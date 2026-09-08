@@ -26,7 +26,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Score { get; set; }
+        public required double Score { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,7 +49,7 @@ namespace EdenAI
 #endif
         public LogoItem(
             string description,
-            int score,
+            double score,
             global::EdenAI.LogoBoundingPoly? boundingPoly)
         {
             this.BoundingPoly = boundingPoly;

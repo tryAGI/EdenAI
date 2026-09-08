@@ -32,7 +32,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sentiment_rate")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int SentimentRate { get; set; }
+        public required double SentimentRate { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,7 +52,7 @@ namespace EdenAI
         public SegmentSentimentAnalysisDataClass(
             string segment,
             global::EdenAI.SentimentEbfEnum sentiment,
-            int sentimentRate)
+            double sentimentRate)
         {
             this.Segment = segment ?? throw new global::System.ArgumentNullException(nameof(segment));
             this.Sentiment = sentiment;

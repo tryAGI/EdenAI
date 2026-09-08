@@ -13,14 +13,14 @@ namespace EdenAI
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tax")]
-        public int? Tax { get; set; }
+        public double? Tax { get; set; }
 
         /// <summary>
         /// Total amount for the line item.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount_line")]
-        public int? AmountLine { get; set; }
+        public double? AmountLine { get; set; }
 
         /// <summary>
         /// Description of the line item.<br/>
@@ -34,14 +34,14 @@ namespace EdenAI
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("quantity")]
-        public int? Quantity { get; set; }
+        public double? Quantity { get; set; }
 
         /// <summary>
         /// Unit price for each unit in the line item.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("unit_price")]
-        public int? UnitPrice { get; set; }
+        public double? UnitPrice { get; set; }
 
         /// <summary>
         /// Type of unit (e.g., hours, items).<br/>
@@ -76,35 +76,35 @@ namespace EdenAI
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tax_rate")]
-        public int? TaxRate { get; set; }
+        public double? TaxRate { get; set; }
 
         /// <summary>
         /// Base total amount before any discounts or taxes.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("base_total")]
-        public int? BaseTotal { get; set; }
+        public double? BaseTotal { get; set; }
 
         /// <summary>
         /// Subtotal amount for the line item.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sub_total")]
-        public int? SubTotal { get; set; }
+        public double? SubTotal { get; set; }
 
         /// <summary>
         /// Amount of discount applied to the line item.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("discount_amount")]
-        public int? DiscountAmount { get; set; }
+        public double? DiscountAmount { get; set; }
 
         /// <summary>
         /// Rate of discount applied to the line item.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("discount_rate")]
-        public int? DiscountRate { get; set; }
+        public double? DiscountRate { get; set; }
 
         /// <summary>
         /// Code associated with any discount applied to the line item.<br/>
@@ -208,20 +208,20 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FinancialLineItem(
-            int? tax,
-            int? amountLine,
+            double? tax,
+            double? amountLine,
             string? description,
-            int? quantity,
-            int? unitPrice,
+            double? quantity,
+            double? unitPrice,
             string? unitType,
             string? date,
             string? productCode,
             string? purchaseOrder,
-            int? taxRate,
-            int? baseTotal,
-            int? subTotal,
-            int? discountAmount,
-            int? discountRate,
+            double? taxRate,
+            double? baseTotal,
+            double? subTotal,
+            double? discountAmount,
+            double? discountRate,
             string? discountCode,
             string? orderNumber,
             string? title)

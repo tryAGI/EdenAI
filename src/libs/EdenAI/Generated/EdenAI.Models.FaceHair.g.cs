@@ -19,7 +19,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bald")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Bald { get; set; }
+        public required double Bald { get; set; }
 
         /// <summary>
         ///
@@ -44,7 +44,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceHair(
-            int bald,
+            double bald,
             bool invisible,
             global::System.Collections.Generic.IList<global::EdenAI.FaceHairColor>? hairColor)
         {

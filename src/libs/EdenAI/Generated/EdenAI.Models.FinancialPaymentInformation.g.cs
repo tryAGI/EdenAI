@@ -13,98 +13,98 @@ namespace EdenAI
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount_due")]
-        public int? AmountDue { get; set; }
+        public double? AmountDue { get; set; }
 
         /// <summary>
         /// Tip amount in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount_tip")]
-        public int? AmountTip { get; set; }
+        public double? AmountTip { get; set; }
 
         /// <summary>
         /// Shipping cost in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount_shipping")]
-        public int? AmountShipping { get; set; }
+        public double? AmountShipping { get; set; }
 
         /// <summary>
         /// Change amount in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount_change")]
-        public int? AmountChange { get; set; }
+        public double? AmountChange { get; set; }
 
         /// <summary>
         /// Amount already paid in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount_paid")]
-        public int? AmountPaid { get; set; }
+        public double? AmountPaid { get; set; }
 
         /// <summary>
         /// Total amount in the invoice.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total")]
-        public int? Total { get; set; }
+        public double? Total { get; set; }
 
         /// <summary>
         /// Subtotal amount in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subtotal")]
-        public int? Subtotal { get; set; }
+        public double? Subtotal { get; set; }
 
         /// <summary>
         /// Total tax amount in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_tax")]
-        public int? TotalTax { get; set; }
+        public double? TotalTax { get; set; }
 
         /// <summary>
         /// Tax rate applied in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tax_rate")]
-        public int? TaxRate { get; set; }
+        public double? TaxRate { get; set; }
 
         /// <summary>
         /// Discount amount applied in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("discount")]
-        public int? Discount { get; set; }
+        public double? Discount { get; set; }
 
         /// <summary>
         /// Gratuity amount in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gratuity")]
-        public int? Gratuity { get; set; }
+        public double? Gratuity { get; set; }
 
         /// <summary>
         /// Service charge in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service_charge")]
-        public int? ServiceCharge { get; set; }
+        public double? ServiceCharge { get; set; }
 
         /// <summary>
         /// Previous unpaid balance in a financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previous_unpaid_balance")]
-        public int? PreviousUnpaidBalance { get; set; }
+        public double? PreviousUnpaidBalance { get; set; }
 
         /// <summary>
         /// Prior balance before the current financial transaction.<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prior_balance")]
-        public int? PriorBalance { get; set; }
+        public double? PriorBalance { get; set; }
 
         /// <summary>
         /// Terms and conditions for payment.<br/>
@@ -139,7 +139,7 @@ namespace EdenAI
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shipping_handling_charge")]
-        public int? ShippingHandlingCharge { get; set; }
+        public double? ShippingHandlingCharge { get; set; }
 
         /// <summary>
         /// Unique identifier for the financial transaction.<br/>
@@ -252,25 +252,25 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FinancialPaymentInformation(
-            int? amountDue,
-            int? amountTip,
-            int? amountShipping,
-            int? amountChange,
-            int? amountPaid,
-            int? total,
-            int? subtotal,
-            int? totalTax,
-            int? taxRate,
-            int? discount,
-            int? gratuity,
-            int? serviceCharge,
-            int? previousUnpaidBalance,
-            int? priorBalance,
+            double? amountDue,
+            double? amountTip,
+            double? amountShipping,
+            double? amountChange,
+            double? amountPaid,
+            double? total,
+            double? subtotal,
+            double? totalTax,
+            double? taxRate,
+            double? discount,
+            double? gratuity,
+            double? serviceCharge,
+            double? previousUnpaidBalance,
+            double? priorBalance,
             string? paymentTerms,
             string? paymentMethod,
             string? paymentCardNumber,
             string? paymentAuthCode,
-            int? shippingHandlingCharge,
+            double? shippingHandlingCharge,
             string? transactionNumber,
             string? transactionReference)
         {

@@ -12,31 +12,31 @@ namespace EdenAI
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eye_left")]
-        public global::System.Collections.Generic.IList<int>? EyeLeft { get; set; }
+        public global::System.Collections.Generic.IList<double>? EyeLeft { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eye_right")]
-        public global::System.Collections.Generic.IList<int>? EyeRight { get; set; }
+        public global::System.Collections.Generic.IList<double>? EyeRight { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nose")]
-        public global::System.Collections.Generic.IList<int>? Nose { get; set; }
+        public global::System.Collections.Generic.IList<double>? Nose { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_left")]
-        public global::System.Collections.Generic.IList<int>? MouthLeft { get; set; }
+        public global::System.Collections.Generic.IList<double>? MouthLeft { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_right")]
-        public global::System.Collections.Generic.IList<int>? MouthRight { get; set; }
+        public global::System.Collections.Generic.IList<double>? MouthRight { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,11 +56,11 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LandmarksVideo(
-            global::System.Collections.Generic.IList<int>? eyeLeft,
-            global::System.Collections.Generic.IList<int>? eyeRight,
-            global::System.Collections.Generic.IList<int>? nose,
-            global::System.Collections.Generic.IList<int>? mouthLeft,
-            global::System.Collections.Generic.IList<int>? mouthRight)
+            global::System.Collections.Generic.IList<double>? eyeLeft,
+            global::System.Collections.Generic.IList<double>? eyeRight,
+            global::System.Collections.Generic.IList<double>? nose,
+            global::System.Collections.Generic.IList<double>? mouthLeft,
+            global::System.Collections.Generic.IList<double>? mouthRight)
         {
             this.EyeLeft = eyeLeft;
             this.EyeRight = eyeRight;

@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("offset")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Offset { get; set; }
+        public required double Offset { get; set; }
 
         /// <summary>
         ///
@@ -53,7 +53,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideoFace(
-            int offset,
+            double offset,
             global::EdenAI.VideoBoundingBox boundingBox,
             global::EdenAI.FaceAttributes attributes,
             global::EdenAI.LandmarksVideo landmarks)

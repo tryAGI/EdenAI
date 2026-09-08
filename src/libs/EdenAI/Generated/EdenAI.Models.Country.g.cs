@@ -33,7 +33,7 @@ namespace EdenAI
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
-        public int? Confidence { get; set; }
+        public double? Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,7 +57,7 @@ namespace EdenAI
             string name,
             string alpha2,
             string alpha3,
-            int? confidence)
+            double? confidence)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Alpha2 = alpha2 ?? throw new global::System.ArgumentNullException(nameof(alpha2));

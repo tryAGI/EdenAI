@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         ///
@@ -41,7 +41,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("age")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Age { get; set; }
+        public required double Age { get; set; }
 
         /// <summary>
         ///
@@ -133,11 +133,11 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceItem(
-            int confidence,
+            double confidence,
             global::EdenAI.FaceLandmarks landmarks,
             global::EdenAI.FaceEmotions emotions,
             global::EdenAI.FacePoses poses,
-            int age,
+            double age,
             string gender,
             global::EdenAI.FaceBoundingBox boundingBox,
             global::EdenAI.FaceHair hair,

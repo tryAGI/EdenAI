@@ -13,35 +13,35 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("noise")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Noise { get; set; }
+        public required double Noise { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("exposure")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Exposure { get; set; }
+        public required double Exposure { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blur")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Blur { get; set; }
+        public required double Blur { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brightness")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Brightness { get; set; }
+        public required double Brightness { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharpness")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Sharpness { get; set; }
+        public required double Sharpness { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,11 +61,11 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceQuality(
-            int noise,
-            int exposure,
-            int blur,
-            int brightness,
-            int sharpness)
+            double noise,
+            double exposure,
+            double blur,
+            double brightness,
+            double sharpness)
         {
             this.Noise = noise;
             this.Exposure = exposure;

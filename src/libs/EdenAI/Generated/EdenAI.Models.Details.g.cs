@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_cost")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int TotalCost { get; set; }
+        public required double TotalCost { get; set; }
 
         /// <summary>
         ///
@@ -27,7 +27,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cost_per_provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, int> CostPerProvider { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, double> CostPerProvider { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,9 +45,9 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public Details(
-            int totalCost,
+            double totalCost,
             int details1,
-            global::System.Collections.Generic.Dictionary<string, int> costPerProvider)
+            global::System.Collections.Generic.Dictionary<string, double> costPerProvider)
         {
             this.TotalCost = totalCost;
             this.Details1 = details1;

@@ -13,21 +13,21 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("moustache")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Moustache { get; set; }
+        public required double Moustache { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("beard")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Beard { get; set; }
+        public required double Beard { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sideburns")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Sideburns { get; set; }
+        public required double Sideburns { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,9 +45,9 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceFacialHair(
-            int moustache,
-            int beard,
-            int sideburns)
+            double moustache,
+            double beard,
+            double sideburns)
         {
             this.Moustache = moustache;
             this.Beard = beard;

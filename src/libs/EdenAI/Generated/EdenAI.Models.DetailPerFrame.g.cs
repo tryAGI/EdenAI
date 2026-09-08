@@ -13,14 +13,14 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("position")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Position { get; set; }
+        public required double Position { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Score { get; set; }
+        public required double Score { get; set; }
 
         /// <summary>
         ///
@@ -46,8 +46,8 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DetailPerFrame(
-            int position,
-            int score,
+            double position,
+            double score,
             global::EdenAI.PredictionB20Enum prediction)
         {
             this.Position = position;

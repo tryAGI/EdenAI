@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plagia_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int PlagiaScore { get; set; }
+        public required double PlagiaScore { get; set; }
 
         /// <summary>
         ///
@@ -56,7 +56,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextplagiaDetectionPlagiaDetectionDataClass(
-            int plagiaScore,
+            double plagiaScore,
             global::EdenAI.Status549Enum status,
             global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionItem>? items,
             object? originalResponse)

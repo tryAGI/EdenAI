@@ -13,56 +13,56 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("headwear")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Headwear { get; set; }
+        public required double Headwear { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("frontal_gaze")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int FrontalGaze { get; set; }
+        public required double FrontalGaze { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eyes_visible")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int EyesVisible { get; set; }
+        public required double EyesVisible { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("glasses")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Glasses { get; set; }
+        public required double Glasses { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_open")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MouthOpen { get; set; }
+        public required double MouthOpen { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("smiling")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Smiling { get; set; }
+        public required double Smiling { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brightness")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Brightness { get; set; }
+        public required double Brightness { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharpness")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Sharpness { get; set; }
+        public required double Sharpness { get; set; }
 
         /// <summary>
         ///
@@ -93,14 +93,14 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceAttributes(
-            int headwear,
-            int frontalGaze,
-            int eyesVisible,
-            int glasses,
-            int mouthOpen,
-            int smiling,
-            int brightness,
-            int sharpness,
+            double headwear,
+            double frontalGaze,
+            double eyesVisible,
+            double glasses,
+            double mouthOpen,
+            double smiling,
+            double brightness,
+            double sharpness,
             global::EdenAI.VideoFacePoses pose)
         {
             this.Headwear = headwear;

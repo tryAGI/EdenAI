@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         ///
@@ -52,7 +52,7 @@ namespace EdenAI
 #endif
         public LandmarkItem(
             string description,
-            int confidence,
+            double confidence,
             global::System.Collections.Generic.IList<global::EdenAI.LandmarkVertice>? boundingBox,
             global::System.Collections.Generic.IList<global::EdenAI.LandmarkLocation>? locations)
         {

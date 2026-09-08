@@ -13,28 +13,28 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("x_min")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int XMin { get; set; }
+        public required double XMin { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("x_max")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int XMax { get; set; }
+        public required double XMax { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("y_min")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int YMin { get; set; }
+        public required double YMin { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("y_max")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int YMax { get; set; }
+        public required double YMax { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,10 +53,10 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceBoundingBox(
-            int xMin,
-            int xMax,
-            int yMin,
-            int yMax)
+            double xMin,
+            double xMax,
+            double yMin,
+            double yMax)
         {
             this.XMin = xMin;
             this.XMax = xMax;

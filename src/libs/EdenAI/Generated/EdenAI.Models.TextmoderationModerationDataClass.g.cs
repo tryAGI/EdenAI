@@ -26,7 +26,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsfw_likelihood_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int NsfwLikelihoodScore { get; set; }
+        public required double NsfwLikelihoodScore { get; set; }
 
         /// <summary>
         /// original response sent by the provider, hidden by default, show it by passing the `show_original_response` field to `true` in your request<br/>
@@ -65,7 +65,7 @@ namespace EdenAI
 #endif
         public TextmoderationModerationDataClass(
             int nsfwLikelihood,
-            int nsfwLikelihoodScore,
+            double nsfwLikelihoodScore,
             global::EdenAI.Status549Enum status,
             global::System.Collections.Generic.IList<global::EdenAI.TextModerationItem>? items,
             object? originalResponse)

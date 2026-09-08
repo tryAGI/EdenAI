@@ -27,7 +27,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Score { get; set; }
+        public required double Score { get; set; }
 
         /// <summary>
         ///
@@ -63,7 +63,7 @@ namespace EdenAI
         public YodaQueryResponseItem(
             global::System.Guid id,
             int version,
-            int score,
+            double score,
             global::EdenAI.YodaQueryResponsePayload payload,
             object vector)
         {

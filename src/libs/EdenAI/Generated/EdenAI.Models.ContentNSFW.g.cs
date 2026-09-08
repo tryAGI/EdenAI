@@ -13,14 +13,14 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Timestamp { get; set; }
+        public required double Timestamp { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         ///
@@ -45,8 +45,8 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ContentNSFW(
-            int timestamp,
-            int confidence,
+            double timestamp,
+            double confidence,
             string category)
         {
             this.Timestamp = timestamp;

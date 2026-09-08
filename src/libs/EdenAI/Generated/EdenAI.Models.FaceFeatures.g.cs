@@ -13,21 +13,21 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eyes_open")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int EyesOpen { get; set; }
+        public required double EyesOpen { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("smile")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Smile { get; set; }
+        public required double Smile { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mouth_open")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int MouthOpen { get; set; }
+        public required double MouthOpen { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,9 +45,9 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FaceFeatures(
-            int eyesOpen,
-            int smile,
-            int mouthOpen)
+            double eyesOpen,
+            double smile,
+            double mouthOpen)
         {
             this.EyesOpen = eyesOpen;
             this.Smile = smile;

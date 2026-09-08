@@ -44,7 +44,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int ConfidenceScore { get; set; }
+        public required double ConfidenceScore { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -78,7 +78,7 @@ namespace EdenAI
             string key,
             object value,
             global::EdenAI.BoundingBox boundingBox,
-            int confidenceScore)
+            double confidenceScore)
         {
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));

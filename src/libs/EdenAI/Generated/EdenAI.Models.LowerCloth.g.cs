@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,7 +38,7 @@ namespace EdenAI
 #endif
         public LowerCloth(
             string value,
-            int confidence)
+            double confidence)
         {
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Confidence = confidence;

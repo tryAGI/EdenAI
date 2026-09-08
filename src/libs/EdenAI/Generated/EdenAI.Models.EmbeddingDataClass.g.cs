@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("embedding")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<int> Embedding { get; set; }
+        public required global::System.Collections.Generic.IList<double> Embedding { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public EmbeddingDataClass(
-            global::System.Collections.Generic.IList<int> embedding)
+            global::System.Collections.Generic.IList<double> embedding)
         {
             this.Embedding = embedding ?? throw new global::System.ArgumentNullException(nameof(embedding));
         }

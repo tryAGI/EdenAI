@@ -48,7 +48,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         ///
@@ -91,7 +91,7 @@ namespace EdenAI
             int colIndex,
             int rowSpan,
             int colSpan,
-            int confidence,
+            double confidence,
             global::EdenAI.BoundixBoxOCRTable boundingBox,
             bool? isHeader)
         {
