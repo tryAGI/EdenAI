@@ -13,14 +13,14 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brightness")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Brightness { get; set; }
+        public required double Brightness { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharpness")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Sharpness { get; set; }
+        public required double Sharpness { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,8 +37,8 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideoPersonQuality(
-            int brightness,
-            int sharpness)
+            double brightness,
+            double sharpness)
         {
             this.Brightness = brightness;
             this.Sharpness = sharpness;

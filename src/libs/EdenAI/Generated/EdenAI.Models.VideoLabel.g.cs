@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         ///
@@ -59,7 +59,7 @@ namespace EdenAI
 #endif
         public VideoLabel(
             string name,
-            int confidence,
+            double confidence,
             global::System.Collections.Generic.IList<global::EdenAI.VideoLabelTimeStamp>? timestamp,
             global::System.Collections.Generic.IList<string>? category,
             global::System.Collections.Generic.IList<global::EdenAI.VideoLabelBoundingBox>? boundingBox)

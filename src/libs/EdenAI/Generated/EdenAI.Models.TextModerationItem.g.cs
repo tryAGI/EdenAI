@@ -43,7 +43,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("likelihood_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int LikelihoodScore { get; set; }
+        public required double LikelihoodScore { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -69,7 +69,7 @@ namespace EdenAI
             int likelihood,
             global::EdenAI.CategoryType category,
             global::EdenAI.SubCategoryType subcategory,
-            int likelihoodScore)
+            double likelihoodScore)
         {
             this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
             this.Likelihood = likelihood;

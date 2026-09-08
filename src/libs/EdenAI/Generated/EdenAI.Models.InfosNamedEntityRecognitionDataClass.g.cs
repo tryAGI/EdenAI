@@ -27,7 +27,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importance")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Importance { get; set; }
+        public required double Importance { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace EdenAI
         public InfosNamedEntityRecognitionDataClass(
             string entity,
             string category,
-            int importance)
+            double importance)
         {
             this.Entity = entity ?? throw new global::System.ArgumentNullException(nameof(entity));
             this.Category = category ?? throw new global::System.ArgumentNullException(nameof(category));

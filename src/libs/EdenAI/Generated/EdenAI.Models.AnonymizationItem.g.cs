@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         ///
@@ -46,7 +46,7 @@ namespace EdenAI
 #endif
         public AnonymizationItem(
             string kind,
-            int confidence,
+            double confidence,
             global::EdenAI.AnonymizationBoundingBox boundingBoxes)
         {
             this.Kind = kind ?? throw new global::System.ArgumentNullException(nameof(kind));

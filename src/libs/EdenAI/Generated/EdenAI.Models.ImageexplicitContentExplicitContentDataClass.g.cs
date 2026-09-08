@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsfw_likelihood_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int NsfwLikelihoodScore { get; set; }
+        public required double NsfwLikelihoodScore { get; set; }
 
         /// <summary>
         /// A list of items identified as potentially explicit. Each item contains details of the explicit content detected.
@@ -71,7 +71,7 @@ namespace EdenAI
 #endif
         public ImageexplicitContentExplicitContentDataClass(
             int nsfwLikelihood,
-            int nsfwLikelihoodScore,
+            double nsfwLikelihoodScore,
             global::EdenAI.Status549Enum status,
             global::System.Collections.Generic.IList<global::EdenAI.ExplicitItem>? items,
             object? originalResponse)

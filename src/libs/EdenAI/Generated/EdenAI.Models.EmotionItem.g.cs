@@ -23,7 +23,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emotion_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int EmotionScore { get; set; }
+        public required double EmotionScore { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,7 +41,7 @@ namespace EdenAI
 #endif
         public EmotionItem(
             string emotion,
-            int emotionScore)
+            double emotionScore)
         {
             this.Emotion = emotion ?? throw new global::System.ArgumentNullException(nameof(emotion));
             this.EmotionScore = emotionScore;

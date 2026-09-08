@@ -13,14 +13,14 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("x")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int X { get; set; }
+        public required double X { get; set; }
 
         /// <summary>
         /// The y-coordinate of the vertex.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("y")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Y { get; set; }
+        public required double Y { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,8 +41,8 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LogoVertice(
-            int x,
-            int y)
+            double x,
+            double y)
         {
             this.X = x;
             this.Y = y;

@@ -13,14 +13,14 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startTimeOffset")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int StartTimeOffset { get; set; }
+        public required double StartTimeOffset { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endTimeOffset")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int EndTimeOffset { get; set; }
+        public required double EndTimeOffset { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,8 +37,8 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ShotFrame(
-            int startTimeOffset,
-            int endTimeOffset)
+            double startTimeOffset,
+            double endTimeOffset)
         {
             this.StartTimeOffset = startTimeOffset;
             this.EndTimeOffset = endTimeOffset;

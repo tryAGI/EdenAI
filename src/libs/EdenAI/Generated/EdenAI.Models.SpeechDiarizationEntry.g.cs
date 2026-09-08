@@ -41,7 +41,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,7 +65,7 @@ namespace EdenAI
             string startTime,
             string endTime,
             int speaker,
-            int confidence)
+            double confidence)
         {
             this.Segment = segment ?? throw new global::System.ArgumentNullException(nameof(segment));
             this.StartTime = startTime ?? throw new global::System.ArgumentNullException(nameof(startTime));

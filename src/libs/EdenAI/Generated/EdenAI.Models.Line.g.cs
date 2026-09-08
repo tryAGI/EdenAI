@@ -47,7 +47,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -85,7 +85,7 @@ namespace EdenAI
 #endif
         public Line(
             string text,
-            int confidence,
+            double confidence,
             global::System.Collections.Generic.IList<global::EdenAI.Word>? words,
             global::EdenAI.BoundingBox? boundingBox)
         {

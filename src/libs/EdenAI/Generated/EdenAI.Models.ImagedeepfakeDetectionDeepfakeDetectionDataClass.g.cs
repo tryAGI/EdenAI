@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deepfake_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int DeepfakeScore { get; set; }
+        public required double DeepfakeScore { get; set; }
 
         /// <summary>
         ///
@@ -58,7 +58,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagedeepfakeDetectionDeepfakeDetectionDataClass(
-            int deepfakeScore,
+            double deepfakeScore,
             global::EdenAI.PredictionB20Enum prediction,
             global::EdenAI.Status549Enum status,
             object? originalResponse)

@@ -27,7 +27,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("likelihood_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int LikelihoodScore { get; set; }
+        public required double LikelihoodScore { get; set; }
 
         /// <summary>
         /// This enum are used to categorize the explicit content extracted from the text
@@ -178,7 +178,7 @@ namespace EdenAI
         public ExplicitItem(
             string label,
             int likelihood,
-            int likelihoodScore,
+            double likelihoodScore,
             global::EdenAI.CategoryType category,
             string subcategory)
         {

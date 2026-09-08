@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importance")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Importance { get; set; }
+        public required double Importance { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,7 +38,7 @@ namespace EdenAI
 #endif
         public InfosKeywordExtractionDataClass(
             string keyword,
-            int importance)
+            double importance)
         {
             this.Keyword = keyword ?? throw new global::System.ArgumentNullException(nameof(keyword));
             this.Importance = importance;

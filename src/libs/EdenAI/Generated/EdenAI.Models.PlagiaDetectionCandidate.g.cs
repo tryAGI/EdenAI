@@ -20,7 +20,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plagia_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int PlagiaScore { get; set; }
+        public required double PlagiaScore { get; set; }
 
         /// <summary>
         ///
@@ -54,7 +54,7 @@ namespace EdenAI
 #endif
         public PlagiaDetectionCandidate(
             string url,
-            int plagiaScore,
+            double plagiaScore,
             string prediction,
             string plagiarizedText)
         {

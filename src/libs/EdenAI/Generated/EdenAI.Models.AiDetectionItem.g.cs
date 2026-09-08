@@ -27,14 +27,14 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int AiScore { get; set; }
+        public required double AiScore { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai_score_detail")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int AiScoreDetail { get; set; }
+        public required double AiScoreDetail { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -55,8 +55,8 @@ namespace EdenAI
         public AiDetectionItem(
             string text,
             string prediction,
-            int aiScore,
-            int aiScoreDetail)
+            double aiScore,
+            double aiScoreDetail)
         {
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Prediction = prediction ?? throw new global::System.ArgumentNullException(nameof(prediction));

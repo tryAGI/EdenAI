@@ -41,7 +41,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -77,7 +77,7 @@ namespace EdenAI
         public Word(
             string text,
             global::EdenAI.BoundingBox boundingBox,
-            int confidence)
+            double confidence)
         {
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.BoundingBox = boundingBox ?? throw new global::System.ArgumentNullException(nameof(boundingBox));

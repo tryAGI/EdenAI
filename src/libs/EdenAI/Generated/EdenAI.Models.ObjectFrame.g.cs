@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Timestamp { get; set; }
+        public required double Timestamp { get; set; }
 
         /// <summary>
         ///
@@ -37,7 +37,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ObjectFrame(
-            int timestamp,
+            double timestamp,
             global::EdenAI.VideoObjectBoundingBox boundingBox)
         {
             this.Timestamp = timestamp;

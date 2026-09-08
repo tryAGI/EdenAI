@@ -27,7 +27,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confidence")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Confidence { get; set; }
+        public required double Confidence { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace EdenAI
         public InfosLanguageDetectionDataClass(
             string language,
             string displayName,
-            int confidence)
+            double confidence)
         {
             this.Language = language ?? throw new global::System.ArgumentNullException(nameof(language));
             this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));

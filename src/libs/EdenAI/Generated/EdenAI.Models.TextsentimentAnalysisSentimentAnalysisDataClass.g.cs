@@ -21,7 +21,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("general_sentiment_rate")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int GeneralSentimentRate { get; set; }
+        public required double GeneralSentimentRate { get; set; }
 
         /// <summary>
         ///
@@ -66,7 +66,7 @@ namespace EdenAI
 #endif
         public TextsentimentAnalysisSentimentAnalysisDataClass(
             global::EdenAI.GeneralSentimentEnum generalSentiment,
-            int generalSentimentRate,
+            double generalSentimentRate,
             global::EdenAI.Status549Enum status,
             global::System.Collections.Generic.IList<global::EdenAI.SegmentSentimentAnalysisDataClass>? items,
             object? originalResponse)

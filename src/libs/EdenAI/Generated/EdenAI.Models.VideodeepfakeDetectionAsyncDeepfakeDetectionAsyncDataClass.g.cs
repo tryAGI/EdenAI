@@ -13,7 +13,7 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("average_score")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int AverageScore { get; set; }
+        public required double AverageScore { get; set; }
 
         /// <summary>
         ///
@@ -82,7 +82,7 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideodeepfakeDetectionAsyncDeepfakeDetectionAsyncDataClass(
-            int averageScore,
+            double averageScore,
             global::EdenAI.PredictionB20Enum prediction,
             string id,
             global::EdenAI.FinalStatusEnum finalStatus,

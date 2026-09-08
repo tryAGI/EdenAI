@@ -105,7 +105,7 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        public int? Type18 { get; set; }
+        public double? Type18 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -137,23 +137,23 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.CategoryType? Type26 { get; set; }
+        public int? Type26 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SubCategoryType? Type27 { get; set; }
+        public global::EdenAI.CategoryType? Type27 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AnonymizationItem? Type28 { get; set; }
+        public global::EdenAI.SubCategoryType? Type28 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AskLLMRequest? Type29 { get; set; }
+        public global::EdenAI.AnonymizationItem? Type29 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public double? Type30 { get; set; }
+        public global::EdenAI.AskLLMRequest? Type30 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -445,7 +445,7 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, int>? Type103 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, double>? Type103 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -457,7 +457,7 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<int>? Type106 { get; set; }
+        public global::System.Collections.Generic.IList<double>? Type106 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -661,1611 +661,1607 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, double>? Type157 { get; set; }
+        public global::EdenAI.ServiceTierEnum? Type157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ServiceTierEnum? Type158 { get; set; }
+        public global::EdenAI.ThinkingRequest? Type158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ThinkingRequest? Type159 { get; set; }
+        public global::EdenAI.GeneratedImageDataClass? Type159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.GeneratedImageDataClass? Type160 { get; set; }
+        public global::EdenAI.GenerationAsyncRequest? Type160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.GenerationAsyncRequest? Type161 { get; set; }
+        public global::EdenAI.ImageaiDetectionAiDetectionDataClassPredictionEnum? Type161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageaiDetectionAiDetectionDataClassPredictionEnum? Type162 { get; set; }
+        public global::EdenAI.InfosIdentityParserDataClass? Type162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.InfosIdentityParserDataClass? Type163 { get; set; }
+        public global::EdenAI.ItemIdentityParserDataClass? Type163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ItemIdentityParserDataClass? Type164 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ItemIdentityParserDataClass>? Type164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ItemIdentityParserDataClass>? Type165 { get; set; }
+        public global::EdenAI.InfosKeywordExtractionDataClass? Type165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.InfosKeywordExtractionDataClass? Type166 { get; set; }
+        public global::EdenAI.InfosLanguageDetectionDataClass? Type166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.InfosLanguageDetectionDataClass? Type167 { get; set; }
+        public global::EdenAI.InfosNamedEntityRecognitionDataClass? Type167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.InfosNamedEntityRecognitionDataClass? Type168 { get; set; }
+        public global::EdenAI.ItemBankCheckParsingDataClass? Type168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ItemBankCheckParsingDataClass? Type169 { get; set; }
+        public global::EdenAI.MicrModel? Type169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.MicrModel? Type170 { get; set; }
+        public global::EdenAI.ItemDataExtraction? Type170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ItemDataExtraction? Type171 { get; set; }
+        public global::EdenAI.LandmarkItem? Type171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LandmarkItem? Type172 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.LandmarkVertice>? Type172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.LandmarkVertice>? Type173 { get; set; }
+        public global::EdenAI.LandmarkVertice? Type173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LandmarkVertice? Type174 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.LandmarkLocation>? Type174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.LandmarkLocation>? Type175 { get; set; }
+        public global::EdenAI.LandmarkLocation? Type175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LandmarkLocation? Type176 { get; set; }
+        public global::EdenAI.LandmarkLatLng? Type176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LandmarkLatLng? Type177 { get; set; }
+        public global::EdenAI.LandmarksVideo? Type177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LandmarksVideo? Type178 { get; set; }
+        public global::EdenAI.LaunchAsyncJobResponse? Type178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LaunchAsyncJobResponse? Type179 { get; set; }
+        public global::EdenAI.Line? Type179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Line? Type180 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Word>? Type180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Word>? Type181 { get; set; }
+        public global::EdenAI.Word? Type181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Word? Type182 { get; set; }
+        public global::EdenAI.ListAsyncJobResponse? Type182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ListAsyncJobResponse? Type183 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AsyncJobList>? Type183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AsyncJobList>? Type184 { get; set; }
+        public global::EdenAI.ListChunkRequest? Type184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ListChunkRequest? Type185 { get; set; }
+        public global::EdenAI.LogoBoundingPoly? Type185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LogoBoundingPoly? Type186 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.LogoVertice>? Type186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.LogoVertice>? Type187 { get; set; }
+        public global::EdenAI.LogoVertice? Type187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LogoVertice? Type188 { get; set; }
+        public global::EdenAI.LogoItem? Type188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LogoItem? Type189 { get; set; }
+        public global::EdenAI.LogoTrack? Type189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LogoTrack? Type190 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoLogo>? Type190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoLogo>? Type191 { get; set; }
+        public global::EdenAI.VideoLogo? Type191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoLogo? Type192 { get; set; }
+        public global::EdenAI.LowerCloth? Type192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LowerCloth? Type193 { get; set; }
+        public global::EdenAI.MessageRequest? Type193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.MessageRequest? Type194 { get; set; }
+        public global::EdenAI.NotFoundResponse? Type194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.NotFoundResponse? Type195 { get; set; }
+        public global::EdenAI.ObjectFrame? Type195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ObjectFrame? Type196 { get; set; }
+        public global::EdenAI.VideoObjectBoundingBox? Type196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoObjectBoundingBox? Type197 { get; set; }
+        public global::EdenAI.ObjectItem? Type197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ObjectItem? Type198 { get; set; }
+        public global::EdenAI.ObjectTrack? Type198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ObjectTrack? Type199 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ObjectFrame>? Type199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ObjectFrame>? Type200 { get; set; }
+        public global::EdenAI.OcrTablesAsyncRequest? Type200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrTablesAsyncRequest? Type201 { get; set; }
+        public global::EdenAI.OptionEnum? Type201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OptionEnum? Type202 { get; set; }
+        public global::EdenAI.Page? Type202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Page? Type203 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Line>? Type203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Line>? Type204 { get; set; }
+        public global::EdenAI.PaginatedBatchResponse? Type204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PaginatedBatchResponse? Type205 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.BatchResponseRequest>? Type205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.BatchResponseRequest>? Type206 { get; set; }
+        public global::EdenAI.PaginatedExecutionListList? Type206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PaginatedExecutionListList? Type207 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ExecutionList>? Type207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ExecutionList>? Type208 { get; set; }
+        public global::EdenAI.PaginatedPromptCreateList? Type208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PaginatedPromptCreateList? Type209 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.PromptCreate>? Type209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.PromptCreate>? Type210 { get; set; }
+        public global::EdenAI.PromptCreate? Type210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptCreate? Type211 { get; set; }
+        public global::EdenAI.PaginatedPromptHistoryList? Type211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PaginatedPromptHistoryList? Type212 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.PromptHistory>? Type212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.PromptHistory>? Type213 { get; set; }
+        public global::EdenAI.PromptHistory? Type213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptHistory? Type214 { get; set; }
+        public global::EdenAI.PatchedAskYodaProjectUpdateRequest? Type214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedAskYodaProjectUpdateRequest? Type215 { get; set; }
+        public global::EdenAI.PatchedAssetUpdateRequest? Type215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedAssetUpdateRequest? Type216 { get; set; }
+        public global::EdenAI.PatchedConversationDetailRequest? Type216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedConversationDetailRequest? Type217 { get; set; }
+        public global::EdenAI.PatchedCustomTokenUpdateRequest? Type217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedCustomTokenUpdateRequest? Type218 { get; set; }
+        public global::EdenAI.PatchedPromptHistoryRequest? Type218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedPromptHistoryRequest? Type219 { get; set; }
+        public global::EdenAI.PatchedPromptUpdateRequest? Type219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedPromptUpdateRequest? Type220 { get; set; }
+        public global::EdenAI.PatchedResourceUpdateRequest? Type220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedResourceUpdateRequest? Type221 { get; set; }
+        public global::EdenAI.TypeDe8Enum? Type221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TypeDe8Enum? Type222 { get; set; }
+        public global::EdenAI.PatchedWebhookParametersRequest? Type222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PatchedWebhookParametersRequest? Type223 { get; set; }
+        public global::EdenAI.PersonAttributes? Type223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PersonAttributes? Type224 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.UpperCloth>? Type224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.UpperCloth>? Type225 { get; set; }
+        public global::EdenAI.UpperCloth? Type225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.UpperCloth? Type226 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.LowerCloth>? Type226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.LowerCloth>? Type227 { get; set; }
+        public global::EdenAI.PersonLandmarks? Type227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PersonLandmarks? Type228 { get; set; }
+        public global::EdenAI.PersonTracking? Type228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PersonTracking? Type229 { get; set; }
+        public global::EdenAI.VideoPersonPoses? Type229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoPersonPoses? Type230 { get; set; }
+        public global::EdenAI.VideoPersonQuality? Type230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoPersonQuality? Type231 { get; set; }
+        public global::EdenAI.VideoTrackingBoundingBox? Type231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoTrackingBoundingBox? Type232 { get; set; }
+        public global::EdenAI.PlagiaDetectionCandidate? Type232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PlagiaDetectionCandidate? Type233 { get; set; }
+        public global::EdenAI.PlagiaDetectionItem? Type233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PlagiaDetectionItem? Type234 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionCandidate>? Type234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionCandidate>? Type235 { get; set; }
+        public global::EdenAI.PriceUnitTypeEnum? Type235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PriceUnitTypeEnum? Type236 { get; set; }
+        public global::EdenAI.PricingSerialzier? Type236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PricingSerialzier? Type237 { get; set; }
+        public global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>? Type237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OneOf<global::EdenAI.DetailTypeEnum?, global::EdenAI.BlankEnum?, global::EdenAI.NullEnum?>? Type238 { get; set; }
+        public global::EdenAI.PromptCallRequest? Type238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptCallRequest? Type239 { get; set; }
+        public global::EdenAI.PromptCreateRequest? Type239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptCreateRequest? Type240 { get; set; }
+        public global::EdenAI.PromptDataClass? Type240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptDataClass? Type241 { get; set; }
+        public global::EdenAI.PromptHistoryRequest? Type241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptHistoryRequest? Type242 { get; set; }
+        public global::EdenAI.PromptUpdate? Type242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptUpdate? Type243 { get; set; }
+        public global::EdenAI.PromptUpdateRequest? Type243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.PromptUpdateRequest? Type244 { get; set; }
+        public global::EdenAI.Provider? Type244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Provider? Type245 { get; set; }
+        public global::EdenAI.ProviderSubfeature? Type245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ProviderSubfeature? Type246 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.PricingSerialzier>? Type246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.PricingSerialzier>? Type247 { get; set; }
+        public global::EdenAI.Subfeature? Type247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Subfeature? Type248 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ProviderSubfeatureLanguage>? Type248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ProviderSubfeatureLanguage>? Type249 { get; set; }
+        public global::EdenAI.ProviderSubfeatureLanguage? Type249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ProviderSubfeatureLanguage? Type250 { get; set; }
+        public global::EdenAI.QuestionAnswerAsyncRequest? Type250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.QuestionAnswerAsyncRequest? Type251 { get; set; }
+        public global::EdenAI.RepresentationEnum? Type251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.RepresentationEnum? Type252 { get; set; }
+        public global::EdenAI.ResourceCreate? Type252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResourceCreate? Type253 { get; set; }
+        public global::EdenAI.ResourceCreateRequest? Type253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResourceCreateRequest? Type254 { get; set; }
+        public global::EdenAI.ResourceList? Type254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResourceList? Type255 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AssetList>? Type255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AssetList>? Type256 { get; set; }
+        public global::EdenAI.ResourceUpdate? Type256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResourceUpdate? Type257 { get; set; }
+        public global::EdenAI.ResourceUpdateRequest? Type257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResourceUpdateRequest? Type258 { get; set; }
+        public global::EdenAI.ResumeEducation? Type258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeEducation? Type259 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ResumeEducationEntry>? Type259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ResumeEducationEntry>? Type260 { get; set; }
+        public global::EdenAI.ResumeEducationEntry? Type260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeEducationEntry? Type261 { get; set; }
+        public global::EdenAI.ResumeLocation? Type261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeLocation? Type262 { get; set; }
+        public global::EdenAI.ResumeExtractedData? Type262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeExtractedData? Type263 { get; set; }
+        public global::EdenAI.ResumePersonalInfo? Type263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumePersonalInfo? Type264 { get; set; }
+        public global::EdenAI.ResumeWorkExp? Type264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeWorkExp? Type265 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ResumeLang>? Type265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ResumeLang>? Type266 { get; set; }
+        public global::EdenAI.ResumeLang? Type266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeLang? Type267 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ResumeSkill>? Type267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ResumeSkill>? Type268 { get; set; }
+        public global::EdenAI.ResumeSkill? Type268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeSkill? Type269 { get; set; }
+        public global::EdenAI.ResumePersonalName? Type269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumePersonalName? Type270 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ResumeWorkExpEntry>? Type270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ResumeWorkExpEntry>? Type271 { get; set; }
+        public global::EdenAI.ResumeWorkExpEntry? Type271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ResumeWorkExpEntry? Type272 { get; set; }
+        public global::EdenAI.Row? Type272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Row? Type273 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Cell>? Type273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Cell>? Type274 { get; set; }
+        public global::EdenAI.SegmentSentimentAnalysisDataClass? Type274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SegmentSentimentAnalysisDataClass? Type275 { get; set; }
+        public global::EdenAI.SentimentEbfEnum? Type275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SentimentEbfEnum? Type276 { get; set; }
+        public global::EdenAI.ShotFrame? Type276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ShotFrame? Type277 { get; set; }
+        public global::EdenAI.SpeechDiarization? Type277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SpeechDiarization? Type278 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.SpeechDiarizationEntry>? Type278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.SpeechDiarizationEntry>? Type279 { get; set; }
+        public global::EdenAI.SpeechDiarizationEntry? Type279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SpeechDiarizationEntry? Type280 { get; set; }
+        public global::EdenAI.SpeechToTextAsyncRequest? Type280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SpeechToTextAsyncRequest? Type281 { get; set; }
+        public global::EdenAI.SpellCheckItem? Type281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SpellCheckItem? Type282 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.SuggestionItem>? Type282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.SuggestionItem>? Type283 { get; set; }
+        public global::EdenAI.SuggestionItem? Type283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.SuggestionItem? Type284 { get; set; }
+        public global::EdenAI.Status549Enum? Type284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Status549Enum? Type285 { get; set; }
+        public global::EdenAI.Table? Type285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Table? Type286 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Row>? Type286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Row>? Type287 { get; set; }
+        public global::EdenAI.TextModerationItem? Type287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextModerationItem? Type288 { get; set; }
+        public global::EdenAI.TextToSpeechAsyncRequest? Type288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextToSpeechAsyncRequest? Type289 { get; set; }
+        public global::EdenAI.OneOf<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>? Type289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OneOf<global::EdenAI.OptionEnum?, global::EdenAI.BlankEnum?>? Type290 { get; set; }
+        public global::EdenAI.ThinkingTypeEnum? Type290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ThinkingTypeEnum? Type291 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::EdenAI.Details>>? Type291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::EdenAI.Details>>? Type292 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::EdenAI.Details>? Type292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::EdenAI.Details>? Type293 { get; set; }
+        public global::EdenAI.ToolCall? Type293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ToolCall? Type294 { get; set; }
+        public global::EdenAI.ToolChoiceEnum? Type294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ToolChoiceEnum? Type295 { get; set; }
+        public global::EdenAI.VideoBoundingBox? Type295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoBoundingBox? Type296 { get; set; }
+        public global::EdenAI.VideoFace? Type296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoFace? Type297 { get; set; }
+        public global::EdenAI.VideoLabel? Type297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoLabel? Type298 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoLabelTimeStamp>? Type298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoLabelTimeStamp>? Type299 { get; set; }
+        public global::EdenAI.VideoLabelTimeStamp? Type299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoLabelTimeStamp? Type300 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoLabelBoundingBox>? Type300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoLabelBoundingBox>? Type301 { get; set; }
+        public global::EdenAI.VideoLabelBoundingBox? Type301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoLabelBoundingBox? Type302 { get; set; }
+        public global::EdenAI.VideoLogoBoundingBox? Type302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoLogoBoundingBox? Type303 { get; set; }
+        public global::EdenAI.VideoText? Type303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoText? Type304 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoTextFrames>? Type304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoTextFrames>? Type305 { get; set; }
+        public global::EdenAI.VideoTextFrames? Type305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoTextFrames? Type306 { get; set; }
+        public global::EdenAI.VideoTextBoundingBox? Type306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoTextBoundingBox? Type307 { get; set; }
+        public global::EdenAI.VideoTrackingPerson? Type307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoTrackingPerson? Type308 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.PersonTracking>? Type308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.PersonTracking>? Type309 { get; set; }
+        public global::EdenAI.WebhookParameters? Type309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.WebhookParameters? Type310 { get; set; }
+        public global::EdenAI.WebhookParametersRequest? Type310 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.WebhookParametersRequest? Type311 { get; set; }
+        public global::EdenAI.Workflow? Type311 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.Workflow? Type312 { get; set; }
+        public global::EdenAI.YodaAskLlmResponse? Type312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaAskLlmResponse? Type313 { get; set; }
+        public global::EdenAI.YodaCreateProjectResponse? Type313 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaCreateProjectResponse? Type314 { get; set; }
+        public global::EdenAI.YodaDeleteResponse? Type314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaDeleteResponse? Type315 { get; set; }
+        public global::EdenAI.YodaInfoResponse? Type315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaInfoResponse? Type316 { get; set; }
+        public global::EdenAI.YodaListChunksIdsResponse? Type316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaListChunksIdsResponse? Type317 { get; set; }
+        public global::EdenAI.YodaQueryResponse? Type317 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaQueryResponse? Type318 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.YodaQueryResponseItem>? Type318 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.YodaQueryResponseItem>? Type319 { get; set; }
+        public global::EdenAI.YodaQueryResponseItem? Type319 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaQueryResponseItem? Type320 { get; set; }
+        public global::EdenAI.YodaQueryResponsePayload? Type320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.YodaQueryResponsePayload? Type321 { get; set; }
+        public global::EdenAI.AsyncaudiospeechToTextAsyncResponseModel? Type321 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncaudiospeechToTextAsyncResponseModel? Type322 { get; set; }
+        public global::EdenAI.AudiospeechToTextAsyncModel? Type322 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AudiospeechToTextAsyncModel? Type323 { get; set; }
+        public global::EdenAI.AsyncaudiotextToSpeechAsyncResponseModel? Type323 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncaudiotextToSpeechAsyncResponseModel? Type324 { get; set; }
+        public global::EdenAI.AudiotextToSpeechAsyncModel? Type324 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AudiotextToSpeechAsyncModel? Type325 { get; set; }
+        public global::EdenAI.AsyncocranonymizationAsyncResponseModel? Type325 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncocranonymizationAsyncResponseModel? Type326 { get; set; }
+        public global::EdenAI.OcranonymizationAsyncModel? Type326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcranonymizationAsyncModel? Type327 { get; set; }
+        public global::EdenAI.AsyncocrcustomDocumentParsingAsyncResponseModel? Type327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncocrcustomDocumentParsingAsyncResponseModel? Type328 { get; set; }
+        public global::EdenAI.OcrcustomDocumentParsingAsyncModel? Type328 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrcustomDocumentParsingAsyncModel? Type329 { get; set; }
+        public global::EdenAI.AsyncocrocrAsyncResponseModel? Type329 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncocrocrAsyncResponseModel? Type330 { get; set; }
+        public global::EdenAI.OcrocrAsyncModel? Type330 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrocrAsyncModel? Type331 { get; set; }
+        public global::EdenAI.AsyncocrocrTablesAsyncResponseModel? Type331 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncocrocrTablesAsyncResponseModel? Type332 { get; set; }
+        public global::EdenAI.OcrocrTablesAsyncModel? Type332 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrocrTablesAsyncModel? Type333 { get; set; }
+        public global::EdenAI.AsyncvideodeepfakeDetectionAsyncResponseModel? Type333 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideodeepfakeDetectionAsyncResponseModel? Type334 { get; set; }
+        public global::EdenAI.VideodeepfakeDetectionAsyncModel? Type334 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideodeepfakeDetectionAsyncModel? Type335 { get; set; }
+        public global::EdenAI.AsyncvideoexplicitContentDetectionAsyncResponseModel? Type335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideoexplicitContentDetectionAsyncResponseModel? Type336 { get; set; }
+        public global::EdenAI.VideoexplicitContentDetectionAsyncModel? Type336 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoexplicitContentDetectionAsyncModel? Type337 { get; set; }
+        public global::EdenAI.AsyncvideofaceDetectionAsyncResponseModel? Type337 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideofaceDetectionAsyncResponseModel? Type338 { get; set; }
+        public global::EdenAI.VideofaceDetectionAsyncModel? Type338 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideofaceDetectionAsyncModel? Type339 { get; set; }
+        public global::EdenAI.AsyncvideogenerationAsyncResponseModel? Type339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideogenerationAsyncResponseModel? Type340 { get; set; }
+        public global::EdenAI.VideogenerationAsyncModel? Type340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideogenerationAsyncModel? Type341 { get; set; }
+        public global::EdenAI.AsyncvideolabelDetectionAsyncResponseModel? Type341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideolabelDetectionAsyncResponseModel? Type342 { get; set; }
+        public global::EdenAI.VideolabelDetectionAsyncModel? Type342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideolabelDetectionAsyncModel? Type343 { get; set; }
+        public global::EdenAI.AsyncvideologoDetectionAsyncResponseModel? Type343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideologoDetectionAsyncResponseModel? Type344 { get; set; }
+        public global::EdenAI.VideologoDetectionAsyncModel? Type344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideologoDetectionAsyncModel? Type345 { get; set; }
+        public global::EdenAI.AsyncvideoobjectTrackingAsyncResponseModel? Type345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideoobjectTrackingAsyncResponseModel? Type346 { get; set; }
+        public global::EdenAI.VideoobjectTrackingAsyncModel? Type346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoobjectTrackingAsyncModel? Type347 { get; set; }
+        public global::EdenAI.AsyncvideopersonTrackingAsyncResponseModel? Type347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideopersonTrackingAsyncResponseModel? Type348 { get; set; }
+        public global::EdenAI.VideopersonTrackingAsyncModel? Type348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideopersonTrackingAsyncModel? Type349 { get; set; }
+        public global::EdenAI.AsyncvideoquestionAnswerAsyncResponseModel? Type349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideoquestionAnswerAsyncResponseModel? Type350 { get; set; }
+        public global::EdenAI.VideoquestionAnswerAsyncModel? Type350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoquestionAnswerAsyncModel? Type351 { get; set; }
+        public global::EdenAI.AsyncvideoshotChangeDetectionAsyncResponseModel? Type351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideoshotChangeDetectionAsyncResponseModel? Type352 { get; set; }
+        public global::EdenAI.VideoshotChangeDetectionAsyncModel? Type352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoshotChangeDetectionAsyncModel? Type353 { get; set; }
+        public global::EdenAI.AsyncvideotextDetectionAsyncResponseModel? Type353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AsyncvideotextDetectionAsyncResponseModel? Type354 { get; set; }
+        public global::EdenAI.VideotextDetectionAsyncModel? Type354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideotextDetectionAsyncModel? Type355 { get; set; }
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Type355 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Type356 { get; set; }
+        public global::EdenAI.AudiotextToSpeechResponseModel? Type356 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AudiotextToSpeechResponseModel? Type357 { get; set; }
+        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Type357 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AudiotextToSpeechTextToSpeechDataClass? Type358 { get; set; }
+        public global::EdenAI.AudiotextToSpeechTextToSpeechRequest? Type358 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AudiotextToSpeechTextToSpeechRequest? Type359 { get; set; }
+        public global::EdenAI.AudiotextToSpeechAsyncTextToSpeechAsyncDataClass? Type359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.AudiotextToSpeechAsyncTextToSpeechAsyncDataClass? Type360 { get; set; }
+        public global::EdenAI.CreditsSerializer? Type360 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.CreditsSerializer? Type361 { get; set; }
+        public global::EdenAI.ImageaiDetectionAiDetectionDataClass? Type361 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageaiDetectionAiDetectionDataClass? Type362 { get; set; }
+        public global::EdenAI.ImageaiDetectionAiDetectionRequest? Type362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageaiDetectionAiDetectionRequest? Type363 { get; set; }
+        public global::EdenAI.ImageaiDetectionResponseModel? Type363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageaiDetectionResponseModel? Type364 { get; set; }
+        public global::EdenAI.ImageanonymizationAnonymizationDataClass? Type364 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageanonymizationAnonymizationDataClass? Type365 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AnonymizationItem>? Type365 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AnonymizationItem>? Type366 { get; set; }
+        public global::EdenAI.ImageanonymizationResponseModel? Type366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageanonymizationResponseModel? Type367 { get; set; }
+        public global::EdenAI.ImageanonymizationimagelandmarkDetectionimageexplicitContentimagedeepfakeDetectionImageRequest? Type367 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageanonymizationimagelandmarkDetectionimageexplicitContentimagedeepfakeDetectionImageRequest? Type368 { get; set; }
+        public global::EdenAI.ImageautomlClassificationAutomlClassificationCreateProjectDataClass? Type368 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageautomlClassificationAutomlClassificationCreateProjectDataClass? Type369 { get; set; }
+        public global::EdenAI.ImageautomlClassificationResponseModel? Type369 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageautomlClassificationResponseModel? Type370 { get; set; }
+        public global::EdenAI.ImageautomlClassificationcreateProjectAutomlClassificationCreateProjectRequest? Type370 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageautomlClassificationcreateProjectAutomlClassificationCreateProjectRequest? Type371 { get; set; }
+        public global::EdenAI.ImageautomlClassificationdeleteProjectAutomlClassificationDeleteRequest? Type371 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageautomlClassificationdeleteProjectAutomlClassificationDeleteRequest? Type372 { get; set; }
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Type372 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Type373 { get; set; }
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalRequest? Type373 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalRequest? Type374 { get; set; }
+        public global::EdenAI.ImagebackgroundRemovalResponseModel? Type374 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagebackgroundRemovalResponseModel? Type375 { get; set; }
+        public global::EdenAI.ImagedeepfakeDetectionDeepfakeDetectionDataClass? Type375 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagedeepfakeDetectionDeepfakeDetectionDataClass? Type376 { get; set; }
+        public global::EdenAI.ImagedeepfakeDetectionResponseModel? Type376 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagedeepfakeDetectionResponseModel? Type377 { get; set; }
+        public global::EdenAI.ImageembeddingsEmbeddingsDataClass? Type377 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageembeddingsEmbeddingsDataClass? Type378 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.EmbeddingDataClass>? Type378 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.EmbeddingDataClass>? Type379 { get; set; }
+        public global::EdenAI.ImageembeddingsEmbeddingsRequest? Type379 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageembeddingsEmbeddingsRequest? Type380 { get; set; }
+        public global::EdenAI.ImageembeddingsResponseModel? Type380 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageembeddingsResponseModel? Type381 { get; set; }
+        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Type381 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Type382 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ExplicitItem>? Type382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ExplicitItem>? Type383 { get; set; }
+        public global::EdenAI.ImageexplicitContentResponseModel? Type383 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageexplicitContentResponseModel? Type384 { get; set; }
+        public global::EdenAI.ImagefaceCompareFaceCompareDataClass? Type384 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceCompareFaceCompareDataClass? Type385 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.FaceMatch>? Type385 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.FaceMatch>? Type386 { get; set; }
+        public global::EdenAI.ImagefaceCompareFaceCompareRequest? Type386 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceCompareFaceCompareRequest? Type387 { get; set; }
+        public global::EdenAI.ImagefaceCompareResponseModel? Type387 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceCompareResponseModel? Type388 { get; set; }
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Type388 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Type389 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.FaceItem>? Type389 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.FaceItem>? Type390 { get; set; }
+        public global::EdenAI.ImagefaceDetectionFaceDetectionRequest? Type390 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceDetectionFaceDetectionRequest? Type391 { get; set; }
+        public global::EdenAI.ImagefaceDetectionResponseModel? Type391 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceDetectionResponseModel? Type392 { get; set; }
+        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Type392 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceRecognitionFaceRecognitionAddFaceDataClass? Type393 { get; set; }
+        public global::EdenAI.ImagefaceRecognitionResponseModel? Type393 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceRecognitionResponseModel? Type394 { get; set; }
+        public global::EdenAI.ImagefaceRecognitionaddFaceFaceRecognitionAddFaceRequest? Type394 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceRecognitionaddFaceFaceRecognitionAddFaceRequest? Type395 { get; set; }
+        public global::EdenAI.ImagefaceRecognitiondeleteFaceFaceRecognitionDeleteFaceRequest? Type395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceRecognitiondeleteFaceFaceRecognitionDeleteFaceRequest? Type396 { get; set; }
+        public global::EdenAI.ImagefaceRecognitionrecognizeFaceRecognitionDetectFaceRequest? Type396 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagefaceRecognitionrecognizeFaceRecognitionDetectFaceRequest? Type397 { get; set; }
+        public global::EdenAI.ImagegenerationGenerationDataClass? Type397 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagegenerationGenerationDataClass? Type398 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.GeneratedImageDataClass>? Type398 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.GeneratedImageDataClass>? Type399 { get; set; }
+        public global::EdenAI.ImagegenerationGenerationRequest? Type399 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagegenerationGenerationRequest? Type400 { get; set; }
+        public global::EdenAI.ImagegenerationResponseModel? Type400 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagegenerationResponseModel? Type401 { get; set; }
+        public global::EdenAI.ImagelandmarkDetectionLandmarkDetectionDataClass? Type401 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagelandmarkDetectionLandmarkDetectionDataClass? Type402 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.LandmarkItem>? Type402 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.LandmarkItem>? Type403 { get; set; }
+        public global::EdenAI.ImagelandmarkDetectionResponseModel? Type403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagelandmarkDetectionResponseModel? Type404 { get; set; }
+        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Type404 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagelogoDetectionLogoDetectionDataClass? Type405 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.LogoItem>? Type405 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.LogoItem>? Type406 { get; set; }
+        public global::EdenAI.ImagelogoDetectionLogoDetectionRequest? Type406 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagelogoDetectionLogoDetectionRequest? Type407 { get; set; }
+        public global::EdenAI.ImagelogoDetectionResponseModel? Type407 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagelogoDetectionResponseModel? Type408 { get; set; }
+        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Type408 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageobjectDetectionObjectDetectionDataClass? Type409 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ObjectItem>? Type409 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ObjectItem>? Type410 { get; set; }
+        public global::EdenAI.ImageobjectDetectionObjectDetectionRequest? Type410 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageobjectDetectionObjectDetectionRequest? Type411 { get; set; }
+        public global::EdenAI.ImageobjectDetectionResponseModel? Type411 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImageobjectDetectionResponseModel? Type412 { get; set; }
+        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Type412 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagequestionAnswerQuestionAnswerDataClass? Type413 { get; set; }
+        public global::EdenAI.ImagequestionAnswerQuestionAnswerRequest? Type413 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagequestionAnswerQuestionAnswerRequest? Type414 { get; set; }
+        public global::EdenAI.ImagequestionAnswerResponseModel? Type414 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagequestionAnswerResponseModel? Type415 { get; set; }
+        public global::EdenAI.ImagesearchResponseModel? Type415 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagesearchResponseModel? Type416 { get; set; }
+        public global::EdenAI.ImagesearchSearchDeleteImageDataClass? Type416 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagesearchSearchDeleteImageDataClass? Type417 { get; set; }
+        public global::EdenAI.ImagesearchdeleteImageDeleteImageRequest? Type417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagesearchdeleteImageDeleteImageRequest? Type418 { get; set; }
+        public global::EdenAI.ImagesearchlaunchSimilaritySearchImageRequest? Type418 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagesearchlaunchSimilaritySearchImageRequest? Type419 { get; set; }
+        public global::EdenAI.ImagesearchuploadImageUploadImageRequest? Type419 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.ImagesearchuploadImageUploadImageRequest? Type420 { get; set; }
+        public global::EdenAI.LlmchatChatDataClass? Type420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LlmchatChatDataClass? Type421 { get; set; }
+        public global::System.DateTimeOffset? Type421 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.DateTimeOffset? Type422 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ChatCompletionChoice>? Type422 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ChatCompletionChoice>? Type423 { get; set; }
+        public global::EdenAI.LlmchatResponseModel? Type423 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LlmchatResponseModel? Type424 { get; set; }
+        public global::EdenAI.LlmchatllmchatChatRequest? Type424 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.LlmchatllmchatChatRequest? Type425 { get; set; }
+        public global::EdenAI.MultimodalchatChatDataClass? Type425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.MultimodalchatChatDataClass? Type426 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ChatMessageDataClass>? Type426 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ChatMessageDataClass>? Type427 { get; set; }
+        public global::EdenAI.MultimodalchatChatRequest? Type427 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.MultimodalchatChatRequest? Type428 { get; set; }
+        public global::EdenAI.MultimodalchatResponseModel? Type428 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.MultimodalchatResponseModel? Type429 { get; set; }
+        public global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? Type429 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcranonymizationAsyncAnonymizationAsyncDataClass? Type430 { get; set; }
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Type430 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Type431 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ItemBankCheckParsingDataClass>? Type431 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ItemBankCheckParsingDataClass>? Type432 { get; set; }
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingRequest? Type432 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingRequest? Type433 { get; set; }
+        public global::EdenAI.OcrbankCheckParsingResponseModel? Type433 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrbankCheckParsingResponseModel? Type434 { get; set; }
+        public global::EdenAI.OcrcustomDocumentParsingAsyncCustomDocumentParsingAsyncDataClass? Type434 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrcustomDocumentParsingAsyncCustomDocumentParsingAsyncDataClass? Type435 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.CustomDocumentParsingAsyncItem>? Type435 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.CustomDocumentParsingAsyncItem>? Type436 { get; set; }
+        public global::EdenAI.OcrdataExtractionDataExtractionDataClass? Type436 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrdataExtractionDataExtractionDataClass? Type437 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ItemDataExtraction>? Type437 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ItemDataExtraction>? Type438 { get; set; }
+        public global::EdenAI.OcrdataExtractionDataExtractionRequest? Type438 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrdataExtractionDataExtractionRequest? Type439 { get; set; }
+        public global::EdenAI.OcrdataExtractionResponseModel? Type439 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrdataExtractionResponseModel? Type440 { get; set; }
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Type440 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Type441 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.FinancialParserObjectDataClass>? Type441 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.FinancialParserObjectDataClass>? Type442 { get; set; }
+        public global::EdenAI.OcrfinancialParserFinancialParserRequest? Type442 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrfinancialParserFinancialParserRequest? Type443 { get; set; }
+        public global::EdenAI.OcrfinancialParserResponseModel? Type443 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrfinancialParserResponseModel? Type444 { get; set; }
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Type444 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Type445 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.InfosIdentityParserDataClass>? Type445 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.InfosIdentityParserDataClass>? Type446 { get; set; }
+        public global::EdenAI.OcridentityParserIdentityParserRequest? Type446 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcridentityParserIdentityParserRequest? Type447 { get; set; }
+        public global::EdenAI.OcridentityParserResponseModel? Type447 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcridentityParserResponseModel? Type448 { get; set; }
+        public global::EdenAI.OcrocrOcrDataClass? Type448 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrocrOcrDataClass? Type449 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.BoundingBox2>? Type449 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.BoundingBox2>? Type450 { get; set; }
+        public global::EdenAI.OcrocrOcrRequest? Type450 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrocrOcrRequest? Type451 { get; set; }
+        public global::EdenAI.OcrocrResponseModel? Type451 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrocrResponseModel? Type452 { get; set; }
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Type452 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Type453 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Page>? Type453 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Page>? Type454 { get; set; }
+        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Type454 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrocrTablesAsyncOcrTablesAsyncDataClass? Type455 { get; set; }
+        public global::EdenAI.OcrresumeParserResponseModel? Type455 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrresumeParserResponseModel? Type456 { get; set; }
+        public global::EdenAI.OcrresumeParserResumeParserDataClass? Type456 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrresumeParserResumeParserDataClass? Type457 { get; set; }
+        public global::EdenAI.OcrresumeParserResumeParserRequest? Type457 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.OcrresumeParserResumeParserRequest? Type458 { get; set; }
+        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Type458 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextaiDetectionAiDetectionDataClass? Type459 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AiDetectionItem>? Type459 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AiDetectionItem>? Type460 { get; set; }
+        public global::EdenAI.TextaiDetectionAiDetectionRequest? Type460 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextaiDetectionAiDetectionRequest? Type461 { get; set; }
+        public global::EdenAI.TextaiDetectionResponseModel? Type461 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextaiDetectionResponseModel? Type462 { get; set; }
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Type462 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Type463 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AnonymizationEntity>? Type463 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AnonymizationEntity>? Type464 { get; set; }
+        public global::EdenAI.TextanonymizationResponseModel? Type464 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextanonymizationResponseModel? Type465 { get; set; }
+        public global::EdenAI.TextchatChatDataClass? Type465 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextchatChatDataClass? Type466 { get; set; }
+        public global::EdenAI.TextchatChatRequest? Type466 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextchatChatRequest? Type467 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ChatMessageRequest>? Type467 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ChatMessageRequest>? Type468 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ChatToolResultRequest>? Type468 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ChatToolResultRequest>? Type469 { get; set; }
+        public global::EdenAI.TextchatChatStreamRequest? Type469 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextchatChatStreamRequest? Type470 { get; set; }
+        public global::EdenAI.TextchatResponseModel? Type470 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextchatResponseModel? Type471 { get; set; }
+        public global::EdenAI.TextcodeGenerationCodeGenerationDataClass? Type471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextcodeGenerationCodeGenerationDataClass? Type472 { get; set; }
+        public global::EdenAI.TextcodeGenerationCodeGenerationRequest? Type472 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextcodeGenerationCodeGenerationRequest? Type473 { get; set; }
+        public global::EdenAI.TextcodeGenerationResponseModel? Type473 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextcodeGenerationResponseModel? Type474 { get; set; }
+        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Type474 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextembeddingsEmbeddingsDataClass? Type475 { get; set; }
+        public global::EdenAI.TextembeddingsEmbeddingsRequest? Type475 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextembeddingsEmbeddingsRequest? Type476 { get; set; }
+        public global::EdenAI.TextembeddingsResponseModel? Type476 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextembeddingsResponseModel? Type477 { get; set; }
+        public global::EdenAI.TextemotionDetectionEmotionDetectionDataClass? Type477 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextemotionDetectionEmotionDetectionDataClass? Type478 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.EmotionItem>? Type478 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.EmotionItem>? Type479 { get; set; }
+        public global::EdenAI.TextemotionDetectionEmotionDetectionRequest? Type479 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextemotionDetectionEmotionDetectionRequest? Type480 { get; set; }
+        public global::EdenAI.TextemotionDetectionResponseModel? Type480 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextemotionDetectionResponseModel? Type481 { get; set; }
+        public global::EdenAI.TextentitySentimentEntitySentimentDataClass? Type481 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextentitySentimentEntitySentimentDataClass? Type482 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Entity>? Type482 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Entity>? Type483 { get; set; }
+        public global::EdenAI.TextentitySentimentEntitySentimentRequest? Type483 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextentitySentimentEntitySentimentRequest? Type484 { get; set; }
+        public global::EdenAI.TextentitySentimentResponseModel? Type484 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextentitySentimentResponseModel? Type485 { get; set; }
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Type485 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Type486 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.InfosKeywordExtractionDataClass>? Type486 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.InfosKeywordExtractionDataClass>? Type487 { get; set; }
+        public global::EdenAI.TextkeywordExtractionResponseModel? Type487 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextkeywordExtractionResponseModel? Type488 { get; set; }
+        public global::EdenAI.TextmoderationModerationDataClass? Type488 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextmoderationModerationDataClass? Type489 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.TextModerationItem>? Type489 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.TextModerationItem>? Type490 { get; set; }
+        public global::EdenAI.TextmoderationResponseModel? Type490 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextmoderationResponseModel? Type491 { get; set; }
+        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Type491 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass? Type492 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.InfosNamedEntityRecognitionDataClass>? Type492 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.InfosNamedEntityRecognitionDataClass>? Type493 { get; set; }
+        public global::EdenAI.TextnamedEntityRecognitionResponseModel? Type493 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextnamedEntityRecognitionResponseModel? Type494 { get; set; }
+        public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Type494 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass? Type495 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionItem>? Type495 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionItem>? Type496 { get; set; }
+        public global::EdenAI.TextplagiaDetectionPlagiaDetectionRequest? Type496 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextplagiaDetectionPlagiaDetectionRequest? Type497 { get; set; }
+        public global::EdenAI.TextplagiaDetectionResponseModel? Type497 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextplagiaDetectionResponseModel? Type498 { get; set; }
+        public global::EdenAI.TextpromptOptimizationPromptOptimizationDataClass? Type498 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextpromptOptimizationPromptOptimizationDataClass? Type499 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.PromptDataClass>? Type499 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.PromptDataClass>? Type500 { get; set; }
+        public global::EdenAI.TextpromptOptimizationPromptOptimizationRequest? Type500 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextpromptOptimizationPromptOptimizationRequest? Type501 { get; set; }
+        public global::EdenAI.TextpromptOptimizationResponseModel? Type501 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextpromptOptimizationResponseModel? Type502 { get; set; }
+        public global::EdenAI.TextsentimentAnalysisResponseModel? Type502 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextsentimentAnalysisResponseModel? Type503 { get; set; }
+        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Type503 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextsentimentAnalysisSentimentAnalysisDataClass? Type504 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.SegmentSentimentAnalysisDataClass>? Type504 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.SegmentSentimentAnalysisDataClass>? Type505 { get; set; }
+        public global::EdenAI.TextspellCheckResponseModel? Type505 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextspellCheckResponseModel? Type506 { get; set; }
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Type506 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Type507 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.SpellCheckItem>? Type507 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.SpellCheckItem>? Type508 { get; set; }
+        public global::EdenAI.TextspellCheckSpellCheckRequest? Type508 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextspellCheckSpellCheckRequest? Type509 { get; set; }
+        public global::EdenAI.TextsummarizeResponseModel? Type509 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextsummarizeResponseModel? Type510 { get; set; }
+        public global::EdenAI.TextsummarizeSummarizeDataClass? Type510 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextsummarizeSummarizeDataClass? Type511 { get; set; }
+        public global::EdenAI.TextsummarizeSummarizeRequest? Type511 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TextsummarizeSummarizeRequest? Type512 { get; set; }
+        public global::EdenAI.TexttopicExtractionResponseModel? Type512 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TexttopicExtractionResponseModel? Type513 { get; set; }
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Type513 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Type514 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ExtractedTopic>? Type514 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ExtractedTopic>? Type515 { get; set; }
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Type515 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Type516 { get; set; }
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationRequest? Type516 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationRequest? Type517 { get; set; }
+        public global::EdenAI.TranslationautomaticTranslationResponseModel? Type517 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationautomaticTranslationResponseModel? Type518 { get; set; }
+        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? Type518 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationDataClass? Type519 { get; set; }
+        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationRequest? Type519 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationdocumentTranslationDocumentTranslationRequest? Type520 { get; set; }
+        public global::EdenAI.TranslationdocumentTranslationResponseModel? Type520 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationdocumentTranslationResponseModel? Type521 { get; set; }
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Type521 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionDataClass? Type522 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.InfosLanguageDetectionDataClass>? Type522 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.InfosLanguageDetectionDataClass>? Type523 { get; set; }
+        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionRequest? Type523 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationlanguageDetectionLanguageDetectionRequest? Type524 { get; set; }
+        public global::EdenAI.TranslationlanguageDetectionResponseModel? Type524 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.TranslationlanguageDetectionResponseModel? Type525 { get; set; }
+        public global::EdenAI.VideodeepfakeDetectionAsyncDeepfakeDetectionAsyncDataClass? Type525 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideodeepfakeDetectionAsyncDeepfakeDetectionAsyncDataClass? Type526 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.DetailPerFrame>? Type526 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.DetailPerFrame>? Type527 { get; set; }
+        public global::EdenAI.VideoexplicitContentDetectionAsyncExplicitContentDetectionAsyncDataClass? Type527 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoexplicitContentDetectionAsyncExplicitContentDetectionAsyncDataClass? Type528 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ContentNSFW>? Type528 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ContentNSFW>? Type529 { get; set; }
+        public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Type529 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideofaceDetectionAsyncFaceDetectionAsyncDataClass? Type530 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoFace>? Type530 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoFace>? Type531 { get; set; }
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Type531 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Type532 { get; set; }
+        public global::EdenAI.VideolabelDetectionAsyncLabelDetectionAsyncDataClass? Type532 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideolabelDetectionAsyncLabelDetectionAsyncDataClass? Type533 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoLabel>? Type533 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoLabel>? Type534 { get; set; }
+        public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Type534 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideologoDetectionAsyncLogoDetectionAsyncDataClass? Type535 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.LogoTrack>? Type535 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.LogoTrack>? Type536 { get; set; }
+        public global::EdenAI.VideoobjectTrackingAsyncObjectTrackingAsyncDataClass? Type536 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoobjectTrackingAsyncObjectTrackingAsyncDataClass? Type537 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ObjectTrack>? Type537 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ObjectTrack>? Type538 { get; set; }
+        public global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? Type538 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideopersonTrackingAsyncPersonTrackingAsyncDataClass? Type539 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoTrackingPerson>? Type539 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoTrackingPerson>? Type540 { get; set; }
+        public global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? Type540 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoquestionAnswerQuestionAnswerDataClass? Type541 { get; set; }
+        public global::EdenAI.VideoquestionAnswerQuestionAnswerRequest? Type541 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoquestionAnswerQuestionAnswerRequest? Type542 { get; set; }
+        public global::EdenAI.VideoquestionAnswerResponseModel? Type542 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoquestionAnswerResponseModel? Type543 { get; set; }
+        public global::EdenAI.VideoquestionAnswerAsyncQuestionAnswerAsyncDataClass? Type543 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoquestionAnswerAsyncQuestionAnswerAsyncDataClass? Type544 { get; set; }
+        public global::EdenAI.VideoshotChangeDetectionAsyncShotChangeDetectionAsyncDataClass? Type544 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideoshotChangeDetectionAsyncShotChangeDetectionAsyncDataClass? Type545 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ShotFrame>? Type545 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ShotFrame>? Type546 { get; set; }
+        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Type546 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.VideotextDetectionAsyncTextDetectionAsyncDataClass? Type547 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.VideoText>? Type547 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.VideoText>? Type548 { get; set; }
+        public global::EdenAI.FeatureBatchRetrieveStatus? Type548 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.FeatureBatchRetrieveStatus? Type549 { get; set; }
+        public global::EdenAI.CostManagementCostManagementRetrieveGroupBy? Type549 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::EdenAI.CostManagementCostManagementRetrieveGroupBy? Type550 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AIProject>? Type550 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AIProject>? Type551 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Conversation>? Type551 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Conversation>? Type552 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.AiProductFile>? Type552 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.AiProductFile>? Type553 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.BatchList>? Type553 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.BatchList>? Type554 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ProviderSubfeature>? Type554 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ProviderSubfeature>? Type555 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.ResourceList>? Type555 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.ResourceList>? Type556 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.CustomTokensList>? Type556 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.CustomTokensList>? Type557 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::System.Collections.Generic.IList<global::EdenAI.Workflow>? Type558 { get; set; }
+        public global::System.Collections.Generic.IList<global::EdenAI.Workflow>? Type557 { get; set; }
 
         /// <summary>
         ///
@@ -2310,7 +2306,7 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<int>? ListType10 { get; set; }
+        public global::System.Collections.Generic.List<double>? ListType10 { get; set; }
         /// <summary>
         ///
         /// </summary>

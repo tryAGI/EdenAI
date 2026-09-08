@@ -13,21 +13,21 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pitch")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Pitch { get; set; }
+        public required double Pitch { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("roll")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Roll { get; set; }
+        public required double Roll { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("yawn")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Yawn { get; set; }
+        public required double Yawn { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,9 +45,9 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideoFacePoses(
-            int pitch,
-            int roll,
-            int yawn)
+            double pitch,
+            double roll,
+            double yawn)
         {
             this.Pitch = pitch;
             this.Roll = roll;
