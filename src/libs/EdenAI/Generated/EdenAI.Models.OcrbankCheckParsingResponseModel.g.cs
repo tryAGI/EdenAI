@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Veryfi { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Mindee { get; set; }
 
         /// <summary>
         ///
@@ -23,8 +23,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Mindee { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
+        public global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? Veryfi { get; set; }
 
         /// <summary>
         ///
@@ -41,22 +41,22 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrbankCheckParsingResponseModel" /> class.
         /// </summary>
-        /// <param name="veryfi"></param>
-        /// <param name="extracta"></param>
         /// <param name="mindee"></param>
+        /// <param name="extracta"></param>
+        /// <param name="veryfi"></param>
         /// <param name="base64"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrbankCheckParsingResponseModel(
-            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? veryfi,
-            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? extracta,
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? mindee,
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? extracta,
+            global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? veryfi,
             global::EdenAI.OcrbankCheckParsingBankCheckParsingDataClass? base64)
         {
-            this.Veryfi = veryfi;
-            this.Extracta = extracta;
             this.Mindee = mindee;
+            this.Extracta = extracta;
+            this.Veryfi = veryfi;
             this.Base64 = base64;
         }
 
