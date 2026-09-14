@@ -71,7 +71,6 @@ namespace EdenAI
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
-        /// |**bytedance**|**seedance-2-0-260128**|`v3`|6.79 (per 1000000 token)|1 token<br/>
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
@@ -222,7 +221,6 @@ namespace EdenAI
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
-        /// |**bytedance**|**seedance-2-0-260128**|`v3`|6.79 (per 1000000 token)|1 token<br/>
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
@@ -858,7 +856,6 @@ namespace EdenAI
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
-        /// |**bytedance**|**seedance-2-0-260128**|`v3`|6.79 (per 1000000 token)|1 token<br/>
         /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
