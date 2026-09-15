@@ -7,14 +7,21 @@ namespace EdenAI
         /// <summary>
         /// OCR<br/>
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
-        /// |Provider|Version|Price|Billing unit|<br/>
-        /// |----|-------|-----|------------|<br/>
-        /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**google**|`v1`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`v3.2`|1.0 (per 1000 page)|1 page<br/>
-        /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
-        /// |**mistral**|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
+        /// |**google**|-|`v1`|1.5 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|-|`v3.2`|1.0 (per 1000 page)|1 page<br/>
+        /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|-|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
+        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -237,7 +244,7 @@ namespace EdenAI
         /// |**Turkish (Türkiye)**|`tr-TR`|<br/>
         /// |**Uzbek (Arabic)**|`uz-arab`|<br/>
         /// |**Uzbek (Cyrillic)**|`uz-cyrl`|<br/>
-        /// &lt;/details&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -251,14 +258,21 @@ namespace EdenAI
         /// <summary>
         /// OCR<br/>
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
-        /// |Provider|Version|Price|Billing unit|<br/>
-        /// |----|-------|-----|------------|<br/>
-        /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**google**|`v1`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`v3.2`|1.0 (per 1000 page)|1 page<br/>
-        /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
-        /// |**mistral**|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
+        /// |**google**|-|`v1`|1.5 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|-|`v3.2`|1.0 (per 1000 page)|1 page<br/>
+        /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|-|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
+        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -481,7 +495,7 @@ namespace EdenAI
         /// |**Turkish (Türkiye)**|`tr-TR`|<br/>
         /// |**Uzbek (Arabic)**|`uz-arab`|<br/>
         /// |**Uzbek (Cyrillic)**|`uz-cyrl`|<br/>
-        /// &lt;/details&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -495,14 +509,21 @@ namespace EdenAI
         /// <summary>
         /// OCR<br/>
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
-        /// |Provider|Version|Price|Billing unit|<br/>
-        /// |----|-------|-----|------------|<br/>
-        /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**google**|`v1`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`v3.2`|1.0 (per 1000 page)|1 page<br/>
-        /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
-        /// |**mistral**|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
+        /// |**google**|-|`v1`|1.5 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|-|`v3.2`|1.0 (per 1000 page)|1 page<br/>
+        /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|-|`v1.0.0`|3.0 (per 1000 request)|1 request<br/>
+        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -725,7 +746,7 @@ namespace EdenAI
         /// |**Turkish (Türkiye)**|`tr-TR`|<br/>
         /// |**Uzbek (Arabic)**|`uz-arab`|<br/>
         /// |**Uzbek (Cyrillic)**|`uz-cyrl`|<br/>
-        /// &lt;/details&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
