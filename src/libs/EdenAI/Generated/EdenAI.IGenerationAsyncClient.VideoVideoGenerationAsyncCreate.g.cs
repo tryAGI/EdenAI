@@ -21,7 +21,11 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
-        /// |**bytedance**|-|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|-|`v3`|1.2 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-260128**|`v3`|7.0 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-fast-260128**|`v3`|5.6 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-mini-260615**|`v3`|3.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-5-260628**|`v3`|10.7 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
@@ -128,7 +132,7 @@ namespace EdenAI
         /// |----|-----|<br/>
         /// |**amazon**|`amazon.nova-reel-v1:1`|<br/>
         /// |**minimax**|`MiniMax-Hailuo-2.3`|<br/>
-        /// |**bytedance**|`seedance-1-0-pro-250528`|<br/>
+        /// |**bytedance**|`seedance-1-5-pro-251215`|<br/>
         /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
@@ -161,7 +165,11 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
-        /// |**bytedance**|-|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|-|`v3`|1.2 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-260128**|`v3`|7.0 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-fast-260128**|`v3`|5.6 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-mini-260615**|`v3`|3.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-5-260628**|`v3`|10.7 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
@@ -268,7 +276,7 @@ namespace EdenAI
         /// |----|-----|<br/>
         /// |**amazon**|`amazon.nova-reel-v1:1`|<br/>
         /// |**minimax**|`MiniMax-Hailuo-2.3`|<br/>
-        /// |**bytedance**|`seedance-1-0-pro-250528`|<br/>
+        /// |**bytedance**|`seedance-1-5-pro-251215`|<br/>
         /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
@@ -301,7 +309,11 @@ namespace EdenAI
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`912x512`|0.084 (per 1 request)|1 request<br/>
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1280x720`|0.28 (per 1 request)|1 request<br/>
         /// |**minimax**|**MiniMax-Hailuo-2.3**|`v1`|`1920x1080`|0.56 (per 1 request)|1 request<br/>
-        /// |**bytedance**|-|`v3`|2.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|-|`v3`|1.2 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-260128**|`v3`|7.0 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-fast-260128**|`v3`|5.6 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-0-mini-260615**|`v3`|3.5 (per 1000000 token)|1 token<br/>
+        /// |**bytedance**|**dreamina-seedance-2-5-260628**|`v3`|10.7 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
@@ -408,7 +420,7 @@ namespace EdenAI
         /// |----|-----|<br/>
         /// |**amazon**|`amazon.nova-reel-v1:1`|<br/>
         /// |**minimax**|`MiniMax-Hailuo-2.3`|<br/>
-        /// |**bytedance**|`seedance-1-0-pro-250528`|<br/>
+        /// |**bytedance**|`seedance-1-5-pro-251215`|<br/>
         /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>

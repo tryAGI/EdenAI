@@ -7,12 +7,20 @@ namespace EdenAI
         /// <summary>
         /// Ocr Async Launch Job<br/>
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
-        /// |Provider|Version|Price|Billing unit|<br/>
-        /// |----|-------|-----|------------|<br/>
-        /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
-        /// &lt;/details&gt;
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|-|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -26,12 +34,20 @@ namespace EdenAI
         /// <summary>
         /// Ocr Async Launch Job<br/>
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
-        /// |Provider|Version|Price|Billing unit|<br/>
-        /// |----|-------|-----|------------|<br/>
-        /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
-        /// &lt;/details&gt;
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|-|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -45,12 +61,20 @@ namespace EdenAI
         /// <summary>
         /// Ocr Async Launch Job<br/>
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
-        /// |Provider|Version|Price|Billing unit|<br/>
-        /// |----|-------|-----|------------|<br/>
-        /// |**amazon**|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
-        /// |**microsoft**|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|`v1`|1.0 (per 1000 page)|1 page<br/>
-        /// &lt;/details&gt;
+        /// |Provider|Model|Version|Price|Billing unit|<br/>
+        /// |----|----|-------|-----|------------|<br/>
+        /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
+        /// |**microsoft**|-|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// &lt;/details&gt;<br/>
+        /// &lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
