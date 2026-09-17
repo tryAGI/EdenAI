@@ -23,20 +23,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("picsart")]
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Picsart { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clipdrop")]
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Clipdrop { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Sentisight { get; set; }
 
         /// <summary>
         ///
@@ -47,8 +35,20 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
-        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Sentisight { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clipdrop")]
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Clipdrop { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("picsart")]
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Picsart { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? Microsoft { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,30 +61,30 @@ namespace EdenAI
         /// </summary>
         /// <param name="api4ai"></param>
         /// <param name="photoroom"></param>
-        /// <param name="microsoft"></param>
-        /// <param name="picsart"></param>
-        /// <param name="clipdrop"></param>
-        /// <param name="stabilityai"></param>
         /// <param name="sentisight"></param>
+        /// <param name="stabilityai"></param>
+        /// <param name="clipdrop"></param>
+        /// <param name="picsart"></param>
+        /// <param name="microsoft"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagebackgroundRemovalResponseModel(
             global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? api4ai,
             global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? photoroom,
-            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? microsoft,
-            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? picsart,
-            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? clipdrop,
+            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? sentisight,
             global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? stabilityai,
-            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? sentisight)
+            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? clipdrop,
+            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? picsart,
+            global::EdenAI.ImagebackgroundRemovalBackgroundRemovalDataClass? microsoft)
         {
             this.Api4ai = api4ai;
             this.Photoroom = photoroom;
-            this.Microsoft = microsoft;
-            this.Picsart = picsart;
-            this.Clipdrop = clipdrop;
-            this.Stabilityai = stabilityai;
             this.Sentisight = sentisight;
+            this.Stabilityai = stabilityai;
+            this.Clipdrop = clipdrop;
+            this.Picsart = picsart;
+            this.Microsoft = microsoft;
         }
 
         /// <summary>
