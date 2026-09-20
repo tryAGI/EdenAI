@@ -11,140 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xiaomi")]
-        public global::EdenAI.LlmchatChatDataClass? Xiaomi { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
-        public global::EdenAI.LlmchatChatDataClass? Ionos { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("iointelligence")]
-        public global::EdenAI.LlmchatChatDataClass? Iointelligence { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.LlmchatChatDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.LlmchatChatDataClass? Xai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cloudflare")]
-        public global::EdenAI.LlmchatChatDataClass? Cloudflare { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("compactifai")]
-        public global::EdenAI.LlmchatChatDataClass? Compactifai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("infomaniak")]
-        public global::EdenAI.LlmchatChatDataClass? Infomaniak { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tensorx")]
-        public global::EdenAI.LlmchatChatDataClass? Tensorx { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepseek")]
-        public global::EdenAI.LlmchatChatDataClass? Deepseek { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
         public global::EdenAI.LlmchatChatDataClass? Replicate { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("azure")]
-        public global::EdenAI.LlmchatChatDataClass? Azure { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.LlmchatChatDataClass? Amazon { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("together_ai")]
-        public global::EdenAI.LlmchatChatDataClass? TogetherAi { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lilac")]
-        public global::EdenAI.LlmchatChatDataClass? Lilac { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
-        public global::EdenAI.LlmchatChatDataClass? Minimax { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dashscope")]
-        public global::EdenAI.LlmchatChatDataClass? Dashscope { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.LlmchatChatDataClass? Google { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vertex")]
-        public global::EdenAI.LlmchatChatDataClass? Vertex { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scaleway")]
-        public global::EdenAI.LlmchatChatDataClass? Scaleway { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("groq")]
-        public global::EdenAI.LlmchatChatDataClass? Groq { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
-        public global::EdenAI.LlmchatChatDataClass? Bytedance { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.LlmchatChatDataClass? Mistral { get; set; }
 
         /// <summary>
         ///
@@ -155,56 +23,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nebius")]
-        public global::EdenAI.LlmchatChatDataClass? Nebius { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cerebras")]
-        public global::EdenAI.LlmchatChatDataClass? Cerebras { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("zai")]
         public global::EdenAI.LlmchatChatDataClass? Zai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("moonshot")]
-        public global::EdenAI.LlmchatChatDataClass? Moonshot { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepinfra")]
-        public global::EdenAI.LlmchatChatDataClass? Deepinfra { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
-        public global::EdenAI.LlmchatChatDataClass? Meta { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tonomia")]
-        public global::EdenAI.LlmchatChatDataClass? Tonomia { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("flexai")]
-        public global::EdenAI.LlmchatChatDataClass? Flexai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("selfhosted")]
-        public global::EdenAI.LlmchatChatDataClass? Selfhosted { get; set; }
 
         /// <summary>
         ///
@@ -221,14 +41,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
-        public global::EdenAI.LlmchatChatDataClass? Anthropic { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("perplexityai")]
-        public global::EdenAI.LlmchatChatDataClass? Perplexityai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("groq")]
+        public global::EdenAI.LlmchatChatDataClass? Groq { get; set; }
 
         /// <summary>
         ///
@@ -239,8 +53,38 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("qwen")]
-        public global::EdenAI.LlmchatChatDataClass? Qwen { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
+        public global::EdenAI.LlmchatChatDataClass? Ionos { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("moonshot")]
+        public global::EdenAI.LlmchatChatDataClass? Moonshot { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.LlmchatChatDataClass? Openai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepinfra")]
+        public global::EdenAI.LlmchatChatDataClass? Deepinfra { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tensorx")]
+        public global::EdenAI.LlmchatChatDataClass? Tensorx { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cerebras")]
+        public global::EdenAI.LlmchatChatDataClass? Cerebras { get; set; }
 
         /// <summary>
         ///
@@ -251,14 +95,62 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cloudflare")]
+        public global::EdenAI.LlmchatChatDataClass? Cloudflare { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("databricks")]
         public global::EdenAI.LlmchatChatDataClass? Databricks { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.LlmchatChatDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepseek")]
+        public global::EdenAI.LlmchatChatDataClass? Deepseek { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("huggingface")]
+        public global::EdenAI.LlmchatChatDataClass? Huggingface { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("iointelligence")]
+        public global::EdenAI.LlmchatChatDataClass? Iointelligence { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("perplexityai")]
+        public global::EdenAI.LlmchatChatDataClass? Perplexityai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vertex")]
+        public global::EdenAI.LlmchatChatDataClass? Vertex { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("together_ai")]
+        public global::EdenAI.LlmchatChatDataClass? TogetherAi { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("selfhosted")]
+        public global::EdenAI.LlmchatChatDataClass? Selfhosted { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("qwen")]
+        public global::EdenAI.LlmchatChatDataClass? Qwen { get; set; }
 
         /// <summary>
         ///
@@ -269,8 +161,116 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("huggingface")]
-        public global::EdenAI.LlmchatChatDataClass? Huggingface { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
+        public global::EdenAI.LlmchatChatDataClass? Minimax { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
+        public global::EdenAI.LlmchatChatDataClass? Anthropic { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
+        public global::EdenAI.LlmchatChatDataClass? Meta { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xiaomi")]
+        public global::EdenAI.LlmchatChatDataClass? Xiaomi { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("flexai")]
+        public global::EdenAI.LlmchatChatDataClass? Flexai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.LlmchatChatDataClass? Cohere { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.LlmchatChatDataClass? Xai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
+        public global::EdenAI.LlmchatChatDataClass? Bytedance { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tonomia")]
+        public global::EdenAI.LlmchatChatDataClass? Tonomia { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.LlmchatChatDataClass? Amazon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.LlmchatChatDataClass? Google { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scaleway")]
+        public global::EdenAI.LlmchatChatDataClass? Scaleway { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dashscope")]
+        public global::EdenAI.LlmchatChatDataClass? Dashscope { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.LlmchatChatDataClass? Mistral { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("azure")]
+        public global::EdenAI.LlmchatChatDataClass? Azure { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lilac")]
+        public global::EdenAI.LlmchatChatDataClass? Lilac { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("infomaniak")]
+        public global::EdenAI.LlmchatChatDataClass? Infomaniak { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nebius")]
+        public global::EdenAI.LlmchatChatDataClass? Nebius { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("compactifai")]
+        public global::EdenAI.LlmchatChatDataClass? Compactifai { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -281,143 +281,143 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="LlmchatResponseModel" /> class.
         /// </summary>
-        /// <param name="xiaomi"></param>
-        /// <param name="ionos"></param>
-        /// <param name="iointelligence"></param>
-        /// <param name="openai"></param>
-        /// <param name="xai"></param>
-        /// <param name="cloudflare"></param>
-        /// <param name="compactifai"></param>
-        /// <param name="infomaniak"></param>
-        /// <param name="tensorx"></param>
-        /// <param name="deepseek"></param>
         /// <param name="replicate"></param>
-        /// <param name="azure"></param>
-        /// <param name="amazon"></param>
-        /// <param name="togetherAi"></param>
-        /// <param name="lilac"></param>
-        /// <param name="minimax"></param>
-        /// <param name="dashscope"></param>
-        /// <param name="google"></param>
-        /// <param name="vertex"></param>
-        /// <param name="scaleway"></param>
-        /// <param name="groq"></param>
-        /// <param name="bytedance"></param>
-        /// <param name="mistral"></param>
         /// <param name="microsoft"></param>
-        /// <param name="nebius"></param>
-        /// <param name="cerebras"></param>
         /// <param name="zai"></param>
-        /// <param name="moonshot"></param>
-        /// <param name="deepinfra"></param>
-        /// <param name="meta"></param>
-        /// <param name="tonomia"></param>
-        /// <param name="flexai"></param>
-        /// <param name="selfhosted"></param>
         /// <param name="ovhcloud"></param>
         /// <param name="tenstorrent"></param>
-        /// <param name="anthropic"></param>
-        /// <param name="perplexityai"></param>
+        /// <param name="groq"></param>
         /// <param name="tsystems"></param>
-        /// <param name="qwen"></param>
+        /// <param name="ionos"></param>
+        /// <param name="moonshot"></param>
+        /// <param name="openai"></param>
+        /// <param name="deepinfra"></param>
+        /// <param name="tensorx"></param>
+        /// <param name="cerebras"></param>
         /// <param name="sakana"></param>
+        /// <param name="cloudflare"></param>
         /// <param name="databricks"></param>
-        /// <param name="cohere"></param>
-        /// <param name="fireworksAi"></param>
+        /// <param name="deepseek"></param>
         /// <param name="huggingface"></param>
+        /// <param name="iointelligence"></param>
+        /// <param name="perplexityai"></param>
+        /// <param name="vertex"></param>
+        /// <param name="togetherAi"></param>
+        /// <param name="selfhosted"></param>
+        /// <param name="qwen"></param>
+        /// <param name="fireworksAi"></param>
+        /// <param name="minimax"></param>
+        /// <param name="anthropic"></param>
+        /// <param name="meta"></param>
+        /// <param name="xiaomi"></param>
+        /// <param name="flexai"></param>
+        /// <param name="cohere"></param>
+        /// <param name="xai"></param>
+        /// <param name="bytedance"></param>
+        /// <param name="tonomia"></param>
+        /// <param name="amazon"></param>
+        /// <param name="google"></param>
+        /// <param name="scaleway"></param>
+        /// <param name="dashscope"></param>
+        /// <param name="mistral"></param>
+        /// <param name="azure"></param>
+        /// <param name="lilac"></param>
+        /// <param name="infomaniak"></param>
+        /// <param name="nebius"></param>
+        /// <param name="compactifai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public LlmchatResponseModel(
-            global::EdenAI.LlmchatChatDataClass? xiaomi,
-            global::EdenAI.LlmchatChatDataClass? ionos,
-            global::EdenAI.LlmchatChatDataClass? iointelligence,
-            global::EdenAI.LlmchatChatDataClass? openai,
-            global::EdenAI.LlmchatChatDataClass? xai,
-            global::EdenAI.LlmchatChatDataClass? cloudflare,
-            global::EdenAI.LlmchatChatDataClass? compactifai,
-            global::EdenAI.LlmchatChatDataClass? infomaniak,
-            global::EdenAI.LlmchatChatDataClass? tensorx,
-            global::EdenAI.LlmchatChatDataClass? deepseek,
             global::EdenAI.LlmchatChatDataClass? replicate,
-            global::EdenAI.LlmchatChatDataClass? azure,
-            global::EdenAI.LlmchatChatDataClass? amazon,
-            global::EdenAI.LlmchatChatDataClass? togetherAi,
-            global::EdenAI.LlmchatChatDataClass? lilac,
-            global::EdenAI.LlmchatChatDataClass? minimax,
-            global::EdenAI.LlmchatChatDataClass? dashscope,
-            global::EdenAI.LlmchatChatDataClass? google,
-            global::EdenAI.LlmchatChatDataClass? vertex,
-            global::EdenAI.LlmchatChatDataClass? scaleway,
-            global::EdenAI.LlmchatChatDataClass? groq,
-            global::EdenAI.LlmchatChatDataClass? bytedance,
-            global::EdenAI.LlmchatChatDataClass? mistral,
             global::EdenAI.LlmchatChatDataClass? microsoft,
-            global::EdenAI.LlmchatChatDataClass? nebius,
-            global::EdenAI.LlmchatChatDataClass? cerebras,
             global::EdenAI.LlmchatChatDataClass? zai,
-            global::EdenAI.LlmchatChatDataClass? moonshot,
-            global::EdenAI.LlmchatChatDataClass? deepinfra,
-            global::EdenAI.LlmchatChatDataClass? meta,
-            global::EdenAI.LlmchatChatDataClass? tonomia,
-            global::EdenAI.LlmchatChatDataClass? flexai,
-            global::EdenAI.LlmchatChatDataClass? selfhosted,
             global::EdenAI.LlmchatChatDataClass? ovhcloud,
             global::EdenAI.LlmchatChatDataClass? tenstorrent,
-            global::EdenAI.LlmchatChatDataClass? anthropic,
-            global::EdenAI.LlmchatChatDataClass? perplexityai,
+            global::EdenAI.LlmchatChatDataClass? groq,
             global::EdenAI.LlmchatChatDataClass? tsystems,
-            global::EdenAI.LlmchatChatDataClass? qwen,
+            global::EdenAI.LlmchatChatDataClass? ionos,
+            global::EdenAI.LlmchatChatDataClass? moonshot,
+            global::EdenAI.LlmchatChatDataClass? openai,
+            global::EdenAI.LlmchatChatDataClass? deepinfra,
+            global::EdenAI.LlmchatChatDataClass? tensorx,
+            global::EdenAI.LlmchatChatDataClass? cerebras,
             global::EdenAI.LlmchatChatDataClass? sakana,
+            global::EdenAI.LlmchatChatDataClass? cloudflare,
             global::EdenAI.LlmchatChatDataClass? databricks,
-            global::EdenAI.LlmchatChatDataClass? cohere,
+            global::EdenAI.LlmchatChatDataClass? deepseek,
+            global::EdenAI.LlmchatChatDataClass? huggingface,
+            global::EdenAI.LlmchatChatDataClass? iointelligence,
+            global::EdenAI.LlmchatChatDataClass? perplexityai,
+            global::EdenAI.LlmchatChatDataClass? vertex,
+            global::EdenAI.LlmchatChatDataClass? togetherAi,
+            global::EdenAI.LlmchatChatDataClass? selfhosted,
+            global::EdenAI.LlmchatChatDataClass? qwen,
             global::EdenAI.LlmchatChatDataClass? fireworksAi,
-            global::EdenAI.LlmchatChatDataClass? huggingface)
+            global::EdenAI.LlmchatChatDataClass? minimax,
+            global::EdenAI.LlmchatChatDataClass? anthropic,
+            global::EdenAI.LlmchatChatDataClass? meta,
+            global::EdenAI.LlmchatChatDataClass? xiaomi,
+            global::EdenAI.LlmchatChatDataClass? flexai,
+            global::EdenAI.LlmchatChatDataClass? cohere,
+            global::EdenAI.LlmchatChatDataClass? xai,
+            global::EdenAI.LlmchatChatDataClass? bytedance,
+            global::EdenAI.LlmchatChatDataClass? tonomia,
+            global::EdenAI.LlmchatChatDataClass? amazon,
+            global::EdenAI.LlmchatChatDataClass? google,
+            global::EdenAI.LlmchatChatDataClass? scaleway,
+            global::EdenAI.LlmchatChatDataClass? dashscope,
+            global::EdenAI.LlmchatChatDataClass? mistral,
+            global::EdenAI.LlmchatChatDataClass? azure,
+            global::EdenAI.LlmchatChatDataClass? lilac,
+            global::EdenAI.LlmchatChatDataClass? infomaniak,
+            global::EdenAI.LlmchatChatDataClass? nebius,
+            global::EdenAI.LlmchatChatDataClass? compactifai)
         {
-            this.Xiaomi = xiaomi;
-            this.Ionos = ionos;
-            this.Iointelligence = iointelligence;
-            this.Openai = openai;
-            this.Xai = xai;
-            this.Cloudflare = cloudflare;
-            this.Compactifai = compactifai;
-            this.Infomaniak = infomaniak;
-            this.Tensorx = tensorx;
-            this.Deepseek = deepseek;
             this.Replicate = replicate;
-            this.Azure = azure;
-            this.Amazon = amazon;
-            this.TogetherAi = togetherAi;
-            this.Lilac = lilac;
-            this.Minimax = minimax;
-            this.Dashscope = dashscope;
-            this.Google = google;
-            this.Vertex = vertex;
-            this.Scaleway = scaleway;
-            this.Groq = groq;
-            this.Bytedance = bytedance;
-            this.Mistral = mistral;
             this.Microsoft = microsoft;
-            this.Nebius = nebius;
-            this.Cerebras = cerebras;
             this.Zai = zai;
-            this.Moonshot = moonshot;
-            this.Deepinfra = deepinfra;
-            this.Meta = meta;
-            this.Tonomia = tonomia;
-            this.Flexai = flexai;
-            this.Selfhosted = selfhosted;
             this.Ovhcloud = ovhcloud;
             this.Tenstorrent = tenstorrent;
-            this.Anthropic = anthropic;
-            this.Perplexityai = perplexityai;
+            this.Groq = groq;
             this.Tsystems = tsystems;
-            this.Qwen = qwen;
+            this.Ionos = ionos;
+            this.Moonshot = moonshot;
+            this.Openai = openai;
+            this.Deepinfra = deepinfra;
+            this.Tensorx = tensorx;
+            this.Cerebras = cerebras;
             this.Sakana = sakana;
+            this.Cloudflare = cloudflare;
             this.Databricks = databricks;
-            this.Cohere = cohere;
-            this.FireworksAi = fireworksAi;
+            this.Deepseek = deepseek;
             this.Huggingface = huggingface;
+            this.Iointelligence = iointelligence;
+            this.Perplexityai = perplexityai;
+            this.Vertex = vertex;
+            this.TogetherAi = togetherAi;
+            this.Selfhosted = selfhosted;
+            this.Qwen = qwen;
+            this.FireworksAi = fireworksAi;
+            this.Minimax = minimax;
+            this.Anthropic = anthropic;
+            this.Meta = meta;
+            this.Xiaomi = xiaomi;
+            this.Flexai = flexai;
+            this.Cohere = cohere;
+            this.Xai = xai;
+            this.Bytedance = bytedance;
+            this.Tonomia = tonomia;
+            this.Amazon = amazon;
+            this.Google = google;
+            this.Scaleway = scaleway;
+            this.Dashscope = dashscope;
+            this.Mistral = mistral;
+            this.Azure = azure;
+            this.Lilac = lilac;
+            this.Infomaniak = infomaniak;
+            this.Nebius = nebius;
+            this.Compactifai = compactifai;
         }
 
         /// <summary>
