@@ -11,20 +11,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
         public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Minimax { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Bytedance { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("pruna")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Pruna { get; set; }
 
         /// <summary>
         ///
@@ -41,14 +35,20 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pruna")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Pruna { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Openai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Bytedance { get; set; }
 
         /// <summary>
         ///
@@ -65,34 +65,34 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideogenerationAsyncModel" /> class.
         /// </summary>
-        /// <param name="microsoft"></param>
         /// <param name="minimax"></param>
-        /// <param name="bytedance"></param>
+        /// <param name="pruna"></param>
         /// <param name="amazon"></param>
         /// <param name="google"></param>
-        /// <param name="pruna"></param>
+        /// <param name="microsoft"></param>
         /// <param name="openai"></param>
+        /// <param name="bytedance"></param>
         /// <param name="pixverse"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideogenerationAsyncModel(
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? minimax,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pruna,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? google,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pruna,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pixverse)
         {
-            this.Microsoft = microsoft;
             this.Minimax = minimax;
-            this.Bytedance = bytedance;
+            this.Pruna = pruna;
             this.Amazon = amazon;
             this.Google = google;
-            this.Pruna = pruna;
+            this.Microsoft = microsoft;
             this.Openai = openai;
+            this.Bytedance = bytedance;
             this.Pixverse = pixverse;
         }
 
