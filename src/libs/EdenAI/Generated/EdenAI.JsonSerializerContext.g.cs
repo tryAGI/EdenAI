@@ -469,6 +469,7 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OcridentityParserResponseModel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OcrocrOcrDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.BoundingBox2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, int>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OcrocrOcrRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OcrocrResponseModel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.OcrocrAsyncOcrAsyncDataClass))]
@@ -513,7 +514,6 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.InfosNamedEntityRecognitionDataClass>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextnamedEntityRecognitionResponseModel))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -527,6 +527,7 @@ namespace EdenAI
         {
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsyntaxAnalysistextsentimentAnalysisTextAnalysisRequest), TypeInfoPropertyName = "TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsy_2d9618c64ac15db3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionResponseModel))]
