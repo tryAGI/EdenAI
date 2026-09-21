@@ -22,6 +22,12 @@ namespace EdenAI
         public global::System.Collections.Generic.IList<global::EdenAI.BoundingBox2>? BoundingBoxes { get; set; }
 
         /// <summary>
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("usage")]
+        public global::System.Collections.Generic.Dictionary<string, int>? Usage { get; set; }
+
+        /// <summary>
         /// original response sent by the provider, hidden by default, show it by passing the `show_original_response` field to `true` in your request<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
@@ -48,6 +54,9 @@ namespace EdenAI
         /// <param name="text"></param>
         /// <param name="status"></param>
         /// <param name="boundingBoxes"></param>
+        /// <param name="usage">
+        /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="originalResponse">
         /// original response sent by the provider, hidden by default, show it by passing the `show_original_response` field to `true` in your request<br/>
         /// Default Value: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -59,10 +68,12 @@ namespace EdenAI
             string text,
             global::EdenAI.Status549Enum status,
             global::System.Collections.Generic.IList<global::EdenAI.BoundingBox2>? boundingBoxes,
+            global::System.Collections.Generic.Dictionary<string, int>? usage,
             object? originalResponse)
         {
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.BoundingBoxes = boundingBoxes;
+            this.Usage = usage;
             this.OriginalResponse = originalResponse;
             this.Status = status;
         }

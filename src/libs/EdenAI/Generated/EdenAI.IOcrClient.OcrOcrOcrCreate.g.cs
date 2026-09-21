@@ -22,6 +22,8 @@ namespace EdenAI
         /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**ionos**|-|`v1`|0.33 (per 1000000 token)|None token<br/>
+        /// |**ionos**|**lightonai/LightOnOCR-2-1B**|`v1`|0.33 (per 1000000 token)|None token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -244,7 +246,12 @@ namespace EdenAI
         /// |**Turkish (Türkiye)**|`tr-TR`|<br/>
         /// |**Uzbek (Arabic)**|`uz-arab`|<br/>
         /// |**Uzbek (Cyrillic)**|`uz-cyrl`|<br/>
-        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**ionos**|`lightonai/LightOnOCR-2-1B`|<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -273,6 +280,8 @@ namespace EdenAI
         /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**ionos**|-|`v1`|0.33 (per 1000000 token)|None token<br/>
+        /// |**ionos**|**lightonai/LightOnOCR-2-1B**|`v1`|0.33 (per 1000000 token)|None token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -495,7 +504,12 @@ namespace EdenAI
         /// |**Turkish (Türkiye)**|`tr-TR`|<br/>
         /// |**Uzbek (Arabic)**|`uz-arab`|<br/>
         /// |**Uzbek (Cyrillic)**|`uz-cyrl`|<br/>
-        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**ionos**|`lightonai/LightOnOCR-2-1B`|<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -524,6 +538,8 @@ namespace EdenAI
         /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
         /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**ionos**|-|`v1`|0.33 (per 1000000 token)|None token<br/>
+        /// |**ionos**|**lightonai/LightOnOCR-2-1B**|`v1`|0.33 (per 1000000 token)|None token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -746,7 +762,12 @@ namespace EdenAI
         /// |**Turkish (Türkiye)**|`tr-TR`|<br/>
         /// |**Uzbek (Arabic)**|`uz-arab`|<br/>
         /// |**Uzbek (Cyrillic)**|`uz-cyrl`|<br/>
-        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**ionos**|`lightonai/LightOnOCR-2-1B`|<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>
