@@ -11,8 +11,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
-        public global::EdenAI.OcrocrOcrDataClass? Ionos { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.OcrocrOcrDataClass? Mistral { get; set; }
 
         /// <summary>
         ///
@@ -29,14 +35,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
+        public global::EdenAI.OcrocrOcrDataClass? Base64 { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.OcrocrOcrDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
+        public global::EdenAI.OcrocrOcrDataClass? Ionos { get; set; }
 
         /// <summary>
         ///
@@ -47,14 +53,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.OcrocrOcrDataClass? Mistral { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("base64")]
-        public global::EdenAI.OcrocrOcrDataClass? Base64 { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.OcrocrOcrDataClass? Amazon { get; set; }
 
         /// <summary>
         ///
@@ -71,37 +71,37 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrocrResponseModel" /> class.
         /// </summary>
-        /// <param name="ionos"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="mistral"></param>
         /// <param name="clarifai"></param>
         /// <param name="sentisight"></param>
-        /// <param name="microsoft"></param>
-        /// <param name="amazon"></param>
-        /// <param name="google"></param>
-        /// <param name="mistral"></param>
         /// <param name="base64"></param>
+        /// <param name="ionos"></param>
+        /// <param name="google"></param>
+        /// <param name="amazon"></param>
         /// <param name="api4ai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrResponseModel(
-            global::EdenAI.OcrocrOcrDataClass? ionos,
+            global::EdenAI.OcrocrOcrDataClass? microsoft,
+            global::EdenAI.OcrocrOcrDataClass? mistral,
             global::EdenAI.OcrocrOcrDataClass? clarifai,
             global::EdenAI.OcrocrOcrDataClass? sentisight,
-            global::EdenAI.OcrocrOcrDataClass? microsoft,
-            global::EdenAI.OcrocrOcrDataClass? amazon,
-            global::EdenAI.OcrocrOcrDataClass? google,
-            global::EdenAI.OcrocrOcrDataClass? mistral,
             global::EdenAI.OcrocrOcrDataClass? base64,
+            global::EdenAI.OcrocrOcrDataClass? ionos,
+            global::EdenAI.OcrocrOcrDataClass? google,
+            global::EdenAI.OcrocrOcrDataClass? amazon,
             global::EdenAI.OcrocrOcrDataClass? api4ai)
         {
-            this.Ionos = ionos;
+            this.Microsoft = microsoft;
+            this.Mistral = mistral;
             this.Clarifai = clarifai;
             this.Sentisight = sentisight;
-            this.Microsoft = microsoft;
-            this.Amazon = amazon;
-            this.Google = google;
-            this.Mistral = mistral;
             this.Base64 = base64;
+            this.Ionos = ionos;
+            this.Google = google;
+            this.Amazon = amazon;
             this.Api4ai = api4ai;
         }
 
