@@ -171,6 +171,36 @@ namespace EdenAI
         /// |**pruna**|**p-video-2**|`v1`|`1080x1620`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2**|`v1`|`1080x1080`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2**|`v1`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x640`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x720`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1280x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x1280`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`960x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x960`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x1080`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1365x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1365`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1024x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1024`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1152x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1152`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1024x1024`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1920x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1920`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1440x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1440`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1620x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1620`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|0.25 (per 1 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -183,6 +213,7 @@ namespace EdenAI
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
         /// |**pruna**|`p-video`|<br/>
+        /// |**xai**|`grok-imagine-video-1.5`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -325,6 +356,36 @@ namespace EdenAI
         /// |**pruna**|**p-video-2**|`v1`|`1080x1620`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2**|`v1`|`1080x1080`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2**|`v1`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x640`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x720`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1280x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x1280`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`960x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x960`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x1080`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1365x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1365`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1024x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1024`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1152x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1152`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1024x1024`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1920x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1920`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1440x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1440`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1620x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1620`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|0.25 (per 1 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -337,6 +398,7 @@ namespace EdenAI
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
         /// |**pruna**|`p-video`|<br/>
+        /// |**xai**|`grok-imagine-video-1.5`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -964,6 +1026,36 @@ namespace EdenAI
         /// |**pruna**|**p-video-2**|`v1`|`1080x1620`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2**|`v1`|`1080x1080`|0.05 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2**|`v1`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x640`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x720`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x480`|0.08 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1280x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x1280`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`960x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x960`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x1080`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`720x720`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1365x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1365`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1024x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1024`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1152x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x1152`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`768x768`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1024x1024`|0.14 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1920x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1920`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1440x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1440`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1620x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1620`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|`1080x1080`|0.25 (per 1 seconde)|1 seconde<br/>
+        /// |**xai**|**grok-imagine-video-1.5**|`v1`|0.25 (per 1 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=video-generation_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -976,6 +1068,7 @@ namespace EdenAI
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
         /// |**pruna**|`p-video`|<br/>
+        /// |**xai**|`grok-imagine-video-1.5`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
