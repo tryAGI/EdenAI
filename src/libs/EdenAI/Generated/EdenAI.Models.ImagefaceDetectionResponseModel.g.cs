@@ -17,14 +17,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Api4ai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Clarifai { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Clarifai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("api4ai")]
+        public global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? Api4ai { get; set; }
 
         /// <summary>
         ///
@@ -48,8 +48,8 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="ImagefaceDetectionResponseModel" /> class.
         /// </summary>
         /// <param name="amazon"></param>
-        /// <param name="api4ai"></param>
         /// <param name="clarifai"></param>
+        /// <param name="api4ai"></param>
         /// <param name="microsoft"></param>
         /// <param name="google"></param>
 #if NET7_0_OR_GREATER
@@ -57,14 +57,14 @@ namespace EdenAI
 #endif
         public ImagefaceDetectionResponseModel(
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? amazon,
-            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? api4ai,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? clarifai,
+            global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? api4ai,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? microsoft,
             global::EdenAI.ImagefaceDetectionFaceDetectionDataClass? google)
         {
             this.Amazon = amazon;
-            this.Api4ai = api4ai;
             this.Clarifai = clarifai;
+            this.Api4ai = api4ai;
             this.Microsoft = microsoft;
             this.Google = google;
         }

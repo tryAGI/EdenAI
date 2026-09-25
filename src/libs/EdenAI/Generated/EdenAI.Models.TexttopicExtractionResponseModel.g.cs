@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Xai { get; set; }
 
         /// <summary>
         ///
@@ -29,8 +29,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tenstorrent")]
+        public global::EdenAI.TexttopicExtractionTopicExtractionDataClass? Tenstorrent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,22 +42,22 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="TexttopicExtractionResponseModel" /> class.
         /// </summary>
         /// <param name="openai"></param>
-        /// <param name="tenstorrent"></param>
-        /// <param name="google"></param>
         /// <param name="xai"></param>
+        /// <param name="google"></param>
+        /// <param name="tenstorrent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TexttopicExtractionResponseModel(
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? openai,
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent,
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai,
             global::EdenAI.TexttopicExtractionTopicExtractionDataClass? google,
-            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? xai)
+            global::EdenAI.TexttopicExtractionTopicExtractionDataClass? tenstorrent)
         {
             this.Openai = openai;
-            this.Tenstorrent = tenstorrent;
-            this.Google = google;
             this.Xai = xai;
+            this.Google = google;
+            this.Tenstorrent = tenstorrent;
         }
 
         /// <summary>
