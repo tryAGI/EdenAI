@@ -59,6 +59,12 @@ namespace EdenAI
         public global::EdenAI.BalanceResetPeriodEnum? BalanceResetPeriod { get; set; }
 
         /// <summary>
+        /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default_tags")]
+        public object? DefaultTags { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -91,6 +97,9 @@ namespace EdenAI
         /// * `weekly` - Weekly<br/>
         /// * `monthly` - Monthly
         /// </param>
+        /// <param name="defaultTags">
+        /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -101,7 +110,8 @@ namespace EdenAI
             global::System.DateTime? expireTime,
             bool? activeBalance,
             string? balanceResetAmount,
-            global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod)
+            global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod,
+            object? defaultTags)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.TokenType = tokenType;
@@ -110,6 +120,7 @@ namespace EdenAI
             this.ActiveBalance = activeBalance;
             this.BalanceResetAmount = balanceResetAmount;
             this.BalanceResetPeriod = balanceResetPeriod;
+            this.DefaultTags = defaultTags;
         }
 
         /// <summary>

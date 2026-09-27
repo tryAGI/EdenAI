@@ -11,7 +11,6 @@ namespace EdenAI
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.0 (per 1000000 char)|300 char<br/>
         /// |**microsoft**|`v3.1`|0.25 (per 1000000 char)|1000 char<br/>
-        /// |**privateai**|`v3`|5.0 (per 1000000 char)|100 char<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -94,7 +93,6 @@ namespace EdenAI
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.0 (per 1000000 char)|300 char<br/>
         /// |**microsoft**|`v3.1`|0.25 (per 1000000 char)|1000 char<br/>
-        /// |**privateai**|`v3`|5.0 (per 1000000 char)|100 char<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -177,7 +175,6 @@ namespace EdenAI
         /// |----|-------|-----|------------|<br/>
         /// |**amazon**|`boto3 (v1.15.18)`|1.0 (per 1000000 char)|300 char<br/>
         /// |**microsoft**|`v3.1`|0.25 (per 1000000 char)|1000 char<br/>
-        /// |**privateai**|`v3`|5.0 (per 1000000 char)|100 char<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
