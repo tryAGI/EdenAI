@@ -191,7 +191,7 @@ namespace EdenAI
                                 .AddOptionalParameter("group_by", groupBy?.ToValueString())
                                 .AddOptionalParameter("provider", provider)
                                 .AddOptionalParameter("rag_project_id", ragProjectId?.ToString())
-                                .AddRequiredParameter("step", step.ToString()!)
+                                .AddRequiredParameter("step", step.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."))
                                 .AddOptionalParameter("subfeature", subfeature)
                                 .AddOptionalParameter("token", token)
                                 .AddOptionalParameter("user", user)
@@ -237,12 +237,12 @@ namespace EdenAI
                 PrepareCostManagementCostManagementRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    begin: begin!,
-                    end: end!,
+                    begin: begin,
+                    end: end,
                     groupBy: groupBy,
                     provider: provider,
                     ragProjectId: ragProjectId,
-                    step: step!,
+                    step: step,
                     subfeature: subfeature,
                     token: token,
                     user: user,
@@ -268,7 +268,7 @@ namespace EdenAI
                                 pathTemplate: "\"/cost_management/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -302,7 +302,7 @@ namespace EdenAI
                                 pathTemplate: "\"/cost_management/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -343,7 +343,7 @@ namespace EdenAI
                                 pathTemplate: "\"/cost_management/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -391,7 +391,7 @@ namespace EdenAI
                                 pathTemplate: "\"/cost_management/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -413,7 +413,7 @@ namespace EdenAI
                                 pathTemplate: "\"/cost_management/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
