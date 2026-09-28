@@ -11,20 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
-        public global::EdenAI.OcrocrOcrDataClass? Clarifai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
-        public global::EdenAI.OcrocrOcrDataClass? Ionos { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrocrOcrDataClass? Google { get; set; }
 
         /// <summary>
         ///
@@ -35,8 +23,32 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrocrOcrDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clarifai")]
+        public global::EdenAI.OcrocrOcrDataClass? Clarifai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrocrOcrDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.OcrocrOcrDataClass? Mistral { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
+        public global::EdenAI.OcrocrOcrDataClass? Sentisight { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
+        public global::EdenAI.OcrocrOcrDataClass? Ionos { get; set; }
 
         /// <summary>
         ///
@@ -51,18 +63,6 @@ namespace EdenAI
         public global::EdenAI.OcrocrOcrDataClass? Api4ai { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
-        public global::EdenAI.OcrocrOcrDataClass? Sentisight { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.OcrocrOcrDataClass? Mistral { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -71,38 +71,38 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="OcrocrResponseModel" /> class.
         /// </summary>
-        /// <param name="microsoft"></param>
-        /// <param name="clarifai"></param>
-        /// <param name="ionos"></param>
-        /// <param name="amazon"></param>
         /// <param name="google"></param>
+        /// <param name="amazon"></param>
+        /// <param name="clarifai"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="mistral"></param>
+        /// <param name="sentisight"></param>
+        /// <param name="ionos"></param>
         /// <param name="base64"></param>
         /// <param name="api4ai"></param>
-        /// <param name="sentisight"></param>
-        /// <param name="mistral"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrocrResponseModel(
-            global::EdenAI.OcrocrOcrDataClass? microsoft,
-            global::EdenAI.OcrocrOcrDataClass? clarifai,
-            global::EdenAI.OcrocrOcrDataClass? ionos,
-            global::EdenAI.OcrocrOcrDataClass? amazon,
             global::EdenAI.OcrocrOcrDataClass? google,
-            global::EdenAI.OcrocrOcrDataClass? base64,
-            global::EdenAI.OcrocrOcrDataClass? api4ai,
+            global::EdenAI.OcrocrOcrDataClass? amazon,
+            global::EdenAI.OcrocrOcrDataClass? clarifai,
+            global::EdenAI.OcrocrOcrDataClass? microsoft,
+            global::EdenAI.OcrocrOcrDataClass? mistral,
             global::EdenAI.OcrocrOcrDataClass? sentisight,
-            global::EdenAI.OcrocrOcrDataClass? mistral)
+            global::EdenAI.OcrocrOcrDataClass? ionos,
+            global::EdenAI.OcrocrOcrDataClass? base64,
+            global::EdenAI.OcrocrOcrDataClass? api4ai)
         {
-            this.Microsoft = microsoft;
-            this.Clarifai = clarifai;
-            this.Ionos = ionos;
-            this.Amazon = amazon;
             this.Google = google;
+            this.Amazon = amazon;
+            this.Clarifai = clarifai;
+            this.Microsoft = microsoft;
+            this.Mistral = mistral;
+            this.Sentisight = sentisight;
+            this.Ionos = ionos;
             this.Base64 = base64;
             this.Api4ai = api4ai;
-            this.Sentisight = sentisight;
-            this.Mistral = mistral;
         }
 
         /// <summary>
