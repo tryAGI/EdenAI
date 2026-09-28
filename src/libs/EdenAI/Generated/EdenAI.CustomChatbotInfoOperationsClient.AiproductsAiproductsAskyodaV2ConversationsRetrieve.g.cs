@@ -162,8 +162,8 @@ namespace EdenAI
                 PrepareAiproductsAiproductsAskyodaV2ConversationsRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId!,
-                    projectId: projectId!);
+                    conversationId: conversationId,
+                    projectId: projectId);
 
                 global::EdenAI.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
 
@@ -187,7 +187,7 @@ namespace EdenAI
                                 pathTemplate: "$\"/aiproducts/askyoda/v2/{projectId}/conversations/{conversationId}/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -221,7 +221,7 @@ namespace EdenAI
                                 pathTemplate: "$\"/aiproducts/askyoda/v2/{projectId}/conversations/{conversationId}/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -262,7 +262,7 @@ namespace EdenAI
                                 pathTemplate: "$\"/aiproducts/askyoda/v2/{projectId}/conversations/{conversationId}/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -310,7 +310,7 @@ namespace EdenAI
                                 pathTemplate: "$\"/aiproducts/askyoda/v2/{projectId}/conversations/{conversationId}/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -332,7 +332,7 @@ namespace EdenAI
                                 pathTemplate: "$\"/aiproducts/askyoda/v2/{projectId}/conversations/{conversationId}/\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
