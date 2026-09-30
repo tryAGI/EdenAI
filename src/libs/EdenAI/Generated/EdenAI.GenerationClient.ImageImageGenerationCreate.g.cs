@@ -104,6 +104,7 @@ namespace EdenAI
         /// |**google**|**imagen-3.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-3.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
         /// |**google**|**gemini-3-pro-image-preview**|`v1`|-|0.039 (per 1 image)|1 image<br/>
+        /// |**pruna**|**p-image**|`v1`|-|0.005 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -116,6 +117,7 @@ namespace EdenAI
         /// |**minimax**|`image-01`|<br/>
         /// |**bytedance**|`seedream-4-0-250828`|<br/>
         /// |**google**|`gemini-3.1-flash-image`|<br/>
+        /// |**pruna**|`p-image`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -200,6 +202,7 @@ namespace EdenAI
         /// |**google**|**imagen-3.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-3.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
         /// |**google**|**gemini-3-pro-image-preview**|`v1`|-|0.039 (per 1 image)|1 image<br/>
+        /// |**pruna**|**p-image**|`v1`|-|0.005 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -212,6 +215,7 @@ namespace EdenAI
         /// |**minimax**|`image-01`|<br/>
         /// |**bytedance**|`seedream-4-0-250828`|<br/>
         /// |**google**|`gemini-3.1-flash-image`|<br/>
+        /// |**pruna**|`p-image`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -790,6 +794,7 @@ namespace EdenAI
         /// |**google**|**imagen-3.0-generate-001**|`v1`|-|0.04 (per 1 image)|1 image<br/>
         /// |**google**|**imagen-3.0-fast-generate-001**|`v1`|-|0.02 (per 1 image)|1 image<br/>
         /// |**google**|**gemini-3-pro-image-preview**|`v1`|-|0.039 (per 1 image)|1 image<br/>
+        /// |**pruna**|**p-image**|`v1`|-|0.005 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -802,6 +807,7 @@ namespace EdenAI
         /// |**minimax**|`image-01`|<br/>
         /// |**bytedance**|`seedream-4-0-250828`|<br/>
         /// |**google**|`gemini-3.1-flash-image`|<br/>
+        /// |**pruna**|`p-image`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
