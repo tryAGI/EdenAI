@@ -11,8 +11,38 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Deepgram { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gradium")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Gradium { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("symbl")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Symbl { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("faker")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Faker { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Oneai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("speechmatics")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Speechmatics { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         ///
@@ -29,38 +59,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Google { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("faker")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Faker { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("speechmatics")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Speechmatics { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gradium")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Gradium { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("symbl")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Symbl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
@@ -71,8 +71,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepgram")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Deepgram { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Openai { get; set; }
 
         /// <summary>
         ///
@@ -83,14 +89,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Oneai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Google { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -101,53 +101,53 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="AudiospeechToTextAsyncModel" /> class.
         /// </summary>
-        /// <param name="deepgram"></param>
+        /// <param name="gradium"></param>
+        /// <param name="symbl"></param>
+        /// <param name="faker"></param>
+        /// <param name="oneai"></param>
+        /// <param name="speechmatics"></param>
+        /// <param name="amazon"></param>
         /// <param name="voxist"></param>
         /// <param name="assembly"></param>
-        /// <param name="google"></param>
-        /// <param name="faker"></param>
-        /// <param name="speechmatics"></param>
-        /// <param name="gradium"></param>
-        /// <param name="openai"></param>
-        /// <param name="symbl"></param>
-        /// <param name="gladia"></param>
-        /// <param name="amazon"></param>
-        /// <param name="voci"></param>
-        /// <param name="oneai"></param>
         /// <param name="microsoft"></param>
+        /// <param name="gladia"></param>
+        /// <param name="deepgram"></param>
+        /// <param name="openai"></param>
+        /// <param name="voci"></param>
+        /// <param name="google"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AudiospeechToTextAsyncModel(
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? deepgram,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? gradium,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? symbl,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? faker,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? oneai,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? speechmatics,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? amazon,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? voxist,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? assembly,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? google,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? faker,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? speechmatics,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? gradium,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? openai,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? symbl,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? microsoft,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? gladia,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? amazon,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? deepgram,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? openai,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? voci,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? oneai,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? microsoft)
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? google)
         {
-            this.Deepgram = deepgram;
+            this.Gradium = gradium;
+            this.Symbl = symbl;
+            this.Faker = faker;
+            this.Oneai = oneai;
+            this.Speechmatics = speechmatics;
+            this.Amazon = amazon;
             this.Voxist = voxist;
             this.Assembly = assembly;
-            this.Google = google;
-            this.Faker = faker;
-            this.Speechmatics = speechmatics;
-            this.Gradium = gradium;
-            this.Openai = openai;
-            this.Symbl = symbl;
-            this.Gladia = gladia;
-            this.Amazon = amazon;
-            this.Voci = voci;
-            this.Oneai = oneai;
             this.Microsoft = microsoft;
+            this.Gladia = gladia;
+            this.Deepgram = deepgram;
+            this.Openai = openai;
+            this.Voci = voci;
+            this.Google = google;
         }
 
         /// <summary>
