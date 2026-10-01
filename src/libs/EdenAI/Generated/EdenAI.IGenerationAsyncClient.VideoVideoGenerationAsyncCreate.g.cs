@@ -151,6 +151,7 @@ namespace EdenAI
         /// |**pruna**|**p-video-2-pro**|`v1`|`1344x768`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|`768x1344`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|0.035 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-edit**|`v1`|0.045 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
@@ -352,6 +353,7 @@ namespace EdenAI
         /// |**pruna**|**p-video-2-pro**|`v1`|`1344x768`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|`768x1344`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|0.035 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-edit**|`v1`|0.045 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
@@ -553,6 +555,7 @@ namespace EdenAI
         /// |**pruna**|**p-video-2-pro**|`v1`|`1344x768`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|`768x1344`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|0.035 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-edit**|`v1`|0.045 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
