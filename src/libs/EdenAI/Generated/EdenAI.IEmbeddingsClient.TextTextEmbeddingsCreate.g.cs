@@ -30,9 +30,9 @@ namespace EdenAI
         /// |**mistral**|**mistral-embed**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
         /// |**mistral**|**codestral-embed**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
         /// |**mistral**|**codestral-embed-2505**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
-        /// |**jina**|-|`v1`|0.018 (per 1000000 token)|1 token<br/>
-        /// |**jina**|**jina-embeddings-v2-base-en**|`v1`|0.018 (per 1000000 token)|1 token<br/>
-        /// |**jina**|**jina-embeddings-v3**|`v1`|0.02 (per 1000000 token)|1 token<br/>
+        /// |**jina**|-|`v1`|0.05 (per 1000000 token)|1 token<br/>
+        /// |**jina**|**jina-embeddings-v2-base-en**|`v1`|0.05 (per 1000000 token)|1 token<br/>
+        /// |**jina**|**jina-embeddings-v3**|`v1`|0.05 (per 1000000 token)|1 token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=text-embeddings' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -80,9 +80,9 @@ namespace EdenAI
         /// |**mistral**|**mistral-embed**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
         /// |**mistral**|**codestral-embed**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
         /// |**mistral**|**codestral-embed-2505**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
-        /// |**jina**|-|`v1`|0.018 (per 1000000 token)|1 token<br/>
-        /// |**jina**|**jina-embeddings-v2-base-en**|`v1`|0.018 (per 1000000 token)|1 token<br/>
-        /// |**jina**|**jina-embeddings-v3**|`v1`|0.02 (per 1000000 token)|1 token<br/>
+        /// |**jina**|-|`v1`|0.05 (per 1000000 token)|1 token<br/>
+        /// |**jina**|**jina-embeddings-v2-base-en**|`v1`|0.05 (per 1000000 token)|1 token<br/>
+        /// |**jina**|**jina-embeddings-v3**|`v1`|0.05 (per 1000000 token)|1 token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=text-embeddings' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -130,9 +130,9 @@ namespace EdenAI
         /// |**mistral**|**mistral-embed**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
         /// |**mistral**|**codestral-embed**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
         /// |**mistral**|**codestral-embed-2505**|`v0.0.1`|0.0 (per 1 seconde)|1 seconde<br/>
-        /// |**jina**|-|`v1`|0.018 (per 1000000 token)|1 token<br/>
-        /// |**jina**|**jina-embeddings-v2-base-en**|`v1`|0.018 (per 1000000 token)|1 token<br/>
-        /// |**jina**|**jina-embeddings-v3**|`v1`|0.02 (per 1000000 token)|1 token<br/>
+        /// |**jina**|-|`v1`|0.05 (per 1000000 token)|1 token<br/>
+        /// |**jina**|**jina-embeddings-v2-base-en**|`v1`|0.05 (per 1000000 token)|1 token<br/>
+        /// |**jina**|**jina-embeddings-v3**|`v1`|0.05 (per 1000000 token)|1 token<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=text-embeddings' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
