@@ -152,6 +152,58 @@ namespace EdenAI
         /// |**pruna**|**p-video-2-pro**|`v1`|`768x1344`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-edit**|`v1`|0.045 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`854x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x854`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`640x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x640`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x720`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`832x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x832`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1280x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x1280`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`960x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x960`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1080x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x1080`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1365x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1365`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1024x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1024`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1152x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1152`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1344x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1344`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`854x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x854`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`640x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x640`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x720`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`832x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x832`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1280x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x1280`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`960x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x960`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1080x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x1080`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1365x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1365`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1024x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1024`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1152x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1152`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1344x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1344`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|0.075 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
@@ -354,6 +406,58 @@ namespace EdenAI
         /// |**pruna**|**p-video-2-pro**|`v1`|`768x1344`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-edit**|`v1`|0.045 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`854x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x854`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`640x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x640`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x720`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`832x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x832`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1280x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x1280`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`960x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x960`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1080x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x1080`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1365x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1365`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1024x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1024`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1152x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1152`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1344x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1344`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`854x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x854`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`640x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x640`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x720`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`832x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x832`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1280x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x1280`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`960x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x960`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1080x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x1080`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1365x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1365`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1024x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1024`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1152x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1152`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1344x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1344`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|0.075 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
@@ -556,6 +660,58 @@ namespace EdenAI
         /// |**pruna**|**p-video-2-pro**|`v1`|`768x1344`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-2-pro**|`v1`|0.035 (per 1 seconde)|1 seconde<br/>
         /// |**pruna**|**p-video-edit**|`v1`|0.045 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`854x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x854`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`640x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x640`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x720`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`832x480`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`480x832`|0.01 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1280x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x1280`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`960x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x960`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1080x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x1080`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`720x720`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1365x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1365`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1024x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1024`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1152x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1152`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`1344x768`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|`768x1344`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-cost**|`v1`|0.025 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`854x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x854`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`640x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x640`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x720`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`832x480`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`480x832`|0.04 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1280x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x1280`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`960x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x960`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1080x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x1080`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`720x720`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1365x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1365`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1024x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1024`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1152x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1152`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`1344x768`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|`768x1344`|0.075 (per 1 seconde)|1 seconde<br/>
+        /// |**pruna**|**p-video-2-pro-quality**|`v1`|0.075 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`854x480`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`480x854`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**xai**|**grok-imagine-video-1.5**|`v1`|`640x480`|0.08 (per 1 seconde)|1 seconde<br/>
