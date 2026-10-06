@@ -11,26 +11,32 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Amazon { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Google { get; set; }
 
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Amazon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Openai { get; set; }
 
         /// <summary>
         ///
@@ -45,12 +51,6 @@ namespace EdenAI
         public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Deepl { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? Xai { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -59,32 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TranslationautomaticTranslationResponseModel" /> class.
         /// </summary>
-        /// <param name="amazon"></param>
-        /// <param name="openai"></param>
         /// <param name="google"></param>
+        /// <param name="amazon"></param>
         /// <param name="microsoft"></param>
+        /// <param name="xai"></param>
+        /// <param name="openai"></param>
         /// <param name="modernmt"></param>
         /// <param name="deepl"></param>
-        /// <param name="xai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TranslationautomaticTranslationResponseModel(
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? openai,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? google,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? amazon,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? microsoft,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? xai,
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? openai,
             global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? modernmt,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? deepl,
-            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? xai)
+            global::EdenAI.TranslationautomaticTranslationAutomaticTranslationDataClass? deepl)
         {
-            this.Amazon = amazon;
-            this.Openai = openai;
             this.Google = google;
+            this.Amazon = amazon;
             this.Microsoft = microsoft;
+            this.Xai = xai;
+            this.Openai = openai;
             this.Modernmt = modernmt;
             this.Deepl = deepl;
-            this.Xai = xai;
         }
 
         /// <summary>
