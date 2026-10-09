@@ -11,8 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
 
         /// <summary>
         ///
@@ -41,8 +41,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prowritingaid")]
-        public global::EdenAI.TextspellCheckSpellCheckDataClass? Prowritingaid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextspellCheckSpellCheckDataClass? Cohere { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,29 +53,29 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextspellCheckResponseModel" /> class.
         /// </summary>
-        /// <param name="cohere"></param>
+        /// <param name="prowritingaid"></param>
         /// <param name="sapling"></param>
         /// <param name="openai"></param>
         /// <param name="xai"></param>
         /// <param name="microsoft"></param>
-        /// <param name="prowritingaid"></param>
+        /// <param name="cohere"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextspellCheckResponseModel(
-            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere,
+            global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid,
             global::EdenAI.TextspellCheckSpellCheckDataClass? sapling,
             global::EdenAI.TextspellCheckSpellCheckDataClass? openai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? xai,
             global::EdenAI.TextspellCheckSpellCheckDataClass? microsoft,
-            global::EdenAI.TextspellCheckSpellCheckDataClass? prowritingaid)
+            global::EdenAI.TextspellCheckSpellCheckDataClass? cohere)
         {
-            this.Cohere = cohere;
+            this.Prowritingaid = prowritingaid;
             this.Sapling = sapling;
             this.Openai = openai;
             this.Xai = xai;
             this.Microsoft = microsoft;
-            this.Prowritingaid = prowritingaid;
+            this.Cohere = cohere;
         }
 
         /// <summary>
