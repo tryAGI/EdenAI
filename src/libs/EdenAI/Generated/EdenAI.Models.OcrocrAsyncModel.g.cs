@@ -23,14 +23,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrocrAsyncOcrAsyncDataClass? Google { get; set; }
 
         /// <summary>
         ///
@@ -49,8 +49,8 @@ namespace EdenAI
         /// </summary>
         /// <param name="amazon"></param>
         /// <param name="oneai"></param>
-        /// <param name="google"></param>
         /// <param name="microsoft"></param>
+        /// <param name="google"></param>
         /// <param name="mistral"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -58,14 +58,14 @@ namespace EdenAI
         public OcrocrAsyncModel(
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? amazon,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? oneai,
-            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? microsoft,
+            global::EdenAI.OcrocrAsyncOcrAsyncDataClass? google,
             global::EdenAI.OcrocrAsyncOcrAsyncDataClass? mistral)
         {
             this.Amazon = amazon;
             this.Oneai = oneai;
-            this.Google = google;
             this.Microsoft = microsoft;
+            this.Google = google;
             this.Mistral = mistral;
         }
 
