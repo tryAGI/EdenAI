@@ -56,7 +56,6 @@ namespace EdenAI
         /// |**google**|**gemini-2.5-flash-tts**|`v1`|10.0 (per 1000000 char)|1 char<br/>
         /// |**google**|**gemini-2.5-pro-tts**|`v1`|20.0 (per 1000000 char)|None char<br/>
         /// |**microsoft**|-|`v1.0`|16.0 (per 1000000 char)|1 char<br/>
-        /// |**lovoai**|-|`v1`|160.0 (per 1000000 char)|1000 char<br/>
         /// |**elevenlabs**|-|`v1`|0.3 (per 1000 char)|1 char<br/>
         /// |**openai**|-|`v1.0`|0.015 (per 1000 char)|1 char<br/>
         /// |**deepgram**|-|`v1`|0.015 (per 1000 char)|1 char<br/>
@@ -342,7 +341,6 @@ namespace EdenAI
         /// |**google**|**gemini-2.5-flash-tts**|`v1`|10.0 (per 1000000 char)|1 char<br/>
         /// |**google**|**gemini-2.5-pro-tts**|`v1`|20.0 (per 1000000 char)|None char<br/>
         /// |**microsoft**|-|`v1.0`|16.0 (per 1000000 char)|1 char<br/>
-        /// |**lovoai**|-|`v1`|160.0 (per 1000000 char)|1000 char<br/>
         /// |**elevenlabs**|-|`v1`|0.3 (per 1000 char)|1 char<br/>
         /// |**openai**|-|`v1.0`|0.015 (per 1000 char)|1 char<br/>
         /// |**deepgram**|-|`v1`|0.015 (per 1000 char)|1 char<br/>
@@ -1122,7 +1120,6 @@ namespace EdenAI
         /// |**google**|**gemini-2.5-flash-tts**|`v1`|10.0 (per 1000000 char)|1 char<br/>
         /// |**google**|**gemini-2.5-pro-tts**|`v1`|20.0 (per 1000000 char)|None char<br/>
         /// |**microsoft**|-|`v1.0`|16.0 (per 1000000 char)|1 char<br/>
-        /// |**lovoai**|-|`v1`|160.0 (per 1000000 char)|1000 char<br/>
         /// |**elevenlabs**|-|`v1`|0.3 (per 1000 char)|1 char<br/>
         /// |**openai**|-|`v1.0`|0.015 (per 1000 char)|1 char<br/>
         /// |**deepgram**|-|`v1`|0.015 (per 1000 char)|1 char<br/>

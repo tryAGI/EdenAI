@@ -461,6 +461,9 @@ namespace EdenAI
         /// * `weekly` - Weekly<br/>
         /// * `monthly` - Monthly
         /// </param>
+        /// <param name="budgetAlertPercent">
+        /// Alert the key owner by email when this % of the periodic budget is used.
+        /// </param>
         /// <param name="defaultTags">
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </param>
@@ -474,6 +477,7 @@ namespace EdenAI
             bool? activeBalance = default,
             double? balanceResetAmount = default,
             global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod = default,
+            int? budgetAlertPercent = default,
             object? defaultTags = default,
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -485,6 +489,7 @@ namespace EdenAI
                 ActiveBalance = activeBalance,
                 BalanceResetAmount = balanceResetAmount,
                 BalanceResetPeriod = balanceResetPeriod,
+                BudgetAlertPercent = budgetAlertPercent,
                 DefaultTags = defaultTags,
             };
 
