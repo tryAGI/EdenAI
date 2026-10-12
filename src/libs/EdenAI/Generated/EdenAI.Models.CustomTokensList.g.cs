@@ -95,6 +95,12 @@ namespace EdenAI
         public global::EdenAI.BalanceResetPeriodEnum? BalanceResetPeriod { get; set; }
 
         /// <summary>
+        /// Alert the key owner by email when this % of the periodic budget is used.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("budget_alert_percent")]
+        public int? BudgetAlertPercent { get; set; }
+
+        /// <summary>
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_tags")]
@@ -149,6 +155,9 @@ namespace EdenAI
         /// * `weekly` - Weekly<br/>
         /// * `monthly` - Monthly
         /// </param>
+        /// <param name="budgetAlertPercent">
+        /// Alert the key owner by email when this % of the periodic budget is used.
+        /// </param>
         /// <param name="defaultTags">
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </param>
@@ -183,6 +192,7 @@ namespace EdenAI
             global::System.DateTime? expireTime,
             double? balanceResetAmount,
             global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod,
+            int? budgetAlertPercent,
             object? defaultTags,
             string label = default!,
             string masked = default!,
@@ -202,6 +212,7 @@ namespace EdenAI
             this.ExpireTime = expireTime;
             this.BalanceResetAmount = balanceResetAmount;
             this.BalanceResetPeriod = balanceResetPeriod;
+            this.BudgetAlertPercent = budgetAlertPercent;
             this.DefaultTags = defaultTags;
             this.Legacy = legacy;
             this.Synthesized = synthesized;

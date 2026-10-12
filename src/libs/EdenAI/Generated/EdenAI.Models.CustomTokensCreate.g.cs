@@ -59,6 +59,12 @@ namespace EdenAI
         public global::EdenAI.BalanceResetPeriodEnum? BalanceResetPeriod { get; set; }
 
         /// <summary>
+        /// Alert the key owner by email when this % of the periodic budget is used.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("budget_alert_percent")]
+        public int? BudgetAlertPercent { get; set; }
+
+        /// <summary>
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_tags")]
@@ -97,6 +103,9 @@ namespace EdenAI
         /// * `weekly` - Weekly<br/>
         /// * `monthly` - Monthly
         /// </param>
+        /// <param name="budgetAlertPercent">
+        /// Alert the key owner by email when this % of the periodic budget is used.
+        /// </param>
         /// <param name="defaultTags">
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </param>
@@ -111,6 +120,7 @@ namespace EdenAI
             bool? activeBalance,
             string? balanceResetAmount,
             global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod,
+            int? budgetAlertPercent,
             object? defaultTags)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
@@ -120,6 +130,7 @@ namespace EdenAI
             this.ActiveBalance = activeBalance;
             this.BalanceResetAmount = balanceResetAmount;
             this.BalanceResetPeriod = balanceResetPeriod;
+            this.BudgetAlertPercent = budgetAlertPercent;
             this.DefaultTags = defaultTags;
         }
 

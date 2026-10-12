@@ -55,7 +55,6 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
-        /// |**lovoai**|-|`v1`|0.16 (per 1000 char)|1 char<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|4.0 (per 1000000 char)|1 char<br/>
         /// |**amazon**|**Neural**|`boto3 (v1.15.18)`|16.0 (per 1000000 char)|1 char<br/>
         /// &lt;/details&gt;<br/>
@@ -305,7 +304,6 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
-        /// |**lovoai**|-|`v1`|0.16 (per 1000 char)|1 char<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|4.0 (per 1000000 char)|1 char<br/>
         /// |**amazon**|**Neural**|`boto3 (v1.15.18)`|16.0 (per 1000000 char)|1 char<br/>
         /// &lt;/details&gt;<br/>
@@ -1038,7 +1036,6 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
-        /// |**lovoai**|-|`v1`|0.16 (per 1000 char)|1 char<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|4.0 (per 1000000 char)|1 char<br/>
         /// |**amazon**|**Neural**|`boto3 (v1.15.18)`|16.0 (per 1000000 char)|1 char<br/>
         /// &lt;/details&gt;<br/>
