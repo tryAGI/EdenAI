@@ -21,6 +21,9 @@ namespace EdenAI
         /// |**gladia**|-|`v1`|0.0102 (per 60 seconde)|1 seconde<br/>
         /// |**gradium**|-|`v1`|0.0001734 (per 1 seconde)|None seconde<br/>
         /// |**gradium**|**stt-translate**|`v1`|0.0002312 (per 1 seconde)|None seconde<br/>
+        /// |**greenpt**|**green-s**|`v1`|0.004286052 (per 60 seconde)|1 seconde<br/>
+        /// |**greenpt**|**green-s-pro**|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
+        /// |**greenpt**|-|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -293,6 +296,7 @@ namespace EdenAI
         /// |----|-----|<br/>
         /// |**deepgram**|`enhanced`|<br/>
         /// |**gradium**|`default`|<br/>
+        /// |**greenpt**|`green-s-pro`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -321,6 +325,9 @@ namespace EdenAI
         /// |**gladia**|-|`v1`|0.0102 (per 60 seconde)|1 seconde<br/>
         /// |**gradium**|-|`v1`|0.0001734 (per 1 seconde)|None seconde<br/>
         /// |**gradium**|**stt-translate**|`v1`|0.0002312 (per 1 seconde)|None seconde<br/>
+        /// |**greenpt**|**green-s**|`v1`|0.004286052 (per 60 seconde)|1 seconde<br/>
+        /// |**greenpt**|**green-s-pro**|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
+        /// |**greenpt**|-|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -593,6 +600,7 @@ namespace EdenAI
         /// |----|-----|<br/>
         /// |**deepgram**|`enhanced`|<br/>
         /// |**gradium**|`default`|<br/>
+        /// |**greenpt**|`green-s-pro`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -621,6 +629,9 @@ namespace EdenAI
         /// |**gladia**|-|`v1`|0.0102 (per 60 seconde)|1 seconde<br/>
         /// |**gradium**|-|`v1`|0.0001734 (per 1 seconde)|None seconde<br/>
         /// |**gradium**|**stt-translate**|`v1`|0.0002312 (per 1 seconde)|None seconde<br/>
+        /// |**greenpt**|**green-s**|`v1`|0.004286052 (per 60 seconde)|1 seconde<br/>
+        /// |**greenpt**|**green-s-pro**|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
+        /// |**greenpt**|-|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -893,6 +904,7 @@ namespace EdenAI
         /// |----|-----|<br/>
         /// |**deepgram**|`enhanced`|<br/>
         /// |**gradium**|`default`|<br/>
+        /// |**greenpt**|`green-s-pro`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
