@@ -11,26 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("corticalio")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Corticalio { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Amazon { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Oneai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Xai { get; set; }
 
         /// <summary>
         ///
@@ -41,14 +23,32 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Amazon { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
         public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Openai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Oneai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("corticalio")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Corticalio { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
@@ -65,34 +65,34 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextkeywordExtractionResponseModel" /> class.
         /// </summary>
-        /// <param name="microsoft"></param>
-        /// <param name="corticalio"></param>
-        /// <param name="amazon"></param>
-        /// <param name="oneai"></param>
-        /// <param name="emvista"></param>
         /// <param name="xai"></param>
+        /// <param name="emvista"></param>
+        /// <param name="amazon"></param>
         /// <param name="openai"></param>
+        /// <param name="oneai"></param>
+        /// <param name="corticalio"></param>
+        /// <param name="microsoft"></param>
         /// <param name="tenstorrent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextkeywordExtractionResponseModel(
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? microsoft,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? corticalio,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? amazon,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? oneai,
-            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? emvista,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? xai,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? emvista,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? amazon,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? openai,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? oneai,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? corticalio,
+            global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? microsoft,
             global::EdenAI.TextkeywordExtractionKeywordExtractionDataClass? tenstorrent)
         {
-            this.Microsoft = microsoft;
-            this.Corticalio = corticalio;
-            this.Amazon = amazon;
-            this.Oneai = oneai;
-            this.Emvista = emvista;
             this.Xai = xai;
+            this.Emvista = emvista;
+            this.Amazon = amazon;
             this.Openai = openai;
+            this.Oneai = oneai;
+            this.Corticalio = corticalio;
+            this.Microsoft = microsoft;
             this.Tenstorrent = tenstorrent;
         }
 

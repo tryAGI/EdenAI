@@ -57,7 +57,6 @@ namespace EdenAI
         /// |----|-------|-----|------------|<br/>
         /// |**readyredact**|`v1`|0.05 (per 1 file)|1 file<br/>
         /// |**base64**|`v1`|0.25 (per 1 page)|1 page<br/>
-        /// |**privateai**|`v3`|0.01 (per 1 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -86,7 +85,6 @@ namespace EdenAI
         /// |----|-------|-----|------------|<br/>
         /// |**readyredact**|`v1`|0.05 (per 1 file)|1 file<br/>
         /// |**base64**|`v1`|0.25 (per 1 page)|1 page<br/>
-        /// |**privateai**|`v3`|0.01 (per 1 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -588,7 +586,6 @@ namespace EdenAI
         /// |----|-------|-----|------------|<br/>
         /// |**readyredact**|`v1`|0.05 (per 1 file)|1 file<br/>
         /// |**base64**|`v1`|0.25 (per 1 page)|1 page<br/>
-        /// |**privateai**|`v3`|0.01 (per 1 page)|1 page<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
