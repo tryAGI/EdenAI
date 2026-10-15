@@ -11,26 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Google { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pixverse")]
         public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Pixverse { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Xai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         ///
@@ -41,8 +23,20 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
         public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Bytedance { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Amazon { get; set; }
 
         /// <summary>
         ///
@@ -53,8 +47,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("qwen")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Qwen { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Google { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Xai { get; set; }
 
         /// <summary>
         ///
@@ -65,8 +65,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("qwen")]
+        public global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? Qwen { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -77,41 +77,41 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="VideogenerationAsyncModel" /> class.
         /// </summary>
-        /// <param name="google"></param>
         /// <param name="pixverse"></param>
-        /// <param name="xai"></param>
-        /// <param name="amazon"></param>
         /// <param name="openai"></param>
-        /// <param name="bytedance"></param>
-        /// <param name="minimax"></param>
-        /// <param name="qwen"></param>
-        /// <param name="pruna"></param>
         /// <param name="microsoft"></param>
+        /// <param name="bytedance"></param>
+        /// <param name="amazon"></param>
+        /// <param name="minimax"></param>
+        /// <param name="google"></param>
+        /// <param name="xai"></param>
+        /// <param name="pruna"></param>
+        /// <param name="qwen"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideogenerationAsyncModel(
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? google,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pixverse,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? xai,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? openai,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? bytedance,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? amazon,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? minimax,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? qwen,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? google,
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? xai,
             global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? pruna,
-            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? microsoft)
+            global::EdenAI.VideogenerationAsyncGenerationAsyncDataClass? qwen)
         {
-            this.Google = google;
             this.Pixverse = pixverse;
-            this.Xai = xai;
-            this.Amazon = amazon;
             this.Openai = openai;
-            this.Bytedance = bytedance;
-            this.Minimax = minimax;
-            this.Qwen = qwen;
-            this.Pruna = pruna;
             this.Microsoft = microsoft;
+            this.Bytedance = bytedance;
+            this.Amazon = amazon;
+            this.Minimax = minimax;
+            this.Google = google;
+            this.Xai = xai;
+            this.Pruna = pruna;
+            this.Qwen = qwen;
         }
 
         /// <summary>
