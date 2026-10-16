@@ -17,50 +17,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Klippa { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Microsoft { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("veryfi")]
         public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Veryfi { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dataleon")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Dataleon { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Mindee { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Extracta { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Google { get; set; }
 
         /// <summary>
         ///
@@ -71,14 +29,56 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Google { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Mindee { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tabscanner")]
         public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Tabscanner { get; set; }
 
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Klippa { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Openai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Amazon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dataleon")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Dataleon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("extracta")]
+        public global::EdenAI.OcrfinancialParserFinancialParserDataClass? Extracta { get; set; }
 
         /// <summary>
         ///
@@ -96,48 +96,48 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="OcrfinancialParserResponseModel" /> class.
         /// </summary>
         /// <param name="base64"></param>
-        /// <param name="klippa"></param>
-        /// <param name="microsoft"></param>
-        /// <param name="openai"></param>
         /// <param name="veryfi"></param>
-        /// <param name="dataleon"></param>
-        /// <param name="mindee"></param>
-        /// <param name="extracta"></param>
-        /// <param name="google"></param>
         /// <param name="eagledoc"></param>
+        /// <param name="google"></param>
+        /// <param name="mindee"></param>
         /// <param name="tabscanner"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="klippa"></param>
+        /// <param name="openai"></param>
         /// <param name="amazon"></param>
+        /// <param name="dataleon"></param>
+        /// <param name="extracta"></param>
         /// <param name="affinda"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OcrfinancialParserResponseModel(
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? base64,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? klippa,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? microsoft,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? openai,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? veryfi,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? dataleon,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? mindee,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? extracta,
-            global::EdenAI.OcrfinancialParserFinancialParserDataClass? google,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? eagledoc,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? google,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? mindee,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? tabscanner,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? microsoft,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? klippa,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? openai,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? amazon,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? dataleon,
+            global::EdenAI.OcrfinancialParserFinancialParserDataClass? extracta,
             global::EdenAI.OcrfinancialParserFinancialParserDataClass? affinda)
         {
             this.Base64 = base64;
-            this.Klippa = klippa;
-            this.Microsoft = microsoft;
-            this.Openai = openai;
             this.Veryfi = veryfi;
-            this.Dataleon = dataleon;
-            this.Mindee = mindee;
-            this.Extracta = extracta;
-            this.Google = google;
             this.Eagledoc = eagledoc;
+            this.Google = google;
+            this.Mindee = mindee;
             this.Tabscanner = tabscanner;
+            this.Microsoft = microsoft;
+            this.Klippa = klippa;
+            this.Openai = openai;
             this.Amazon = amazon;
+            this.Dataleon = dataleon;
+            this.Extracta = extracta;
             this.Affinda = affinda;
         }
 

@@ -17,8 +17,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Klippa { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Mindee { get; set; }
 
         /// <summary>
         ///
@@ -29,14 +29,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("klippa")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Klippa { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mindee")]
-        public global::EdenAI.OcridentityParserIdentityParserDataClass? Mindee { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.OcridentityParserIdentityParserDataClass? Openai { get; set; }
 
         /// <summary>
         ///
@@ -60,10 +60,10 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="OcridentityParserResponseModel" /> class.
         /// </summary>
         /// <param name="base64"></param>
-        /// <param name="klippa"></param>
-        /// <param name="microsoft"></param>
-        /// <param name="openai"></param>
         /// <param name="mindee"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="klippa"></param>
+        /// <param name="openai"></param>
         /// <param name="amazon"></param>
         /// <param name="affinda"></param>
 #if NET7_0_OR_GREATER
@@ -71,18 +71,18 @@ namespace EdenAI
 #endif
         public OcridentityParserResponseModel(
             global::EdenAI.OcridentityParserIdentityParserDataClass? base64,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? klippa,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? microsoft,
-            global::EdenAI.OcridentityParserIdentityParserDataClass? openai,
             global::EdenAI.OcridentityParserIdentityParserDataClass? mindee,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? microsoft,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? klippa,
+            global::EdenAI.OcridentityParserIdentityParserDataClass? openai,
             global::EdenAI.OcridentityParserIdentityParserDataClass? amazon,
             global::EdenAI.OcridentityParserIdentityParserDataClass? affinda)
         {
             this.Base64 = base64;
-            this.Klippa = klippa;
-            this.Microsoft = microsoft;
-            this.Openai = openai;
             this.Mindee = mindee;
+            this.Microsoft = microsoft;
+            this.Klippa = klippa;
+            this.Openai = openai;
             this.Amazon = amazon;
             this.Affinda = affinda;
         }
