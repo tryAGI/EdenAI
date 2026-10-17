@@ -11,20 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("perplexityai")]
-        public global::EdenAI.TextchatChatDataClass? Perplexityai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
         public global::EdenAI.TextchatChatDataClass? Amazon { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
-        public global::EdenAI.TextchatChatDataClass? Anthropic { get; set; }
 
         /// <summary>
         ///
@@ -35,20 +23,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextchatChatDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deepseek")]
-        public global::EdenAI.TextchatChatDataClass? Deepseek { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
-        public global::EdenAI.TextchatChatDataClass? Mistral { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
+        public global::EdenAI.TextchatChatDataClass? Replicate { get; set; }
 
         /// <summary>
         ///
@@ -59,14 +35,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
-        public global::EdenAI.TextchatChatDataClass? Replicate { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextchatChatDataClass? Microsoft { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
+        public global::EdenAI.TextchatChatDataClass? Xai { get; set; }
 
         /// <summary>
         ///
@@ -77,20 +47,50 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xai")]
-        public global::EdenAI.TextchatChatDataClass? Xai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextchatChatDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
-        public global::EdenAI.TextchatChatDataClass? Cohere { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextchatChatDataClass? Openai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.TextchatChatDataClass? Mistral { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("perplexityai")]
+        public global::EdenAI.TextchatChatDataClass? Perplexityai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deepseek")]
+        public global::EdenAI.TextchatChatDataClass? Deepseek { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("anthropic")]
+        public global::EdenAI.TextchatChatDataClass? Anthropic { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.TextchatChatDataClass? Google { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
+        public global::EdenAI.TextchatChatDataClass? Cohere { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -101,53 +101,53 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextchatResponseModel" /> class.
         /// </summary>
-        /// <param name="perplexityai"></param>
         /// <param name="amazon"></param>
-        /// <param name="anthropic"></param>
         /// <param name="groq"></param>
-        /// <param name="openai"></param>
-        /// <param name="deepseek"></param>
-        /// <param name="mistral"></param>
-        /// <param name="togetherAi"></param>
         /// <param name="replicate"></param>
-        /// <param name="microsoft"></param>
-        /// <param name="meta"></param>
+        /// <param name="togetherAi"></param>
         /// <param name="xai"></param>
-        /// <param name="cohere"></param>
+        /// <param name="meta"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="openai"></param>
+        /// <param name="mistral"></param>
+        /// <param name="perplexityai"></param>
+        /// <param name="deepseek"></param>
+        /// <param name="anthropic"></param>
         /// <param name="google"></param>
+        /// <param name="cohere"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextchatResponseModel(
-            global::EdenAI.TextchatChatDataClass? perplexityai,
             global::EdenAI.TextchatChatDataClass? amazon,
-            global::EdenAI.TextchatChatDataClass? anthropic,
             global::EdenAI.TextchatChatDataClass? groq,
-            global::EdenAI.TextchatChatDataClass? openai,
-            global::EdenAI.TextchatChatDataClass? deepseek,
-            global::EdenAI.TextchatChatDataClass? mistral,
-            global::EdenAI.TextchatChatDataClass? togetherAi,
             global::EdenAI.TextchatChatDataClass? replicate,
-            global::EdenAI.TextchatChatDataClass? microsoft,
-            global::EdenAI.TextchatChatDataClass? meta,
+            global::EdenAI.TextchatChatDataClass? togetherAi,
             global::EdenAI.TextchatChatDataClass? xai,
-            global::EdenAI.TextchatChatDataClass? cohere,
-            global::EdenAI.TextchatChatDataClass? google)
+            global::EdenAI.TextchatChatDataClass? meta,
+            global::EdenAI.TextchatChatDataClass? microsoft,
+            global::EdenAI.TextchatChatDataClass? openai,
+            global::EdenAI.TextchatChatDataClass? mistral,
+            global::EdenAI.TextchatChatDataClass? perplexityai,
+            global::EdenAI.TextchatChatDataClass? deepseek,
+            global::EdenAI.TextchatChatDataClass? anthropic,
+            global::EdenAI.TextchatChatDataClass? google,
+            global::EdenAI.TextchatChatDataClass? cohere)
         {
-            this.Perplexityai = perplexityai;
             this.Amazon = amazon;
-            this.Anthropic = anthropic;
             this.Groq = groq;
-            this.Openai = openai;
-            this.Deepseek = deepseek;
-            this.Mistral = mistral;
-            this.TogetherAi = togetherAi;
             this.Replicate = replicate;
-            this.Microsoft = microsoft;
-            this.Meta = meta;
+            this.TogetherAi = togetherAi;
             this.Xai = xai;
-            this.Cohere = cohere;
+            this.Meta = meta;
+            this.Microsoft = microsoft;
+            this.Openai = openai;
+            this.Mistral = mistral;
+            this.Perplexityai = perplexityai;
+            this.Deepseek = deepseek;
+            this.Anthropic = anthropic;
             this.Google = google;
+            this.Cohere = cohere;
         }
 
         /// <summary>
