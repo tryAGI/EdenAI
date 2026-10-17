@@ -175,6 +175,28 @@ namespace EdenAI
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|`1248x832`|0.033 (per 1 image)|1 image<br/>
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|`832x1248`|0.033 (per 1 image)|1 image<br/>
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|-|0.033 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.1-schnell**|`v1`|-|0.032409 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1024`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1536`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1792`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1152x2048`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1280x720`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1344x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x1024`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x1536`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x2048`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1792x1024`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x1152`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x1536`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x2048`|0.018005 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`256x256`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`512x512`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`720x1280`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x1024`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x1344`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|-|0.014629 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -188,6 +210,7 @@ namespace EdenAI
         /// |**bytedance**|`seedream-4-0-250828`|<br/>
         /// |**google**|`gemini-3.1-flash-image`|<br/>
         /// |**pruna**|`p-image`|<br/>
+        /// |**ionos**|`black-forest-labs/FLUX.1-schnell`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -343,6 +366,28 @@ namespace EdenAI
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|`1248x832`|0.033 (per 1 image)|1 image<br/>
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|`832x1248`|0.033 (per 1 image)|1 image<br/>
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|-|0.033 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.1-schnell**|`v1`|-|0.032409 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1024`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1536`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1792`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1152x2048`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1280x720`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1344x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x1024`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x1536`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x2048`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1792x1024`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x1152`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x1536`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x2048`|0.018005 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`256x256`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`512x512`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`720x1280`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x1024`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x1344`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|-|0.014629 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -356,6 +401,7 @@ namespace EdenAI
         /// |**bytedance**|`seedream-4-0-250828`|<br/>
         /// |**google**|`gemini-3.1-flash-image`|<br/>
         /// |**pruna**|`p-image`|<br/>
+        /// |**ionos**|`black-forest-labs/FLUX.1-schnell`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -1005,6 +1051,28 @@ namespace EdenAI
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|`1248x832`|0.033 (per 1 image)|1 image<br/>
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|`832x1248`|0.033 (per 1 image)|1 image<br/>
         /// |**pruna**|**p-image-ideogram-very-high**|`v1`|-|0.033 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.1-schnell**|`v1`|-|0.032409 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1024`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1536`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x1792`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1024x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1152x2048`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1280x720`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1344x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x1024`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x1536`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1536x2048`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`1792x1024`|0.015754 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x1152`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x1536`|0.016879 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`2048x2048`|0.018005 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`256x256`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`512x512`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`720x1280`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x1024`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x1344`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x768`|0.014629 (per 1 image)|1 image<br/>
+        /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|-|0.014629 (per 1 image)|1 image<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -1018,6 +1086,7 @@ namespace EdenAI
         /// |**bytedance**|`seedream-4-0-250828`|<br/>
         /// |**google**|`gemini-3.1-flash-image`|<br/>
         /// |**pruna**|`p-image`|<br/>
+        /// |**ionos**|`black-forest-labs/FLUX.1-schnell`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
