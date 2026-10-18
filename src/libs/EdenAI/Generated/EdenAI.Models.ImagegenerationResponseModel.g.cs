@@ -11,14 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pruna")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Pruna { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Bytedance { get; set; }
 
         /// <summary>
         ///
@@ -29,14 +23,14 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Amazon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bytedance")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Bytedance { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
 
         /// <summary>
         ///
@@ -47,14 +41,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Google { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Ionos { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Minimax { get; set; }
 
         /// <summary>
         ///
@@ -65,14 +53,26 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Minimax { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("pruna")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Pruna { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Google { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Amazon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Ionos { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -83,44 +83,44 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="ImagegenerationResponseModel" /> class.
         /// </summary>
-        /// <param name="pruna"></param>
-        /// <param name="stabilityai"></param>
-        /// <param name="leonardo"></param>
-        /// <param name="amazon"></param>
         /// <param name="bytedance"></param>
-        /// <param name="replicate"></param>
-        /// <param name="google"></param>
-        /// <param name="ionos"></param>
-        /// <param name="deepai"></param>
-        /// <param name="minimax"></param>
+        /// <param name="leonardo"></param>
+        /// <param name="stabilityai"></param>
         /// <param name="openai"></param>
+        /// <param name="replicate"></param>
+        /// <param name="minimax"></param>
+        /// <param name="deepai"></param>
+        /// <param name="pruna"></param>
+        /// <param name="google"></param>
+        /// <param name="amazon"></param>
+        /// <param name="ionos"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagegenerationResponseModel(
-            global::EdenAI.ImagegenerationGenerationDataClass? pruna,
-            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
-            global::EdenAI.ImagegenerationGenerationDataClass? leonardo,
-            global::EdenAI.ImagegenerationGenerationDataClass? amazon,
             global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
+            global::EdenAI.ImagegenerationGenerationDataClass? leonardo,
+            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
+            global::EdenAI.ImagegenerationGenerationDataClass? openai,
             global::EdenAI.ImagegenerationGenerationDataClass? replicate,
-            global::EdenAI.ImagegenerationGenerationDataClass? google,
-            global::EdenAI.ImagegenerationGenerationDataClass? ionos,
-            global::EdenAI.ImagegenerationGenerationDataClass? deepai,
             global::EdenAI.ImagegenerationGenerationDataClass? minimax,
-            global::EdenAI.ImagegenerationGenerationDataClass? openai)
+            global::EdenAI.ImagegenerationGenerationDataClass? deepai,
+            global::EdenAI.ImagegenerationGenerationDataClass? pruna,
+            global::EdenAI.ImagegenerationGenerationDataClass? google,
+            global::EdenAI.ImagegenerationGenerationDataClass? amazon,
+            global::EdenAI.ImagegenerationGenerationDataClass? ionos)
         {
-            this.Pruna = pruna;
-            this.Stabilityai = stabilityai;
-            this.Leonardo = leonardo;
-            this.Amazon = amazon;
             this.Bytedance = bytedance;
-            this.Replicate = replicate;
-            this.Google = google;
-            this.Ionos = ionos;
-            this.Deepai = deepai;
-            this.Minimax = minimax;
+            this.Leonardo = leonardo;
+            this.Stabilityai = stabilityai;
             this.Openai = openai;
+            this.Replicate = replicate;
+            this.Minimax = minimax;
+            this.Deepai = deepai;
+            this.Pruna = pruna;
+            this.Google = google;
+            this.Amazon = amazon;
+            this.Ionos = ionos;
         }
 
         /// <summary>
