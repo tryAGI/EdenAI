@@ -17,6 +17,12 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Amazon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("google")]
         public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Google { get; set; }
 
@@ -25,6 +31,12 @@ namespace EdenAI
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
+        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Sentisight { get; set; }
 
         /// <summary>
         ///
@@ -39,18 +51,6 @@ namespace EdenAI
         public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Openai { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sentisight")]
-        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Sentisight { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImageexplicitContentExplicitContentDataClass? Amazon { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -60,31 +60,31 @@ namespace EdenAI
         /// Initializes a new instance of the <see cref="ImageexplicitContentResponseModel" /> class.
         /// </summary>
         /// <param name="clarifai"></param>
+        /// <param name="amazon"></param>
         /// <param name="google"></param>
         /// <param name="microsoft"></param>
+        /// <param name="sentisight"></param>
         /// <param name="api4ai"></param>
         /// <param name="openai"></param>
-        /// <param name="sentisight"></param>
-        /// <param name="amazon"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageexplicitContentResponseModel(
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? clarifai,
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? amazon,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? google,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? microsoft,
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? api4ai,
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? openai,
             global::EdenAI.ImageexplicitContentExplicitContentDataClass? sentisight,
-            global::EdenAI.ImageexplicitContentExplicitContentDataClass? amazon)
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? api4ai,
+            global::EdenAI.ImageexplicitContentExplicitContentDataClass? openai)
         {
             this.Clarifai = clarifai;
+            this.Amazon = amazon;
             this.Google = google;
             this.Microsoft = microsoft;
+            this.Sentisight = sentisight;
             this.Api4ai = api4ai;
             this.Openai = openai;
-            this.Sentisight = sentisight;
-            this.Amazon = amazon;
         }
 
         /// <summary>
