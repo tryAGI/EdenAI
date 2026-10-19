@@ -11,26 +11,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emvista")]
         public global::EdenAI.TextanonymizationAnonymizationDataClass? Emvista { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Oneai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
-        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
 
         /// <summary>
         ///
@@ -51,6 +33,24 @@ namespace EdenAI
         public global::EdenAI.TextanonymizationAnonymizationDataClass? Amazon { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oneai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Oneai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Microsoft { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.TextanonymizationAnonymizationDataClass? Openai { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -59,32 +59,32 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextanonymizationResponseModel" /> class.
         /// </summary>
-        /// <param name="openai"></param>
         /// <param name="emvista"></param>
-        /// <param name="oneai"></param>
-        /// <param name="microsoft"></param>
         /// <param name="xai"></param>
         /// <param name="limina"></param>
         /// <param name="amazon"></param>
+        /// <param name="oneai"></param>
+        /// <param name="microsoft"></param>
+        /// <param name="openai"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextanonymizationResponseModel(
-            global::EdenAI.TextanonymizationAnonymizationDataClass? openai,
             global::EdenAI.TextanonymizationAnonymizationDataClass? emvista,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? oneai,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft,
             global::EdenAI.TextanonymizationAnonymizationDataClass? xai,
             global::EdenAI.TextanonymizationAnonymizationDataClass? limina,
-            global::EdenAI.TextanonymizationAnonymizationDataClass? amazon)
+            global::EdenAI.TextanonymizationAnonymizationDataClass? amazon,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? oneai,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? microsoft,
+            global::EdenAI.TextanonymizationAnonymizationDataClass? openai)
         {
-            this.Openai = openai;
             this.Emvista = emvista;
-            this.Oneai = oneai;
-            this.Microsoft = microsoft;
             this.Xai = xai;
             this.Limina = limina;
             this.Amazon = amazon;
+            this.Oneai = oneai;
+            this.Microsoft = microsoft;
+            this.Openai = openai;
         }
 
         /// <summary>
