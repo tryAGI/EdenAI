@@ -78,6 +78,13 @@ namespace EdenAI
         public global::System.DateTime? ExpireTime { get; set; }
 
         /// <summary>
+        /// Included only in responses
+        /// </summary>
+        /// <default>default!</default>
+        [global::System.Text.Json.Serialization.JsonPropertyName("created")]
+        public global::System.DateTime Created { get; set; } = default!;
+
+        /// <summary>
         /// The amount this token's balance is reset to at the start of each balance_reset_period. Null when balance_reset_period is 'none'.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("balance_reset_amount")]
@@ -173,6 +180,9 @@ namespace EdenAI
         /// <param name="revoked">
         /// Included only in responses
         /// </param>
+        /// <param name="created">
+        /// Included only in responses
+        /// </param>
         /// <param name="legacy">
         /// Included only in responses
         /// </param>
@@ -197,6 +207,7 @@ namespace EdenAI
             string label = default!,
             string masked = default!,
             bool revoked = default!,
+            global::System.DateTime created = default!,
             bool legacy = default!,
             bool synthesized = default!)
         {
@@ -210,6 +221,7 @@ namespace EdenAI
             this.Balance = balance;
             this.ActiveBalance = activeBalance;
             this.ExpireTime = expireTime;
+            this.Created = created;
             this.BalanceResetAmount = balanceResetAmount;
             this.BalanceResetPeriod = balanceResetPeriod;
             this.BudgetAlertPercent = budgetAlertPercent;
