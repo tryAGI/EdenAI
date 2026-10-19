@@ -23,38 +23,8 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Amazon { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Replicate { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Ionos { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Google { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Minimax { get; set; }
 
         /// <summary>
         ///
@@ -65,14 +35,44 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimax")]
-        public global::EdenAI.ImagegenerationGenerationDataClass? Minimax { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("openai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Openai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amazon")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Amazon { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pruna")]
         public global::EdenAI.ImagegenerationGenerationDataClass? Pruna { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stabilityai")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Stabilityai { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("replicate")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Replicate { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("google")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Google { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ionos")]
+        public global::EdenAI.ImagegenerationGenerationDataClass? Ionos { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -85,42 +85,42 @@ namespace EdenAI
         /// </summary>
         /// <param name="deepai"></param>
         /// <param name="leonardo"></param>
-        /// <param name="stabilityai"></param>
-        /// <param name="amazon"></param>
-        /// <param name="openai"></param>
-        /// <param name="replicate"></param>
-        /// <param name="ionos"></param>
-        /// <param name="google"></param>
-        /// <param name="bytedance"></param>
         /// <param name="minimax"></param>
+        /// <param name="bytedance"></param>
+        /// <param name="openai"></param>
+        /// <param name="amazon"></param>
         /// <param name="pruna"></param>
+        /// <param name="stabilityai"></param>
+        /// <param name="replicate"></param>
+        /// <param name="google"></param>
+        /// <param name="ionos"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImagegenerationResponseModel(
             global::EdenAI.ImagegenerationGenerationDataClass? deepai,
             global::EdenAI.ImagegenerationGenerationDataClass? leonardo,
-            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
-            global::EdenAI.ImagegenerationGenerationDataClass? amazon,
-            global::EdenAI.ImagegenerationGenerationDataClass? openai,
-            global::EdenAI.ImagegenerationGenerationDataClass? replicate,
-            global::EdenAI.ImagegenerationGenerationDataClass? ionos,
-            global::EdenAI.ImagegenerationGenerationDataClass? google,
-            global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
             global::EdenAI.ImagegenerationGenerationDataClass? minimax,
-            global::EdenAI.ImagegenerationGenerationDataClass? pruna)
+            global::EdenAI.ImagegenerationGenerationDataClass? bytedance,
+            global::EdenAI.ImagegenerationGenerationDataClass? openai,
+            global::EdenAI.ImagegenerationGenerationDataClass? amazon,
+            global::EdenAI.ImagegenerationGenerationDataClass? pruna,
+            global::EdenAI.ImagegenerationGenerationDataClass? stabilityai,
+            global::EdenAI.ImagegenerationGenerationDataClass? replicate,
+            global::EdenAI.ImagegenerationGenerationDataClass? google,
+            global::EdenAI.ImagegenerationGenerationDataClass? ionos)
         {
             this.Deepai = deepai;
             this.Leonardo = leonardo;
-            this.Stabilityai = stabilityai;
-            this.Amazon = amazon;
-            this.Openai = openai;
-            this.Replicate = replicate;
-            this.Ionos = ionos;
-            this.Google = google;
-            this.Bytedance = bytedance;
             this.Minimax = minimax;
+            this.Bytedance = bytedance;
+            this.Openai = openai;
+            this.Amazon = amazon;
             this.Pruna = pruna;
+            this.Stabilityai = stabilityai;
+            this.Replicate = replicate;
+            this.Google = google;
+            this.Ionos = ionos;
         }
 
         /// <summary>
