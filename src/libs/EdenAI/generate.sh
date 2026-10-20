@@ -1,3 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Preserve the committed positional constructor contract before fetching a spec
+# whose provider-property dictionaries may be emitted in a different order.
+baseline_spec="$(mktemp "${TMPDIR:-/tmp}/edenai-schema-baseline.XXXXXX")"
+trap 'rm -f "$baseline_spec"' EXIT
+git show HEAD:src/libs/EdenAI/openapi.json > "$baseline_spec"
+
 install_autosdk_cli() {
   dotnet tool update --global autosdk.cli --prerelease >/dev/null 2>&1 || \
     dotnet tool install --global autosdk.cli --prerelease
@@ -49,6 +58,8 @@ with open('openapi.json', 'w') as f:
     json.dump(spec, f)
 print('Spec cleaned and fixed.')
 "
+
+python3 ../../../scripts/preserve-schema-order.py "$baseline_spec" openapi.json
 
 autosdk generate openapi.json \
   --namespace EdenAI \
