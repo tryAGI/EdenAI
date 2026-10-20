@@ -198,6 +198,7 @@ namespace EdenAI
         /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x768`|0.014629 (per 1 image)|1 image<br/>
         /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|-|0.014629 (per 1 image)|1 image<br/>
         /// |**ovhcloud**|**stable-diffusion-xl-base-v10**|`v1`|-|free|-<br/>
+        /// |**infomaniak**|**flux**|`v1`|-|0.0056075 (per 1 exec_time)|1 exec_time<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -213,6 +214,7 @@ namespace EdenAI
         /// |**pruna**|`p-image`|<br/>
         /// |**ionos**|`black-forest-labs/FLUX.1-schnell`|<br/>
         /// |**ovhcloud**|`stable-diffusion-xl-base-v10`|<br/>
+        /// |**infomaniak**|`flux`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -391,6 +393,7 @@ namespace EdenAI
         /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x768`|0.014629 (per 1 image)|1 image<br/>
         /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|-|0.014629 (per 1 image)|1 image<br/>
         /// |**ovhcloud**|**stable-diffusion-xl-base-v10**|`v1`|-|free|-<br/>
+        /// |**infomaniak**|**flux**|`v1`|-|0.0056075 (per 1 exec_time)|1 exec_time<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -406,6 +409,7 @@ namespace EdenAI
         /// |**pruna**|`p-image`|<br/>
         /// |**ionos**|`black-forest-labs/FLUX.1-schnell`|<br/>
         /// |**ovhcloud**|`stable-diffusion-xl-base-v10`|<br/>
+        /// |**infomaniak**|`flux`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -1078,6 +1082,7 @@ namespace EdenAI
         /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|`768x768`|0.014629 (per 1 image)|1 image<br/>
         /// |**ionos**|**black-forest-labs/FLUX.2-klein-4B**|`v1`|-|0.014629 (per 1 image)|1 image<br/>
         /// |**ovhcloud**|**stable-diffusion-xl-base-v10**|`v1`|-|free|-<br/>
+        /// |**infomaniak**|**flux**|`v1`|-|0.0056075 (per 1 exec_time)|1 exec_time<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=image-generation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
@@ -1093,6 +1098,7 @@ namespace EdenAI
         /// |**pruna**|`p-image`|<br/>
         /// |**ionos**|`black-forest-labs/FLUX.1-schnell`|<br/>
         /// |**ovhcloud**|`stable-diffusion-xl-base-v10`|<br/>
+        /// |**infomaniak**|`flux`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
