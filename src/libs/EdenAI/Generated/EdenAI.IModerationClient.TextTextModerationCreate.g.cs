@@ -15,6 +15,8 @@ namespace EdenAI
         /// |**openai**|**text-moderation-007**|`v3.0.0`|0.0 (per 1 token)|1 token<br/>
         /// |**openai**|**text-moderation-latest**|`v3.0.0`|0.0 (per 1 token)|1 token<br/>
         /// |**google**|-|`v1`|5.0 (per 1000000 char)|100 char<br/>
+        /// |**ovhcloud**|**Qwen3Guard-Gen-8B**|`v1`|free|-<br/>
+        /// |**ovhcloud**|**Qwen3Guard-Gen-0.6B**|`v1`|free|-<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -25,42 +27,58 @@ namespace EdenAI
         /// |**Arabic**|`ar`|<br/>
         /// |**Armenian**|`hy`|<br/>
         /// |**Assamese**|`as`|<br/>
+        /// |**Asturian**|`ast`|<br/>
+        /// |**Awadhi**|`awa`|<br/>
         /// |**Azerbaijani**|`az`|<br/>
+        /// |**Balinese**|`ban`|<br/>
+        /// |**Banjar**|`bjn`|<br/>
+        /// |**Bashkir**|`ba`|<br/>
         /// |**Basque**|`eu`|<br/>
         /// |**Belarusian**|`be`|<br/>
         /// |**Bengali**|`bn`|<br/>
+        /// |**Bhojpuri**|`bho`|<br/>
         /// |**Bosnian**|`bs`|<br/>
         /// |**Breton**|`br`|<br/>
         /// |**Bulgarian**|`bg`|<br/>
+        /// |**Burmese**|`my`|<br/>
         /// |**Catalan**|`ca`|<br/>
+        /// |**Cebuano**|`ceb`|<br/>
         /// |**Central Kurdish**|`ckb`|<br/>
         /// |**Cherokee**|`chr`|<br/>
+        /// |**Chhattisgarhi**|`hne`|<br/>
         /// |**Chinese**|`zh`|<br/>
         /// |**Croatian**|`hr`|<br/>
         /// |**Czech**|`cs`|<br/>
         /// |**Danish**|`da`|<br/>
         /// |**Dutch**|`nl`|<br/>
+        /// |**Eastern Yiddish**|`ydd`|<br/>
         /// |**English**|`en`|<br/>
         /// |**Estonian**|`et`|<br/>
+        /// |**Faroese**|`fo`|<br/>
         /// |**Filipino**|`fil`|<br/>
         /// |**Finnish**|`fi`|<br/>
         /// |**French**|`fr`|<br/>
+        /// |**Friulian**|`fur`|<br/>
         /// |**Fulah**|`ff`|<br/>
         /// |**Galician**|`gl`|<br/>
         /// |**Georgian**|`ka`|<br/>
         /// |**German**|`de`|<br/>
         /// |**Gujarati**|`gu`|<br/>
+        /// |**Haitian**|`ht`|<br/>
         /// |**Hausa**|`ha`|<br/>
         /// |**Hebrew**|`he`|<br/>
         /// |**Hindi**|`hi`|<br/>
         /// |**Hungarian**|`hu`|<br/>
         /// |**Icelandic**|`is`|<br/>
         /// |**Igbo**|`ig`|<br/>
+        /// |**Iloko**|`ilo`|<br/>
         /// |**Indonesian**|`id`|<br/>
         /// |**Inuktitut**|`iu`|<br/>
         /// |**Irish**|`ga`|<br/>
         /// |**Italian**|`it`|<br/>
         /// |**Japanese**|`ja`|<br/>
+        /// |**Javanese**|`jv`|<br/>
+        /// |**Kabuverdianu**|`kea`|<br/>
         /// |**Kannada**|`kn`|<br/>
         /// |**Kazakh**|`kk`|<br/>
         /// |**Khmer**|`km`|<br/>
@@ -70,21 +88,33 @@ namespace EdenAI
         /// |**Korean**|`ko`|<br/>
         /// |**Lao**|`lo`|<br/>
         /// |**Latvian**|`lv`|<br/>
+        /// |**Ligurian**|`lij`|<br/>
+        /// |**Limburgan**|`li`|<br/>
         /// |**Lithuanian**|`lt`|<br/>
+        /// |**Lombard**|`lmo`|<br/>
         /// |**Luxembourgish**|`lb`|<br/>
         /// |**Macedonian**|`mk`|<br/>
+        /// |**Magahi**|`mag`|<br/>
+        /// |**Maithili**|`mai`|<br/>
         /// |**Malay (macrolanguage)**|`ms`|<br/>
         /// |**Malayalam**|`ml`|<br/>
         /// |**Maltese**|`mt`|<br/>
         /// |**Maori**|`mi`|<br/>
         /// |**Marathi**|`mr`|<br/>
+        /// |**Minangkabau**|`min`|<br/>
         /// |**Modern Greek (1453-)**|`el`|<br/>
         /// |**Mongolian**|`mn`|<br/>
         /// |**Nepali (macrolanguage)**|`ne`|<br/>
+        /// |**North Azerbaijani**|`azj`|<br/>
+        /// |**Northern Uzbek**|`uzn`|<br/>
+        /// |**Norwegian**|`no`|<br/>
         /// |**Norwegian Bokmål**|`nb`|<br/>
         /// |**Norwegian Nynorsk**|`nn`|<br/>
+        /// |**Occitan (post 1500)**|`oc`|<br/>
         /// |**Oriya (macrolanguage)**|`or`|<br/>
+        /// |**Pangasinan**|`pag`|<br/>
         /// |**Panjabi**|`pa`|<br/>
+        /// |**Papiamento**|`pap`|<br/>
         /// |**Pedi**|`nso`|<br/>
         /// |**Persian**|`fa`|<br/>
         /// |**Polish**|`pl`|<br/>
@@ -93,22 +123,29 @@ namespace EdenAI
         /// |**Quechua**|`qu`|<br/>
         /// |**Romanian**|`ro`|<br/>
         /// |**Russian**|`ru`|<br/>
+        /// |**Sardinian**|`sc`|<br/>
         /// |**Scottish Gaelic**|`gd`|<br/>
         /// |**Serbian**|`sr`|<br/>
+        /// |**Sicilian**|`scn`|<br/>
+        /// |**Silesian**|`szl`|<br/>
         /// |**Sindhi**|`sd`|<br/>
         /// |**Sinhala**|`si`|<br/>
         /// |**Slovak**|`sk`|<br/>
         /// |**Slovenian**|`sl`|<br/>
         /// |**Southern Sotho**|`st`|<br/>
         /// |**Spanish**|`es`|<br/>
+        /// |**Sundanese**|`su`|<br/>
         /// |**Swahili (macrolanguage)**|`sw`|<br/>
         /// |**Swedish**|`sv`|<br/>
+        /// |**Tagalog**|`tl`|<br/>
         /// |**Tajik**|`tg`|<br/>
         /// |**Tamil**|`ta`|<br/>
         /// |**Tatar**|`tt`|<br/>
         /// |**Telugu**|`te`|<br/>
         /// |**Thai**|`th`|<br/>
         /// |**Tigrinya**|`ti`|<br/>
+        /// |**Tok Pisin**|`tpi`|<br/>
+        /// |**Tosk Albanian**|`als`|<br/>
         /// |**Tswana**|`tn`|<br/>
         /// |**Turkish**|`tr`|<br/>
         /// |**Turkmen**|`tk`|<br/>
@@ -116,7 +153,9 @@ namespace EdenAI
         /// |**Ukrainian**|`uk`|<br/>
         /// |**Urdu**|`ur`|<br/>
         /// |**Uzbek**|`uz`|<br/>
+        /// |**Venetian**|`vec`|<br/>
         /// |**Vietnamese**|`vi`|<br/>
+        /// |**Waray (Philippines)**|`war`|<br/>
         /// |**Welsh**|`cy`|<br/>
         /// |**Wolof**|`wo`|<br/>
         /// |**Xhosa**|`xh`|<br/>
@@ -126,7 +165,12 @@ namespace EdenAI
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
         /// |**Auto detection**|`auto-detect`|<br/>
-        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=text-moderation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=text-moderation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**ovhcloud**|`Qwen3Guard-Gen-8B`|<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -148,6 +192,8 @@ namespace EdenAI
         /// |**openai**|**text-moderation-007**|`v3.0.0`|0.0 (per 1 token)|1 token<br/>
         /// |**openai**|**text-moderation-latest**|`v3.0.0`|0.0 (per 1 token)|1 token<br/>
         /// |**google**|-|`v1`|5.0 (per 1000000 char)|100 char<br/>
+        /// |**ovhcloud**|**Qwen3Guard-Gen-8B**|`v1`|free|-<br/>
+        /// |**ovhcloud**|**Qwen3Guard-Gen-0.6B**|`v1`|free|-<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -158,42 +204,58 @@ namespace EdenAI
         /// |**Arabic**|`ar`|<br/>
         /// |**Armenian**|`hy`|<br/>
         /// |**Assamese**|`as`|<br/>
+        /// |**Asturian**|`ast`|<br/>
+        /// |**Awadhi**|`awa`|<br/>
         /// |**Azerbaijani**|`az`|<br/>
+        /// |**Balinese**|`ban`|<br/>
+        /// |**Banjar**|`bjn`|<br/>
+        /// |**Bashkir**|`ba`|<br/>
         /// |**Basque**|`eu`|<br/>
         /// |**Belarusian**|`be`|<br/>
         /// |**Bengali**|`bn`|<br/>
+        /// |**Bhojpuri**|`bho`|<br/>
         /// |**Bosnian**|`bs`|<br/>
         /// |**Breton**|`br`|<br/>
         /// |**Bulgarian**|`bg`|<br/>
+        /// |**Burmese**|`my`|<br/>
         /// |**Catalan**|`ca`|<br/>
+        /// |**Cebuano**|`ceb`|<br/>
         /// |**Central Kurdish**|`ckb`|<br/>
         /// |**Cherokee**|`chr`|<br/>
+        /// |**Chhattisgarhi**|`hne`|<br/>
         /// |**Chinese**|`zh`|<br/>
         /// |**Croatian**|`hr`|<br/>
         /// |**Czech**|`cs`|<br/>
         /// |**Danish**|`da`|<br/>
         /// |**Dutch**|`nl`|<br/>
+        /// |**Eastern Yiddish**|`ydd`|<br/>
         /// |**English**|`en`|<br/>
         /// |**Estonian**|`et`|<br/>
+        /// |**Faroese**|`fo`|<br/>
         /// |**Filipino**|`fil`|<br/>
         /// |**Finnish**|`fi`|<br/>
         /// |**French**|`fr`|<br/>
+        /// |**Friulian**|`fur`|<br/>
         /// |**Fulah**|`ff`|<br/>
         /// |**Galician**|`gl`|<br/>
         /// |**Georgian**|`ka`|<br/>
         /// |**German**|`de`|<br/>
         /// |**Gujarati**|`gu`|<br/>
+        /// |**Haitian**|`ht`|<br/>
         /// |**Hausa**|`ha`|<br/>
         /// |**Hebrew**|`he`|<br/>
         /// |**Hindi**|`hi`|<br/>
         /// |**Hungarian**|`hu`|<br/>
         /// |**Icelandic**|`is`|<br/>
         /// |**Igbo**|`ig`|<br/>
+        /// |**Iloko**|`ilo`|<br/>
         /// |**Indonesian**|`id`|<br/>
         /// |**Inuktitut**|`iu`|<br/>
         /// |**Irish**|`ga`|<br/>
         /// |**Italian**|`it`|<br/>
         /// |**Japanese**|`ja`|<br/>
+        /// |**Javanese**|`jv`|<br/>
+        /// |**Kabuverdianu**|`kea`|<br/>
         /// |**Kannada**|`kn`|<br/>
         /// |**Kazakh**|`kk`|<br/>
         /// |**Khmer**|`km`|<br/>
@@ -203,21 +265,33 @@ namespace EdenAI
         /// |**Korean**|`ko`|<br/>
         /// |**Lao**|`lo`|<br/>
         /// |**Latvian**|`lv`|<br/>
+        /// |**Ligurian**|`lij`|<br/>
+        /// |**Limburgan**|`li`|<br/>
         /// |**Lithuanian**|`lt`|<br/>
+        /// |**Lombard**|`lmo`|<br/>
         /// |**Luxembourgish**|`lb`|<br/>
         /// |**Macedonian**|`mk`|<br/>
+        /// |**Magahi**|`mag`|<br/>
+        /// |**Maithili**|`mai`|<br/>
         /// |**Malay (macrolanguage)**|`ms`|<br/>
         /// |**Malayalam**|`ml`|<br/>
         /// |**Maltese**|`mt`|<br/>
         /// |**Maori**|`mi`|<br/>
         /// |**Marathi**|`mr`|<br/>
+        /// |**Minangkabau**|`min`|<br/>
         /// |**Modern Greek (1453-)**|`el`|<br/>
         /// |**Mongolian**|`mn`|<br/>
         /// |**Nepali (macrolanguage)**|`ne`|<br/>
+        /// |**North Azerbaijani**|`azj`|<br/>
+        /// |**Northern Uzbek**|`uzn`|<br/>
+        /// |**Norwegian**|`no`|<br/>
         /// |**Norwegian Bokmål**|`nb`|<br/>
         /// |**Norwegian Nynorsk**|`nn`|<br/>
+        /// |**Occitan (post 1500)**|`oc`|<br/>
         /// |**Oriya (macrolanguage)**|`or`|<br/>
+        /// |**Pangasinan**|`pag`|<br/>
         /// |**Panjabi**|`pa`|<br/>
+        /// |**Papiamento**|`pap`|<br/>
         /// |**Pedi**|`nso`|<br/>
         /// |**Persian**|`fa`|<br/>
         /// |**Polish**|`pl`|<br/>
@@ -226,22 +300,29 @@ namespace EdenAI
         /// |**Quechua**|`qu`|<br/>
         /// |**Romanian**|`ro`|<br/>
         /// |**Russian**|`ru`|<br/>
+        /// |**Sardinian**|`sc`|<br/>
         /// |**Scottish Gaelic**|`gd`|<br/>
         /// |**Serbian**|`sr`|<br/>
+        /// |**Sicilian**|`scn`|<br/>
+        /// |**Silesian**|`szl`|<br/>
         /// |**Sindhi**|`sd`|<br/>
         /// |**Sinhala**|`si`|<br/>
         /// |**Slovak**|`sk`|<br/>
         /// |**Slovenian**|`sl`|<br/>
         /// |**Southern Sotho**|`st`|<br/>
         /// |**Spanish**|`es`|<br/>
+        /// |**Sundanese**|`su`|<br/>
         /// |**Swahili (macrolanguage)**|`sw`|<br/>
         /// |**Swedish**|`sv`|<br/>
+        /// |**Tagalog**|`tl`|<br/>
         /// |**Tajik**|`tg`|<br/>
         /// |**Tamil**|`ta`|<br/>
         /// |**Tatar**|`tt`|<br/>
         /// |**Telugu**|`te`|<br/>
         /// |**Thai**|`th`|<br/>
         /// |**Tigrinya**|`ti`|<br/>
+        /// |**Tok Pisin**|`tpi`|<br/>
+        /// |**Tosk Albanian**|`als`|<br/>
         /// |**Tswana**|`tn`|<br/>
         /// |**Turkish**|`tr`|<br/>
         /// |**Turkmen**|`tk`|<br/>
@@ -249,7 +330,9 @@ namespace EdenAI
         /// |**Ukrainian**|`uk`|<br/>
         /// |**Urdu**|`ur`|<br/>
         /// |**Uzbek**|`uz`|<br/>
+        /// |**Venetian**|`vec`|<br/>
         /// |**Vietnamese**|`vi`|<br/>
+        /// |**Waray (Philippines)**|`war`|<br/>
         /// |**Welsh**|`cy`|<br/>
         /// |**Wolof**|`wo`|<br/>
         /// |**Xhosa**|`xh`|<br/>
@@ -259,7 +342,12 @@ namespace EdenAI
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
         /// |**Auto detection**|`auto-detect`|<br/>
-        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=text-moderation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=text-moderation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**ovhcloud**|`Qwen3Guard-Gen-8B`|<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -281,6 +369,8 @@ namespace EdenAI
         /// |**openai**|**text-moderation-007**|`v3.0.0`|0.0 (per 1 token)|1 token<br/>
         /// |**openai**|**text-moderation-latest**|`v3.0.0`|0.0 (per 1 token)|1 token<br/>
         /// |**google**|-|`v1`|5.0 (per 1000000 char)|100 char<br/>
+        /// |**ovhcloud**|**Qwen3Guard-Gen-8B**|`v1`|free|-<br/>
+        /// |**ovhcloud**|**Qwen3Guard-Gen-0.6B**|`v1`|free|-<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -291,42 +381,58 @@ namespace EdenAI
         /// |**Arabic**|`ar`|<br/>
         /// |**Armenian**|`hy`|<br/>
         /// |**Assamese**|`as`|<br/>
+        /// |**Asturian**|`ast`|<br/>
+        /// |**Awadhi**|`awa`|<br/>
         /// |**Azerbaijani**|`az`|<br/>
+        /// |**Balinese**|`ban`|<br/>
+        /// |**Banjar**|`bjn`|<br/>
+        /// |**Bashkir**|`ba`|<br/>
         /// |**Basque**|`eu`|<br/>
         /// |**Belarusian**|`be`|<br/>
         /// |**Bengali**|`bn`|<br/>
+        /// |**Bhojpuri**|`bho`|<br/>
         /// |**Bosnian**|`bs`|<br/>
         /// |**Breton**|`br`|<br/>
         /// |**Bulgarian**|`bg`|<br/>
+        /// |**Burmese**|`my`|<br/>
         /// |**Catalan**|`ca`|<br/>
+        /// |**Cebuano**|`ceb`|<br/>
         /// |**Central Kurdish**|`ckb`|<br/>
         /// |**Cherokee**|`chr`|<br/>
+        /// |**Chhattisgarhi**|`hne`|<br/>
         /// |**Chinese**|`zh`|<br/>
         /// |**Croatian**|`hr`|<br/>
         /// |**Czech**|`cs`|<br/>
         /// |**Danish**|`da`|<br/>
         /// |**Dutch**|`nl`|<br/>
+        /// |**Eastern Yiddish**|`ydd`|<br/>
         /// |**English**|`en`|<br/>
         /// |**Estonian**|`et`|<br/>
+        /// |**Faroese**|`fo`|<br/>
         /// |**Filipino**|`fil`|<br/>
         /// |**Finnish**|`fi`|<br/>
         /// |**French**|`fr`|<br/>
+        /// |**Friulian**|`fur`|<br/>
         /// |**Fulah**|`ff`|<br/>
         /// |**Galician**|`gl`|<br/>
         /// |**Georgian**|`ka`|<br/>
         /// |**German**|`de`|<br/>
         /// |**Gujarati**|`gu`|<br/>
+        /// |**Haitian**|`ht`|<br/>
         /// |**Hausa**|`ha`|<br/>
         /// |**Hebrew**|`he`|<br/>
         /// |**Hindi**|`hi`|<br/>
         /// |**Hungarian**|`hu`|<br/>
         /// |**Icelandic**|`is`|<br/>
         /// |**Igbo**|`ig`|<br/>
+        /// |**Iloko**|`ilo`|<br/>
         /// |**Indonesian**|`id`|<br/>
         /// |**Inuktitut**|`iu`|<br/>
         /// |**Irish**|`ga`|<br/>
         /// |**Italian**|`it`|<br/>
         /// |**Japanese**|`ja`|<br/>
+        /// |**Javanese**|`jv`|<br/>
+        /// |**Kabuverdianu**|`kea`|<br/>
         /// |**Kannada**|`kn`|<br/>
         /// |**Kazakh**|`kk`|<br/>
         /// |**Khmer**|`km`|<br/>
@@ -336,21 +442,33 @@ namespace EdenAI
         /// |**Korean**|`ko`|<br/>
         /// |**Lao**|`lo`|<br/>
         /// |**Latvian**|`lv`|<br/>
+        /// |**Ligurian**|`lij`|<br/>
+        /// |**Limburgan**|`li`|<br/>
         /// |**Lithuanian**|`lt`|<br/>
+        /// |**Lombard**|`lmo`|<br/>
         /// |**Luxembourgish**|`lb`|<br/>
         /// |**Macedonian**|`mk`|<br/>
+        /// |**Magahi**|`mag`|<br/>
+        /// |**Maithili**|`mai`|<br/>
         /// |**Malay (macrolanguage)**|`ms`|<br/>
         /// |**Malayalam**|`ml`|<br/>
         /// |**Maltese**|`mt`|<br/>
         /// |**Maori**|`mi`|<br/>
         /// |**Marathi**|`mr`|<br/>
+        /// |**Minangkabau**|`min`|<br/>
         /// |**Modern Greek (1453-)**|`el`|<br/>
         /// |**Mongolian**|`mn`|<br/>
         /// |**Nepali (macrolanguage)**|`ne`|<br/>
+        /// |**North Azerbaijani**|`azj`|<br/>
+        /// |**Northern Uzbek**|`uzn`|<br/>
+        /// |**Norwegian**|`no`|<br/>
         /// |**Norwegian Bokmål**|`nb`|<br/>
         /// |**Norwegian Nynorsk**|`nn`|<br/>
+        /// |**Occitan (post 1500)**|`oc`|<br/>
         /// |**Oriya (macrolanguage)**|`or`|<br/>
+        /// |**Pangasinan**|`pag`|<br/>
         /// |**Panjabi**|`pa`|<br/>
+        /// |**Papiamento**|`pap`|<br/>
         /// |**Pedi**|`nso`|<br/>
         /// |**Persian**|`fa`|<br/>
         /// |**Polish**|`pl`|<br/>
@@ -359,22 +477,29 @@ namespace EdenAI
         /// |**Quechua**|`qu`|<br/>
         /// |**Romanian**|`ro`|<br/>
         /// |**Russian**|`ru`|<br/>
+        /// |**Sardinian**|`sc`|<br/>
         /// |**Scottish Gaelic**|`gd`|<br/>
         /// |**Serbian**|`sr`|<br/>
+        /// |**Sicilian**|`scn`|<br/>
+        /// |**Silesian**|`szl`|<br/>
         /// |**Sindhi**|`sd`|<br/>
         /// |**Sinhala**|`si`|<br/>
         /// |**Slovak**|`sk`|<br/>
         /// |**Slovenian**|`sl`|<br/>
         /// |**Southern Sotho**|`st`|<br/>
         /// |**Spanish**|`es`|<br/>
+        /// |**Sundanese**|`su`|<br/>
         /// |**Swahili (macrolanguage)**|`sw`|<br/>
         /// |**Swedish**|`sv`|<br/>
+        /// |**Tagalog**|`tl`|<br/>
         /// |**Tajik**|`tg`|<br/>
         /// |**Tamil**|`ta`|<br/>
         /// |**Tatar**|`tt`|<br/>
         /// |**Telugu**|`te`|<br/>
         /// |**Thai**|`th`|<br/>
         /// |**Tigrinya**|`ti`|<br/>
+        /// |**Tok Pisin**|`tpi`|<br/>
+        /// |**Tosk Albanian**|`als`|<br/>
         /// |**Tswana**|`tn`|<br/>
         /// |**Turkish**|`tr`|<br/>
         /// |**Turkmen**|`tk`|<br/>
@@ -382,7 +507,9 @@ namespace EdenAI
         /// |**Ukrainian**|`uk`|<br/>
         /// |**Urdu**|`ur`|<br/>
         /// |**Uzbek**|`uz`|<br/>
+        /// |**Venetian**|`vec`|<br/>
         /// |**Vietnamese**|`vi`|<br/>
+        /// |**Waray (Philippines)**|`war`|<br/>
         /// |**Welsh**|`cy`|<br/>
         /// |**Wolof**|`wo`|<br/>
         /// |**Xhosa**|`xh`|<br/>
@@ -392,7 +519,12 @@ namespace EdenAI
         /// |Name|Value|<br/>
         /// |----|-----|<br/>
         /// |**Auto detection**|`auto-detect`|<br/>
-        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=text-moderation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
+        /// &lt;/details&gt;&lt;a href='https://old-app.edenai.run/v2/models?technology=text-moderation' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;<br/>
+        /// &lt;details&gt;&lt;summary&gt;Default Models&lt;/summary&gt;<br/>
+        /// |Name|Value|<br/>
+        /// |----|-----|<br/>
+        /// |**ovhcloud**|`Qwen3Guard-Gen-8B`|<br/>
+        /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
         /// A dictionnary or a json object to specify specific models to use for some providers.                      It can be in the following format: {"google" : "google_model", "ibm": "ibm_model"...}.<br/>

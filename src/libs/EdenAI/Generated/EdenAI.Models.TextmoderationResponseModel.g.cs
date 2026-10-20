@@ -11,6 +11,12 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ovhcloud")]
+        public global::EdenAI.TextmoderationModerationDataClass? Ovhcloud { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microsoft")]
         public global::EdenAI.TextmoderationModerationDataClass? Microsoft { get; set; }
 
@@ -35,6 +41,7 @@ namespace EdenAI
         /// <summary>
         /// Initializes a new instance of the <see cref="TextmoderationResponseModel" /> class.
         /// </summary>
+        /// <param name="ovhcloud"></param>
         /// <param name="microsoft"></param>
         /// <param name="google"></param>
         /// <param name="openai"></param>
@@ -42,10 +49,12 @@ namespace EdenAI
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TextmoderationResponseModel(
+            global::EdenAI.TextmoderationModerationDataClass? ovhcloud,
             global::EdenAI.TextmoderationModerationDataClass? microsoft,
             global::EdenAI.TextmoderationModerationDataClass? google,
             global::EdenAI.TextmoderationModerationDataClass? openai)
         {
+            this.Ovhcloud = ovhcloud;
             this.Microsoft = microsoft;
             this.Google = google;
             this.Openai = openai;
