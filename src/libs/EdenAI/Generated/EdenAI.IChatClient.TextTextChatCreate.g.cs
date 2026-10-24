@@ -152,10 +152,6 @@ namespace EdenAI
         /// |**cohere**|**command-light-nightly**|`2022-12-06`|0.6 (per 1000000 token)|1 token<br/>
         /// |**cohere**|**command-r**|`2022-12-06`|1.5 (per 1000000 token)|1 token<br/>
         /// |**cohere**|**command-r7b-12-2024**|`2022-12-06`|0.15 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-405b-instruct-v1:0**|`boto3 (v1.35.84)`|2.4 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-70b-instruct-v1:0**|`boto3 (v1.35.84)`|0.72 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-8b-instruct-v1:0**|`boto3 (v1.35.84)`|0.22 (per 1000000 token)|1 token<br/>
-        /// |**meta**|-|`boto3 (v1.35.84)`|0.15 (per 1000000 token)|1 token<br/>
         /// |**mistral**|-|`v0.0.1`|6.0 (per 1000000 token)|1 token<br/>
         /// |**mistral**|**pixtral-large-latest**|`v0.0.1`|6e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**mistral-saba-latest**|`v0.0.1`|0.6 (per 1000000 token)|1 token<br/>
@@ -334,7 +330,6 @@ namespace EdenAI
         /// |**openai**|`gpt-4o`|<br/>
         /// |**google**|`gemini-2.5-flash`|<br/>
         /// |**cohere**|`command`|<br/>
-        /// |**meta**|`llama3-1-8b-instruct-v1:0`|<br/>
         /// |**mistral**|`mistral-large-latest`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**anthropic**|`claude-3-5-sonnet-latest`|<br/>
@@ -503,10 +498,6 @@ namespace EdenAI
         /// |**cohere**|**command-light-nightly**|`2022-12-06`|0.6 (per 1000000 token)|1 token<br/>
         /// |**cohere**|**command-r**|`2022-12-06`|1.5 (per 1000000 token)|1 token<br/>
         /// |**cohere**|**command-r7b-12-2024**|`2022-12-06`|0.15 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-405b-instruct-v1:0**|`boto3 (v1.35.84)`|2.4 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-70b-instruct-v1:0**|`boto3 (v1.35.84)`|0.72 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-8b-instruct-v1:0**|`boto3 (v1.35.84)`|0.22 (per 1000000 token)|1 token<br/>
-        /// |**meta**|-|`boto3 (v1.35.84)`|0.15 (per 1000000 token)|1 token<br/>
         /// |**mistral**|-|`v0.0.1`|6.0 (per 1000000 token)|1 token<br/>
         /// |**mistral**|**pixtral-large-latest**|`v0.0.1`|6e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**mistral-saba-latest**|`v0.0.1`|0.6 (per 1000000 token)|1 token<br/>
@@ -685,7 +676,6 @@ namespace EdenAI
         /// |**openai**|`gpt-4o`|<br/>
         /// |**google**|`gemini-2.5-flash`|<br/>
         /// |**cohere**|`command`|<br/>
-        /// |**meta**|`llama3-1-8b-instruct-v1:0`|<br/>
         /// |**mistral**|`mistral-large-latest`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**anthropic**|`claude-3-5-sonnet-latest`|<br/>
@@ -854,10 +844,6 @@ namespace EdenAI
         /// |**cohere**|**command-light-nightly**|`2022-12-06`|0.6 (per 1000000 token)|1 token<br/>
         /// |**cohere**|**command-r**|`2022-12-06`|1.5 (per 1000000 token)|1 token<br/>
         /// |**cohere**|**command-r7b-12-2024**|`2022-12-06`|0.15 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-405b-instruct-v1:0**|`boto3 (v1.35.84)`|2.4 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-70b-instruct-v1:0**|`boto3 (v1.35.84)`|0.72 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**llama3-1-8b-instruct-v1:0**|`boto3 (v1.35.84)`|0.22 (per 1000000 token)|1 token<br/>
-        /// |**meta**|-|`boto3 (v1.35.84)`|0.15 (per 1000000 token)|1 token<br/>
         /// |**mistral**|-|`v0.0.1`|6.0 (per 1000000 token)|1 token<br/>
         /// |**mistral**|**pixtral-large-latest**|`v0.0.1`|6e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**mistral-saba-latest**|`v0.0.1`|0.6 (per 1000000 token)|1 token<br/>
@@ -1036,7 +1022,6 @@ namespace EdenAI
         /// |**openai**|`gpt-4o`|<br/>
         /// |**google**|`gemini-2.5-flash`|<br/>
         /// |**cohere**|`command`|<br/>
-        /// |**meta**|`llama3-1-8b-instruct-v1:0`|<br/>
         /// |**mistral**|`mistral-large-latest`|<br/>
         /// |**perplexityai**|`sonar`|<br/>
         /// |**anthropic**|`claude-3-5-sonnet-latest`|<br/>

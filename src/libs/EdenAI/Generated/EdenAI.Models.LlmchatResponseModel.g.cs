@@ -291,6 +291,18 @@ namespace EdenAI
         public global::EdenAI.LlmchatChatDataClass? Xai { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("arkanecloud")]
+        public global::EdenAI.LlmchatChatDataClass? Arkanecloud { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sference")]
+        public global::EdenAI.LlmchatChatDataClass? Sference { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -346,6 +358,8 @@ namespace EdenAI
         /// <param name="tonomia"></param>
         /// <param name="google"></param>
         /// <param name="xai"></param>
+        /// <param name="arkanecloud"></param>
+        /// <param name="sference"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -396,7 +410,9 @@ namespace EdenAI
             global::EdenAI.LlmchatChatDataClass? greenference,
             global::EdenAI.LlmchatChatDataClass? tonomia,
             global::EdenAI.LlmchatChatDataClass? google,
-            global::EdenAI.LlmchatChatDataClass? xai)
+            global::EdenAI.LlmchatChatDataClass? xai,
+            global::EdenAI.LlmchatChatDataClass? arkanecloud,
+            global::EdenAI.LlmchatChatDataClass? sference)
         {
             this.Lilac = lilac;
             this.Flexai = flexai;
@@ -445,6 +461,8 @@ namespace EdenAI
             this.Tonomia = tonomia;
             this.Google = google;
             this.Xai = xai;
+            this.Arkanecloud = arkanecloud;
+            this.Sference = sference;
         }
 
         /// <summary>
