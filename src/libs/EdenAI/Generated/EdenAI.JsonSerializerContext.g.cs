@@ -13,6 +13,7 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.AIProject))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
@@ -508,7 +509,6 @@ namespace EdenAI
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextmoderationResponseModel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextnamedEntityRecognitionNamedEntityRecognitionDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.InfosNamedEntityRecognitionDataClass>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextnamedEntityRecognitionResponseModel))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -520,6 +520,7 @@ namespace EdenAI
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsyntaxAnalysistextsentimentAnalysisTextAnalysisRequest), TypeInfoPropertyName = "TexttopicExtractiontextanonymizationtextmoderationtextnamedEntityRecognitiontextkeywordExtractiontextsy_2d9618c64ac15db3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextnamedEntityRecognitionResponseModel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionDataClass))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::EdenAI.PlagiaDetectionItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::EdenAI.TextplagiaDetectionPlagiaDetectionRequest))]

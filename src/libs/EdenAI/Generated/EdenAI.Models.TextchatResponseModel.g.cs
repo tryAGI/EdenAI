@@ -41,12 +41,6 @@ namespace EdenAI
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
-        public global::EdenAI.TextchatChatDataClass? Meta { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cohere")]
         public global::EdenAI.TextchatChatDataClass? Cohere { get; set; }
 
@@ -106,7 +100,6 @@ namespace EdenAI
         /// <param name="anthropic"></param>
         /// <param name="replicate"></param>
         /// <param name="perplexityai"></param>
-        /// <param name="meta"></param>
         /// <param name="cohere"></param>
         /// <param name="microsoft"></param>
         /// <param name="mistral"></param>
@@ -124,7 +117,6 @@ namespace EdenAI
             global::EdenAI.TextchatChatDataClass? anthropic,
             global::EdenAI.TextchatChatDataClass? replicate,
             global::EdenAI.TextchatChatDataClass? perplexityai,
-            global::EdenAI.TextchatChatDataClass? meta,
             global::EdenAI.TextchatChatDataClass? cohere,
             global::EdenAI.TextchatChatDataClass? microsoft,
             global::EdenAI.TextchatChatDataClass? mistral,
@@ -139,7 +131,6 @@ namespace EdenAI
             this.Anthropic = anthropic;
             this.Replicate = replicate;
             this.Perplexityai = perplexityai;
-            this.Meta = meta;
             this.Cohere = cohere;
             this.Microsoft = microsoft;
             this.Mistral = mistral;

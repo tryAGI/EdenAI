@@ -71,6 +71,12 @@ namespace EdenAI
         public object? DefaultTags { get; set; }
 
         /// <summary>
+        /// Name of a routing policy to apply to every call made with this key (one of the key owner's own, or one of the organization's), or null for none.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default_policy")]
+        public string? DefaultPolicy { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -109,6 +115,9 @@ namespace EdenAI
         /// <param name="defaultTags">
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </param>
+        /// <param name="defaultPolicy">
+        /// Name of a routing policy to apply to every call made with this key (one of the key owner's own, or one of the organization's), or null for none.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -121,7 +130,8 @@ namespace EdenAI
             string? balanceResetAmount,
             global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod,
             int? budgetAlertPercent,
-            object? defaultTags)
+            object? defaultTags,
+            string? defaultPolicy)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.TokenType = tokenType;
@@ -132,6 +142,7 @@ namespace EdenAI
             this.BalanceResetPeriod = balanceResetPeriod;
             this.BudgetAlertPercent = budgetAlertPercent;
             this.DefaultTags = defaultTags;
+            this.DefaultPolicy = defaultPolicy;
         }
 
         /// <summary>

@@ -72,9 +72,6 @@ namespace EdenAI
         /// |**deepseek**|**deepseek-chat**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
         /// |**deepseek**|**deepseek-reasoner**|`llmengine (v2)`|2.19e-06 (per 1 token)|1 token<br/>
         /// |**deepseek**|**deepseek-coder**|`llmengine (v2)`|2.8e-07 (per 1 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-405b-instruct-v1:0**|`llmengine (v2)`|2.4 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-70b-instruct-v1:0**|`llmengine (v2)`|0.72 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-8b-instruct-v1:0**|`llmengine (v2)`|0.22 (per 1000000 token)|1 token<br/>
         /// |**mistral**|**magistral-medium-2506**|`llmengine (v2)`|5e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**magistral-small-2506**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**mistral-medium-latest**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
@@ -432,7 +429,6 @@ namespace EdenAI
         /// |**anthropic**|`claude-3-7-sonnet-latest`|<br/>
         /// |**cohere**|`command-r`|<br/>
         /// |**deepseek**|`deepseek-chat`|<br/>
-        /// |**meta**|`meta.llama3-1-70b-instruct-v1:0`|<br/>
         /// |**mistral**|`mistral-large-latest`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// |**together_ai**|`Qwen/Qwen2.5-72B-Instruct-Turbo`|<br/>
@@ -497,9 +493,6 @@ namespace EdenAI
         /// |**deepseek**|**deepseek-chat**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
         /// |**deepseek**|**deepseek-reasoner**|`llmengine (v2)`|2.19e-06 (per 1 token)|1 token<br/>
         /// |**deepseek**|**deepseek-coder**|`llmengine (v2)`|2.8e-07 (per 1 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-405b-instruct-v1:0**|`llmengine (v2)`|2.4 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-70b-instruct-v1:0**|`llmengine (v2)`|0.72 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-8b-instruct-v1:0**|`llmengine (v2)`|0.22 (per 1000000 token)|1 token<br/>
         /// |**mistral**|**magistral-medium-2506**|`llmengine (v2)`|5e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**magistral-small-2506**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**mistral-medium-latest**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
@@ -857,7 +850,6 @@ namespace EdenAI
         /// |**anthropic**|`claude-3-7-sonnet-latest`|<br/>
         /// |**cohere**|`command-r`|<br/>
         /// |**deepseek**|`deepseek-chat`|<br/>
-        /// |**meta**|`meta.llama3-1-70b-instruct-v1:0`|<br/>
         /// |**mistral**|`mistral-large-latest`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// |**together_ai**|`Qwen/Qwen2.5-72B-Instruct-Turbo`|<br/>
@@ -1416,9 +1408,6 @@ namespace EdenAI
         /// |**deepseek**|**deepseek-chat**|`llmengine (v2)`|1.1e-06 (per 1 token)|1 token<br/>
         /// |**deepseek**|**deepseek-reasoner**|`llmengine (v2)`|2.19e-06 (per 1 token)|1 token<br/>
         /// |**deepseek**|**deepseek-coder**|`llmengine (v2)`|2.8e-07 (per 1 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-405b-instruct-v1:0**|`llmengine (v2)`|2.4 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-70b-instruct-v1:0**|`llmengine (v2)`|0.72 (per 1000000 token)|1 token<br/>
-        /// |**meta**|**meta.llama3-1-8b-instruct-v1:0**|`llmengine (v2)`|0.22 (per 1000000 token)|1 token<br/>
         /// |**mistral**|**magistral-medium-2506**|`llmengine (v2)`|5e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**magistral-small-2506**|`llmengine (v2)`|1.5e-06 (per 1 token)|1 token<br/>
         /// |**mistral**|**mistral-medium-latest**|`llmengine (v2)`|2e-06 (per 1 token)|1 token<br/>
@@ -1776,7 +1765,6 @@ namespace EdenAI
         /// |**anthropic**|`claude-3-7-sonnet-latest`|<br/>
         /// |**cohere**|`command-r`|<br/>
         /// |**deepseek**|`deepseek-chat`|<br/>
-        /// |**meta**|`meta.llama3-1-70b-instruct-v1:0`|<br/>
         /// |**mistral**|`mistral-large-latest`|<br/>
         /// |**openai**|`gpt-4o`|<br/>
         /// |**together_ai**|`Qwen/Qwen2.5-72B-Instruct-Turbo`|<br/>
