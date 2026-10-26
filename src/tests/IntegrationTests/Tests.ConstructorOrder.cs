@@ -10,10 +10,23 @@ public partial class Tests
     {
         // Every provider uses the same CLR parameter type: reordering silently
         // changes positional calls, even when a binary API comparison is clean.
-        var parameters = modelType.GetConstructors()
-            .Single(constructor => constructor.GetParameters().Length > 0)
-            .GetParameters().Select(parameter => parameter.Name).ToArray();
         var expected = legacyOrder.Split(',');
+        var parameters = modelType.GetConstructors()
+            .Single(constructor => constructor.GetParameters().Length >= expected.Length)
+            .GetParameters().Select(parameter => parameter.Name).ToArray();
         parameters.Take(expected.Length).Should().Equal(expected);
+    }
+    [TestMethod]
+    public void LegacyMetaProviderRoundTripsWithGeneratedSerializer()
+    {
+        var response = new TextchatResponseModel(null, null, null, null, null,
+            new TextchatChatDataClass { GeneratedText = "legacy", Status = Status549Enum.Sucess },
+            null, null, null, null, null, null, null, null);
+
+        var restored = TextchatResponseModel.FromJson(response.ToJson());
+
+        restored!.Meta.Should().NotBeNull();
+        restored.Meta!.GeneratedText.Should().Be("legacy");
+        restored.Cohere.Should().BeNull();
     }
 }
