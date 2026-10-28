@@ -50,7 +50,6 @@ namespace EdenAI
         /// |**microsoft**|-|`v3.1`|1.0 (per 1000000 char)|1000 char<br/>
         /// |**openai**|-|`v3.0.0`|10.0 (per 1000000 token)|1 token<br/>
         /// |**openai**|**gpt-4o**|`v3.0.0`|10.0 (per 1000000 token)|1 token<br/>
-        /// |**tenstorrent**|-|`v1.0.0`|1.0 (per 1000000 char)|1000 char<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -121,7 +120,6 @@ namespace EdenAI
         /// |**microsoft**|-|`v3.1`|1.0 (per 1000000 char)|1000 char<br/>
         /// |**openai**|-|`v3.0.0`|10.0 (per 1000000 token)|1 token<br/>
         /// |**openai**|**gpt-4o**|`v3.0.0`|10.0 (per 1000000 token)|1 token<br/>
-        /// |**tenstorrent**|-|`v1.0.0`|1.0 (per 1000000 char)|1000 char<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -686,7 +684,6 @@ namespace EdenAI
         /// |**microsoft**|-|`v3.1`|1.0 (per 1000000 char)|1000 char<br/>
         /// |**openai**|-|`v3.0.0`|10.0 (per 1000000 token)|1 token<br/>
         /// |**openai**|**gpt-4o**|`v3.0.0`|10.0 (per 1000000 token)|1 token<br/>
-        /// |**tenstorrent**|-|`v1.0.0`|1.0 (per 1000000 char)|1000 char<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>

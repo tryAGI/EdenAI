@@ -99,6 +99,12 @@ namespace EdenAI
         public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Voxist { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mistral")]
+        public global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? Mistral { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -122,6 +128,7 @@ namespace EdenAI
         /// <param name="faker"></param>
         /// <param name="amazon"></param>
         /// <param name="voxist"></param>
+        /// <param name="mistral"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -140,7 +147,8 @@ namespace EdenAI
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? gladia,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? faker,
             global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? amazon,
-            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? voxist)
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? voxist,
+            global::EdenAI.AudiospeechToTextAsyncSpeechToTextAsyncDataClass? mistral)
         {
             this.Openai = openai;
             this.Assembly = assembly;
@@ -157,6 +165,7 @@ namespace EdenAI
             this.Faker = faker;
             this.Amazon = amazon;
             this.Voxist = voxist;
+            this.Mistral = mistral;
         }
 
         /// <summary>

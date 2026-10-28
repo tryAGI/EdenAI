@@ -10,7 +10,6 @@ namespace EdenAI
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|**amazon.nova-reel-v1:1**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**amazon**|**amazon.nova-reel-v1:0**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|-|`boto3`|0.5 (per 1 request)|1 request<br/>
         /// |**minimax**|-|`v1`|0.56 (per 1 request)|1 request<br/>
         /// |**minimax**|**S2V-01**|`v1`|0.65 (per 1 request)|1 request<br/>
@@ -29,22 +28,6 @@ namespace EdenAI
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1280x720`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1920x1080`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|-|`v1`|5.0 (per 1 request)|1 request<br/>
         /// |**openai**|**sora-2**|`v1`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|**sora-2-pro**|`v1`|`720x1280`|0.3 (per 1 seconde)|1 seconde<br/>
@@ -286,7 +269,6 @@ namespace EdenAI
         /// |**amazon**|`amazon.nova-reel-v1:1`|<br/>
         /// |**minimax**|`MiniMax-Hailuo-2.3`|<br/>
         /// |**bytedance**|`seedance-1-5-pro-251215`|<br/>
-        /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
         /// |**pruna**|`p-video`|<br/>
@@ -308,7 +290,6 @@ namespace EdenAI
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|**amazon.nova-reel-v1:1**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**amazon**|**amazon.nova-reel-v1:0**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|-|`boto3`|0.5 (per 1 request)|1 request<br/>
         /// |**minimax**|-|`v1`|0.56 (per 1 request)|1 request<br/>
         /// |**minimax**|**S2V-01**|`v1`|0.65 (per 1 request)|1 request<br/>
@@ -327,22 +308,6 @@ namespace EdenAI
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1280x720`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1920x1080`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|-|`v1`|5.0 (per 1 request)|1 request<br/>
         /// |**openai**|**sora-2**|`v1`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|**sora-2-pro**|`v1`|`720x1280`|0.3 (per 1 seconde)|1 seconde<br/>
@@ -584,7 +549,6 @@ namespace EdenAI
         /// |**amazon**|`amazon.nova-reel-v1:1`|<br/>
         /// |**minimax**|`MiniMax-Hailuo-2.3`|<br/>
         /// |**bytedance**|`seedance-1-5-pro-251215`|<br/>
-        /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
         /// |**pruna**|`p-video`|<br/>
@@ -606,7 +570,6 @@ namespace EdenAI
         /// |Provider|Model|Version|Price|Billing unit|<br/>
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|**amazon.nova-reel-v1:1**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**amazon**|**amazon.nova-reel-v1:0**|`boto3`|0.08 (per 1 seconde)|1 seconde<br/>
         /// |**amazon**|-|`boto3`|0.5 (per 1 request)|1 request<br/>
         /// |**minimax**|-|`v1`|0.56 (per 1 request)|1 request<br/>
         /// |**minimax**|**S2V-01**|`v1`|0.65 (per 1 request)|1 request<br/>
@@ -625,22 +588,6 @@ namespace EdenAI
         /// |**bytedance**|**seedance-1-0-pro-250528**|`v3`|2.5 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-0-pro-fast-251015**|`v3`|1.0 (per 1000000 token)|1 token<br/>
         /// |**bytedance**|**seedance-1-5-pro-251215**|`v3`|1.2 (per 1000000 token)|1 token<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`3840x2160`|0.6 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-fast-generate-preview**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1280x720`|0.05 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|`1920x1080`|0.08 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-lite-generate-preview**|`v1Beta`|0.05 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|-|`v1Beta`|3.6 (per 1 request)|1 request<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`1920x1080`|0.12 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.0-fast-generate-001**|`v1Beta`|`3840x2160`|0.3 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1280x720`|0.4 (per 1 seconde)|1 seconde<br/>
-        /// |**google**|**veo-3.1-generate-preview**|`v1Beta`|`1920x1080`|0.4 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|-|`v1`|5.0 (per 1 request)|1 request<br/>
         /// |**openai**|**sora-2**|`v1`|`1280x720`|0.1 (per 1 seconde)|1 seconde<br/>
         /// |**openai**|**sora-2-pro**|`v1`|`720x1280`|0.3 (per 1 seconde)|1 seconde<br/>
@@ -882,7 +829,6 @@ namespace EdenAI
         /// |**amazon**|`amazon.nova-reel-v1:1`|<br/>
         /// |**minimax**|`MiniMax-Hailuo-2.3`|<br/>
         /// |**bytedance**|`seedance-1-5-pro-251215`|<br/>
-        /// |**google**|`veo-3.1-generate-preview`|<br/>
         /// |**openai**|`sora-2`|<br/>
         /// |**pixverse**|`v6`|<br/>
         /// |**pruna**|`p-video`|<br/>
