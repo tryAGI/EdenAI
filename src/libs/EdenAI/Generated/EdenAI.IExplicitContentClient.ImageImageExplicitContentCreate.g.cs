@@ -12,7 +12,6 @@ namespace EdenAI
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.0 (per 1000 file)|1 file<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
-        /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// &lt;/details&gt;<br/>
@@ -40,7 +39,6 @@ namespace EdenAI
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.0 (per 1000 file)|1 file<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
-        /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// &lt;/details&gt;<br/>
@@ -68,7 +66,6 @@ namespace EdenAI
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.0 (per 1000 file)|1 file<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
-        /// |**sentisight**|-|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// &lt;/details&gt;<br/>

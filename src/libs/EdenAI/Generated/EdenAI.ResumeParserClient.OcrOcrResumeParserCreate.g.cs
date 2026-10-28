@@ -48,7 +48,6 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**affinda**|-|`v3`|0.07 (per 1 file)|1 file<br/>
         /// |**klippa**|-|`v1`|0.1 (per 1 file)|1 file<br/>
-        /// |**senseloaf**|-|`v3`|0.045 (per 1 file)|1 file<br/>
         /// |**extracta**|-|`v1`|0.1 (per 1 page)|1 page<br/>
         /// |**openai**|-|`v1.0`|0.04 (per 1 page)|1 page<br/>
         /// |**openai**|**gpt-4o**|`v1.0`|0.04 (per 1 page)|1 page<br/>
@@ -205,7 +204,6 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**affinda**|-|`v3`|0.07 (per 1 file)|1 file<br/>
         /// |**klippa**|-|`v1`|0.1 (per 1 file)|1 file<br/>
-        /// |**senseloaf**|-|`v3`|0.045 (per 1 file)|1 file<br/>
         /// |**extracta**|-|`v1`|0.1 (per 1 page)|1 page<br/>
         /// |**openai**|-|`v1.0`|0.04 (per 1 page)|1 page<br/>
         /// |**openai**|**gpt-4o**|`v1.0`|0.04 (per 1 page)|1 page<br/>
@@ -973,7 +971,6 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**affinda**|-|`v3`|0.07 (per 1 file)|1 file<br/>
         /// |**klippa**|-|`v1`|0.1 (per 1 file)|1 file<br/>
-        /// |**senseloaf**|-|`v3`|0.045 (per 1 file)|1 file<br/>
         /// |**extracta**|-|`v1`|0.1 (per 1 page)|1 page<br/>
         /// |**openai**|-|`v1.0`|0.04 (per 1 page)|1 page<br/>
         /// |**openai**|**gpt-4o**|`v1.0`|0.04 (per 1 page)|1 page<br/>

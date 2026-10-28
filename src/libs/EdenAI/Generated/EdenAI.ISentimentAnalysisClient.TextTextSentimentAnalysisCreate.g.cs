@@ -145,7 +145,6 @@ namespace EdenAI
         /// |**openai**|**o4-mini**|`v3.0.0`|4.4e-06 (per 1 token)|1 token<br/>
         /// |**openai**|**o4-mini-2025-04-16**|`v3.0.0`|4.4e-06 (per 1 token)|1 token<br/>
         /// |**openai**|**container**|`v3.0.0`|0.0 (per 1 seconde)|1 seconde<br/>
-        /// |**tenstorrent**|-|`v1.1.0`|0.7 (per 1000000 char)|1000 char<br/>
         /// |**sapling**|-|`v1`|20.0 (per 1000000 char)|1000 char<br/>
         /// |**xai**|**grok-2-latest**|`v1`|1e-05 (per 1 token)|1 token<br/>
         /// |**xai**|**grok-2**|`v1`|1e-05 (per 1 token)|1 token<br/>
@@ -374,7 +373,6 @@ namespace EdenAI
         /// |**openai**|**o4-mini**|`v3.0.0`|4.4e-06 (per 1 token)|1 token<br/>
         /// |**openai**|**o4-mini-2025-04-16**|`v3.0.0`|4.4e-06 (per 1 token)|1 token<br/>
         /// |**openai**|**container**|`v3.0.0`|0.0 (per 1 seconde)|1 seconde<br/>
-        /// |**tenstorrent**|-|`v1.1.0`|0.7 (per 1000000 char)|1000 char<br/>
         /// |**sapling**|-|`v1`|20.0 (per 1000000 char)|1000 char<br/>
         /// |**xai**|**grok-2-latest**|`v1`|1e-05 (per 1 token)|1 token<br/>
         /// |**xai**|**grok-2**|`v1`|1e-05 (per 1 token)|1 token<br/>
@@ -603,7 +601,6 @@ namespace EdenAI
         /// |**openai**|**o4-mini**|`v3.0.0`|4.4e-06 (per 1 token)|1 token<br/>
         /// |**openai**|**o4-mini-2025-04-16**|`v3.0.0`|4.4e-06 (per 1 token)|1 token<br/>
         /// |**openai**|**container**|`v3.0.0`|0.0 (per 1 seconde)|1 seconde<br/>
-        /// |**tenstorrent**|-|`v1.1.0`|0.7 (per 1000000 char)|1000 char<br/>
         /// |**sapling**|-|`v1`|20.0 (per 1000000 char)|1000 char<br/>
         /// |**xai**|**grok-2-latest**|`v1`|1e-05 (per 1 token)|1 token<br/>
         /// |**xai**|**grok-2**|`v1`|1e-05 (per 1 token)|1 token<br/>
