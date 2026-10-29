@@ -24,6 +24,11 @@ namespace EdenAI
         /// |**greenpt**|**green-s**|`v1`|0.004286052 (per 60 seconde)|1 seconde<br/>
         /// |**greenpt**|**green-s-pro**|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
         /// |**greenpt**|-|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
+        /// |**mistral**|-|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-2602**|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-latest**|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-transcribe-3**|`v1`|5.8334e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-small-transcribe-3**|`v1`|6.6667e-05 (per 1 seconde)|None seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -297,6 +302,7 @@ namespace EdenAI
         /// |**deepgram**|`enhanced`|<br/>
         /// |**gradium**|`default`|<br/>
         /// |**greenpt**|`green-s-pro`|<br/>
+        /// |**mistral**|`voxtral-mini-2602`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -328,6 +334,11 @@ namespace EdenAI
         /// |**greenpt**|**green-s**|`v1`|0.004286052 (per 60 seconde)|1 seconde<br/>
         /// |**greenpt**|**green-s-pro**|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
         /// |**greenpt**|-|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
+        /// |**mistral**|-|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-2602**|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-latest**|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-transcribe-3**|`v1`|5.8334e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-small-transcribe-3**|`v1`|6.6667e-05 (per 1 seconde)|None seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -601,6 +612,7 @@ namespace EdenAI
         /// |**deepgram**|`enhanced`|<br/>
         /// |**gradium**|`default`|<br/>
         /// |**greenpt**|`green-s-pro`|<br/>
+        /// |**mistral**|`voxtral-mini-2602`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="request"></param>
@@ -632,6 +644,11 @@ namespace EdenAI
         /// |**greenpt**|**green-s**|`v1`|0.004286052 (per 60 seconde)|1 seconde<br/>
         /// |**greenpt**|**green-s-pro**|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
         /// |**greenpt**|-|`v1`|0.005217802 (per 60 seconde)|1 seconde<br/>
+        /// |**mistral**|-|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-2602**|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-latest**|`v1`|5e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-mini-transcribe-3**|`v1`|5.8334e-05 (per 1 seconde)|None seconde<br/>
+        /// |**mistral**|**voxtral-small-transcribe-3**|`v1`|6.6667e-05 (per 1 seconde)|None seconde<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;details&gt;&lt;summary&gt;Supported Languages&lt;/summary&gt;<br/>
         /// |Name|Value|<br/>
@@ -905,6 +922,7 @@ namespace EdenAI
         /// |**deepgram**|`enhanced`|<br/>
         /// |**gradium**|`default`|<br/>
         /// |**greenpt**|`green-s-pro`|<br/>
+        /// |**mistral**|`voxtral-mini-2602`|<br/>
         /// &lt;/details&gt;
         /// </summary>
         /// <param name="settings">
