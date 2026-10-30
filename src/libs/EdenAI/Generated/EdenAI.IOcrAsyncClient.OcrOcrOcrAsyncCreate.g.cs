@@ -11,14 +11,14 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
         /// |**microsoft**|-|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|-|`v1`|4.4 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.4 (per 1000 page)|None page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
@@ -38,14 +38,14 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
         /// |**microsoft**|-|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|-|`v1`|4.4 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.4 (per 1000 page)|None page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
@@ -65,14 +65,14 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**amazon**|-|`boto3 (v1.15.18)`|1.5 (per 1000 page)|1 page<br/>
         /// |**microsoft**|-|`rest API 4.0 (2024-11-30)`|10.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|-|`v1`|4.0 (per 1000 page)|1 page<br/>
-        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-3**|`v1`|2.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.0 (per 1000 page)|None page<br/>
-        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.0 (per 1000 page)|None page<br/>
+        /// |**mistral**|-|`v1`|4.4 (per 1000 page)|1 page<br/>
+        /// |**mistral**|**mistral-ocr-2512**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3-0**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-3**|`v1`|2.2 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-0**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-4-1**|`v1`|4.4 (per 1000 page)|None page<br/>
+        /// |**mistral**|**mistral-ocr-latest**|`v1`|4.4 (per 1000 page)|None page<br/>
         /// &lt;/details&gt;<br/>
         /// &lt;a href='https://old-app.edenai.run/v2/models?technology=ocr-ocr_async' target='_blank' rel='noopener noreferrer' &gt;&lt;h4&gt;Supported Models&lt;/h4&gt;&lt;/a&gt;
         /// </summary>
