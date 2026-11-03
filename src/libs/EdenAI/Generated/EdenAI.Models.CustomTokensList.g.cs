@@ -128,13 +128,6 @@ namespace EdenAI
         public bool Synthesized { get; set; } = default!;
 
         /// <summary>
-        /// Name of a routing policy to apply to every call made with this key (one of the key owner's own, or one of the organization's), or null for none.<br/>
-        /// Included only in responses
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default_policy")]
-        public string? DefaultPolicy { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -175,10 +168,6 @@ namespace EdenAI
         /// <param name="defaultTags">
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </param>
-        /// <param name="defaultPolicy">
-        /// Name of a routing policy to apply to every call made with this key (one of the key owner's own, or one of the organization's), or null for none.<br/>
-        /// Included only in responses
-        /// </param>
         /// <param name="label">
         /// Included only in responses
         /// </param>
@@ -215,7 +204,6 @@ namespace EdenAI
             global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod,
             int? budgetAlertPercent,
             object? defaultTags,
-            string? defaultPolicy,
             string label = default!,
             string masked = default!,
             bool revoked = default!,
@@ -240,7 +228,6 @@ namespace EdenAI
             this.DefaultTags = defaultTags;
             this.Legacy = legacy;
             this.Synthesized = synthesized;
-            this.DefaultPolicy = defaultPolicy;
         }
 
         /// <summary>
