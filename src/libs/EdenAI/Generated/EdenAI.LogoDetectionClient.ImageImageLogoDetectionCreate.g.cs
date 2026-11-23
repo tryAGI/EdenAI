@@ -48,9 +48,9 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|-|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**api4ai**|**v1**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|**v2**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|-|`v1.0.0`|25.0 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|**v2**|`v1.0.0`|25.0 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4-turbo**|`v1`|48.0 (per 1000 file)|1 file<br/>
@@ -89,9 +89,9 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|-|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**api4ai**|**v1**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|**v2**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|-|`v1.0.0`|25.0 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|**v2**|`v1.0.0`|25.0 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4-turbo**|`v1`|48.0 (per 1000 file)|1 file<br/>
@@ -725,9 +725,9 @@ namespace EdenAI
         /// |----|----|-------|-----|------------|<br/>
         /// |**google**|-|`v1`|1.5 (per 1000 file)|1 file<br/>
         /// |**microsoft**|-|`v3.2`|1.0 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|-|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
         /// |**api4ai**|**v1**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
-        /// |**api4ai**|**v2**|`v1.0.0`|0.25 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|-|`v1.0.0`|25.0 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|**v2**|`v1.0.0`|25.0 (per 1000 file)|1 file<br/>
         /// |**openai**|-|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4o**|`v1`|24.0 (per 1000 file)|1 file<br/>
         /// |**openai**|**gpt-4-turbo**|`v1`|48.0 (per 1000 file)|1 file<br/>
