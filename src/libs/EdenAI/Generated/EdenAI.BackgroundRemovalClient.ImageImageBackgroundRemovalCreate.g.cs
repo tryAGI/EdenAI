@@ -46,7 +46,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
-        /// |**api4ai**|`v1.0.0`|50.0 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|`v1.0.0`|5.0 (per 1000 file)|1 file<br/>
         /// |**photoroom**|`v1`|20.0 (per 1000 file)|1 file<br/>
         /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**stabilityai**|`v2Beta`|0.02 (per 1 request)|1 request<br/>
@@ -78,7 +78,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
-        /// |**api4ai**|`v1.0.0`|50.0 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|`v1.0.0`|5.0 (per 1000 file)|1 file<br/>
         /// |**photoroom**|`v1`|20.0 (per 1000 file)|1 file<br/>
         /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**stabilityai**|`v2Beta`|0.02 (per 1 request)|1 request<br/>
@@ -713,7 +713,7 @@ namespace EdenAI
         /// &lt;details&gt;&lt;summary&gt;&lt;strong style='color: #0072a3; cursor: pointer'&gt;Available Providers&lt;/strong&gt;&lt;/summary&gt;<br/>
         /// |Provider|Version|Price|Billing unit|<br/>
         /// |----|-------|-----|------------|<br/>
-        /// |**api4ai**|`v1.0.0`|50.0 (per 1000 file)|1 file<br/>
+        /// |**api4ai**|`v1.0.0`|5.0 (per 1000 file)|1 file<br/>
         /// |**photoroom**|`v1`|20.0 (per 1000 file)|1 file<br/>
         /// |**sentisight**|`v3.3.1`|0.75 (per 1000 file)|1 file<br/>
         /// |**stabilityai**|`v2Beta`|0.02 (per 1 request)|1 request<br/>
