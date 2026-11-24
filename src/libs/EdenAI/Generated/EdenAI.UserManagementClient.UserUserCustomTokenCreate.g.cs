@@ -466,6 +466,7 @@ namespace EdenAI
         /// <param name="defaultTags">
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </param>
+        /// <param name="team"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -479,6 +480,7 @@ namespace EdenAI
             global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod = default,
             int? budgetAlertPercent = default,
             object? defaultTags = default,
+            string? team = default,
             global::EdenAI.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -493,6 +495,7 @@ namespace EdenAI
                 BalanceResetPeriod = balanceResetPeriod,
                 BudgetAlertPercent = budgetAlertPercent,
                 DefaultTags = defaultTags,
+                Team = team,
             };
 
             return await UserUserCustomTokenCreateAsync(

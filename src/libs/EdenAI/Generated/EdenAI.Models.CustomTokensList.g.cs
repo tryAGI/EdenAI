@@ -134,6 +134,13 @@ namespace EdenAI
         public global::System.Guid? KeyId { get; set; }
 
         /// <summary>
+        /// Included only in responses
+        /// </summary>
+        /// <default>default!</default>
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        public string Team { get; set; } = default!;
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -198,6 +205,9 @@ namespace EdenAI
         /// <param name="synthesized">
         /// Included only in responses
         /// </param>
+        /// <param name="team">
+        /// Included only in responses
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -219,7 +229,8 @@ namespace EdenAI
             bool revoked = default!,
             global::System.DateTime created = default!,
             bool legacy = default!,
-            bool synthesized = default!)
+            bool synthesized = default!,
+            string team = default!)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Label = label;
@@ -239,6 +250,7 @@ namespace EdenAI
             this.Legacy = legacy;
             this.Synthesized = synthesized;
             this.KeyId = keyId;
+            this.Team = team;
         }
 
         /// <summary>
