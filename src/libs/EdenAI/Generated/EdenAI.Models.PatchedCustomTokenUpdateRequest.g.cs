@@ -4,7 +4,9 @@
 namespace EdenAI
 {
     /// <summary>
-    ///
+    /// A key's update writes what was sent (and what ``Token.save`` derives from it), never<br/>
+    /// the whole row as it was loaded at the start of the request: that would write back a<br/>
+    /// team, own limits or a balance another request changed meanwhile.
     /// </summary>
     public sealed partial class PatchedCustomTokenUpdateRequest
     {
@@ -56,6 +58,12 @@ namespace EdenAI
         public object? DefaultTags { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        public string? Team { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -87,6 +95,7 @@ namespace EdenAI
         /// <param name="defaultTags">
         /// Tags added to every call made with this key. A tag the call sends itself wins on the same key.
         /// </param>
+        /// <param name="team"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -97,7 +106,8 @@ namespace EdenAI
             double? balanceResetAmount,
             global::EdenAI.BalanceResetPeriodEnum? balanceResetPeriod,
             int? budgetAlertPercent,
-            object? defaultTags)
+            object? defaultTags,
+            string? team)
         {
             this.Balance = balance;
             this.ExpireTime = expireTime;
@@ -106,6 +116,7 @@ namespace EdenAI
             this.BalanceResetPeriod = balanceResetPeriod;
             this.BudgetAlertPercent = budgetAlertPercent;
             this.DefaultTags = defaultTags;
+            this.Team = team;
         }
 
         /// <summary>
