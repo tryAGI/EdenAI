@@ -303,6 +303,12 @@ namespace EdenAI
         public global::EdenAI.LlmchatChatDataClass? Sference { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lyceum")]
+        public global::EdenAI.LlmchatChatDataClass? Lyceum { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -360,6 +366,7 @@ namespace EdenAI
         /// <param name="xai"></param>
         /// <param name="arkanecloud"></param>
         /// <param name="sference"></param>
+        /// <param name="lyceum"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -412,7 +419,8 @@ namespace EdenAI
             global::EdenAI.LlmchatChatDataClass? google,
             global::EdenAI.LlmchatChatDataClass? xai,
             global::EdenAI.LlmchatChatDataClass? arkanecloud,
-            global::EdenAI.LlmchatChatDataClass? sference)
+            global::EdenAI.LlmchatChatDataClass? sference,
+            global::EdenAI.LlmchatChatDataClass? lyceum)
         {
             this.Lilac = lilac;
             this.Flexai = flexai;
@@ -463,6 +471,7 @@ namespace EdenAI
             this.Xai = xai;
             this.Arkanecloud = arkanecloud;
             this.Sference = sference;
+            this.Lyceum = lyceum;
         }
 
         /// <summary>
